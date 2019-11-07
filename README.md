@@ -4,8 +4,6 @@
     </a>
 </p>
 
-# Vtu Weapp
-
 ### 一套简单便捷高颜值的微信小程序 UI 组件库
 <p align="center">
     <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/1.jpg">
@@ -70,6 +68,7 @@ npm run dev
     <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/wx.jpg">
     <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/qq.png">
 </p>
+
 ### 赞赏
 <p align="center">
     <a href="https://vtuui.vtuzx.com">
