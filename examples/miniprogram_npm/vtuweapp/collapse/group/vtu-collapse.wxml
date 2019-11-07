@@ -1,3 +1,0 @@
-<view class="Vtu_Collapse custom-class">
-    <slot></slot>
-</view>

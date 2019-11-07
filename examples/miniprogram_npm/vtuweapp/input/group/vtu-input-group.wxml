@@ -1,6 +1,0 @@
-<view class="Vtuzx_Input_Group custom-class shadow-{{shadow}} {{card?'is-card':''}}"  slot="{{slot}}">
-  <view class="Vtuzx_Input_Group_Title" wx:if="{{title}}">{{title}}</view>
-  <view class="Vtuzx_Input_Group_Center {{round?'is-round':''}}" style="background: {{bgColor}}">
-    <slot></slot>
-  </view>
-</view>

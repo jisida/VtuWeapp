@@ -1,3 +1,0 @@
-<view class="Vtu_Step custom-class" slot="name4">
-    <slot></slot>
-</view>

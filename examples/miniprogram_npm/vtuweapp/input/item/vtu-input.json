@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "vtu-btn": "../../button/vtu-btn",
-    "vtu-switch": "../../switch/vtu-switch"
-  }
-}

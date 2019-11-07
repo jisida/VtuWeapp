@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "vtu-badge": "../badge/vtu-badge",
-    "vtu-divider": "../divider/vtu-divider"
-  }
-}

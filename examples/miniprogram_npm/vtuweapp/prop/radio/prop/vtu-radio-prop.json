@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "vtu-radio-group": "/miniprogram_npm/vtuweapp/radio/group/vtu-radio-group",
-    "vtu-radio": "/miniprogram_npm/vtuweapp/radio/radio/vtu-radio"
-  }
-}
