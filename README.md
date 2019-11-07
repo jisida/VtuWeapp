@@ -44,7 +44,7 @@ npm run dev
 ### 交流
 微信群：加入微信群请先添加开发者微信。QQ群：793843513 或扫描二维码。
 <p align="center">
-    <img width="500" src="https://activity.vtuzx.com/doc/vtuui/weapp/jiaoliu.png">
+    <img max-width="900px" src="https://activity.vtuzx.com/doc/vtuui/weapp/jiaoliu.png">
 </p>
 
 ### 截图预览
