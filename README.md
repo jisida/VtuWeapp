@@ -4,27 +4,6 @@
     </a>
 </p>
 
-### 一套简单便捷高颜值的微信小程序 UI 组件库
-<p align="center">
-    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/1.jpg">
-    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/2.jpg">
-    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/3.jpg">
-    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/4.jpg">
-</p>
-<p align="center">
-    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/5.jpg">
-    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/6.jpg">
-    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/7.jpg">
-    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/8.jpg">
-</p>
-<p align="center">
-<img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/9.jpg">
-<img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/10.jpg">
-<img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/11.jpg">
-<img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/12.jpg">
-</p>
-
-
 ## 文档
 [https://vtuui.vtuzx.com](http://inmap.talkingdata.com/wx/index_prod.html)
 
@@ -65,15 +44,29 @@ npm run dev
 ### 交流
 微信群：加入微信群请先添加开发者微信。QQ群：793843513 或扫描二维码。
 <p align="center">
-    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/wx.jpg">
-    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/qq.png">
+    <img width="500" src="https://activity.vtuzx.com/doc/vtuui/weapp/jiaoliu.png">
 </p>
 
-### 赞赏
+### 截图预览
 <p align="center">
-    <a href="https://vtuui.vtuzx.com">
-        <img height="300px" src="https://activity.vtuzx.com/doc/system/zanshang.png">
-    </a>
+    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/1.jpg">
+    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/2.jpg">
+    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/3.jpg">
+</p>
+<p align="center">
+    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/4.jpg">
+    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/5.jpg">
+    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/6.jpg">
+</p>
+<p align="center">
+    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/7.jpg">
+    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/8.jpg">
+<img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/9.jpg">
+</p>
+<p align="center">
+    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/10.jpg">
+    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/11.jpg">
+    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/12.jpg">
 </p>
 
 ## License
