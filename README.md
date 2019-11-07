@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://vtuui.vtuzx.com">
-        <img width="100%" src="https://activity.vtuzx.com/doc/vtuui/weapp/xuanchuan.png">
+        <img width="100%" src="https://activity.vtuzx.com/doc/vtuui/weapp/head.png">
     </a>
 </p>
 
