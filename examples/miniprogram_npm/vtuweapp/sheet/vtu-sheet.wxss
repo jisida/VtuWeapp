@@ -45,6 +45,15 @@
 }
 .Vtu_Sheet_Center_Li_Loading{
     font-size: 22px;
+    animation-name: myfirst; /*动画的名称 */
+    animation-duration: 1000ms; /*动画从开始到结束的时间*/
+    animation-timing-function: linear; /*动画执行快慢的参数*/
+    animation-iteration-count: infinite; /*动画执行多少次的参数*//*以下是兼容ios所需，参数意义与上相同*/
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    display:inline-block;
 }
 .Vtu_Sheet_Center_Li_H1_Icon{
     margin: 0px 5px 0 0;
@@ -68,4 +77,22 @@
     font-size: 12px;
     color: var(--font-hc);
     line-height: 25px;
+}
+@keyframes myfirst {
+    /*开始转的角度*/
+    from {
+        transform: rotate(0deg);
+    }/*结束的角度*/
+    to {
+        transform: rotate(360deg);
+    }
+}
+/*兼容ios*/
+@-webkit-keyframes myfirst {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

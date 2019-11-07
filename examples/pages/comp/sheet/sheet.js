@@ -82,6 +82,7 @@ class SheetPage extends Mixin{
   bindSelect1 = function(e) {
     let self = this
     let index = e.detail.index;
+
     switch (index) {
       case 0:
         setTimeout(function() {
@@ -100,6 +101,23 @@ class SheetPage extends Mixin{
     }
   }
 
+  getUserInfo = function(e) {
+    wx.showToast({
+      title: "获取用户信息成功！",
+      icon: 'none',
+      duration: 2000
+    });
+    console.log("getUserInfo: ", e)
+  }
+
+  getPhoneNumber = function(e) {
+    wx.showToast({
+      title: "获取用户手机号成功！",
+      icon: 'none',
+      duration: 2000
+    });
+    console.log("getPhoneNumber: ", e)
+  }
 }
 
 Page(new SheetPage({className: 'SheetPage', path: '/pages/comp/sheet/sheet', noShow: true}));

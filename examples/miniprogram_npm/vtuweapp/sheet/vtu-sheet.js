@@ -144,12 +144,23 @@ VtuComponent({
       if (this.data.closeOnClickOverlay) this.close()
     },
 
-    /**
-     * 点击取消按钮
-     */
-    closeByCancel: function() {
-      this.triggerEvent('cancel');
-      this.close()
+    getUserInfo: function(e) {
+      this.triggerEvent('getuserinfo', e.detail);
+    },
+    getPhoneNumber: function(e) {
+      this.triggerEvent('getphonenumber', e.detail);
+    },
+    contact: function(e) {
+      this.triggerEvent('contact', e.detail);
+    },
+    error: function(e) {
+      this.triggerEvent('error', e.detail);
+    },
+    opensetting: function(e) {
+      this.triggerEvent('opensetting', e.detail);
+    },
+    launchapp: function(e) {
+      this.triggerEvent('launchapp', e.detail);
     }
   }
 })

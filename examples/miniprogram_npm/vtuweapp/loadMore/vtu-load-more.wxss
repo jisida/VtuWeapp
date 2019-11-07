@@ -19,6 +19,7 @@
 }
 .Vtu_LoadMore_Loading_Img image{
     width: 100%;
+    height: 0;
 }
 .Vtu_LoadMore_Loading_Icon{
     width: 30px;

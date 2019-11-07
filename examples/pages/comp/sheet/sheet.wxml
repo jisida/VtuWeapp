@@ -10,6 +10,6 @@
       <vtu-btn type="primary" bind:click="showSheet2">弹出菜单</vtu-btn>
     </view>
     <vtu-sheet show="{{show1}}" sheetList="{{sheetList1}}" bind:select="bindSelect1"></vtu-sheet>
-    <vtu-sheet show="{{show2}}" sheetList="{{sheetList2}}" bind:select="bindSelect2"></vtu-sheet>
+    <vtu-sheet show="{{show2}}" sheetList="{{sheetList2}}" bind:getuserinfo="getUserInfo" bind:getphonenumber="getPhoneNumber"></vtu-sheet>
   </view>
 </view>
