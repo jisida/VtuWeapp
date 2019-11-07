@@ -1,6 +1,6 @@
 {
   "name": "vtuweapp",
-  "version": "1.1.2",
+  "version": "1.1.4",
   "description": "",
   "scripts": {
     "dev": "gulp dev --develop",
@@ -32,7 +32,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/VtuWeapp/VtuWeapp.git"
+    "url": "https://github.com/jisida/VtuWeapp"
   },
   "author": "vtuzx",
   "license": "MIT",

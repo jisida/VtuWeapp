@@ -19,7 +19,7 @@
         </vtu-layout-row>
     </view>
     <vtu-cell-group>
-        <vtu-cell title="GitHub" icon="iconfont icon-Githeibai" icon-color="#386d61" border arrow></vtu-cell>
+        <vtu-cell title="GitHub" icon="iconfont icon-Githeibai" icon-color="#386d61" border arrow bind:click="$wx_copyText" data-text="https://github.com/jisida/VtuWeapp"></vtu-cell>
         <vtu-cell title="赞赏支持" icon="iconfont icon-zanshangshouyi" icon-color="#ed3954" border arrow bind:click="$wx_previewImage" data-url="https://activity.vtuzx.com/doc/system/zanshang.png"></vtu-cell>
         <vtu-cell title="意见反馈" open-type="feedback" icon="iconfont icon-yijian" icon-color="#0fb730" border arrow></vtu-cell>
         <vtu-cell title="关于我们" icon="iconfont icon-guanyu1" icon-color="#1b4a6d" arrow bind:click="toAboutPage"></vtu-cell>

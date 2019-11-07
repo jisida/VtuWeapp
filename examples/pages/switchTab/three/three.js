@@ -86,6 +86,10 @@ class SwitchtabThreePage extends ComponentPage {
 
     $wx_previewImage (e) {
       switchtabThreePage.$wx_previewImage(e)
+    },
+
+    $wx_copyText (e) {
+      switchtabThreePage.$wx_copyText(e)
     }
   }
 }
