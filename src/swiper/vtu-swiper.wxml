@@ -1,0 +1,28 @@
+<view class="Vtu_Swipe_Body custom-class">
+    <swiper class="swiper-class Vtu_Swiper Vtu_Swiper--{{type}} {{dotType}}--dot"
+            indicator-dots="{{indicatorDots && dotType=='default'}}"
+            indicator-color="{{indicatorColor}}"
+            indicator-active-color="{{indicatorActiveColor}}"
+            current="{{current}}"
+            interval="{{interval}}"
+            duration="{{duration}}"
+            circular="{{circular}}"
+            vertical="{{vertical}}"
+            easing-function="{{easingFunction}}"
+            bindchange="swipeChange"
+            display-multiple-items="{{displayMultipleItems}}"
+            autoplay="{{autoplay}}"
+            style="height: {{height}}">
+        <swiper-item wx:for="{{list}}" class="swiper-item-class Vtu_Swiper_Item {{current==index?'current':''}}">
+            <view class="Vtu_Swiper_Item_Body">
+                <image src="{{item.url}}" class="swiper-item-img-class Vtu_Swiper_Item_Body_Li" mode="{{item.mode||'widthFix'}}"/>
+            </view>
+        </swiper-item>
+    </swiper>
+    <view class="Vtu_Swiper_Dot" wx:if="{{indicatorDots && dotType!='default'}}">
+        <view class="Vtu_Swiper_Dot_Li Dot--{{dotType}} {{current==index?'is-active':''}} swiper-content-class"
+              style="background: {{current==index? indicatorActiveColor : indicatorColor}};color: {{dotFontColor}};" wx:for="{{list}}">
+            <block wx:if="{{dotType == 'content'}}">{{item.content}}</block>
+        </view>
+    </view>
+</view>

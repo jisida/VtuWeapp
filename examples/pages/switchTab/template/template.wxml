@@ -1,0 +1,25 @@
+<scroll-view scroll-y class="Swiper_Item_Scroll" bindscroll="bindscroll">
+    <view class="SwitchBody">
+        <vtu-navbar title="模板库" title-align="center" show-nav-btn="{{false}}" bg-color="rgba(255,255,255,.9)" hidden="{{hiddenNavBar}}"></vtu-navbar>
+        <view class="TopSpan">
+            <view class="TopSpan_Name">模板库</view>
+            <view class="TopSpan_Desc">丰富的业务模板库，可直接直接使用，也可自定义修改</view>
+        </view>
+        <vtu-panel content-class="contentClass" round card>
+            <vtu-cell slot="header" title="商城模板" icon="iconfont icon-jichu" icon-color="#40cff9" border panel-header></vtu-cell>
+            <vtu-cell title="购买导航"  border arrow bind:click="buyBar"></vtu-cell>
+            <vtu-cell title="商品列表" border arrow bind:click="shopList"></vtu-cell>
+        </vtu-panel>
+        <vtu-panel content-class="contentClass" round card>
+            <vtu-cell slot="header" title="列表模板" icon="iconfont icon-biaodanzujian" icon-color="#40cff9" border panel-header></vtu-cell>
+            <vtu-cell title="评论列表" border arrow bind:click="comment"></vtu-cell>
+            <vtu-cell title="聊天列表" border arrow bind:click="chat"></vtu-cell>
+            <vtu-cell title="新闻列表" arrow bind:click="newsList"></vtu-cell>
+        </vtu-panel>
+        <vtu-panel content-class="contentClass" round card>
+            <vtu-cell slot="header" title="其他模板" icon="iconfont icon-zhanshi" icon-color="#40cff9" border panel-header></vtu-cell>
+            <vtu-cell title="标题" border arrow bind:click="title"></vtu-cell>
+            <vtu-cell title="小程序卡片" arrow bind:click="minipg"></vtu-cell>
+        </vtu-panel>
+    </view>
+</scroll-view>

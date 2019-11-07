@@ -1,0 +1,104 @@
+<view class="container">
+  <vtu-navbar title="Layout"></vtu-navbar>
+  <view class="center Page_Margin">
+    <view class="Cell_Span">
+      <view class="Cell_Span_Title">基础布局</view>
+      <view class="Cell_Span_Center">
+        <vtu-layout-row>
+          <vtu-layout-col span="12"><view class="layoutSpan"></view></vtu-layout-col>
+        </vtu-layout-row>
+        <vtu-layout-row>
+          <vtu-layout-col span="6"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="6"><view class="layoutSpan light"></view></vtu-layout-col>
+        </vtu-layout-row>
+        <vtu-layout-row>
+          <vtu-layout-col span="4"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="4"><view class="layoutSpan light"></view></vtu-layout-col>
+          <vtu-layout-col span="4"><view class="layoutSpan"></view></vtu-layout-col>
+        </vtu-layout-row>
+        <vtu-layout-row>
+          <vtu-layout-col span="3"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="3"><view class="layoutSpan light"></view></vtu-layout-col>
+          <vtu-layout-col span="3"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="3"><view class="layoutSpan light"></view></vtu-layout-col>
+        </vtu-layout-row>
+        <vtu-layout-row>
+          <vtu-layout-col span="2"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="2"><view class="layoutSpan light"></view></vtu-layout-col>
+          <vtu-layout-col span="2"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="2"><view class="layoutSpan light"></view></vtu-layout-col>
+          <vtu-layout-col span="2"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="2"><view class="layoutSpan light"></view></vtu-layout-col>
+        </vtu-layout-row>
+      </view>
+    </view>
+    <view class="Cell_Span">
+      <view class="Cell_Span_Title">分栏间隔</view>
+      <view class="Cell_Span_Center">
+        <vtu-layout-row gutter="20">
+          <vtu-layout-col span="3"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="3"><view class="layoutSpan light"></view></vtu-layout-col>
+          <vtu-layout-col span="3"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="3"><view class="layoutSpan light"></view></vtu-layout-col>
+        </vtu-layout-row>
+      </view>
+    </view>
+    <view class="Cell_Span">
+      <view class="Cell_Span_Title">混合布局</view>
+      <view class="Cell_Span_Center">
+        <vtu-layout-row gutter="10">
+          <vtu-layout-col span="8"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="4"><view class="layoutSpan"></view></vtu-layout-col>
+        </vtu-layout-row>
+        <vtu-layout-row gutter="10">
+          <vtu-layout-col span="4"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="3"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="3"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="2"><view class="layoutSpan"></view></vtu-layout-col>
+        </vtu-layout-row>
+        <vtu-layout-row gutter="10">
+          <vtu-layout-col span="2"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="5"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="5"><view class="layoutSpan"></view></vtu-layout-col>
+        </vtu-layout-row>
+      </view>
+    </view>
+    <view class="Cell_Span">
+      <view class="Cell_Span_Title">对齐方式</view>
+      <view class="Cell_Span_Center">
+        <vtu-layout-row align="right">
+          <vtu-layout-col span="3"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="3"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="3"><view class="layoutSpan"></view></vtu-layout-col>
+        </vtu-layout-row>
+        <vtu-layout-row align="center">
+          <vtu-layout-col span="3"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="3"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="3"><view class="layoutSpan"></view></vtu-layout-col>
+        </vtu-layout-row>
+        <vtu-layout-row align="left">
+          <vtu-layout-col span="3"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="3"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="3"><view class="layoutSpan"></view></vtu-layout-col>
+        </vtu-layout-row>
+      </view>
+    </view>
+    <view class="Cell_Span">
+      <view class="Cell_Span_Title">分栏偏移</view>
+      <view class="Cell_Span_Center">
+        <vtu-layout-row gutter="20">
+          <vtu-layout-col span="4"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="4" offset="4"><view class="layoutSpan"></view></vtu-layout-col>
+        </vtu-layout-row>
+        <vtu-layout-row gutter="20">
+          <vtu-layout-col span="2"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="4" offset="2"><view class="layoutSpan"></view></vtu-layout-col>
+          <vtu-layout-col span="2" offset="2"><view class="layoutSpan"></view></vtu-layout-col>
+        </vtu-layout-row>
+        <vtu-layout-row gutter="20">
+          <vtu-layout-col span="6" offset="2"><view class="layoutSpan"></view></vtu-layout-col>
+        </vtu-layout-row>
+      </view>
+    </view>
+  </view>
+</view>

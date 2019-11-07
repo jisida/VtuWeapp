@@ -1,0 +1,59 @@
+<view class="container">
+  <vtu-navbar title="Badge"></vtu-navbar>
+  <view class="center Page_Margin">
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="基础用法"  border>
+      </vtu-cell>
+      <view >
+        <view class="Badge_Btn">
+          <vtu-badge value="15" user-slot>
+            <vtu-btn>数字</vtu-btn>
+          </vtu-badge>
+        </view>
+        <view class="Badge_Btn">
+          <vtu-badge value="hot" bg-color="#ddd" user-slot>
+            <vtu-btn>自定义颜色</vtu-btn>
+          </vtu-badge>
+        </view>
+        <view class="Badge_Btn">
+          <vtu-btn>不使用插槽<vtu-badge value="hot"></vtu-badge></vtu-btn>
+        </view>
+      </view>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="最大值(适用于数字)"  border>
+      </vtu-cell>
+      <view >
+        <view class="Badge_Btn">
+          <vtu-badge value="15" max="10" user-slot>
+            <vtu-btn>最大10</vtu-btn>
+          </vtu-badge>
+        </view>
+        <view class="Badge_Btn">
+          <vtu-badge value="105" max="99" user-slot>
+            <vtu-btn>最大99</vtu-btn>
+          </vtu-badge>
+        </view>
+      </view>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="小红点" border>
+      </vtu-cell>
+      <view >
+        <view class="Badge_Btn">
+          <vtu-badge is-dot="true" user-slot>
+            <vtu-btn>按钮</vtu-btn>
+          </vtu-badge>
+        </view>
+        <view class="Badge_Btn">
+          <vtu-badge is-dot="true" user-slot>
+            未读消息
+          </vtu-badge>
+        </view>
+      </view>
+    </vtu-panel>
+  </view>
+</view>

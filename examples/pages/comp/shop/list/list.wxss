@@ -1,0 +1,5 @@
+.ShopListLi{
+  width: calc(50% - 10px);
+  margin: 10px 5px 0px 5px;
+  float: left;
+}

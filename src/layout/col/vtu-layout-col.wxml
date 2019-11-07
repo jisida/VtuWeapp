@@ -1,0 +1,4 @@
+<view class="Vtu_Layout-Col custom-class {{commonClass}}" hover-class="hover-class"
+      style="width: calc({{100*(span/12)}}% - {{gutter}}px);padding-left: {{gutter/2}}px;padding-right: {{gutter/2}}px;margin-left: {{100*(offset/12)}}%;{{commonStyle}};">
+    <slot></slot>
+</view>

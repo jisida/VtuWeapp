@@ -1,0 +1,15 @@
+<view class="container">
+  <vtu-navbar title="Sheet"></vtu-navbar>
+  <view class="center Page_Margin">
+    <view class="Cell_Span">
+        <view class="Cell_Span_Title Page_Padding">基础用法</view>
+      <vtu-btn type="primary" bind:click="showSheet1">弹出菜单</vtu-btn>
+    </view>
+    <view class="Cell_Span">
+      <view class="Cell_Span_Title Page_Padding">微信开放能力</view>
+      <vtu-btn type="primary" bind:click="showSheet2">弹出菜单</vtu-btn>
+    </view>
+    <vtu-sheet show="{{show1}}" sheetList="{{sheetList1}}" bind:select="bindSelect1"></vtu-sheet>
+    <vtu-sheet show="{{show2}}" sheetList="{{sheetList2}}" bind:select="bindSelect2"></vtu-sheet>
+  </view>
+</view>

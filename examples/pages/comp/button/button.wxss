@@ -1,0 +1,6 @@
+.btn-class{
+  margin: 0 0px 10px 0 !important;
+}
+.iconBtn{
+  margin-right: 10px !important;
+}

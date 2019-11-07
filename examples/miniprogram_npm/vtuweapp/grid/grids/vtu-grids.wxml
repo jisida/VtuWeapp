@@ -1,0 +1,15 @@
+<view class="Vtu_Grids custom-class {{border?'is-border':''}} {{commonClass}}">
+    <view class="Vtu_Grids_Li {{item.disabled?'is-disabled':''}}"
+          bindtap="click"
+          data-index="{{index}}"
+          wx:if="{{!item.hidden}}"
+          hover-class="{{!item.disabled?'Vtu_Grids_Li_Hover':''}}"
+          style="width: {{100/col}}%;"
+          wx:for="{{gridList}}"
+          wx:key="index">
+        <vtu-badge custom-class="icon item-class" value="{{item.badge_value}}" round="{{item.badge_round}}" circle="{{item.badge_circle}}" max="{{item.badge_max}}" color="{{item.badge_color}}" user-slot isDot="{{item.badge_isDot}}">
+            <i class="icon-span {{item.icon}}" wx:if="{{item.icon}}" style="color: {{item.iconColor || iconColor}};font-size: {{item.iconSize||iconSize}}"></i>
+        </vtu-badge>
+        <view class="label" style="color: {{item.fontColor || fontColor}};font-size: {{item.fontSize||fontSize}}">{{item.label}}</view>
+    </view>
+</view>

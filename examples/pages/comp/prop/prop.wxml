@@ -1,0 +1,33 @@
+<view class="container">
+  <vtu-navbar title="Prop"></vtu-navbar>
+  <view class="center Page_Margin">
+    <vtu-panel custom-class="panel" title="基础用法">
+      <vtu-btn custom-class="btn-class" bind:click="showProp1">底部弹出</vtu-btn>
+      <vtu-btn custom-class="btn-class" bind:click="showProp2">固定高度</vtu-btn>
+      <vtu-btn custom-class="btn-class" bind:click="showProp3">最大高度</vtu-btn>
+    </vtu-panel>
+    <vtu-panel custom-class="panel" title="高级用法">
+      <vtu-btn custom-class="btn-class" bind:click="showProp4">固定顶端底端</vtu-btn>
+    </vtu-panel>
+  </view>
+  <vtu-prop title="底部弹出" show="{{show1}}" show-cancel cancel-type="primary" cancel-label="完成">
+    <view class="prop-content">这里是显示内容</view>
+  </vtu-prop>
+  <vtu-prop title="固定高度" show="{{show2}}" height="300px">
+    <view class="prop-content">
+      <view class="prop-content-li" wx:for="{{20}}">这里是显示内容</view>
+    </view>
+  </vtu-prop>
+  <vtu-prop title="设置最大高度" show="{{show3}}" max-height="300px">
+    <view class="prop-content auto">
+      <view class="prop-content-li" wx:for="{{5}}">这里是显示内容</view>
+    </view>
+  </vtu-prop>
+  <vtu-prop title="固定顶端底端" show="{{show4}}" max-height="300px">
+    <view class="prop-header" slot="header"></view>
+    <view class="prop-content">
+      <view class="prop-content-li" wx:for="{{20}}">这里是显示内容</view>
+    </view>
+    <view class="prop-footer" slot="footer"></view>
+  </vtu-prop>
+</view>

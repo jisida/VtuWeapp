@@ -1,0 +1,82 @@
+<view class="container">
+  <vtu-navbar title="Collapse"></vtu-navbar>
+  <view class="center">
+    <view class="Cell_Span">
+      <view class="Cell_Span_Title Page_Padding">基础用法</view>
+      <vtu-collapse current="{{0}}" bind:change="change">
+        <vtu-collapse-item title="标题1">
+          与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；
+          在界面中一致：所有的元素和结构需保持一致，比如：设计样式、图标和文本、元素的位置等。
+        </vtu-collapse-item>
+        <vtu-collapse-item title="标题2">
+          <vtu-radio-group model="1" align="right">
+            <vtu-radio value="1" label="北京" icon="iconfont icon-biaoxing" ></vtu-radio>
+            <vtu-radio value="2" label="上海" icon="iconfont icon-xihuan" ></vtu-radio>
+            <vtu-radio value="3" label="深圳" icon="iconfont icon-sousuo"></vtu-radio>
+            <vtu-radio value="4" label="南京" icon="iconfont icon-shangchuan"></vtu-radio>
+          </vtu-radio-group>
+        </vtu-collapse-item>
+        <vtu-collapse-item title="标题3">
+          控制反馈：通过界面样式和交互动效让用户可以清晰的感知自己的操作；
+          页面反馈：操作后，通过页面元素的变化清晰地展现当前状态。
+        </vtu-collapse-item>
+        <vtu-collapse-item title="标题4">
+          简化流程：设计简洁直观的操作流程；
+          清晰明确：语言表达清晰且表意明确，让用户快速理解进而作出决策；
+          帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。
+        </vtu-collapse-item>
+      </vtu-collapse>
+    </view>
+    <view class="Cell_Span">
+      <view class="Cell_Span_Title Page_Padding">手风琴用法</view>
+      <vtu-collapse accordion="{{true}}" color="#6c6c6c" active-color="orange">
+        <vtu-collapse-item title="标题1" icon="icon-daohang iconfont">
+          用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；
+          结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。
+        </vtu-collapse-item>
+        <vtu-collapse-item title="标题2" icon="iconfont icon-wode">
+          与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；
+          在界面中一致：所有的元素和结构需保持一致，比如：设计样式、图标和文本、元素的位置等。
+        </vtu-collapse-item>
+        <vtu-collapse-item title="标题3" icon="iconfont icon-yemian-copy-copy" disabled>
+          控制反馈：通过界面样式和交互动效让用户可以清晰的感知自己的操作；
+          页面反馈：操作后，通过页面元素的变化清晰地展现当前状态。
+        </vtu-collapse-item>
+        <vtu-collapse-item title="标题4" icon="iconfont icon-biaoxingfill" icon-color="red" title-color="skyblue">
+          简化流程：设计简洁直观的操作流程；
+          清晰明确：语言表达清晰且表意明确，让用户快速理解进而作出决策；
+          帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。
+        </vtu-collapse-item>
+      </vtu-collapse>
+    </view>
+    <view class="Cell_Span">
+      <view class="Cell_Span_Title Page_Padding">分割间距</view>
+      <vtu-collapse color="#6c6c6c" gutter="20px">
+        <vtu-collapse-item title="基础组件" icon="icon-daohang iconfont" icon-color="#40cff9">
+          <vtu-cell title="Button" value="按钮" border arrow bind:click="button"></vtu-cell>
+          <vtu-cell title="Cell" value="单元格" border arrow bind:click="cell"></vtu-cell>
+          <vtu-cell title="Layout" value="栅格布局" arrow bind:click="layout"></vtu-cell>
+        </vtu-collapse-item>
+        <vtu-collapse-item title="展示组件" icon="iconfont icon-wode" icon-color="#40cff9">
+          <vtu-cell title="Avatar" value="头像" border arrow bind:click="avatar"></vtu-cell>
+          <vtu-cell title="Grid" value="宫格" border arrow bind:click="gilds"></vtu-cell>
+          <vtu-cell title="Panel" value="面板" border arrow bind:click="panel"></vtu-cell>
+          <vtu-cell title="Progress" value="进度条" border arrow bind:click="progress"></vtu-cell>
+          <vtu-cell title="Swiper" value="轮播" arrow bind:click="swiper"></vtu-cell>
+        </vtu-collapse-item>
+        <vtu-collapse-item title="表单组件" icon="iconfont icon-yemian-copy-copy" icon-color="#40cff9">
+          <vtu-cell title="Checkbox" value="复选" border arrow bind:click="checkbox"></vtu-cell>
+          <vtu-cell title="Stepper" value="计步器" border arrow bind:click="stepper"></vtu-cell>
+          <vtu-cell title="Divider" value="分割线" border arrow bind:click="divider"></vtu-cell>
+          <vtu-cell title="Switch" value="开关" arrow bind:click="switch"></vtu-cell>
+        </vtu-collapse-item>
+        <vtu-collapse-item title="反馈组件" icon="iconfont icon-biaoxingfill" icon-color="#40cff9">
+          <vtu-cell title="Sheet" value="上拉菜单" border arrow bind:click="sheet"></vtu-cell>
+          <vtu-cell title="Dialog" value="对话框" border arrow bind:click="dialog"></vtu-cell>
+          <vtu-cell title="Loading" value="加载" border arrow bind:click="loading"></vtu-cell>
+          <vtu-cell title="LoadMore" value="底部加载更多" arrow bind:click="loadMore"></vtu-cell>
+        </vtu-collapse-item>
+      </vtu-collapse>
+    </view>
+  </view>
+</view>

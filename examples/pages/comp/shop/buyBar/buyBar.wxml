@@ -1,0 +1,18 @@
+<import src="/miniprogram_npm/vtuweapp/template/shop/template"/>
+<view class="container">
+  <vtu-navbar title="购买导航"></vtu-navbar>
+  <view class="center">
+    <view class="BuyBar">
+      <template is="buyBar_style1"></template>
+    </view>
+    <view class="BuyBar">
+      <template is="buyBar_style2"></template>
+    </view>
+    <view class="BuyBar">
+      <template is="buyBar_style3"></template>
+    </view>
+    <view class="BuyBar">
+      <template is="buyBar_style4"></template>
+    </view>
+  </view>
+</view>

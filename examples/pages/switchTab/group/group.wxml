@@ -1,0 +1,13 @@
+<import src="/miniprogram_npm/vtuweapp/template/other/template"/>
+<scroll-view scroll-y class="Swiper_Item_Scroll" bindscroll="bindscroll">
+    <view class="SwitchBody">
+        <vtu-navbar title="组合案例" title-align="center" show-nav-btn="{{false}}" bg-color="rgba(255,255,255,.9)" hidden="{{hiddenNavBar}}"></vtu-navbar>
+        <view class="TopSpan">
+            <view class="TopSpan_Name">组合案例</view>
+            <view class="TopSpan_Desc">敬请期待.....</view>
+        </view>
+        <block wx:for="{{companyInfo && companyInfo.minipgList}}">
+            <template is="minipg_style" data="{{item: item, baseUrl: baseUrl}}"></template>
+        </block>
+    </view>
+</scroll-view>

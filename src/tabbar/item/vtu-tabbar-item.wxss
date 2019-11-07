@@ -1,0 +1,5 @@
+@import "../../assets/css/Vtu_Common.wxss";
+.Vtu_Tabbar_Item{
+    width: 100%;
+    height: 100%;
+}

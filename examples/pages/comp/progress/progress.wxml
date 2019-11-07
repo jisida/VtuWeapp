@@ -1,0 +1,79 @@
+<view class="container">
+  <vtu-navbar title="Progress"></vtu-navbar>
+  <view class="center Page_Margin">
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="基础用法"  border>
+        <view class="" slot="after" >
+          <vtu-btn bind:click="plus" type="primary" size="small">加</vtu-btn>
+        </view>
+      </vtu-cell>
+        <view class="Cell_Progress_Li">
+          <vtu-progress value="{{number1}}" show-text="{{false}}"></vtu-progress>
+        </view>
+        <view class="Cell_Progress_Li">
+          <vtu-progress value="{{number2}}" color="orange" text-inside="{{true}}" round></vtu-progress>
+        </view>
+        <view class="Cell_Progress_Li">
+          <vtu-progress value="{{number3}}" circle font-color="red"></vtu-progress>
+        </view>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="尺寸大小"  border>
+        <view class="" slot="after" >
+          <vtu-btn bind:click="minus" type="danger" size="small">减</vtu-btn>
+        </view>
+      </vtu-cell>
+        <view class="Cell_Progress_Li">
+          <vtu-progress value="{{number4}}" stroke-width="20px"></vtu-progress>
+        </view>
+        <view class="Cell_Progress_Li">
+          <vtu-progress value="{{number5}}" stroke-width="15px" color="#6f7ad3" round></vtu-progress>
+        </view>
+        <view class="Cell_Progress_Li">
+          <vtu-progress value="{{number6}}" color="{{number6 > 50 ? 'red': null}}" stroke-width="10px" circle></vtu-progress>
+        </view>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="状态"  border>
+        <view class="" slot="after" >
+          <vtu-btn bind:click="plus" type="primary" size="small">加</vtu-btn>
+        </view>
+      </vtu-cell>
+        <view class="Cell_Progress_Li">
+          <vtu-progress value="{{number5}}" status="success" stripe></vtu-progress>
+        </view>
+        <view class="Cell_Progress_Li">
+          <vtu-progress value="{{number2}}" status="error" round stripe></vtu-progress>
+        </view>
+        <view class="Cell_Progress_Li">
+          <vtu-progress value="{{number4}}" status="warning" stroke-width="10px" circle stripe></vtu-progress>
+        </view>
+        <view class="Cell_Progress_Li">
+          <vtu-progress value="{{number4}}" status="primary" stroke-width="10px" circle stripe user-slot>
+            <span slot="label">待完成</span>
+          </vtu-progress>
+        </view>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="环状进度条"  border>
+        <view class="" slot="after" >
+          <vtu-btn bind:click="minus" type="danger" size="small">减</vtu-btn>
+        </view>
+      </vtu-cell>
+        <view class="Cell_Progress_Li circle">
+          <vtu-progress type="circle" status="success" value="{{number2}}"></vtu-progress>
+        </view>
+        <view class="Cell_Progress_Li circle">
+          <vtu-progress type="circle" circle-diam="80" value="{{number4}}" color="orange" user-slot>
+            <span slot="label">待完成</span>
+          </vtu-progress>
+        </view>
+        <view class="Cell_Progress_Li circle">
+          <vtu-progress type="circle" color="blue" circle-diam="60" circle-bg-color="red" circle-border-size="4" value="{{number3}}" label-class="circleLabel"></vtu-progress>
+        </view>
+    </vtu-panel>
+  </view>
+</view>

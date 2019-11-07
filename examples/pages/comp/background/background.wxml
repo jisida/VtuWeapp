@@ -1,0 +1,147 @@
+<view class="container">
+  <vtu-navbar title="background背景色"></vtu-navbar>
+  <view class="center Page_Margin">
+    <view class="color_title">深色背景</view>
+    <view class="color_span">
+      <view class="color_span_li shadow-blur purple">
+        <view class="color_span_li_name">姹紫</view>
+        <view class="color_span_li_color">purple</view>
+      </view>
+      <view class="color_span_li shadow-blur red">
+        <view class="color_span_li_name">嫣红</view>
+        <view class="color_span_li_color">red</view>
+      </view>
+      <view class="color_span_li shadow-blur orange">
+        <view class="color_span_li_name">橙色</view>
+        <view class="color_span_li_color">orange</view>
+      </view>
+      <view class="color_span_li shadow-blur yellow">
+        <view class="color_span_li_name">黄色</view>
+        <view class="color_span_li_color">yellow</view>
+      </view>
+      <view class="color_span_li shadow-blur olive">
+        <view class="color_span_li_name">橄榄</view>
+        <view class="color_span_li_color">olive</view>
+      </view>
+      <view class="color_span_li shadow-blur green">
+        <view class="color_span_li_name">绿色</view>
+        <view class="color_span_li_color">green</view>
+      </view>
+      <view class="color_span_li shadow-blur cyan">
+        <view class="color_span_li_name">天青</view>
+        <view class="color_span_li_color">cyan</view>
+      </view>
+      <view class="color_span_li shadow-blur blue">
+        <view class="color_span_li_name">蓝色</view>
+        <view class="color_span_li_color">blue</view>
+      </view>
+      <view class="color_span_li shadow-blur mauve">
+        <view class="color_span_li_name">木槿</view>
+        <view class="color_span_li_color">mauve</view>
+      </view>
+      <view class="color_span_li shadow-blur pink">
+        <view class="color_span_li_name">桃粉</view>
+        <view class="color_span_li_color">pink</view>
+      </view>
+      <view class="color_span_li shadow-blur brown">
+        <view class="color_span_li_name">棕褐</view>
+        <view class="color_span_li_color">brown</view>
+      </view>
+      <view class="color_span_li shadow-blur grey">
+        <view class="color_span_li_name">玄灰</view>
+        <view class="color_span_li_color">grey</view>
+      </view>
+      <view class="color_span_li shadow-blur gray">
+        <view class="color_span_li_name">草灰</view>
+        <view class="color_span_li_color">gray</view>
+      </view>
+      <view class="color_span_li shadow-blur black">
+        <view class="color_span_li_name">黑色</view>
+        <view class="color_span_li_color">black</view>
+      </view>
+      <view class="color_span_li shadow-blur white">
+        <view class="color_span_li_name">雅白</view>
+        <view class="color_span_li_color">white</view>
+      </view>
+
+    </view>
+    <view class="color_title">浅色背景</view>
+    <view class="color_span">
+      <view class="color_span_li shadow-blur purple light">
+        <view class="color_span_li_name">姹紫</view>
+        <view class="color_span_li_color">purple</view>
+      </view>
+      <view class="color_span_li shadow-blur red light">
+        <view class="color_span_li_name">嫣红</view>
+        <view class="color_span_li_color">red</view>
+      </view>
+      <view class="color_span_li shadow-blur orange light">
+        <view class="color_span_li_name">橙色</view>
+        <view class="color_span_li_color">orange</view>
+      </view>
+      <view class="color_span_li shadow-blur yellow light">
+        <view class="color_span_li_name">黄色</view>
+        <view class="color_span_li_color">yellow</view>
+      </view>
+      <view class="color_span_li shadow-blur olive light">
+        <view class="color_span_li_name">橄榄</view>
+        <view class="color_span_li_color">olive</view>
+      </view>
+      <view class="color_span_li shadow-blur green light">
+        <view class="color_span_li_name">绿色</view>
+        <view class="color_span_li_color">green</view>
+      </view>
+      <view class="color_span_li shadow-blur cyan light">
+        <view class="color_span_li_name">天青</view>
+        <view class="color_span_li_color">cyan</view>
+      </view>
+      <view class="color_span_li shadow-blur blue light">
+        <view class="color_span_li_name">蓝色</view>
+        <view class="color_span_li_color">blue</view>
+      </view>
+      <view class="color_span_li shadow-blur mauve light">
+        <view class="color_span_li_name">木槿</view>
+        <view class="color_span_li_color">mauve</view>
+      </view>
+      <view class="color_span_li shadow-blur pink light">
+        <view class="color_span_li_name">桃粉</view>
+        <view class="color_span_li_color">pink</view>
+      </view>
+      <view class="color_span_li shadow-blur brown light">
+        <view class="color_span_li_name">棕褐</view>
+        <view class="color_span_li_color">brown</view>
+      </view>
+      <view class="color_span_li shadow-blur grey light">
+        <view class="color_span_li_name">玄灰</view>
+        <view class="color_span_li_color">grey</view>
+      </view>
+    </view>
+    <view class="color_title">渐变背景</view>
+    <view class="color_span">
+      <view class="color_span_li shadow-blur gradual gradualRed">
+        <view class="color_span_li_name">魅红</view>
+        <view class="color_span_li_color">purple</view>
+      </view>
+      <view class="color_span_li shadow-blur gradual gradualOrange">
+        <view class="color_span_li_name">鎏金</view>
+        <view class="color_span_li_color">red</view>
+      </view>
+      <view class="color_span_li shadow-blur gradual gradualGreen">
+        <view class="color_span_li_name">翠柳</view>
+        <view class="color_span_li_color">orange</view>
+      </view>
+      <view class="color_span_li shadow-blur gradual gradualBlue">
+        <view class="color_span_li_name">靛青</view>
+        <view class="color_span_li_color">yellow</view>
+      </view>
+      <view class="color_span_li shadow-blur gradual gradualPurple">
+        <view class="color_span_li_name">惑紫</view>
+        <view class="color_span_li_color">olive</view>
+      </view>
+      <view class="color_span_li shadow-blur gradual gradualPink">
+        <view class="color_span_li_name">霞红</view>
+        <view class="color_span_li_color">green</view>
+      </view>
+    </view>
+  </view>
+</view>

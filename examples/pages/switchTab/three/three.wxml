@@ -1,0 +1,30 @@
+<view class="SwitchBody">
+    <view class="MyTop">
+        <vtu-avatar src="/assets/image/logo.png" custom-class="LogoClass" size="large" width="100px" circle></vtu-avatar>
+        <view class="MyTop-name">VtuWeapp组件库</view>
+        <view class="MyTop-desc">一款高度自定义的高颜值小程序组件库</view>
+        <vtu-layout-row custom-class="MyTop-data" shadow="warp">
+            <vtu-layout-col span="4" class="MyTop-data-col">
+                <view class="number view">15.3W</view>
+                <view class="label"><i class="iconfont icon-liulan"></i>View</view>
+            </vtu-layout-col>
+            <vtu-layout-col span="4" class="MyTop-data-col">
+                <view class="number star">5.8K</view>
+                <view class="label"><i class="iconfont icon-star"></i>Star</view>
+            </vtu-layout-col>
+            <vtu-layout-col span="4" class="MyTop-data-col">
+                <view class="number fork">4256</view>
+                <view class="label"><i class="iconfont icon-fork"></i>Fork</view>
+            </vtu-layout-col>
+        </vtu-layout-row>
+    </view>
+    <vtu-cell-group>
+        <vtu-cell title="GitHub" icon="iconfont icon-Githeibai" icon-color="#386d61" border arrow></vtu-cell>
+        <vtu-cell title="赞赏支持" icon="iconfont icon-zanshangshouyi" icon-color="#ed3954" border arrow bind:click="$wx_previewImage" data-url="https://activity.vtuzx.com/doc/system/zanshang.png"></vtu-cell>
+        <vtu-cell title="意见反馈" open-type="feedback" icon="iconfont icon-yijian" icon-color="#0fb730" border arrow></vtu-cell>
+        <vtu-cell title="关于我们" icon="iconfont icon-guanyu1" icon-color="#1b4a6d" arrow bind:click="toAboutPage"></vtu-cell>
+    </vtu-cell-group>
+    <vtu-cell-group round>
+        <vtu-cell title="官方客服" open-type="contact" icon="iconfont icon-kefu" icon-color="#1989fa" arrow></vtu-cell>
+    </vtu-cell-group>
+</view>

@@ -1,0 +1,16 @@
+@import "../assets/css/Vtu_Common.wxss";
+.Vtu_Rate{
+  width: 100%;
+}
+.Vtu_Rate_Li{
+    display: inline-block;
+    padding: 0px 5px;
+    color: var(--font-hc);
+    transition: all .5s;
+}
+.Vtu_Rate_Li.is-selected{
+    color: var(--primary);
+}
+.Vtu_Rate_Li.is-selected.is-disabled{
+    color: var(--font-hc) !important;
+}

@@ -1,0 +1,4 @@
+.contentClass{
+    padding: 0px !important;
+    width: 100%;
+}

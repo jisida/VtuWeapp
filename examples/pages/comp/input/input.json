@@ -1,0 +1,15 @@
+{
+    "usingComponents": {
+        "vtu-btn": "/miniprogram_npm/vtuweapp/button/vtu-btn",
+        "vtu-stepper": "/miniprogram_npm/vtuweapp/stepper/vtu-stepper",
+        "vtu-rate": "/miniprogram_npm/vtuweapp/rate/vtu-rate",
+        "vtu-navbar": "/miniprogram_npm/vtuweapp/navbar/vtu-navbar",
+        "vtu-panel": "/miniprogram_npm/vtuweapp/panel/vtu-panel",
+        "vtu-cell": "/miniprogram_npm/vtuweapp/cell/item/vtu-cell",
+        "vtu-switch": "/miniprogram_npm/vtuweapp/switch/vtu-switch",
+        "vtu-input": "/miniprogram_npm/vtuweapp/input/item/vtu-input",
+        "vtu-input-group": "/miniprogram_npm/vtuweapp/input/group/vtu-input-group",
+        "vtu-radio-prop": "/miniprogram_npm/vtuweapp/prop/radio/prop/vtu-radio-prop",
+        "vtu-radio-prop-item": "/miniprogram_npm/vtuweapp/prop/radio/item/vtu-radio-prop-item"
+    }
+}

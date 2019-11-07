@@ -1,0 +1,71 @@
+.Cell_Span{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.Cell_Span_Title{
+  width: 100%;
+  font-size: 14px;
+  height: 20px;
+  margin: 20px 0px 10px 0px;
+  color: var(--h2Color);
+}
+.style4HomeBar{
+  background: rgba(196, 56, 69, 0.86) !important;
+}
+.style4HomeBar:after{
+  border: 1px solid #ff7d82 !important;
+}
+.style4NavBar{
+    background: -webkit-linear-gradient(left, #fc455d 0%, rgba(189, 37, 92, 0.8) 100%);
+}
+
+.searchImg{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: #fff;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 30px;
+  color:var(--h2Color);
+}
+.searchPanel{
+  width: calc(100% - 60px);
+  height: 100%;
+  background: #fff;
+  border-radius: 100px;
+  margin: 0px 10px 0 50px;
+}
+.searchPanel_icon{
+  width: 40px;
+  height: 100%;
+  float: left;
+  text-align: center;
+  color: var(--h2Color);
+}
+.searchPanel_input{
+  width: calc(100% - 40px);
+  float: left;
+  height: 100%;
+}
+.searchPanel_input input{
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  height: 100%;
+  color: var(--h1Color);
+}
+
+.tabClass{
+  background: transparent !important;
+  height: 100%;
+  margin-left: 10px;
+}
+.tabActiveClass{
+  color: #fc455d !important;
+  font-size: 22px !important;
+  font-weight: bold !important;
+}

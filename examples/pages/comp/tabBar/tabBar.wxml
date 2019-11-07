@@ -1,0 +1,61 @@
+<view class="container">
+  <vtu-navbar title="TabBar" bind:load="navBarLoad"></vtu-navbar>
+  <vtu-swiperPanel height="{{swiperHeight - 10}}px" current="{{current}}" bind:change="change" custom-class="swiper">
+    <vtu-swiperPanel-item name="name1"></vtu-swiperPanel-item>
+    <vtu-swiperPanel-item name="name2"></vtu-swiperPanel-item>
+    <vtu-swiperPanel-item name="name3"></vtu-swiperPanel-item>
+    <vtu-swiperPanel-item name="name4"></vtu-swiperPanel-item>
+    <vtu-swiperPanel-item name="name5"></vtu-swiperPanel-item>
+    <view class="swiper_center" slot="name1">
+      <vtu-panel custom-class="panel" content-class="content">
+        <vtu-cell slot="header" title="点击切换样式"  border></vtu-cell>
+        <view >
+          <vtu-radio-group model="{{type}}" align="right" active-color="red" radio-icon="iconfont icon-xuanze" active-radio-icon="iconfont icon-xuanze-danxuan" bind:change="radioChange">
+            <vtu-radio value="1" label="普通样式"></vtu-radio>
+            <vtu-radio value="2" label="自定义样式"></vtu-radio>
+            <vtu-radio value="3" label="自定义图片"></vtu-radio>
+          </vtu-radio-group>
+        </view>
+      </vtu-panel>
+    </view>
+    <view class="swiper_center" slot="name2">
+      <view class="swiper_li" wx:for="{{10}}">区域二内容展示{{index}}</view>
+    </view>
+    <view class="swiper_center" slot="name3">
+      <view class="swiper_li" wx:for="{{15}}">区域三内容展示{{index}}</view>
+    </view>
+    <view class="swiper_center" slot="name4">
+      <view class="swiper_li" wx:for="{{30}}">区域四内容展示{{index}}</view>
+    </view>
+    <view class="swiper_center" slot="name5">
+      <view class="swiper_li" wx:for="{{15}}">区域四内容展示{{index}}</view>
+    </view>
+  </vtu-swiperPanel>
+
+  <block wx:if="{{type == 1}}">
+    <vtu-tabbar active-icon-color="orange" current="{{current}}" bind:change="change" custom-class="tabbar-content">
+      <vtu-tabbar-item label="首页" icon="iconfont icon-yemian-copy-copy" badge-is-dot name="home"></vtu-tabbar-item>
+      <vtu-tabbar-item label="发布" icon="iconfont icon-jiahao" large icon-font-size="36px" name="add"></vtu-tabbar-item>
+      <vtu-tabbar-item label="我的" icon="iconfont icon-wode" badge="10" name="my"></vtu-tabbar-item>
+      <view class="a" slot="home">111</view>
+      <view class="a" slot="add">222</view>
+      <view class="a" slot="my">333</view>
+    </vtu-tabbar>
+  </block>
+  <block wx:if="{{type == 2}}">
+    <vtu-tabbar active-color="skyblue" bg-color="#3a3a3a" color="#fff" current="{{current}}" bind:change="change">
+      <vtu-tabbar-item label="首页" icon="iconfont icon-yemian-copy-copy"></vtu-tabbar-item>
+      <vtu-tabbar-item label="社区" icon="iconfont icon-kefu"></vtu-tabbar-item>
+      <vtu-tabbar-item label="发布" icon="iconfont icon-jiahao" active-bg-color="#000" active-icon="iconfont icon-qingkong"></vtu-tabbar-item>
+      <vtu-tabbar-item label="发现" icon="iconfont icon-jiansuo"></vtu-tabbar-item>
+      <vtu-tabbar-item label="我的" icon="iconfont icon-wode" badge-is-dot></vtu-tabbar-item>
+    </vtu-tabbar>
+  </block>
+  <block wx:if="{{type == 3}}">
+    <vtu-tabbar current="{{current}}" bind:change="change">
+      <vtu-tabbar-item label="首页" src="/assets/image/home.png" badge="hot" active-src="/assets/image/home1.png"></vtu-tabbar-item>
+      <vtu-tabbar-item label="发布" src="/assets/image/logo.png" large></vtu-tabbar-item>
+      <vtu-tabbar-item label="我的" src="/assets/image/my1.png" active-src="/assets/image/my.png"></vtu-tabbar-item>
+    </vtu-tabbar>
+  </block>
+</view>

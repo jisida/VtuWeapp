@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "vtu-sheet": "/miniprogram_npm/vtuweapp/sheet/vtu-sheet",
+        "vtu-navbar": "/miniprogram_npm/vtuweapp/navbar/vtu-navbar",
+        "vtu-btn": "/miniprogram_npm/vtuweapp/button/vtu-btn"
+    }
+}

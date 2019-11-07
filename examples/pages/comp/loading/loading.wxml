@@ -1,0 +1,29 @@
+<view class="container">
+  <vtu-navbar title="Loading"></vtu-navbar>
+  <view class="center Page_Margin">
+
+    <vtu-panel content-class="content">
+      <vtu-cell slot="header" title="普通加载" border></vtu-cell>
+        <view class="LoadingSpan">
+          <vtu-loading label="加载中..." show="{{true}}"></vtu-loading>
+        </view>
+        <view class="LoadingSpan">
+          <vtu-loading label="上传中..." show="{{true}}" icon-color="red" ></vtu-loading>
+        </view>
+        <view class="LoadingSpan">
+          <vtu-loading label="加载中..." show="{{true}}" icon="iconfont icon-biaoxingfill" icon-class="iconStyle1"></vtu-loading>
+        </view>
+    </vtu-panel>
+
+    <vtu-panel content-class="content">
+      <vtu-cell slot="header" title="区域加载" border></vtu-cell>
+        <vtu-rate value="{{value1}}" count="5" size="24px" async-change="true" bind:change="bindAsyncChange"></vtu-rate>
+        <vtu-loading show="{{show1}}" label="加载中..." bg-color="rgba(0,0,0,.5)" icon-color="#fff" label-color="#fff" fill></vtu-loading>
+    </vtu-panel>
+
+    <vtu-panel content-class="content">
+      <vtu-cell slot="header" title="自定义图片&高度" border></vtu-cell>
+        <vtu-loading label="上传中..." show="{{true}}" img="/assets/image/wait.gif" height="150px"></vtu-loading>
+    </vtu-panel>
+  </view>
+</view>

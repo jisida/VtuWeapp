@@ -1,0 +1,75 @@
+<view class="container">
+  <vtu-navbar title="Steps" navbar-class="navBar" font-color="#fff"></vtu-navbar>
+  <view class="center Page_Margin">
+    <view class="Cell_Span">
+      <vtu-panel custom-class="panel">
+        <vtu-cell slot="header" title="基础用法"  border>
+          <vtu-btn slot="after" type="primary" size="small" bind:click="next1">下一步</vtu-btn>
+        </vtu-cell>
+        <vtu-steps value="{{value1}}" shape="number">
+          <vtu-step title="待支付" des="描述问题"></vtu-step>
+          <vtu-step title="待发货" des="描述问题"></vtu-step>
+          <vtu-step title="待收货" des="描述问题"></vtu-step>
+          <vtu-step title="待评价" des="描述问题"></vtu-step>
+        </vtu-steps>
+      </vtu-panel>
+      <vtu-panel custom-class="panel">
+        <vtu-cell slot="header" title="居中" border>
+          <vtu-btn slot="after" type="primary" size="small" bind:click="next1">下一步</vtu-btn>
+        </vtu-cell>
+        <vtu-steps value="{{value1}}" shape="icon" align-center>
+          <vtu-step title="待支付" des="描述问题" icon="iconfont icon-biaoxingfill"></vtu-step>
+          <vtu-step title="待发货" des="描述问题" icon="iconfont icon-xihuanfill"></vtu-step>
+          <vtu-step title="待收货" des="描述问题" icon="iconfont icon-yuanxingxuanzhongfill" active-icon="iconfont icon-x" active-color="red"></vtu-step>
+          <vtu-step title="待评价" des="描述问题" icon="iconfont icon-xihuanfill" active-color="orange"></vtu-step>
+        </vtu-steps>
+      </vtu-panel>
+      <vtu-panel custom-class="panel">
+        <vtu-cell slot="header" title="点状-添加状态"  border>
+          <vtu-btn slot="after" type="primary" size="small" bind:click="next1">下一步</vtu-btn>
+        </vtu-cell>
+        <vtu-steps value="{{value1}}" shape="spot" align-center>
+          <vtu-step title="待支付" des="描述问题"></vtu-step>
+          <vtu-step title="待发货" des="描述问题" status="wait"></vtu-step>
+          <vtu-step title="待收货" des="描述问题" status="warning"></vtu-step>
+          <vtu-step title="待评价" des="描述问题"></vtu-step>
+        </vtu-steps>
+      </vtu-panel>
+      <vtu-panel custom-class="panel">
+        <vtu-cell slot="header" title="圆角-自定义颜色"  border content="可自定义颜色">
+          <vtu-btn slot="after" type="primary" size="small" bind:click="next1">下一步</vtu-btn>
+        </vtu-cell>
+        <vtu-steps value="{{value1}}" shape="square" active-color="orange" align-center>
+          <vtu-step title="待支付" des="描述问题"></vtu-step>
+          <vtu-step title="待发货" des="描述问题"></vtu-step>
+          <vtu-step title="待收货" des="描述问题"></vtu-step>
+          <vtu-step title="待评价" des="描述问题"></vtu-step>
+        </vtu-steps>
+      </vtu-panel>
+      <vtu-panel custom-class="panel">
+        <vtu-cell slot="header" title="自定义icon" border>
+          <vtu-btn slot="after" type="primary" size="small" bind:click="next1">下一步</vtu-btn>
+        </vtu-cell>
+        <vtu-steps value="{{value1}}" shape="icon" align-center>
+          <vtu-step title="待支付" des="描述问题" icon="iconfont icon-biaoxingfill"></vtu-step>
+          <vtu-step title="待发货" des="描述问题" icon="iconfont icon-daohang"></vtu-step>
+          <vtu-step title="待收货" des="描述问题" icon="iconfont icon-yuanxingxuanzhongfill" active-icon="iconfont icon-x" active-color="red"></vtu-step>
+          <vtu-step title="待评价" des="描述问题" icon="iconfont icon-xihuanfill" active-color="orange"></vtu-step>
+        </vtu-steps>
+      </vtu-panel>
+      <vtu-panel custom-class="panel">
+        <vtu-cell slot="header" title="竖直-自定义内容" border>
+          <vtu-btn slot="after" type="primary" size="small" bind:click="next1">下一步</vtu-btn>
+        </vtu-cell>
+        <vtu-steps value="{{value1}}" direction="vertical" shape="spot">
+          <vtu-step title="已到达北京" des="2012-12-22 12:33:23 已到达北京三里屯快递站"></vtu-step>
+          <vtu-step title="已发往郑州" des="2012-12-22 17:43:22 已扫描装车，发往郑州转运站"></vtu-step>
+          <vtu-step title="待收货" des="查看装货进度" name="name3" icon="iconfont icon-daohang"></vtu-step>
+          <vtu-step title="待评价" name="name4"></vtu-step>
+          <vtu-progress slot="name3" value="95" circle color="red" stroke-width="5px"></vtu-progress>
+          <vtu-rate slot="name4" value="1" count="5" size="16px" disabled="{{value1 != 3}}" bind:change="bindChange" active-color="red"></vtu-rate>
+        </vtu-steps>
+      </vtu-panel>
+    </view>
+  </view>
+</view>

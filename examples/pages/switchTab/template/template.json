@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "vtu-navbar": "/miniprogram_npm/vtuweapp/navbar/vtu-navbar",
+    "vtu-panel": "/miniprogram_npm/vtuweapp/panel/vtu-panel",
+    "vtu-cell": "/miniprogram_npm/vtuweapp/cell/item/vtu-cell",
+    "vtu-cell-group": "/miniprogram_npm/vtuweapp/cell/group/vtu-cell-group",
+    "vtu-layout-row": "/miniprogram_npm/vtuweapp/layout/row/vtu-layout-row",
+    "vtu-layout-col": "/miniprogram_npm/vtuweapp/layout/col/vtu-layout-col",
+    "vtu-avatar": "/miniprogram_npm/vtuweapp/avatar/vtu-avatar"
+  }
+}

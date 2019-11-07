@@ -1,0 +1,109 @@
+<view class="container">
+  <vtu-navbar title="Avatar"></vtu-navbar>
+  <view class="center Page_Margin">
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="形状"  border>
+      </vtu-cell>
+      <view class="avatar_li">
+        <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/1.png" bind:click="select" data-index="1"></vtu-avatar>
+      </view>
+      <view class="avatar_li">
+        <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/2.png" round bind:click="select" data-index="2"></vtu-avatar>
+      </view>
+      <view class="avatar_li">
+        <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/3.png" smooth bind:click="select" data-index="3"></vtu-avatar>
+      </view>
+      <view class="avatar_li">
+        <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/4.png" circle bind:click="select" data-index="4"></vtu-avatar>
+      </view>
+    </vtu-panel>
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="尺寸"  border>
+      </vtu-cell>
+      <view class="avatar_li">
+        <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/1.png" circle size="mini"></vtu-avatar>
+      </view>
+      <view class="avatar_li">
+        <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/2.png" circle size="small"></vtu-avatar>
+      </view>
+      <view class="avatar_li">
+        <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/3.png" circle size="default"></vtu-avatar>
+      </view>
+      <view class="avatar_li">
+        <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/4.png" circle size="large"></vtu-avatar>
+      </view>
+    </vtu-panel>
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="头像徽章" border>
+      </vtu-cell>
+      <view class="avatar_li">
+        <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/3.png" circle size="default">
+          <vtu-badge slot="badge" value="10" right="-10px"></vtu-badge>
+        </vtu-avatar>
+      </view>
+      <view class="avatar_li">
+        <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/1.png" circle size="default">
+          <vtu-badge slot="badge" icon="iconfont icon-xingbie" bg-color="blue" right="-10px"></vtu-badge>
+        </vtu-avatar>
+      </view>
+      <view class="avatar_li">
+        <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/2.png" circle size="default">
+          <vtu-badge slot="badge" icon="iconfont icon-xingbienvxianxing" bg-color="red" right="-10px"></vtu-badge>
+        </vtu-avatar>
+      </view>
+      <view class="avatar_li">
+        <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/4.png" circle size="default">
+          <vtu-badge slot="badge" is-dot bg-color="red" right="0px" top="0px"></vtu-badge>
+        </vtu-avatar>
+      </view>
+    </vtu-panel>
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="内嵌文字" border>
+      </vtu-cell>
+      <view class="avatar_li">
+        <vtu-avatar content="图" circle size="mini" bg-color="red" color="#fff"></vtu-avatar>
+      </view>
+      <view class="avatar_li">
+        <vtu-avatar content="图" circle size="small" bg-color="red" color="#fff"></vtu-avatar>
+      </view>
+      <view class="avatar_li">
+        <vtu-avatar content="图" circle size="default" bg-color="red" color="#fff"></vtu-avatar>
+      </view>
+      <view class="avatar_li">
+        <vtu-avatar content="图" circle size="large" bg-color="red" color="#fff"></vtu-avatar>
+      </view>
+    </vtu-panel>
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="内嵌图标" border>
+      </vtu-cell>
+      <view class="avatar_li">
+        <vtu-avatar icon="iconfont icon-biaoxingfill" circle size="mini" bg-color="orange" color="#fff"></vtu-avatar>
+      </view>
+      <view class="avatar_li">
+        <vtu-avatar icon="iconfont icon-biaoxingfill" circle size="small" bg-color="orange" color="#fff"></vtu-avatar>
+      </view>
+      <view class="avatar_li">
+        <vtu-avatar icon="iconfont icon-biaoxingfill" circle size="default" bg-color="orange" color="#fff"></vtu-avatar>
+      </view>
+      <view class="avatar_li">
+        <vtu-avatar icon="iconfont icon-biaoxingfill" circle size="large" bg-color="orange" color="#fff"></vtu-avatar>
+      </view>
+    </vtu-panel>
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="默认"  border>
+      </vtu-cell>
+      <view class="avatar_li">
+        <vtu-avatar circle size="mini"></vtu-avatar>
+      </view>
+      <view class="avatar_li">
+        <vtu-avatar circle size="small"></vtu-avatar>
+      </view>
+      <view class="avatar_li">
+        <vtu-avatar circle size="default"></vtu-avatar>
+      </view>
+      <view class="avatar_li">
+        <vtu-avatar circle size="large"></vtu-avatar>
+      </view>
+    </vtu-panel>
+  </view>
+</view>

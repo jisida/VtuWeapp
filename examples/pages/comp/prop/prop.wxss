@@ -1,0 +1,27 @@
+.btn-class{
+  margin: 0 0px 10px 0 !important;
+}
+.prop-content{
+  width: 100%;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  font-size: 14px;
+}
+.prop-content.h300{
+  height: 400px;
+}
+.prop-content.auto{
+  height: auto !important;
+}
+.prop-content-li{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+.prop-header,
+.prop-footer{
+  width: 100%;
+  height: 50px;
+  background: #ddd;
+}

@@ -1,0 +1,14 @@
+<view class="Vtu_SwiperPanel custom-class">
+  <swiper class="Vtu_SwiperPanel_Swiper swiper_class" current="{{current}}" bindchange="select" style="height: {{height}};">
+    <swiper-item class="Vtu_SwiperPanel_Swiper_Item swiper_item_class" wx:for="{{swiperList}}" wx:key="index">
+      <scroll-view scroll-y class="Vtu_SwiperPanel_Swiper_Item_Scroll swiper_item_class_scroll"
+                   data-index="{{index}}"
+                   scroll-into-view="{{item.scrollIntoView}}"
+                   bindscrolltoupper="scrolltoupper"
+                   bindscrolltolower="scrolltolower"
+                   bindscroll="scroll">
+        <slot name="{{item.name}}"></slot>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>

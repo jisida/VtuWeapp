@@ -1,0 +1,46 @@
+page{
+    --page: #f9f9f9;
+    --mainColor: #e222a2;
+    --secondColor: #ff5733;
+    --lessColor:#2F2E2E;
+    --h1Color: #7c7c7c;
+    --h2Color: #ababab;
+    --h3Color: #d5d5d5;
+    --h4Color: #eeeeee;
+    --redColor: #FF3366;
+    --paColor: #94dc56;
+    --minipgColor: #8e68dc;
+    --hoverColor: #eee;
+    --mainBgColor: #faffef;
+    --pagePadding: 10px;
+    --radius: 5px;
+
+
+
+    --primary: #1989fa;
+    --success: #07c160;
+    --warning: #f5bf49;
+    --danger: #f44;
+}
+.ErrorInfo{
+    background-color: #fef0f0;
+    color: #f56c6c;
+}
+.WarnInfo{
+    background-color: #fdf6ec;
+    color: #e6a23c;
+}
+.SuccessInfo{
+    background-color: #f0f9eb;
+    color: #67c23a;
+}
+.SuccessInfo_Hover{
+    background-color: #67c23a;
+    color: #fff;
+}
+.TLinear{
+    background-image: linear-gradient(90deg, var(--secondColor) 0%, var(--mainColor) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+

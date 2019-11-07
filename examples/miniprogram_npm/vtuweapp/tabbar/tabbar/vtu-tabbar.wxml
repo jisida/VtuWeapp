@@ -1,0 +1,42 @@
+<view class="Vtu_Tabbar custom-class" wx:if="{{mode == 'page'}}">
+    <view class="Vtu_Tabbar_Page content-class">
+        <swiper class="Vtu_Tabbar_Page_Swiper" current="{{current}}">
+            <swiper-item class="Vtu_Tabbar_Page_Swiper_Item" wx:for="{{tabbarList}}" wx:key="index">
+                <scroll-view scroll-y class="Vtu_Tabbar_Page_Swiper_Item_Scroll">
+                    <slot name="{{item.name}}"></slot>
+                </scroll-view>
+            </swiper-item>
+        </swiper>
+    </view>
+    <view class="Vtu_Tabbar_Bar is-page bar-class" style="background: {{bgColor}};color: {{color}};">
+        <view class="Vtu_Tabbar_Li item-class" wx:for="{{tabbarList}}" wx:key="index" bindtap="select" data-index="{{index}}" style="background: {{index == current ? item.activeBgColor : ''}};">
+            <view class="Vtu_Tabbar_Li_Top {{item.large?'is-large':''}}" animation="{{item.animation}}">
+                <view class="Vtu_Tabbar_Li_Src img-class" wx:if="{{item.src || item.activeSrc}}">
+                    <image src="{{index == current ? item.activeSrc||item.src : item.src}}" />
+                </view>
+                <view class="Vtu_Tabbar_Li_Icon icon-class {{index == current ? item.activeIcon||item.icon : item.icon}}  {{item.large?'is-large':''}}"  animation="{{item.animation}}"wx:elif="{{item.icon}}"
+                      style="color: {{index == current ? item.activeIconColor||item.activeColor||activeIconColor||activeColor :item.iconColor||iconColor}};font-size: {{item.iconFontSize}}"></view>
+                <block wx:if="{{item.badge || item.badgeIsDot}}">
+                    <vtu-badge value="{{item.badge}}" type="{{item.badgeType}}" round="{{item.badgeRound}}" circle="{{item.badgeCircle}}" only top="-5px" max="{{item.badgeMax}}" color="{{item.badgeColor}}" isDot="{{item.badgeIsDot}}"></vtu-badge>
+                </block>
+            </view>
+            <view class="Vtu_Tabbar_Li_Label label-class" style="color: {{index == current ? item.activeFontColor||item.activeColor||activeFontColor||activeColor :item.fontColor||fontColor}};">{{item.label}}</view>
+        </view>
+    </view>
+</view>
+
+<view class="Vtu_Tabbar_Bar bar-class" style="background: {{bgColor}};color: {{color}};" wx:else>
+    <view class="Vtu_Tabbar_Li item-class" wx:for="{{tabbarList}}" wx:key="index" bindtap="select" data-index="{{index}}" style="background: {{index == current ? item.activeBgColor : ''}};">
+        <view class="Vtu_Tabbar_Li_Top {{item.large?'is-large':''}}" animation="{{item.animation}}">
+            <view class="Vtu_Tabbar_Li_Src img-class" wx:if="{{item.src || item.activeSrc}}">
+                <image src="{{index == current ? item.activeSrc||item.src : item.src}}" />
+            </view>
+            <view class="Vtu_Tabbar_Li_Icon icon-class {{index == current ? item.activeIcon||item.icon : item.icon}}  {{item.large?'is-large':''}}"  animation="{{item.animation}}"wx:elif="{{item.icon}}"
+                  style="color: {{index == current ? item.activeIconColor||item.activeColor||activeIconColor||activeColor :item.iconColor||iconColor}};font-size: {{item.iconFontSize}}"></view>
+            <block wx:if="{{item.badge || item.badgeIsDot}}">
+                <vtu-badge value="{{item.badge}}" type="{{item.badgeType}}" round="{{item.badgeRound}}" circle="{{item.badgeCircle}}" only top="-5px" max="{{item.badgeMax}}" color="{{item.badgeColor}}" isDot="{{item.badgeIsDot}}"></vtu-badge>
+            </block>
+        </view>
+        <view class="Vtu_Tabbar_Li_Label label-class" style="color: {{index == current ? item.activeFontColor||item.activeColor||activeFontColor||activeColor :item.fontColor||fontColor}};">{{item.label}}</view>
+    </view>
+</view>

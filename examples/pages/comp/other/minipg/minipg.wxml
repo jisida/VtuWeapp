@@ -1,0 +1,9 @@
+<import src="/miniprogram_npm/vtuweapp/template/other/template"/>
+<view class="container">
+  <vtu-navbar title="小程序卡片"></vtu-navbar>
+  <view class="center">
+    <block wx:for="{{companyInfo && companyInfo.minipgList}}">
+      <template is="minipg_style" data="{{item: item, baseUrl: baseUrl}}"></template>
+    </block>
+  </view>
+</view>

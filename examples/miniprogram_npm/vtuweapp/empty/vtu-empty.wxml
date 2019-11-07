@@ -1,0 +1,11 @@
+<view class="Vtu_Empty custom-class {{fill?'is-fill':''}} {{fillScreen?'is-fillScreen':''}}" bindtap="click" data-data="{{data}}" style="height: {{fill||fillScreen?'100%':height}};z-index: {{zIndex}};">
+    <view class="Vtu_Empty_Center">
+        <view class="Vtu_Empty_Center_Icon {{icon}} icon-class" style="font-size: {{iconSize}};color: {{iconColor}}" wx:if="{{icon}}"></view>
+        <view class="Vtu_Empty_Center_Src image-class" wx:if="{{src}}">
+            <image src="{{src}}" mode="widthFix" style="width: {{imageWidth}}; height: {{imageHeight}};" class="image-i-class"/>
+        </view>
+        <view class="Vtu_Empty_Center_Label label-class" wx:if="{{label}}"><text>{{label}}</text></view>
+        <view class="Vtu_Empty_Center_Desc describe-class" wx:if="{{describe}}"><text>{{describe}}</text></view>
+        <view class="Vtu_Empty_Center_Slot slot-class"><slot></slot></view>
+    </view>
+</view>

@@ -1,0 +1,15 @@
+<view class="container">
+  <vtu-navbar title="NoticeBar"></vtu-navbar>
+  <view class="center Page_Margin">
+    <view class="Cell_Span_Title">通告栏</view>
+    <vtu-noticeBar type="info" content="为庆祝祖国70周年，公司决定，国庆节放假10天，望告知。"></vtu-noticeBar>
+    <view class="Cell_Span_Title">通告栏</view>
+    <vtu-noticeBar type="error" icon="iconfont icon-biaoxing" showClose content="为庆祝祖国70周年，公司决定，国庆节放假10天，望告知。"></vtu-noticeBar>
+    <view class="Cell_Span_Title">通告栏（滚动）</view>
+    <vtu-noticeBar type="success" label="公告:" scroll showClose content="为庆祝祖国70周年，公司决定，国庆节放假10天，望告知。"></vtu-noticeBar>
+    <view class="Cell_Span_Title">通告栏（速度）</view>
+    <vtu-noticeBar type="success" speed="{{2}}" icon="iconfont icon-biaoxing" scroll showClose content="为庆祝祖国70周年，公司决定，国庆节放假10天，望告知。"></vtu-noticeBar>
+    <view class="Cell_Span_Title">通告栏（纵向滚动）</view>
+    <vtu-noticeBar speed="{{1}}" img-src="/assets/image/notice.png" notice-list="{{list}}" direction="vertical" showClose bind:click="selectNotice"></vtu-noticeBar>
+  </view>
+</view>

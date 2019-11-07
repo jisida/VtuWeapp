@@ -1,0 +1,53 @@
+@import "../../../assets/css/Vtu_Common.wxss";
+.Vtu_RadioProp{
+    width: 100%;
+    z-index:111;
+  position:relative;
+}
+.Vtu_RadioProp_Mask{
+     width:0;
+     height:100%;
+     background-color:#000;
+     opacity:0;
+     position:fixed;
+     top:0;
+     left:0;
+     z-index:100;
+ }
+.Vtu_RadioProp_Center{
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    bottom: -1000px;
+    background-color: var(--bg-page);
+    z-index:101;
+}
+.Vtu_RadioProp_Center_Title{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    text-align: center;
+}
+.Vtu_RadioProp_Center_Title .cancel,
+.Vtu_RadioProp_Center_Title .confirm{
+    padding: 0px 10px;
+    flex: 0;
+    white-space: nowrap;
+    font-size: 14px;
+}
+.Vtu_RadioProp_Center_Title .cancel{
+    color: var(--font-hc);
+}
+.Vtu_RadioProp_Center_Title .confirm{
+    color: var(--primary);
+}
+.Vtu_RadioProp_Center_Title .select{
+    padding: 0px 10px;
+    flex: 1;
+}
+.Vtu_RadioProp_Center_Body{
+    width: calc(100% - 20px);
+    padding: 10px;
+    background: #fff;
+}

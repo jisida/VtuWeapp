@@ -1,0 +1,23 @@
+<view class="Vtu_LoadMore custom-class" wx:if="{{show}}">
+    <view class="Vtu_LoadMore_Loading" wx:if="{{loading}}">
+        <view class="Vtu_LoadMore_Loading_Img" wx:if="{{img}}">
+            <image src="{{img}}" mode="{{imgMode}}" class="img-class"></image>
+        </view>
+        <i style="color: {{iconColor}}" wx:elif="{{icon}}" class="{{icon}} icon-class {{rotate?'is-rotate':''}} Vtu_LoadMore_Loading_Icon"></i>
+        <view class="Vtu_LoadMore_Loading_Label load-label-class" wx:if="{{loadLabel}}">{{loadLabel||label}}</view>
+    </view>
+    <block wx:elif="{{!end && label}}">
+        <view class="Vtu_LoadMore_Wait label-class" bindtap="loadMoreData">{{label}}</view>
+    </block>
+    <block wx:else>
+        <vtu-divider font-class="load-end-label-class"
+                     dash="{{divider_dash}}"
+                     align="{{divider_align}}"
+                     icon="{{divider_icon}}"
+                     bgColor="{{divider_bgColor}}"
+                     fontColor="{{divider_fontColor}}"
+                     lineColor="{{divider_lineColor}}"
+                     round="{{divider_round}}"
+                     bold="{{divider_bold}}">{{endLabel||label}}</vtu-divider>
+    </block>
+</view>

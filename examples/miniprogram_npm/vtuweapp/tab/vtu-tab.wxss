@@ -1,0 +1,4 @@
+@import "../assets/css/Vtu_Common.wxss";
+.Vtu_Tab{
+    width: 100%;
+}

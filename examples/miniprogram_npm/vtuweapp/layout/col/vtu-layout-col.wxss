@@ -1,0 +1,5 @@
+@import "../../assets/css/Vtu_Common.wxss";
+.Vtu_Layout-Col{
+  display: inline-block;
+  height: 100%;
+}

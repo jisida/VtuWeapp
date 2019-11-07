@@ -1,0 +1,72 @@
+@import "../assets/css/Vtu_Common.wxss";
+.Vtu_Avatar{
+    width: 100%;
+    text-align: center;
+    color: var(--primary);
+    position: relative;
+}
+.Vtu_Avatar image{
+    width: 100%;
+    height: 100%;
+}
+.Vtu_Avatar.is-round,
+.Vtu_Avatar.is-round image{
+    border-radius: var(--round);
+}
+
+.Vtu_Avatar.is-circle,
+.Vtu_Avatar.is-circle image{
+    border-radius: 100px;
+}
+.Vtu_Avatar--mini{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+.Vtu_Avatar--mini,
+.Vtu_Avatar--mini .Vtu_Avatar_Icon{
+    font-size: 10px;
+}
+.Vtu_Avatar--mini.is-smooth,
+.Vtu_Avatar--mini.is-smooth image{
+    border-radius: 8px;
+}
+.Vtu_Avatar--small{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+.Vtu_Avatar--small,
+.Vtu_Avatar--small .Vtu_Avatar_Icon{
+    font-size: 14px;
+}
+.Vtu_Avatar--small.is-smooth,
+.Vtu_Avatar--small.is-smooth image{
+    border-radius: 10px;
+}
+.Vtu_Avatar--default{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+.Vtu_Avatar--default,
+.Vtu_Avatar--default .Vtu_Avatar_Icon{
+    font-size: 18px;
+}
+.Vtu_Avatar--default.is-smooth,
+.Vtu_Avatar--default.is-smooth image{
+    border-radius: 18px;
+}
+.Vtu_Avatar--large{
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+}
+.Vtu_Avatar--large,
+.Vtu_Avatar--large .Vtu_Avatar_Icon{
+    font-size: 28px;
+}
+.Vtu_Avatar--large.is-smooth,
+.Vtu_Avatar--large.is-smooth image{
+    border-radius: 25px;
+}

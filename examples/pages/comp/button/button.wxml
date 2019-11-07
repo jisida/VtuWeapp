@@ -1,0 +1,87 @@
+<view class="container">
+  <vtu-navbar title="Button"></vtu-navbar>
+  <view class="center Page_Padding">
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="按钮类型"  border></vtu-cell>
+        <vtu-btn custom-class="btn-class" bind:click="click" data="{{ {label: '普通按钮'} }}">普通按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class" type="primary" bind:click="click" data-label="主要按钮">主要按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class" type="success" bind:click="click" data-label="成功按钮">成功按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class" type="warning" bind:click="click" data-label="警告按钮">警告按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class" type="danger" bind:click="click" data-label="danger按钮">danger按钮</vtu-btn>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="按钮阴影"  border></vtu-cell>
+        <vtu-btn custom-class="btn-class" shadow>普通按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class" shadow type="primary">主要按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class" shadow type="success">成功按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class" shadow type="warning">警告按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class" shadow type="danger">danger按钮</vtu-btn>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="朴素类型"  border></vtu-cell>
+        <vtu-btn custom-class="btn-class"plain="true">普通按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class"type="primary" plain="true">主要按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class"type="success" plain="true">成功按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class"type="warning" plain="true">警告按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class"type="danger" plain="true">danger按钮</vtu-btn>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="不同尺寸"  border></vtu-cell>
+        <vtu-btn custom-class="btn-class iconBtn" type="primary" inlineBlock plain="true" size="default">默认尺寸</vtu-btn>
+        <vtu-btn custom-class="btn-class iconBtn" type="primary" inlineBlock plain="true" size="medium">中等按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class iconBtn" type="primary" inlineBlock plain="true" size="small">小型按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class iconBtn" type="primary" inlineBlock plain="true" size="mini">超小按钮</vtu-btn>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="圆角按钮"  border></vtu-cell>
+        <vtu-btn custom-class="btn-class"plain="true" round="true">普通按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class"type="primary" round="true">主要按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class"type="success" round="true">成功按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class"type="warning" round="true">警告按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class"type="danger" round="true">danger按钮</vtu-btn>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="禁用按钮"  border></vtu-cell>
+        <vtu-btn custom-class="btn-class"disabled="true">普通按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class"type="primary" disabled="true">主要按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class"type="success" disabled="true">成功按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class"type="warning" disabled="true">警告按钮</vtu-btn>
+        <vtu-btn custom-class="btn-class"type="danger" disabled="true">danger按钮</vtu-btn>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="图标按钮"  border></vtu-cell>
+      <vtu-btn  custom-class="btn-class iconBtn" inlineBlock icon="iconfont icon-jiansuo"></vtu-btn>
+      <vtu-btn  custom-class="btn-class iconBtn" inlineBlock type="primary" icon="iconfont icon-jiansuo">主要按钮</vtu-btn>
+      <vtu-btn  custom-class="btn-class iconBtn" inlineBlock type="success" icon="iconfont icon-shangchuan">成功按钮</vtu-btn>
+      <vtu-btn  custom-class="btn-class iconBtn" inlineBlock type="warning" icon="iconfont icon-bianji"></vtu-btn>
+      <vtu-btn  custom-class="btn-class iconBtn" inlineBlock type="danger" icon="iconfont icon-picture-delet"></vtu-btn>
+      <vtu-btn  custom-class="btn-class iconBtn" inlineBlock type="danger">删除按钮<i class="iconfont icon-picture-delet"></i></vtu-btn>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="加载按钮"  border></vtu-cell>
+      <vtu-btn custom-class="btn-class" loading></vtu-btn>
+      <vtu-btn custom-class="btn-class" loading type="primary">更新</vtu-btn>
+      <vtu-btn custom-class="btn-class" loading type="success" loading-text="加载中"></vtu-btn>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="open-type使用"  border></vtu-cell>
+      <vtu-btn  custom-class="btn-class" type="primary" open-type="getUserInfo" bind:getuserinfo="getUserInfo">获取用户信息(type=getUserInfo)</vtu-btn>
+      <vtu-btn  custom-class="btn-class" type="primary" open-type="share">转发(type=share)</vtu-btn>
+      <vtu-btn  custom-class="btn-class" type="primary" open-type="getPhoneNumber" bind:getphonenumber="getPhoneNumber">获取用户手机号(type=getPhoneNumber)</vtu-btn>
+      <vtu-btn  custom-class="btn-class" type="primary" open-type="contact">打开客服会话(type=contact)</vtu-btn>
+      <vtu-btn  custom-class="btn-class" type="primary" open-type="launchApp">打开APP(type=launchApp)</vtu-btn>
+      <vtu-btn  custom-class="btn-class" type="primary" open-type="openSetting">打开授权设置页(type=openSetting)</vtu-btn>
+      <vtu-btn  custom-class="btn-class" type="primary" open-type="feedback">打开意见反馈页面(type=feedback)</vtu-btn>
+    </vtu-panel>
+  </view>
+  <vtu-toast id="Vtu-Toast"></vtu-toast>
+</view>

@@ -1,0 +1,15 @@
+{
+    "usingComponents": {
+        "vtu-sheet": "/miniprogram_npm/vtuweapp/sheet/vtu-sheet",
+        "vtu-btn": "/miniprogram_npm/vtuweapp/button/vtu-btn",
+        "vtu-steps": "/miniprogram_npm/vtuweapp/steps/steps/vtu-steps",
+        "vtu-step": "/miniprogram_npm/vtuweapp/steps/step/vtu-step",
+        "vtu-navbar": "/miniprogram_npm/vtuweapp/navbar/vtu-navbar",
+        "vtu-rate": "/miniprogram_npm/vtuweapp/rate/vtu-rate",
+        "vtu-progress": "/miniprogram_npm/vtuweapp/progress/vtu-progress",
+        "vtu-panel": "/miniprogram_npm/vtuweapp/panel/vtu-panel",
+        "vtu-cell": "/miniprogram_npm/vtuweapp/cell/item/vtu-cell",
+        "vtu-grids": "/miniprogram_npm/vtuweapp/grid/grids/vtu-grids",
+        "vtu-grid": "/miniprogram_npm/vtuweapp/grid/grid/vtu-grid"
+    }
+}

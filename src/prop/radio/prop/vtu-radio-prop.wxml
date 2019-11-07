@@ -1,0 +1,21 @@
+<view class="Vtu_RadioProp" slot="{{slot}}">
+  <view class="Vtu_RadioProp_Mask" animation="{{maskAnimation}}" bindtap="{{closeOnClickOverlay?'close':''}}"></view>
+  <view class="Vtu_RadioProp_Center" animation="{{centerAnimation}}">
+    <view class="Vtu_RadioProp_Center_Title">
+      <view class="cancel" bindtap="close">取消</view>
+      <view class="select">请选择</view>
+      <view class="confirm" bindtap="confirm">确定</view>
+    </view>
+    <view class="Vtu_RadioProp_Center_Body">
+      <vtu-radio-group model="{{oldModel}}"
+                       align="{{align}}"
+                       radioIcon="{{radioIcon}}"
+                       activeColor="{{activeColor}}"
+                       activeRadioIcon="{{activeRadioIcon}}"
+                       activeRadioColor="{{activeRadioColor}}"
+                       bind:change="change">
+        <vtu-radio wx:for="{{radioList}}" value="{{item.value}}" label="{{item.label}}" icon="{{item.icon}}" disabled="{{item.disabled}}"></vtu-radio>
+      </vtu-radio-group>
+    </view>
+  </view>
+</view>

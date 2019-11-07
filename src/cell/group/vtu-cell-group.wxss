@@ -1,0 +1,16 @@
+@import "../../assets/css/Vtu_Common.wxss";
+.Vtuzx_Cell_Group{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.Vtuzx_Cell_Group_Title{
+    width: calc(100% - 20px);
+    padding: 0px 10px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: var(--font-hc);
+}
+.Vtuzx_Cell_Group_Center{
+    width: 100%;
+}

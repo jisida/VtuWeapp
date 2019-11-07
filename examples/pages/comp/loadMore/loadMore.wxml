@@ -1,0 +1,21 @@
+<view class="container">
+  <vtu-navbar title="LoadMore"></vtu-navbar>
+  <view class="center Page_Margin">
+    <vtu-panel content-class="content">
+      <vtu-cell slot="header" title="普通加载" border></vtu-cell>
+        <vtu-load-more loading="{{true}}" load-label="加载中..."></vtu-load-more>
+        <vtu-load-more loading="{{loading}}" label="加载更多" bind:load="bindLoad"></vtu-load-more>
+        <vtu-load-more end="{{true}}" end-label="已加载全部~"></vtu-load-more>
+    </vtu-panel>
+    <vtu-panel content-class="content">
+      <vtu-cell slot="header" title="自定义" border></vtu-cell>
+        <vtu-load-more loading="{{true}}" icon="iconfont icon-biaoxingfill"></vtu-load-more>
+        <vtu-load-more loading="{{loading}}" label="加载更多" label-class="labelClass" icon-color="red" bind:load="bindLoad"></vtu-load-more>
+        <vtu-load-more end="{{true}}" divider_line-color="orange" divider_dash end-label="已加载全部~"></vtu-load-more>
+    </vtu-panel>
+    <vtu-panel content-class="content">
+      <vtu-cell slot="header" title="自定义图片" border></vtu-cell>
+        <vtu-load-more loading="{{loading}}" label="加载更多" label-class="labelClass" img="/assets/image/wait.gif" bind:load="bindLoad"></vtu-load-more>
+    </vtu-panel>
+  </view>
+</view>

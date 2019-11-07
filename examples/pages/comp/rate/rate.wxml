@@ -1,0 +1,52 @@
+<view class="container">
+  <vtu-navbar title="Rate"></vtu-navbar>
+  <view class="center Page_Margin">
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="基础用法"  border>
+      </vtu-cell>
+        <vtu-rate value="{{value1}}" count="5"  bind:change="bindChange"></vtu-rate>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="自定义图标"  border>
+      </vtu-cell>
+        <vtu-rate value="{{value1}}" count="5" size="24px" icon="iconfont icon-xihuan" active-icon="icon-xihuanfill iconfont " bind:change="bindChange"></vtu-rate>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="自定义颜色"  border>
+      </vtu-cell>
+        <vtu-rate value="{{value1}}" count="5" size="24px" active-color="red" bind:change="bindChange"></vtu-rate>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="自定义大小"  border>
+      </vtu-cell>
+        <vtu-rate value="{{value1}}" count="5" size="16px"  bind:change="bindChange"></vtu-rate>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="自定义数量"  border>
+      </vtu-cell>
+        <vtu-rate value="{{value1}}" count="8" size="24px"  bind:change="bindChange"></vtu-rate>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="异步处理"  border>
+      </vtu-cell>
+        <vtu-rate value="{{value1}}" count="5" size="24px" async-change="true" bind:change="bindAsyncChange"></vtu-rate>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="禁用状态"  border>
+      </vtu-cell>
+        <vtu-rate value="{{value1}}" count="5" size="24px" disabled></vtu-rate>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="只读状态"  border>
+      </vtu-cell>
+        <vtu-rate value="{{value1}}" count="5" size="24px" readonly></vtu-rate>
+    </vtu-panel>
+  </view>
+</view>

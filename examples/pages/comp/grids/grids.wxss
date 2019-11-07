@@ -1,0 +1,24 @@
+.Cell_Span{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.Cell_Span_Title{
+  width: 100%;
+  font-size: 14px;
+  height: 20px;
+  margin: 20px 0px 10px 0px;
+  color: var(--h1Color);
+}
+.panel{
+  margin-bottom: 20px;
+}
+.content{
+  padding: 0px !important;
+  width: 100% !important;
+}
+.navBar{
+  background: -webkit-linear-gradient(left, #6ecdfc 0%, rgba(187, 188, 252, 0.8) 100%);
+}
+.itemClass{
+  position: relative;
+}

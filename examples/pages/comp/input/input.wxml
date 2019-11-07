@@ -1,0 +1,50 @@
+<view class="container">
+  <vtu-navbar title="Input"></vtu-navbar>
+  <view class="center Page_Padding">
+    <vtu-input-group title="普通表单">
+      <vtu-input title="姓名" border placeholder="请输入姓名" type="input" text-align="left"></vtu-input>
+      <vtu-input title="电话" border placeholder="请输入电话" message="请输入正确的电话号码" status="error" value="48568" type="input" text-align="left" input-type="number"></vtu-input>
+      <vtu-input title="密码" must border placeholder="请输入密码" value="" type="input" text-align="left" input-type="password"></vtu-input>
+      <vtu-input title="身份证" must border placeholder="请输入身份证" value="" type="input" text-align="left" input-type="idcard"></vtu-input>
+      <vtu-input title="小数" border placeholder="请输入小数" value="" type="input" text-align="left" input-type="digit"></vtu-input>
+      <vtu-input title="价格" placeholder="请输入价格" value="" disabled type="input" text-align="left" input-type="digit">
+        <view slot="after">元</view>
+      </vtu-input>
+    </vtu-input-group>
+    <vtu-input-group title="自动换行">
+      <vtu-input title="个人简介" border placeholder="请输入个人简介" value="" type="textarea" auto-height="{{true}}"  text-align="left"></vtu-input>
+      <vtu-input title="最大输入" border placeholder="请输入内容" value="" type="textarea" text-align="left" text-height="100px" show-max-label="{{true}}" maxlength="300"></vtu-input>
+    </vtu-input-group>
+    <vtu-input-group title="表单">
+      <vtu-input title="开关" icon="iconfont icon-kefu" icon-color="#1989fa" border>
+        <vtu-switch slot="after" checked="{{true}}" size="small" bind:change="bindchange"></vtu-switch>
+      </vtu-input>
+      <vtu-input title="普通选项" icon="iconfont icon-kefu" icon-color="#1989fa" border value="{{pickerIndex}}" range="{{pickerArray1}}" range-key="label" type="picker" bindchange="pickerChange" arrow></vtu-input>
+      <vtu-input title="日期" placeholder="选择日期" icon="iconfont icon-kefu" border icon-color="#1989fa" border value="{{pickerDate}}" type="picker" mode="date" bindchange="pickerDateChange" arrow></vtu-input>
+      <vtu-input title="时间" placeholder="选择时间" icon="iconfont icon-kefu" start="09:00" icon-color="#f5bf49" border value="{{pickerTime}}" type="picker" mode="time" bindchange="pickerTimeChange" arrow></vtu-input>
+      <vtu-input title="地址" placeholder="选择地址" icon="iconfont icon-kefu" border icon-color="#f5bf49" border value="{{pickerRegion}}" type="picker" mode="region" bindchange="pickerRegionChange" arrow></vtu-input>
+      <vtu-input title="短信验证码" border icon="iconfont icon-kefu" icon-color="#f5bf49" text-align="left"  placeholder="请输入短信验证码" value="" type="input" input-type="number">
+        <vtu-btn slot="after" my-class="phoneNumberBtn" type="primary" size="small">发送验证码</vtu-btn>
+      </vtu-input>
+      <vtu-input title="计数器" icon="iconfont icon-kefu" icon-color="#f5bf49" border text-align="right" placeholder="请输入数量">
+        <vtu-stepper slot="after" my-class="stepNumberBtn" size="small" value="3"></vtu-stepper>
+      </vtu-input>
+      <vtu-input title="评分" border icon="iconfont icon-kefu" icon-color="#f5bf49">
+        <vtu-rate slot="after" my-class="rateBtn" value="3"></vtu-rate>
+      </vtu-input>
+      <vtu-input title="选择城市" icon="iconfont icon-kefu" arrow border icon-color="#f5bf49" value="{{radioVal}}" bind:click="showRadioEvent"></vtu-input>
+    </vtu-input-group>
+    <vtu-radio-prop show="{{showRadioProp}}"
+                    model="{{radioVal}}"
+                    align="right"
+                    active-color="red"
+                    radio-icon="iconfont icon-xuanze"
+                    active-radio-icon="iconfont icon-xuanze-danxuan"
+                    bind:change="radioChange">
+      <vtu-radio-prop-item value="{{1}}" label="北京" icon="iconfont icon-biaoxing" ></vtu-radio-prop-item>
+      <vtu-radio-prop-item value="{{2}}" label="上海" icon="iconfont icon-xihuan" ></vtu-radio-prop-item>
+      <vtu-radio-prop-item value="{{3}}" label="深圳" icon="iconfont icon-sousuo"></vtu-radio-prop-item>
+      <vtu-radio-prop-item value="{{4}}" label="南京" icon="iconfont icon-shangchuan"></vtu-radio-prop-item>
+    </vtu-radio-prop>
+  </view>
+</view>

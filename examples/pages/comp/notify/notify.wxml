@@ -1,0 +1,21 @@
+<view class="container">
+  <vtu-navbar title="Notify" id="Vtu_Navbar"></vtu-navbar>
+  <view class="center Page_Margin">
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="基础用法" border>
+      </vtu-cell>
+      <vtu-btn type="success" bind:click="open1">成功通知</vtu-btn>
+      <vtu-btn type="danger" bind:click="open2">危险通知</vtu-btn>
+      <vtu-btn type="warning" bind:click="open3">警告通知</vtu-btn>
+      <vtu-btn type="primary" bind:click="open4">信息通知</vtu-btn>
+    </vtu-panel>
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="自定义颜色"  border>
+      </vtu-cell>
+      <vtu-btn type="success" bind:click="open5">自定义颜色</vtu-btn>
+      <vtu-btn type="primary" bind:click="open6">加载中</vtu-btn>
+    </vtu-panel>
+
+    <vtu-notify id="Vtu_Notify"></vtu-notify>
+  </view>
+</view>

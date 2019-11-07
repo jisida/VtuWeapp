@@ -1,0 +1,75 @@
+<view class="container">
+  <block wx:if="{{style == 1}}">
+    <vtu-navbar title="Navbar" goHome="{{false}}" title-align="left"></vtu-navbar>
+  </block>
+  <block wx:if="{{style == 2}}">
+    <vtu-navbar title="Navbar"></vtu-navbar>
+  </block>
+  <block wx:if="{{style == 3}}">
+    <vtu-navbar title="Navbar" back-label="返回" goHome="{{false}}"></vtu-navbar>
+  </block>
+  <block wx:if="{{style == 4}}">
+    <vtu-navbar title="Navbar" homeStyle="cachet" bgColor="#000" fontColor="#ffffff" icon="iconfont icon-shangchuan"></vtu-navbar>
+  </block>
+  <block wx:if="{{style == 5}}">
+    <vtu-navbar title="Navbar" homeStyle="cachet" navbar-class="style4NavBar" homebar-class="style4HomeBar" fontColor="#fff"></vtu-navbar>
+  </block>
+  <block wx:if="{{style == 8}}">
+    <vtu-navbar title="我的" show-nav-btn="{{false}}" title-align="left"></vtu-navbar>
+  </block>
+  <block wx:if="{{style == 6}}">
+    <vtu-navbar use-bar-slot show-nav-btn="{{false}}"
+                navbar-class="style4NavBar"
+                homebar-class="style4HomeBar"
+                fontColor="#fff"
+                bind:load="headLoad">
+      <view class="searchImg iconfont icon-share"></view>
+      <view class="searchPanel">
+        <view class="searchPanel_icon iconfont icon-sousuo"></view>
+        <view class="searchPanel_input">
+          <input placeholder="请输入关键字" />
+        </view>
+      </view>
+    </vtu-navbar>
+  </block>
+  <block wx:if="{{style == 7}}">
+    <vtu-navbar use-bar-slot show-nav-btn="{{false}}" fontColor="#fff">
+      <vtu-tabs value="{{tabValue}}"
+                custom-class="tabClass" color="#606266"
+                tab-active-class="tabActiveClass"
+                is-average="{{false}}"
+                line="{{false}}"
+                border="{{false}}"
+                fill="{{true}}">
+        <vtu-tab label="精选" name="name1"></vtu-tab>
+        <vtu-tab label="电影" name="name2"></vtu-tab>
+        <vtu-tab label="电视剧" name="name3"></vtu-tab>
+        <vtu-tab label="电影" name="name4"></vtu-tab>
+        <vtu-tab label="综艺" name="name5"></vtu-tab>
+        <vtu-tab label="少儿" name="name6"></vtu-tab>
+      </vtu-tabs>
+    </vtu-navbar>
+  </block>
+
+  <view class="center Page_Margin">
+    <view class="Cell_Span">
+
+      <vtu-panel custom-class="panel" content-class="content">
+        <vtu-cell slot="header" title="点击切换样式"  border></vtu-cell>
+        <view >
+          <vtu-radio-group model="{{style}}" align="right" active-color="red" radio-icon="iconfont icon-xuanze" active-radio-icon="iconfont icon-xuanze-danxuan" bind:change="radioChange">
+            <vtu-radio value="1" label="普通居左"></vtu-radio>
+            <vtu-radio value="2" label="带HOME居中"></vtu-radio>
+            <vtu-radio value="3" label="居中带文字"></vtu-radio>
+            <vtu-radio value="4" label="改变背景色"></vtu-radio>
+            <vtu-radio value="5" label="背景自定义"></vtu-radio>
+            <vtu-radio value="6" label="搜索样式"></vtu-radio>
+            <vtu-radio value="7" label="导航样式"></vtu-radio>
+            <vtu-radio value="8" label="首页样式"></vtu-radio>
+          </vtu-radio-group>
+        </view>
+      </vtu-panel>
+
+    </view>
+  </view>
+</view>

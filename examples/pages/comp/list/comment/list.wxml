@@ -1,0 +1,18 @@
+<import src="/miniprogram_npm/vtuweapp/template/list/template"/>
+<view class="container">
+  <vtu-navbar title="评论列表"></vtu-navbar>
+  <view class="center">
+    <view class="comment-span">
+      <template is="commentList_style1"></template>
+      <template is="commentList_style1"></template>
+    </view>
+    <view class="comment-span">
+      <template is="commentList_style2"></template>
+      <template is="commentList_style2"></template>
+    </view>
+    <view class="comment-span">
+      <template is="commentList_style3" data="{{imgList: ['https://activity.vtuzx.com/doc/vtuui/weapp/temp/shop.jpg']}}"></template>
+      <template is="commentList_style3" data="{{imgList: ['https://activity.vtuzx.com/doc/vtuui/weapp/temp/shop.jpg','https://activity.vtuzx.com/doc/vtuui/weapp/temp/shop2.jpg','https://activity.vtuzx.com/doc/vtuui/weapp/temp/shop3.jpg']}}"></template>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,18 @@
+<view class="container">
+  <vtu-navbar title="Accordion" navbar-class="navBar" font-color="#fff"></vtu-navbar>
+  <view class="center Page_Margin">
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="基础用法" border></vtu-cell>
+      <view >
+        <vtu-accordion-group>
+          <vtu-accordion name="name1"></vtu-accordion>
+          <vtu-accordion name="name2"></vtu-accordion>
+          <vtu-accordion name="name3"></vtu-accordion>
+          <view class="accordion_item" slot="name1"></view>
+          <view class="accordion_item" slot="name2"></view>
+          <view class="accordion_item" slot="name3"></view>
+        </vtu-accordion-group>
+      </view>
+    </vtu-panel>
+  </view>
+</view>

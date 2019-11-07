@@ -1,0 +1,152 @@
+@import "../../assets/css/Vtu_Common.wxss";
+.Vtuzx_Input{
+    width: calc(100% - 10px);
+    padding: 0 10px 0 0px;
+    margin: 0px;
+    background: transparent !important;
+    border-radius: 0px;
+    overflow: inherit !important;
+    box-sizing: inherit !important;
+}
+.Vtuzx_Input:after{
+    border: 0px !important;
+}
+.Vtuzx_Input.is-border{
+    border-bottom: 1px solid var(--border-bd);
+}
+.Vtuzx_Input_Hover{
+    background: var(--border-bd);
+    color: #6c6c6c;
+}
+.Vtuzx_Input_Top{
+    width: 100%;
+    display: flex;
+    min-height: 40px;
+    line-height: 40px;
+}
+.Vtuzx_Input_Top.is-textarea{
+    height: auto;
+}
+.Vtuzx_Input_Top.is-textarea textarea{
+    line-height: 20px;
+    margin-top: 12px;
+    min-height: 28px
+}
+.Vtuzx_Input_Top.is-disabled .Vtuzx_Input_Top_Icon,
+.Vtuzx_Input_Top.is-disabled .Vtuzx_Input_Top_Title,
+.Vtuzx_Input_Top.is-disabled .Vtuzx_Input_Top_Value,
+.Vtuzx_Input_Top.is-disabled .Vtuzx_Input_Top_Value .Collapse_Switch,
+.Vtuzx_Input_Top.is-disabled .Vtuzx_Input_Top_Value .placeholder{
+    color: var(--font-disabled) !important;
+}
+.Vtuzx_Input_Top.is-header .Vtuzx_Input_Top_Title{
+    font-size: 16px;
+}
+.Vtuzx_Input_Top_Must{
+    flex-grow: 0;
+    width: 13px;
+    text-align: center;
+    line-height: 34px;
+}
+.Vtuzx_Input_Top_Must i{
+    color: var(--red);
+    font-size: 12px;
+}
+.Vtuzx_Input_Top_Icon{
+    flex-grow: 0;
+    width: 15px;
+    text-align: left;
+}
+.Vtuzx_Input_Top_Title{
+    flex-grow: 0;
+    font-size: 14px;
+    min-width: 70px;
+    margin-left: 5px;
+}
+.Vtuzx_Input_Top_Value{
+    flex-grow: 1;
+    font-size: 14px;
+    text-align: right;
+    color: var(--font-hb);
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    z-index: 111;
+    position: relative;
+    min-height:40px;
+}
+.Vtuzx_Input_Top_Value_MaxLabel{
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    line-height: 20px;
+    color: var(--font-hd);
+}
+.Vtuzx_Input_Top_Value input,
+.Vtuzx_Input_Top_Value picker,
+.Vtuzx_Input_Top_Value textarea{
+    font-size: 14px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    z-index: 111;
+    position: relative;
+}
+.Vtuzx_Input_Top_Slot{
+    flex-grow: 0;
+    align-items: center;
+    display: flex;
+    z-index: 111;
+    position: relative;
+    font-size: 14px;
+    color: var(--font-hc);
+}
+.Vtuzx_Input_Top_Status{
+    flex-grow: 0;
+    align-items: center;
+    display: flex;
+    z-index: 111;
+    position: relative;
+}
+.Vtuzx_Input_Top_Status i{
+    font-size: 20px;
+}
+.Vtuzx_Input_Top_Status.success,
+.Vtuzx_Input_Top_Value input.success,
+.Vtuzx_Input_Top_Value textarea.success,
+.Vtuzx_Input_Message.success{
+    color: var(--success);
+}
+.Vtuzx_Input_Top_Status.warning,
+.Vtuzx_Input_Top_Value input.warning,
+.Vtuzx_Input_Top_Value textarea.warning,
+.Vtuzx_Input_Message.warning{
+    color: var(--warning);
+}
+.Vtuzx_Input_Top_Status.error,
+.Vtuzx_Input_Top_Value input.error,
+.Vtuzx_Input_Top_Value textarea.error,
+.Vtuzx_Input_Message.error{
+    color: var(--danger);
+}
+.Vtuzx_Input_Top_Arrow{
+    width: 20px;
+    text-align: right;
+    height: 100%;
+    color: var(--font-hd);
+    font-size: 12px;
+}
+.Vtuzx_Input_Message{
+    width: 100%;
+    height: auto;
+    font-size: 10px;
+    text-align: left;
+    line-height: 15px;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+}

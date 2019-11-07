@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "vtu-progress": "/miniprogram_npm/vtuweapp/progress/vtu-progress",
+        "vtu-btn": "/miniprogram_npm/vtuweapp/button/vtu-btn",
+        "vtu-navbar": "/miniprogram_npm/vtuweapp/navbar/vtu-navbar",
+        "vtu-panel": "/miniprogram_npm/vtuweapp/panel/vtu-panel",
+        "vtu-cell": "/miniprogram_npm/vtuweapp/cell/item/vtu-cell"
+    }
+}

@@ -1,0 +1,291 @@
+<import src="/assets/template/template.wxml"/>
+<!--
+* 说明：抽奖列表
+-->
+<template name="LuckDraw_Temp">
+  <view class="LuckDraw_Style Comp_Panel" id="LuckDrawBody" hover-class="{{detail?'':'Hover'}}" bindlongpress="{{(canUpdate&&!item.isEnd)?'showSheetMenu':''}}" catchtap="{{detail?'':'toLuckDrawDetailPage'}}" data-id="{{item.id}}">
+    <block wx:if="{{item.isEnd && canShrink}}">
+      <view class="LuckDraw_Style_Shrink Page_Padding">
+        <view class="LuckDraw_Style_Shrink_Name overSpace">{{item.prizes[0].title}} ×{{item.prizes[0].number}}</view>
+        <view class="LuckDraw_Style_Shrink_Time">{{item.showTime}}</view>
+        <view class="LuckDraw_Style_Shrink_Right iconfont icon-right-copy"></view>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="LuckDraw_Style_Image imgBody" wx:if="{{item.prizes.length > 0}}" style="height: {{(windowWidth-20)/2}}px" >
+        <swiper wx:if="{{detail}}" style="height: 100%" indicator-dots="{{true}}" indicator-active-color="#f5bf49" autoplay="{{true}}">
+          <swiper-item wx:for="{{item.prizes}}" wx:for-item="image">
+            <image src="{{baseUrl + item.id + '/' + image.picUrl}}" mode="widthFix" class="image"/>
+          </swiper-item>
+        </swiper>
+        <image src="{{baseUrl + item.id + '/' + item.prizes[0].picUrl}}" mode="widthFix" class="image" wx:else/>
+        <view class="createName">{{item.createUser.wxNickName}} 发起</view>
+      </view>
+      <view class="LuckDraw_Style_Info Page_Padding">
+<!--        <view class="Creater" wx:if="{{isHome}}">{{item.createUser.wxNickName}} 赞助</view>-->
+        <view class="Items" wx:if="{{item.prizes.length > 0}}">
+          <view class="Items_Title">奖品</view>
+          <view class="Items_List">
+            <view class="Items_List_Li" wx:for="{{item.prizes}}" wx:for-item="prize">
+              <view class="Items_List_Li_Name overSpace">{{prize.title}}</view>
+              <view class="Items_List_Li_Price">×{{prize.number}}</view>
+            </view>
+          </view>
+        </view>
+        <view class="Detail">
+          <view class="Detail_Li Time"><block wx:if="{{item.openType == 1}}">{{item.openDate}}</block><block wx:elif="{{item.openType == 2}}">满{{item.openNumber}}人</block>自动开奖</view>
+          <view class="Detail_Li Icon Second" wx:if="{{item.isHelp}}">助力</view>
+<!--          <view class="Detail_Li Icon" wx:if="{{item.prizePack}}">包邮</view>-->
+          <view class="Detail_Li Icon Pass" wx:if="{{item.isPass}}">口令</view>
+          <view class="Detail_Li Icon Phone">手机认证</view>
+        </view>
+        <view class="Users">
+          <view class="Detail_Li Active" wx:if="{{item.isJoin}}">
+            <view class="Detail_Li_Icon icon-duihao1 iconfont"></view>
+            <view class="Detail_Li_Text">已参与</view>
+          </view>
+          <view class="Users_Count">共{{item.joinCount}}人参与<span wx:if="{{item.winnerNumber > 1}}">{{item.winnerNumber}}个中奖名额</span></view>
+          <view class="Users_List" wx:if="{{item.newJoinerList.length > 0}}">
+            <view class="Users_List_Li circle" wx:for="{{item.newJoinerList}}" wx:for-item="image">
+              <image src="{{image.avatarUrl}}" class="imageFill circle"></image>
+            </view>
+            <view class="Users_List_Li circle iconfont icon-tubiaozhizuomoban"></view>
+          </view>
+          <view class="Winner iconfont icon-yizhongjiang" wx:if="{{item.isWinner}}"></view>
+          <view class="Winner fail iconfont icon-weizhongjiang" wx:if="{{detail && item.isEnd && !item.isWinner}}"></view>
+        </view>
+        <template is="FollowAccount_Temp" data="{{accountInfo: item.accountInfo, luckId: item.id}}"></template>
+      </view>
+    </block>
+  </view>
+</template>
+
+<!--
+* 说明：自主抽奖列表
+-->
+<template name="LuckDraw_User_Temp">
+  <view class="LuckDraw_User_Style Page_Padding " hover-class="Hover" catchtap="toLuckDrawDetailPage" data-id="{{item.id}}">
+    <view class="LuckDraw_User_Style_Image imgBody" wx:if="{{item.prizes.length > 0}}">
+      <image src="{{baseUrl + item.id + '/' + item.prizes[0].picUrl}}"/>
+    </view>
+    <view class="LuckDraw_User_Style_Info">
+      <view class="LuckDraw_User_Style_Info_Name overTwoSpace">
+        <span wx:for="{{item.prizes}}" wx:for-index="pIndex" wx:for-item="prize">{{prize.title}} ×{{prize.number}}<span wx:if="{{pIndex < item.prizes.length - 1}}">、</span></span>
+      </view>
+      <view class="LuckDraw_User_Style_Info_Detail">
+        <view class="Detail_Li Active" wx:if="{{item.isJoin}}">
+          <view class="Detail_Li_Icon icon-duihao1 iconfont"></view>
+          <view class="Detail_Li_Text">已参与</view>
+        </view>
+        <view class="Detail_Li Time"><block wx:if="{{item.openType == 1}}">{{item.openDate}}</block><block wx:elif="{{item.openType == 2}}">满{{item.openNumber}}人</block>自动开奖</view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<!--
+* 说明：抽奖结束列表
+-->
+<template name="LuckDraw_OverTime_Temp">
+  <view class="OverTime_Style Comp_Panel Page_Padding" hover-class="Hover" catchtap="toLuckDrawDetailPage">
+    <view class="OverTime_Style_Center">
+      <view class="LuckDraw_OverTime_Style_Center_Title">奖品</view>
+      <view class="LuckDraw_OverTime_Style_Center_Product overSpace">
+        <block wx:for="{{3}}">Lide saml dda 四人帐篷×2 </block>
+      </view>
+    </view>
+    <view class="OverTime_Style_Time">6月10日</view>
+    <view class="OverTime_Style_Right iconfont icon-right-copy"></view>
+  </view>
+</template>
+
+<!--
+* 说明：投票列表
+-->
+<template name="Vote_Temp">
+  <view class="Vote_Style Comp_Panel" hover-class="Hover" catchtap="toVoteDetailPage">
+    <view class="LuckDraw_Style_Image imgBody">
+      <image src="{{item.image}}" mode="widthFix" class="image"/>
+    </view>
+    <view class="Vote_Style_Info Page_Padding">
+      <view class="Creater">
+        <view class="Creater_Center">
+          <view class="Creater_Center_Type">
+            <block wx:if="{{item.voteType == 'match'}}">活动评选</block>
+          </view>
+          <view class="Creater_Center_Name">吉思达 发起</view>
+        </view>
+      </view>
+      <view class="Vote_Style_Info_Name">{{item.name}}</view>
+      <view class="Detail">
+        <view class="Detail_Li Active" wx:if="{{item.isJoin}}">
+          <view class="Detail_Li_Icon icon-duihao1 iconfont"></view>
+          <view class="Detail_Li_Text">已报名</view>
+        </view>
+        <view class="Detail_Li Time">{{item.endTime}}报名结束</view>
+        <view class="Detail_Li Icon Second" wx:if="{{item.hasPrize}}">奖品</view>
+        <view class="Detail_Li Icon" wx:if="{{item.prizePack}}">包邮</view>
+        <view class="Detail_Li Icon Pass" wx:if="{{item.password}}">口令</view>
+      </view>
+      <view class="Users">
+        <view class="Users_List">
+          <view class="Users_List_Li circle" wx:for="{{item.userList}}" wx:for-item="image">
+            <image src="{{image}}" class="imageFill circle"></image>
+          </view>
+          <view class="Users_List_Li circle iconfont icon-tubiaozhizuomoban"></view>
+        </view>
+        <view class="Users_Count">共{{item.userCount}}人参与</view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<!--
+* 说明：投票结束列表
+-->
+<template name="Vote_OverTime_Temp">
+  <view class="OverTime_Style Comp_Panel Page_Padding" hover-class="Hover" catchtap="toLuckDrawDetailPage">
+    <view class="OverTime_Style_Center">
+      <view class="Vote_OverTime_Style_Center_Name overSpace">上英寸第二届最美宝宝网络评选大赛</view>
+    </view>
+    <view class="OverTime_Style_Time">6月10日</view>
+    <view class="OverTime_Style_Right iconfont icon-right-copy"></view>
+  </view>
+</template>
+
+<!--
+* 说明：投票活动列表
+-->
+<template name="Vote_Users_List_Temp">
+  <view class="Vote_Users_List_Style">
+    <view class="Vote_Users_List_Style_Split">
+      <block wx:for="{{19}}" wx:if="{{index % 2 == 0}}">
+        <template is="Vote_Users_Info_Temp"></template>
+      </block>
+    </view>
+    <view class="Vote_Users_List_Style_Split">
+      <block wx:for="{{19}}" wx:if="{{index % 2 == 1}}">
+        <template is="Vote_Users_Info_Temp"></template>
+      </block>
+    </view>
+  </view>
+</template>
+
+<!--
+* 说明：投票活动参赛者信息
+-->
+<template name="Vote_Users_Info_Temp">
+  <view class="Vote_Users_Info_Style" hover-class="Hover" catchtap="toVoteJoinerDetailPage">
+    <view class="Vote_Users_Info_Style_No">12</view>
+    <view class="Vote_Users_Info_Style_Image">
+      <image src="https://img.xiaopiu.com/userImages/img8159694579f0.jpeg" mode="widthFix"/>
+    </view>
+    <view class="Vote_Users_Info_Style_Info">
+      <view class="Vote_Users_Info_Style_Info_Label">大连市甘井子区哈Erinnf劲舞团</view>
+      <view class="Vote_Users_Info_Style_Info_Prop">
+        <view class="Vote_Users_Info_Style_Info_Prop_Count">
+          <view class="Votes">3421票</view>
+          <view class="Noun">第5名</view>
+        </view>
+        <view class="Vote_Users_Info_Style_Info_Prop_Line">
+          <template is="Progress_Temp" data="{{process: [{val: 40, color: '#ff5733'}], circle: false}}"></template>
+        </view>
+      </view>
+    </view>
+    <view class="Vote_Users_Info_Style_Prop_Btn">
+      <view class="Vote_Users_Info_Style_Prop_Btn_Li help">拉票</view>
+      <view class="Vote_Users_Info_Style_Prop_Btn_Li">投票</view>
+    </view>
+  </view>
+</template>
+
+<!--
+* 说明：评论
+-->
+<template name="Comment_Temp">
+  <view class="Comment_Style Page_Padding">
+    <view class="Comment_Style_Image">
+      <image src="{{item.user.wxAvatarUrl}}" class="imageFill"></image>
+    </view>
+    <view class="Comment_Style_Info">
+      <view class="Comment_Style_Info_Top">
+        <view class="Comment_Style_Info_Top_Name">{{item.user.wxNickName}}</view>
+        <view class="Comment_Style_Info_Top_Time">{{item.createTime}}</view>
+      </view>
+      <view class="Comment_Style_Info_Content">{{item.content}}</view>
+    </view>
+  </view>
+</template>
+
+<!--
+* 说明：底部菜单
+-->
+<template name="Bottom_Temp">
+  <view class="Bottom_Style {{hasAnimation?'animation':''}}" animation="{{bottomAnimation}}">
+    <block wx:for="{{menu}}">
+      <block wx:if="{{item.center}}">
+        <form bindsubmit="{{item.catchtap}}" class="Bottom_Style_Li" report-submit="{{true}}" data-data="{{item.data}}">
+          <button form-type="submit" hover-class="Btn_Hover" class="form_btn">
+            <view class="Bottom_Style_Li_Center formView"  animation="{{bottomAnimation}}">
+              <view class="Bottom_Style_Li_Center_Add circle {{item.fail?'fail':'common'}}"><text>{{item.label}}</text></view>
+            </view>
+          </button>
+        </form>
+        <view class="Bottom_Style_Li_Info circle" wx:if="{{item.infoTitle}}">{{item.infoTitle}}</view>
+      </block>
+      <block wx:else>
+        <view class="Bottom_Style_Li" hover-class="Hover" catchtap="{{item.catchtap}}" data-data="{{item.data}}">
+          <view class="Bottom_Style_Li_Icon iconfont {{item.icon}}"></view>
+          <view class="Bottom_Style_Li_Text">{{item.label}}</view>
+        </view>
+      </block>
+    </block>
+  </view>
+</template>
+
+
+<!--
+* 说明：复制文案
+-->
+<template name="Copywriting_Temp">
+  <view class="Copywriting">
+    <view class="Copywriting_Title">{{title}}</view>
+    <view class="Copywriting_Center">
+      <view class="text">{{content}}</view>
+    </view>
+    <view class="Copywriting_Btn">
+      <view class="Btn primary circle small" hover-class="Btn_Hover">点击一键复制</view>
+    </view>
+  </view>
+</template>
+
+<!--
+* 说明：图文介绍
+-->
+<template name="ImageContent_Temp">
+  <view class="ImageContent_Style">
+    <view class="ImageContent_Style_Detail" wx:if="{{imageContent}}">
+      <rich-text nodes="{{imageContent.html}}" space="emsp"></rich-text>
+    </view>
+    <view class="ImageContent_Style_Add" wx:else bindtap="toEditPage" hover-class="Hover">
+      <view class="icon imgBody"><image src="/assets/image/icon/copyw.png" class="imageFill"></image></view>
+      <view class="text">点击添加图文介绍/复制文案</view>
+    </view>
+  </view>
+</template>
+
+
+<template name="FollowAccount_Temp">
+  <view class="FollowAccount_Style" wx:if="{{accountInfo}}" bindtap="showFollowAccountDialog">
+    <view class="FollowAccount_Style_Icon Account_Icon iconfont {{accountInfo.type}}"></view>
+    <view class="FollowAccount_Style_Text overSpace">{{accountInfo.name}}</view>
+    <view class="FollowAccount_Style_Btn circle" hover-class="Btn_Hover">
+      <view class="FollowAccount_Style_Btn_Icon iconfont {{accountInfo.type}}"></view>
+      <view class="FollowAccount_Style_Btn_Text">
+        <block wx:if="{{accountInfo.type == 'wx'}}">加好友</block>
+        <block wx:if="{{accountInfo.type == 'pa'}}">关注公众号</block>
+        <block wx:if="{{accountInfo.type == 'minipg'}}">体验小程序</block>
+      </view>
+    </view>
+  </view>
+</template>

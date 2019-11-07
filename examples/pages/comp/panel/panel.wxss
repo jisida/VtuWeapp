@@ -1,0 +1,21 @@
+.Cell_Span{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.Cell_Span_Title{
+  width: 100%;
+  font-size: 14px;
+  height: 20px;
+  margin: 20px 0px 10px 0px;
+  color: var(--h2Color);
+}
+.Cell_Span_Center{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.footBtn{
+  text-align: right;
+}
+.footBtn button{
+  margin-left: 10px;
+}

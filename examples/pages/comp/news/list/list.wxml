@@ -1,0 +1,9 @@
+<import src="/miniprogram_npm/vtuweapp/template/news/template"/>
+<view class="container">
+  <vtu-navbar title="新闻列表"></vtu-navbar>
+  <view class="center">
+    <template is="newsList_style1" data="{{imgList: ['https://activity.vtuzx.com/doc/vtuui/weapp/temp/shop.jpg']}}"></template>
+    <template is="newsList_style2" data="{{imgList: ['https://activity.vtuzx.com/doc/vtuui/weapp/temp/shop.jpg']}}"></template>
+    <template is="newsList_style2" data="{{imgList: ['https://activity.vtuzx.com/doc/vtuui/weapp/temp/shop.jpg','https://activity.vtuzx.com/doc/vtuui/weapp/temp/shop2.jpg','https://activity.vtuzx.com/doc/vtuui/weapp/temp/shop3.jpg']}}"></template>
+  </view>
+</view>

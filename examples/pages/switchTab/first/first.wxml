@@ -1,0 +1,59 @@
+<scroll-view scroll-y class="Swiper_Item_Scroll" bindscroll="bindscroll">
+    <view class="SwitchBody">
+        <vtu-navbar title="VtuWeapp" title-align="center" show-nav-btn="{{false}}" bg-color="rgba(255,255,255,.9)" hidden="{{hiddenNavBar}}"></vtu-navbar>
+        <view class="TopSpan">
+            <view class="TopSpan_Name">组件库</view>
+            <view class="TopSpan_Desc">简单、丰富的小程序UI组件库</view>
+        </view>
+        <vtu-panel content-class="contentClass" round card>
+            <vtu-cell slot="header" title="基础组件" icon="iconfont icon-jichu" icon-color="#40cff9" border panel-header></vtu-cell>
+            <vtu-cell title="Button" value="按钮" border arrow bind:click="button"></vtu-cell>
+            <vtu-cell title="Cell" value="单元格" border arrow bind:click="cell"></vtu-cell>
+            <vtu-cell title="Color" value="色彩" border arrow bind:click="color"></vtu-cell>
+            <vtu-cell title="Background" value="背景色" border arrow bind:click="background"></vtu-cell>
+            <vtu-cell title="Layout" value="栅格布局" arrow bind:click="layout"></vtu-cell>
+        </vtu-panel>
+        <vtu-panel content-class="contentClass" round card>
+            <vtu-cell slot="header" title="展示组件" icon="iconfont icon-zhanshi" icon-color="#40cff9" border panel-header></vtu-cell>
+            <vtu-cell title="Avatar" value="头像" border arrow bind:click="avatar"></vtu-cell>
+            <vtu-cell title="Grid" value="宫格" border arrow bind:click="gilds"></vtu-cell>
+            <vtu-cell title="Panel" value="面板" border arrow bind:click="panel"></vtu-cell>
+            <vtu-cell title="Prop" value="弹出面板" border arrow bind:click="prop"></vtu-cell>
+            <vtu-cell title="Progress" value="进度条" border arrow bind:click="progress"></vtu-cell>
+            <vtu-cell title="Swiper" value="轮播" border arrow bind:click="swiper"></vtu-cell>
+            <vtu-cell title="SwiperPanel" value="轮播面板" border arrow bind:click="swiperPanel"></vtu-cell>
+            <vtu-cell title="Steps" value="步骤条" border arrow bind:click="steps"></vtu-cell>
+            <vtu-cell title="NoticeBar" value="通告栏" border arrow bind:click="noticeBar"></vtu-cell>
+            <vtu-cell title="Notify" value="消息通知" border arrow bind:click="notify"></vtu-cell>
+            <vtu-cell title="Collapse" value="折叠面板" border arrow bind:click="collapse"></vtu-cell>
+            <vtu-cell title="Tag" value="标签标记" border arrow bind:click="tag"></vtu-cell>
+            <vtu-cell title="Empty" value="空数据" arrow bind:click="empty"></vtu-cell>
+        </vtu-panel>
+        <vtu-panel content-class="contentClass" round card>
+            <vtu-cell slot="header" title="表单组件" icon="iconfont icon-biaodanzujian" icon-color="#40cff9" border panel-header></vtu-cell>
+            <vtu-cell title="Rate" value="评分" border arrow bind:click="rate"></vtu-cell>
+            <vtu-cell title="Radio" value="单选" border arrow bind:click="radio"></vtu-cell>
+            <vtu-cell title="Checkbox" value="复选" border arrow bind:click="checkbox"></vtu-cell>
+            <vtu-cell title="Stepper" value="计步器" border arrow bind:click="stepper"></vtu-cell>
+            <vtu-cell title="Divider" value="分割线" border arrow bind:click="divider"></vtu-cell>
+            <vtu-cell title="Switch" value="开关" border arrow bind:click="switch"></vtu-cell>
+            <vtu-cell title="Input" value="表单" arrow bind:click="input"></vtu-cell>
+        </vtu-panel>
+        <vtu-panel content-class="contentClass" round card>
+            <vtu-cell slot="header" title="反馈组件" icon="iconfont icon-icon-fankuizujian" icon-color="#40cff9" border panel-header></vtu-cell>
+            <vtu-cell title="Sheet" value="上拉菜单" border arrow bind:click="sheet"></vtu-cell>
+            <vtu-cell title="Dialog" value="对话框" border arrow bind:click="dialog"></vtu-cell>
+            <vtu-cell title="Loading" value="加载" border arrow bind:click="loading"></vtu-cell>
+            <vtu-cell title="LoadMore" value="底部加载更多" border arrow bind:click="loadMore"></vtu-cell>
+            <vtu-cell title="Toast" value="轻提醒" border arrow bind:click="toast"></vtu-cell>
+        </vtu-panel>
+        <vtu-panel content-class="contentClass" round card>
+            <vtu-cell slot="header" title="导航组件" icon="iconfont icon-daohang" icon-color="#40cff9" border panel-header></vtu-cell>
+            <vtu-cell title="NavBar" value="导航栏" border arrow bind:click="navbar"></vtu-cell>
+            <vtu-cell title="TabBar" value="标签栏" border arrow bind:click="tabBar"></vtu-cell>
+            <vtu-cell title="Tabs" value="标签页" border arrow bind:click="tabs"></vtu-cell>
+            <vtu-cell title="Badge" value="徽章" arrow bind:click="badge"></vtu-cell>
+        </vtu-panel>
+    </view>
+</scroll-view>
+<component-dialog id="dialog"></component-dialog>

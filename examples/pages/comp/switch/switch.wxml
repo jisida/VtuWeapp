@@ -1,0 +1,80 @@
+<view class="container">
+  <vtu-navbar title="Switch"></vtu-navbar>
+  <view class="center Page_Margin">
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="基础用法" border>
+      </vtu-cell>
+        <view class="switch_span">
+          <vtu-switch checked="{{value}}" bind:change="bindChange"></vtu-switch>
+        </view>
+        <view class="switch_span">
+          <vtu-switch checked="{{value}}" size="small" bind:change="bindChange" active-color="red"></vtu-switch>
+        </view>
+        <view class="switch_span">
+          <vtu-switch checked="{{value}}" type="round" bind:change="bindChange" active-color="orange"></vtu-switch>
+        </view>
+        <view class="switch_span">
+          <vtu-switch checked="{{value}}" type="round" size="small" bind:change="bindChange" color="#9596A4" active-color="orange"></vtu-switch>
+        </view>
+    </vtu-panel>
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="其他样式" border>
+      </vtu-cell>
+        <view class="switch_span">
+          <vtu-switch checked="{{value}}" type="circle" simple bind:change="bindChange" active-color="orange"></vtu-switch>
+        </view>
+        <view class="switch_span">
+          <vtu-switch checked="{{value}}" type="circle" simple size="small" bind:change="bindChange" active-color="orange"></vtu-switch>
+        </view>
+        <view class="switch_span">
+          <vtu-switch checked="{{value}}" type="round" simple bind:change="bindChange" color="#9596A4" active-color="skyblue"></vtu-switch>
+        </view>
+        <view class="switch_span">
+          <vtu-switch checked="{{value}}" type="round" simple size="small" bind:change="bindChange" active-color="skyblue"></vtu-switch>
+        </view>
+    </vtu-panel>
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="禁用样式" border>
+      </vtu-cell>
+        <view class="switch_span">
+          <vtu-switch checked="{{false}}" type="circle" bind:change="bindChange" active-color="red" disabled></vtu-switch>
+        </view>
+        <view class="switch_span">
+          <vtu-switch checked="{{true}}" type="round" bind:change="bindChange" active-color="red" disabled></vtu-switch>
+        </view>
+        <view class="switch_span">
+          <vtu-switch checked="{{false}}" type="circle" simple bind:change="bindChange" active-color="red" disabled></vtu-switch>
+        </view>
+    </vtu-panel>
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="异步" border>
+      </vtu-cell>
+        <view class="switch_span">
+          <vtu-switch checked="{{value}}" async type="circle" bind:change="bindAsyncChange" active-color="orange"></vtu-switch>
+        </view>
+        <view class="switch_span">
+          <vtu-switch checked="{{value}}" async type="round" bind:change="bindAsyncChange" active-color="orange"></vtu-switch>
+        </view>
+        <view class="switch_span">
+          <vtu-switch checked="{{value}}" async type="round" simple bind:change="bindAsyncChange" active-color="orange"></vtu-switch>
+        </view>
+    </vtu-panel>
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="自定义图标" border>
+      </vtu-cell>
+        <view class="switch_span">
+          <vtu-switch checked="{{value}}" async type="circle" color="#9596A4" bind:change="bindAsyncChange" icon="iconfont icon-xingbie" active-icon="iconfont icon-xingbienvxianxing"></vtu-switch>
+        </view>
+        <view class="switch_span">
+          <vtu-switch checked="{{value}}" type="circle" color="#9596A4" bind:change="bindChange" icon="iconfont icon-guanbi1" active-icon="iconfont icon-xuanze1"></vtu-switch>
+        </view>
+    </vtu-panel>
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="自定义文字" border>
+      </vtu-cell>
+        <view class="switch_span">
+          <vtu-switch checked="{{value}}" async type="circle" color="#9596A4" bind:change="bindAsyncChange" label="男" active-label="女"></vtu-switch>
+        </view>
+    </vtu-panel>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+{
+    "usingComponents": {
+        "vtu-sheet": "/miniprogram_npm/vtuweapp/sheet/vtu-sheet",
+        "vtu-btn": "/miniprogram_npm/vtuweapp/button/vtu-btn",
+        "vtu-tab": "/miniprogram_npm/vtuweapp/tab/vtu-tab",
+        "vtu-tabs": "/miniprogram_npm/vtuweapp/tabs/vtu-tabs",
+        "vtu-navbar": "/miniprogram_npm/vtuweapp/navbar/vtu-navbar",
+        "vtu-panel": "/miniprogram_npm/vtuweapp/panel/vtu-panel",
+        "vtu-swiper": "/miniprogram_npm/vtuweapp/swiper/vtu-swiper",
+        "vtu-cell": "/miniprogram_npm/vtuweapp/cell/item/vtu-cell"
+    }
+}

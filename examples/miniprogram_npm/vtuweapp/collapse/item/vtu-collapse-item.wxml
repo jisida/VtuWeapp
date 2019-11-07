@@ -1,0 +1,8 @@
+<view class="Vtu_Collapse_Item custom-class {{gutter?'has-gutter':''}}" style="margin-bottom: {{gutter}};">
+    <view class="Vtu_Collapse_Item_Title title-class" bindtap="{{disabled?'':'clickItem'}}">
+        <vtu-cell title="{{title}}" custom-class="Vtu_Collapse_Item_Title_Cell" disabled="{{disabled}}" icon="{{icon}}" type="collapse" collapse-open="{{open}}" icon-color="{{open?activeColor||iconColor||color:iconColor||color}}" title-color="{{open?activeColor||titleColor||color:titleColor||color}}" border="{{open}}"></vtu-cell>
+    </view>
+    <view class="Vtu_Collapse_Item_Content content-class {{open?'is-open':'is-close'}}">
+        <slot></slot>
+    </view>
+</view>

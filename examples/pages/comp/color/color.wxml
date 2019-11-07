@@ -1,0 +1,88 @@
+<view class="container">
+  <vtu-navbar title="Color色彩"></vtu-navbar>
+  <view class="center Page_Margin">
+    <view class="color_title">主色</view>
+    <view class="color_span">
+      <view class="color_span_li shadow-blur primary">
+        <view class="color_span_li_name">Primary</view>
+        <view class="color_span_li_color">#1989fa</view>
+      </view>
+      <view class="color_span_li shadow-blur primaryLight">
+        <view class="color_span_li_name">Primary Light</view>
+        <view class="color_span_li_color">#91c7ff</view>
+      </view>
+      <view class="color_span_li shadow-blur primaryDark">
+        <view class="color_span_li_name">Primary Dark</view>
+        <view class="color_span_li_color">#0072de</view>
+      </view>
+    </view>
+    <view class="color_title">辅色</view>
+    <view class="color_span">
+      <view class="color_span_li shadow-blur success">
+        <view class="color_span_li_name">Success</view>
+        <view class="color_span_li_color">#07c160</view>
+      </view>
+      <view class="color_span_li shadow-blur warning">
+        <view class="color_span_li_name">Warning</view>
+        <view class="color_span_li_color">#f5bf49</view>
+      </view>
+      <view class="color_span_li shadow-blur danger">
+        <view class="color_span_li_name">Danger</view>
+        <view class="color_span_li_color">#f44</view>
+      </view>
+      <view class="color_span_li shadow-blur info">
+        <view class="color_span_li_name">Info</view>
+        <view class="color_span_li_color">#909399</view>
+      </view>
+    </view>
+    <view class="color_title">字体颜色</view>
+    <view class="color_span">
+      <view class="color_span_li shadow-blur fontA">
+        <view class="color_span_li_name">主要文字</view>
+        <view class="color_span_li_color">#303133</view>
+      </view>
+      <view class="color_span_li shadow-blur fontB">
+        <view class="color_span_li_name">常规文字</view>
+        <view class="color_span_li_color">#606266</view>
+      </view>
+      <view class="color_span_li shadow-blur fontC">
+        <view class="color_span_li_name">次要文字</view>
+        <view class="color_span_li_color">#909399</view>
+      </view>
+      <view class="color_span_li shadow-blur fontD">
+        <view class="color_span_li_name">占位文字</view>
+        <view class="color_span_li_color">#C0C4CC</view>
+      </view>
+    </view>
+    <view class="color_title">边框颜色</view>
+    <view class="color_span">
+      <view class="color_span_li shadow-blur borderA">
+        <view class="color_span_li_name">一级边框</view>
+        <view class="color_span_li_color">#DCDFE6</view>
+      </view>
+      <view class="color_span_li shadow-blur borderB">
+        <view class="color_span_li_name">二级边框</view>
+        <view class="color_span_li_color">#E4E7ED</view>
+      </view>
+      <view class="color_span_li shadow-blur borderC">
+        <view class="color_span_li_name">三级边框</view>
+        <view class="color_span_li_color">#EBEEF5</view>
+      </view>
+      <view class="color_span_li shadow-blur borderD">
+        <view class="color_span_li_name">四级边框</view>
+        <view class="color_span_li_color">#F2F6FC</view>
+      </view>
+    </view>
+    <view class="color_title">背景色</view>
+    <view class="color_span">
+      <view class="color_span_li shadow-blur page">
+        <view class="color_span_li_name">页面背景</view>
+        <view class="color_span_li_color">#f8f8f9</view>
+      </view>
+      <view class="color_span_li shadow-blur disabled">
+        <view class="color_span_li_name">只读</view>
+        <view class="color_span_li_color">#e6e6e7</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,81 @@
+@import "../../assets/css/Vtu_Common.wxss";
+.Vtu_Tabbar{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.Vtu_Tabbar_Page{
+    height: calc(100% - 50px);
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+.Vtu_Tabbar_Page_Swiper,
+.Vtu_Tabbar_Page_Swiper_Item,
+.Vtu_Tabbar_Page_Swiper_Item_Scroll{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.Vtu_Tabbar_Bar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    bottom: 0px;
+    position: fixed;
+    left: 0px;
+    z-index: 1;
+    box-shadow:0px -1px 2px #eee;
+    background: #fff;
+    padding-bottom:env(safe-area-inset-bottom);
+    color: var(--font-hc);
+}
+.Vtu_Tabbar_Bar.is-page{
+    position: absolute;
+}
+
+.Vtu_Tabbar_Li{
+    flex:1;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    position: relative;
+}
+.Vtu_Tabbar_Li_Top{
+    width:27px;
+    height:27px;
+    position:relative;
+    line-height: 27px;
+}
+.Vtu_Tabbar_Li_Top.is-large,
+.Vtu_Tabbar_Li_Top.is-large{
+    width:44px;
+    height:44px;
+    line-height: 44px;
+    margin-top:-15px;
+    background:#fff;
+    border-radius:100px;
+    box-shadow:0px -2px 2px #eee;
+}
+.Vtu_Tabbar_Li_Top.is-large image {
+    width:60%;
+    height:60%;
+    margin:20%;
+}
+.Vtu_Tabbar_Li_Top .Vtu_Tabbar_Li_Icon{
+    font-size: 24px;
+}
+.Vtu_Tabbar_Li_Src,
+.Vtu_Tabbar_Li_Icon{
+    width: 100%;
+    height: 100%;
+}
+.Vtu_Tabbar_Li_Src image{
+    width: 100%;
+    height: 100%;
+}
+.Vtu_Tabbar_Li_Label{
+    font-size: 10px;
+}

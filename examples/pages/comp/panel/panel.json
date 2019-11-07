@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "vtu-cell": "/miniprogram_npm/vtuweapp/cell/item/vtu-cell",
+        "vtu-btn": "/miniprogram_npm/vtuweapp/button/vtu-btn",
+        "vtu-navbar": "/miniprogram_npm/vtuweapp/navbar/vtu-navbar",
+        "vtu-panel": "/miniprogram_npm/vtuweapp/panel/vtu-panel",
+        "vtu-radio-group": "/miniprogram_npm/vtuweapp/radio/group/vtu-radio-group",
+        "vtu-radio": "/miniprogram_npm/vtuweapp/radio/radio/vtu-radio"
+    }
+}

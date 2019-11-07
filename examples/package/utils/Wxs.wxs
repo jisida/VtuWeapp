@@ -1,0 +1,12 @@
+var filters = {
+  toFix: function (value, num) {
+    return value.toFixed(num)//此处2为保留两位小数
+  }
+  toYuan: function(value, num) {
+    return parseFloat(parseFloat(value/100).toFixed(num)*1)
+  }
+}
+module.exports = {
+  toFix: filters.toFix,
+  toYuan: filters.toYuan
+}

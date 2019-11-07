@@ -1,0 +1,17 @@
+<import src="/miniprogram_npm/vtuweapp/template/shop/template"/>
+<view class="container">
+  <vtu-navbar title="商品列表"></vtu-navbar>
+  <view class="center Page_Padding">
+    <template is="shopList_style3" data="{{src: 'https://activity.vtuzx.com/doc/vtuui/weapp/temp/shop.jpg'}}"></template>
+    <template is="shopList_style3" data="{{src: 'https://activity.vtuzx.com/doc/vtuui/weapp/temp/shop3.jpg'}}"></template>
+    <view class="ShopListLi">
+      <template is="shopList_style1" data="{{src: 'https://activity.vtuzx.com/doc/vtuui/weapp/temp/shop3.jpg'}}"></template>
+      <template is="shopList_style2" data="{{src: 'https://activity.vtuzx.com/doc/vtuui/weapp/temp/shop2.jpg'}}"></template>
+    </view>
+    <view class="ShopListLi">
+      <template is="shopList_style2" data="{{src: 'https://activity.vtuzx.com/doc/vtuui/weapp/temp/shop2.jpg'}}"></template>
+      <template is="shopList_style1" data="{{src: 'https://activity.vtuzx.com/doc/vtuui/weapp/temp/shop.jpg'}}"></template>
+      <template is="shopList_style1" data="{{src: 'https://activity.vtuzx.com/doc/vtuui/weapp/temp/shop3.jpg'}}"></template>
+    </view>
+  </view>
+</view>

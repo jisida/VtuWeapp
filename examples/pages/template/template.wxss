@@ -1,0 +1,714 @@
+.LuckDraw_Style{
+}
+.Vote_Style{
+}
+.LuckDraw_Style_Shrink{
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.LuckDraw_Style_Shrink_Name{
+    width: calc(100% - 90px);
+    float: left;
+    color: var(--lessColor);
+}
+.LuckDraw_Style_Shrink_Time{
+    width: 70px;
+    height: 100%;
+    float: left;
+    color: var(--h1Color);
+    font-size: 12px;
+}
+.LuckDraw_Style_Shrink_Right{
+    float: right;
+    width: 20px;
+    text-align: center;
+    color: var(--h1Color);
+    font-size: 12px;
+}
+.LuckDraw_Style_Image{
+    width: 100%;
+    height: auto;
+    float: left;
+    position: relative;
+}
+.LuckDraw_Style_Image .image{
+    width: 100%;
+    height: 0;
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+.LuckDraw_Style_Image.Empty{
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+.LuckDraw_Style_Image .createName{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(104, 104, 104, 0.5);
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 10px;
+}
+
+.LuckDraw_Style_Info,
+.Vote_Style_Info{
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.Vote_Style_Info_Name{
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.Creater{
+    border-radius:var(--radius);
+    height: 30px;
+    line-height: 25px;
+    width: 100%;
+    color: var(--redColor);
+    font-size: 14px;
+    font-weight: bold;
+}
+.Items{
+    width: 100%;
+    float: left;
+}
+.Items_Title{
+    width: 40px;
+    float: left;
+    font-size: 14px;
+}
+.Items_List{
+    width: calc(100% - 40px);
+    float: right;
+}
+.Items_List_Li{
+    width: 100%;
+    height: 25px;
+    color: var(--lessColor);
+    font-size: 12px;
+}
+.Items_List_Li_Name{
+    float: left;
+    width: calc(100% - 90px);
+    font-size: 14px;
+}
+.Items_List_Li_Price{
+    width: 80px;
+    height: 100%;
+    float: right;
+    text-align: right;
+}
+.Detail{
+    width: 100%;
+    height: 20px;
+    float: left;
+    margin-top: 10px;
+    line-height: 20px;
+    font-size: 11px;
+}
+.Detail_Li{
+    float: left;
+    margin-right: 5px;
+    font-size: 11px;
+}
+.Detail_Li.Active{
+    color: var(--mainColor);
+}
+.Detail_Li.Time{
+    color: var(--h1Color);
+}
+.Detail_Li.Icon{
+    height: 14px;
+    background: var(--mainColor);
+    color: #fff;
+    margin: 3px 10px 3px 0px;
+    line-height: 14px;
+    font-size: 11px;
+    padding: 0px 2px;
+    border-radius: 2px;
+}
+.Detail_Li.Second{
+    background: var(--secondColor);
+}
+.Detail_Li.Pass{
+    background: #fff;
+    color: var(--h1Color);
+    border: 1px solid var(--h1Color);
+    height: 12px;
+    line-height: 12px;
+}
+.Detail_Li.Phone{
+    background: #1b8ed2;
+}
+.Detail_Li_Icon{
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    float: left;
+    margin: 3px 3px 3px 0px;
+    line-height: 14px;
+    font-size: 12px;
+}
+.Detail_Li_Text{
+    float: left;
+}
+
+.Users{
+    width: 100%;
+    height: 20px;
+    float: left;
+    margin-top: 5px;
+    line-height: 20px;
+    position: relative;
+}
+.Users_List{
+    width: auto;
+    float: right;
+}
+.Users_List_Li{
+    width: 20px;
+    height: 20px;
+    float: left;
+    background: #eee;
+    margin-left: -5px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+.Users_List_Li:first-child{
+    margin-left: 0px;
+}
+.Users_Count{
+    float: left;
+    font-size: 11px;
+    color: var(--h1Color);
+    position: relative;
+}
+.Users_Count span{
+    height: 20px;
+    background: var(--secondColor);
+    color: #fff;
+    border-radius: 4px;
+    padding: 0px 5px;
+    position: relative;
+    margin-left: 15px;
+}
+.Users_Count span:before{
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    transform: translate(0, -50%);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid var(--secondColor);
+}
+.Winner{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 30px;
+    bottom: 25px;
+    color: var(--secondColor);
+    font-size: 60px;
+}
+.Winner.fail{
+    color: var(--h2Color);
+}
+.OverTime_Style{
+    padding-top: var(--pagePadding);
+    padding-bottom: var(--pagePadding);
+    position: relative;
+    line-height: 30px;
+    font-size: 14px;
+}
+.OverTime_Style_Center{
+    width: calc(100% - 90px);
+    float: left;
+}
+.LuckDraw_OverTime_Style_Center_Title{
+    width: 40px;
+    float: left;
+}
+.LuckDraw_OverTime_Style_Center_Product{
+    width: calc(100% - 40px);
+    float: left;
+}
+.Vote_OverTime_Style_Center_Name{
+    font-size: 14px;
+    color: var(--lessColor);
+    font-weight: bold;
+}
+.OverTime_Style_Time{
+    width: 70px;
+    font-size: 12px;
+    color: var(--h1Color);
+    text-align: right;
+    float: left;
+}
+.OverTime_Style_Right{
+    float: right;
+    width: 20px;
+    font-size: 12px;
+    color: var(--h4Color);
+    text-align: right;
+}
+/*-------------------------投票部分-------------------------------*/
+.Vote_Users_List_Style{
+    width: 100%;
+}
+.Vote_Users_List_Style_Split{
+    width: calc((100% - 10px)/2);
+    height: auto;
+    margin-right: 5px;
+    float: left;
+}
+.Vote_Users_List_Style_Split:last-child{
+    margin: 0px 0px 0px 5px;
+}
+.Vote_Users_Info_Style{
+    background: #fff;
+    width: 100%;
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+    position: relative;
+}
+.Vote_Users_Info_Style_No{
+    padding: 5px;
+    background: var(--secondColor);
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: var(--radius) 0 var(--radius) 0;
+    font-weight:bold;
+}
+.Vote_Users_Info_Style_Image{
+    width: 100%;
+    height: auto;
+}
+.Vote_Users_Info_Style image{
+    width: 100%;
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+.Vote_Users_Info_Style_Info{
+    width: calc(100% - 10px);
+    padding: 5px 5px 0px 5px;
+}
+.Vote_Users_Info_Style_Info_Label{
+    width: 100%;
+    line-height: 20px;
+    font-size: 14px;
+}
+.Vote_Users_Info_Style_Info_Prop{
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+}
+.Vote_Users_Info_Style_Info_Prop_Count{
+    width: 100%;
+    height: 25px;
+}
+.Vote_Users_Info_Style_Info_Prop_Count .Votes{
+    float: left;
+    height: 100%;
+    font-size: 15px;
+    color: var(--secondColor);
+    font-weight: bold;
+}
+.Vote_Users_Info_Style_Info_Prop_Count .Noun{
+    float: right;
+    height: 100%;
+    font-size: 12px;
+    color: var(--h1Color);
+}
+.Vote_Users_Info_Style_Info_Prop_Line{
+    width: 100%;
+}
+.Vote_Users_Info_Style_Prop_Btn{
+    margin-top: 20px;
+    height: 40px;
+}
+.Vote_Users_Info_Style_Prop_Btn_Li{
+    width: 50%;
+    height: 100%;
+    float: left;
+    background: var(--mainColor);
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: var(--radius) 0px var(--radius) 0;
+}
+.Vote_Users_Info_Style_Prop_Btn_Li.help{
+    color: var(--mainColor);
+    background: transparent;
+    border-radius: 0 var(--radius)  0 var(--radius);
+}
+
+/**/
+.Comment_Style{
+    float: left;
+}
+.Comment_Style_Image{
+    width: 30px;
+    height: 30px;
+    float: left;
+    border-radius: var(--radius);
+}
+.Comment_Style_Image image{
+    border-radius: var(--radius);
+}
+.Comment_Style_Info{
+    width: calc(100% - 40px);
+    float: right;
+}
+.Comment_Style_Info_Top{
+    width: 100%;
+    height: 30px;
+}
+.Comment_Style_Info_Top_Name{
+    float: left;
+    height: 100%;
+    font-size: 14px;
+    color: var(--h1Color);
+}
+.Comment_Style_Info_Top_Time{
+    float: right;
+    font-size: 12px;
+    color: var(--h2Color);
+    height: 100%
+}
+.Comment_Style_Info_Content{
+    width: 100%;
+    font-size: 14px;
+    color: var(--lessColor);
+}
+
+/**/
+.Bottom_Style{
+    width: 100%;
+    height: 90px;
+    background: #fff;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    box-shadow: 0px -1px 2px #eee;
+    display: flex;
+    flex: 1;
+    z-index: 10;
+}
+.Bottom_Style.animation{
+    bottom: -150px;
+}
+.Bottom_Style_Li{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    color: var(--h1Color);
+    position: relative;
+}
+.Bottom_Style_Li:first-child,
+.Bottom_Style_Li:last-child{
+    width: 30%;
+}
+.Bottom_Style_Li_Icon{
+    width: 30px;
+    height: 30px;
+    margin: 20px auto 5px auto;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+}
+.Bottom_Style_Li_Text{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.Bottom_Style_Li_Center{
+    width: 80px;
+    height: 80px;
+    margin: 5px auto;
+    text-align: center;
+}
+.Bottom_Style_Li_Center.formView{
+    position: fixed;
+    left:50%;
+    transform: translate(-50%, 0);
+    bottom: -150px;
+}
+.Bottom_Style_Li_Center_Add{
+    width: 72px;
+    height: 72px;
+    border: 4px solid var(--page);
+    background: -webkit-linear-gradient(left, #ff906e 0%, var(--secondColor) 100%);
+    font-size: 14px;
+    color: #fff;
+    box-shadow: 0px 0px 2px #a1a1a1;
+    position: relative;
+}
+.Bottom_Style_Li_Center_Add.common:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: BottomCenterAnimation 2s ease infinite;
+    background: var(--secondColor);
+    border-radius: 100px;
+    left: 0px;
+    top: 0px;
+    transition: all 1s;
+    z-index: -1;
+}
+.Bottom_Style_Li_Center_Add.fail{
+    background: var(--h2Color);
+    color: #fff;
+}
+.Bottom_Style_Li_Center_Add text{
+    line-height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    transform: translate(0, -50%);
+    text-align: center;
+}
+.Bottom_Style_Li_Info{
+    position: absolute;
+    top: -40px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 10px;
+    font-size: 12px;
+    background: var(--mainColor);
+    left: 50%;
+    transform: translate(-50%, 0);
+    animation: BottomInfoAnimation 3s ease infinite;
+    white-space : nowrap;
+}
+.Bottom_Style_Li_Info:after{
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-left: 8px solid transparent;
+    border-top: 4px solid var(--mainColor);
+    bottom: -4px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+@keyframes BottomInfoAnimation{
+    0% {
+        opacity: 0.6;
+        top: -40px;
+    }
+    50% {
+        top: -30px;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+        top: -40px;
+    }
+}
+@keyframes BottomCenterAnimation{
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1.4);
+        opacity: 0.0;
+    }
+}
+
+/**/
+.ImageContent_Style{
+    width: 100%;
+    float: left;
+    padding-bottom: 10px;
+}
+.ImageContent_Style_Add{
+    width: 100%;
+    padding: 10px 0px 20px 0px;
+}
+.ImageContent_Style_Add .icon{
+    width: 40px;
+    height: 40px;
+    margin: 0px auto 10px auto;
+}
+.ImageContent_Style_Add .text{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--mainColor);
+}
+.ImageContent_Style_Detail{}
+.ImageContent_Style_Detail image,
+.ImageContent_Style_Detail img{
+    max-width: 100%;
+}
+
+.Copywriting{
+    background: var(--page);
+    width: 100%;
+}
+.Copywriting_Title{
+    height: 50px;
+    width: 100%;
+    color: var(--lessColor);
+    text-align: center;
+    font-size: 14px;
+    line-height: 50px;
+}
+.Copywriting_Title input{
+    height: 100%;
+    font-size: 14px;
+}
+.Copywriting_Center{
+    background: #fff;
+    text-align: center;
+    margin: 0px 20px;
+    width: calc(100% - 40px);
+}
+.Copywriting_Center textarea{
+    font-size: 14px;
+    padding: 30px 0px;
+}
+.Copywriting_Center .text{
+    padding: 30px 0px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.Copywriting_Btn{
+    width: 100%;
+    margin: 10px 0px;
+    display: inline-block;
+}
+.Copywriting_Btn .Btn{
+    width: 100px;
+    margin: 0px auto;
+}
+
+
+.FollowAccount_Style{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    padding-top: 10px;
+    border-top: 1px solid var(--h4Color);
+    margin-top: 10px;
+    position: relative;
+}
+.FollowAccount_Style_Icon{
+    width: 30px;
+    height: 100%;
+    float: left;
+}
+.FollowAccount_Style_Text{
+    float: left;
+    font-size: 14px;
+    max-width: calc(100% - 140px);
+}
+.FollowAccount_Style_Btn{
+    height: 30px;
+    line-height: 30px;
+    float: right;
+    background: var(--mainColor) !important;
+    margin: 5px 0;
+    padding: 0px;
+}
+.FollowAccount_Style_Btn_Icon{
+    width: 30px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    color: #000;
+}
+.FollowAccount_Style_Btn_Icon.wx:after{
+    font-family:'iconfont';
+    content: "\e685";
+}
+.FollowAccount_Style_Btn_Icon.pa:after{
+    font-family:'iconfont';
+    content: "\e64a";
+}
+.FollowAccount_Style_Btn_Icon.minipg:after{
+    font-family:'iconfont';
+    content: "\e6b4";
+}
+.FollowAccount_Style_Btn_Text{
+    float: left;
+    font-size: 12px;
+    margin: 0px 10px 0px 0px;
+    height: 100%;
+    color: #000;
+}
+
+/*****************/
+.LuckDraw_User_Style{
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed var(--h4Color);
+    position: relative;
+}
+.LuckDraw_User_Style:last-child{
+    border: 0px;
+}
+.LuckDraw_User_Style_Image{
+    width: 60px;
+    height: 60px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+    border-radius: var(--radius);
+}
+.LuckDraw_User_Style_Image image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    width: 120px;
+}
+.LuckDraw_User_Style_Info{
+    width: calc(100% - 85px);
+    float: right;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translate(0, -50%);
+}
+.LuckDraw_User_Style_Info_Name{
+    width: 100%;
+    min-height: 20px;
+    max-height: 40px;
+    font-size: 14px;
+}
+.LuckDraw_User_Style_Info_Detail{
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 5px;
+    color: var(--h2Color);
+}

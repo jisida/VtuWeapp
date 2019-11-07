@@ -1,0 +1,27 @@
+<import src="/miniprogram_npm/vtuweapp/template/other/template"/>
+<view class="container">
+  <vtu-navbar title="标题" bg-color="#fff"></vtu-navbar>
+  <view class="center Page_Padding">
+    <view class="title">
+      <template is="title_style1"></template>
+    </view>
+    <view class="title">
+      <template is="title_style2"></template>
+    </view>
+    <view class="title">
+      <template is="title_style3"></template>
+    </view>
+    <view class="title">
+      <template is="title_style4"></template>
+    </view>
+    <view class="title">
+      <template is="title_style5"></template>
+    </view>
+    <view class="title">
+      <vtu-cell title="独家内容" value="更多" arrow title-style="font-size:18px;font-weight: bold;"></vtu-cell>
+    </view>
+    <view class="title">
+      <vtu-cell title="精选视频" value="更多" arrow title-style="font-size:18px;font-weight: bold;"></vtu-cell>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+.swiper{
+  width: calc(100% - 20px) !important;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+.swiper_center{
+  width: 100%;
+}
+.tabbar-content{}

@@ -1,0 +1,46 @@
+ <view class="container">
+  <vtu-navbar title="Grids" navbar-class="navBar" font-color="#fff" status-color="#fff"></vtu-navbar>
+  <view class="center Page_Margin">
+    <view class="Cell_Span">
+      <vtu-panel custom-class="panel" content-class="content">
+        <vtu-cell slot="header" title="自定义颜色" border></vtu-cell>
+        <vtu-grids col="4">
+          <vtu-grid label="图片" icon="iconfont icon-tupian1" icon-color="red" bind:click="click" data-label="aa" ></vtu-grid>
+          <vtu-grid label="清除" icon="iconfont icon-qingkong" icon-color="orange" bind:click="click" data-label="bb" ></vtu-grid>
+          <vtu-grid label="收藏" icon="iconfont icon-xihuanfill" icon-color="skyblue" bind:click="click" data-label="cc" ></vtu-grid>
+          <vtu-grid label="上传" icon="iconfont icon-shangchuan" icon-color="blue" bind:click="click" data-label="dd" ></vtu-grid>
+          <vtu-grid label="图片" icon="iconfont icon-tupian1" icon-color="#7e35bd" bind:click="click" data-label="ee" ></vtu-grid>
+          <vtu-grid label="清除" icon="iconfont icon-sousuo" icon-color="#9075fc" bind:click="click" data-label="gg" ></vtu-grid>
+          <vtu-grid label="收藏" icon="iconfont icon-biaoxingfill" icon-color="#1abf28" bind:click="click" data-label="er" ></vtu-grid>
+          <vtu-grid label="上传" icon="iconfont icon-yuanxingxuanzhongfill" icon-color="#fc973d" bind:click="click" data-label="sd" ></vtu-grid>
+        </vtu-grids>
+      </vtu-panel>
+      <vtu-panel custom-class="panel" content-class="content">
+        <vtu-cell slot="header" title="基础用法"></vtu-cell>
+        <vtu-grids col="5" border icon-color="orange" item-class="itemClass">
+          <vtu-grid label="图片" icon="iconfont icon-tupian1" badge_value="15"></vtu-grid>
+          <vtu-grid label="清除" icon="iconfont icon-qingkong"></vtu-grid>
+          <vtu-grid label="收藏" icon="iconfont icon-xihuanfill" badge_value="95" badge_max="50"></vtu-grid>
+          <vtu-grid label="上传" icon="iconfont icon-shangchuan"></vtu-grid>
+          <vtu-grid label="图片" icon="iconfont icon-tupian1"></vtu-grid>
+          <vtu-grid label="清除" icon="iconfont icon-sousuo"></vtu-grid>
+          <vtu-grid label="收藏" icon="iconfont icon-biaoxingfill" badge_is-dot></vtu-grid>
+          <vtu-grid label="上传" icon="iconfont icon-yuanxingxuanzhongfill"></vtu-grid>
+          <vtu-grid label="图片" icon="iconfont icon-tupian1"></vtu-grid>
+          <vtu-grid label="清除" icon="iconfont icon-sousuo"></vtu-grid>
+        </vtu-grids>
+      </vtu-panel>
+      <vtu-panel custom-class="panel" content-class="content">
+        <vtu-cell slot="header" title="自定义大小" border ></vtu-cell>
+        <vtu-grids col="3" icon-color="red" >
+          <vtu-grid label="图片" icon="iconfont icon-tupian1" icon-size="30px"></vtu-grid>
+          <vtu-grid label="清除" icon="iconfont icon-qingkong" icon-size="30px"></vtu-grid>
+          <vtu-grid label="收藏" icon="iconfont icon-xihuanfill" icon-size="30px"></vtu-grid>
+          <vtu-grid label="上传" icon="iconfont icon-shangchuan" icon-size="30px"></vtu-grid>
+          <vtu-grid label="禁用" icon="iconfont icon-yemian-copy-copy" icon-size="30px" disabled bind:click="click" data-label="sd"></vtu-grid>
+          <vtu-grid label="清除" icon="iconfont icon-sousuo" icon-size="30px"></vtu-grid>
+        </vtu-grids>
+      </vtu-panel>
+    </view>
+  </view>
+</view>

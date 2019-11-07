@@ -1,0 +1,12 @@
+.dialog-btn{
+  margin-bottom: 10px !important;
+}
+.Vtu-Custom-Btn{
+  margin-top: 20px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+.dialog-custom-btn{
+  margin: 0px 5px !important;
+}

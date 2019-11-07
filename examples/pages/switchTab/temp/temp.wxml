@@ -1,0 +1,32 @@
+<view class="container">
+    <view class="MyBg">
+        <image src="/assets/image/bg.png" mode="widthFix"></image>
+    </view>
+    <swiper class="Swiper" current="{{selected}}" bindchange="switchTab">
+        <swiper-item class="Swiper_Item">
+            <switchtab_first show="{{selected == 0}}" ></switchtab_first>
+        </swiper-item>
+        <swiper-item class="Swiper_Item">
+            <switchtab_template show="{{selected == 1}}"></switchtab_template>
+        </swiper-item>
+        <swiper-item class="Swiper_Item">
+            <switchtab_second show="{{selected == 2}}"></switchtab_second>
+        </swiper-item>
+        <swiper-item class="Swiper_Item">
+            <switchtab_group show="{{selected == 3}}"></switchtab_group>
+        </swiper-item>
+        <swiper-item class="Swiper_Item">
+            <scroll-view scroll-y class="Swiper_Item_Scroll">
+                <switchtab_three show="{{selected == 4}}"></switchtab_three>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+    <vtu-tabbar current="{{selected}}" bind:change="switchTab">
+        <vtu-tabbar-item label="组件" src="/assets/image/home.png" active-src="/assets/image/home1.png"></vtu-tabbar-item>
+        <vtu-tabbar-item label="模板" src="/assets/image/templat.png" active-src="/assets/image/template1.png" ></vtu-tabbar-item>
+        <vtu-tabbar-item label="案例" src="/assets/image/logo.png" active-src="/assets/image/logo.png" large></vtu-tabbar-item>
+        <vtu-tabbar-item label="组合" src="/assets/image/group.png" active-src="/assets/image/group1.png"></vtu-tabbar-item>
+        <vtu-tabbar-item label="关于" src="/assets/image/my1.png" active-src="/assets/image/my.png"></vtu-tabbar-item>
+    </vtu-tabbar>
+    <component-dialog id="dialog"></component-dialog>
+</view>

@@ -1,0 +1,7 @@
+<view class="Vtu_Notify Vtu_Notify--{{type}} custom-class {{showFlg?'is-show':''}}" style="background: {{bgColor}};top: {{navBarHeight}}px;color: {{color}};" bindtap="click">
+    <view class="Vtu_Notify_Content content-class" style="text-align: {{textAlign}}" wx:if="{{content}}">
+      <i wx:if="{{icon}}" class="Vtu_Notify_Icon {{icon}} icon-class {{rotate?'is-rotate':''}}"></i>
+      <text>{{content}}</text>
+    </view>
+    <view class="Vtu_Notify_Close vtu-icon vtu-icon-x close-class" wx:if="{{showClose}}" bindtap="close"></view>
+</view>

@@ -1,0 +1,11 @@
+<import src="/miniprogram_npm/vtuweapp/template/list/template"/>
+<view class="container">
+  <vtu-navbar title="聊天列表"></vtu-navbar>
+  <view class="center">
+    <view class="comment-span">
+      <template is="chatList_style1" data="{{src: 'https://activity.vtuzx.com/doc/vtuui/weapp/avatar/1.png'}}"></template>
+      <template is="chatList_style1" data="{{src: 'https://activity.vtuzx.com/doc/vtuui/weapp/avatar/2.png', error: true}}"></template>
+      <template is="chatList_style1" data="{{src: 'https://activity.vtuzx.com/doc/vtuui/weapp/avatar/3.png', error: true}}"></template>
+    </view>
+  </view>
+</view>

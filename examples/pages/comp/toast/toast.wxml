@@ -1,0 +1,39 @@
+<view class="container">
+  <vtu-navbar title="Toast"></vtu-navbar>
+  <view class="center Page_Margin">
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="文字提示" border></vtu-cell>
+      <view >
+        <vtu-btn bind:click="alert1" type="primary" custom-class="dialog-btn">文字提示</vtu-btn>
+        <vtu-btn bind:click="alert2" type="success" custom-class="dialog-btn">长文字提示</vtu-btn>
+      </view>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="加载提示" border></vtu-cell>
+      <view >
+        <vtu-btn bind:click="alert3" type="primary" custom-class="dialog-btn">加载提示</vtu-btn>
+      </view>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="成功/失败提示" border></vtu-cell>
+      <view >
+        <vtu-btn bind:click="alert4" type="success" custom-class="dialog-btn">成功提示</vtu-btn>
+        <vtu-btn bind:click="alert5" type="warning" custom-class="dialog-btn">警告提示</vtu-btn>
+        <vtu-btn bind:click="alert6" type="danger" custom-class="dialog-btn">失败提示</vtu-btn>
+      </view>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="高级用法" border></vtu-cell>
+      <view >
+        <vtu-btn bind:click="alert7" type="primary" custom-class="dialog-btn">自定义icon</vtu-btn>
+        <vtu-btn bind:click="alert8" type="warning" custom-class="dialog-btn">带遮罩</vtu-btn>
+        <vtu-btn bind:click="alert9" type="success" custom-class="dialog-btn">自定义关闭时间</vtu-btn>
+      </view>
+    </vtu-panel>
+    <vtu-toast id="Vtu-Toast"></vtu-toast>
+  </view>
+</view>

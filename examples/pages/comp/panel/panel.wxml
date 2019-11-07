@@ -1,0 +1,60 @@
+<view class="container">
+  <vtu-navbar title="Panel"></vtu-navbar>
+  <view class="center">
+    <view class="Cell_Span Page_Margin">
+      <view class="Cell_Span_Title ">基础用法</view>
+      <view class="Cell_Span_Center">
+        <vtu-panel title="标题内容">
+          <view>内容</view>
+        </vtu-panel>
+      </view>
+        <view class="Cell_Span_Center">
+            <vtu-panel>
+                <vtu-cell slot="header" title="开关" icon="iconfont icon-kefu" icon-color="#1989fa" border value="{{switch}}" type="switch"></vtu-cell>
+                <view>内容</view>
+            </vtu-panel>
+        </view>
+      <view class="Cell_Span_Center">
+        <vtu-panel>
+          <vtu-cell slot="header" title="标题显示" value="状态" valueColor="#f44" border content="详细的描述信息"></vtu-cell>
+          <view>内容</view>
+        </vtu-panel>
+      </view>
+    </view>
+    <view class="Cell_Span Page_Margin">
+      <view class="Cell_Span_Title ">高级用法</view>
+      <view class="Cell_Span_Center">
+        <vtu-panel round l_show="{{loading}}" l_label="加载中.." use-footer-slot>
+          <vtu-radio-group model="{{1}}">
+            <vtu-radio value="1" label="北京" icon="iconfont icon-biaoxing" ></vtu-radio>
+            <vtu-radio value="2" label="上海" icon="iconfont icon-xihuan" ></vtu-radio>
+            <vtu-radio value="3" label="深圳" icon="iconfont icon-sousuo"></vtu-radio>
+            <vtu-radio value="4" label="南京" icon="iconfont icon-shangchuan"></vtu-radio>
+          </vtu-radio-group>
+          <vtu-btn slot="footer" type="primary" size="small" bind:click="startLoading">点击加载</vtu-btn>
+        </vtu-panel>
+      </view>
+      <view class="Cell_Span_Center">
+        <vtu-panel round l_show="{{loading}}" l_img="/assets/image/wait.gif" l_label="加载中.." use-footer-slot>
+          <vtu-radio-group model="{{1}}">
+            <vtu-radio value="1" label="北京" icon="iconfont icon-biaoxing" ></vtu-radio>
+            <vtu-radio value="2" label="上海" icon="iconfont icon-xihuan" ></vtu-radio>
+            <vtu-radio value="3" label="深圳" icon="iconfont icon-sousuo"></vtu-radio>
+            <vtu-radio value="4" label="南京" icon="iconfont icon-shangchuan"></vtu-radio>
+          </vtu-radio-group>
+          <vtu-btn slot="footer" type="primary" size="small" bind:click="startLoading">点击加载</vtu-btn>
+        </vtu-panel>
+      </view>
+      <view class="Cell_Span_Center">
+        <vtu-panel use-footer-slot="true" round>
+          <vtu-cell slot="header" title="普通信息" value="状态" valueColor="#f44" border round></vtu-cell>
+          <view>内容</view>
+          <view slot="footer" class="footBtn">
+            <vtu-btn type="primary" size="small" inline-block="true">确定</vtu-btn>
+            <vtu-btn size="small" inline-block="true">取消</vtu-btn>
+          </view>
+        </vtu-panel>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "vtu-navbar": "/miniprogram_npm/vtuweapp/navbar/vtu-navbar",
+    "vtu-panel": "/miniprogram_npm/vtuweapp/panel/vtu-panel",
+    "vtu-cell": "/miniprogram_npm/vtuweapp/cell/item/vtu-cell"
+  }
+}

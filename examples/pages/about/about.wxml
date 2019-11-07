@@ -1,0 +1,41 @@
+<view class="container">
+  <vtu-navbar title="" bg-color="#fff"></vtu-navbar>
+  <view class="Top">
+    <view class="Logo">
+      <image src="/assets/image/logo.png" class="imageFill" ></image>
+    </view>
+    <view class="Title">
+      <view class="Title_H1">Vtu Weapp</view>
+      <view class="Title_H2">简单方便的小程序UI组件库</view>
+    </view>
+    <view class="ShareBtn">分享</view>
+  </view>
+
+  <block wx:if="{{companyInfo}}">
+    <view class="List Page_Padding">
+      <view class="List_Title">
+        <view class="label">微图知行出品</view>
+        <view class="line"></view>
+      </view>
+      <view class="List_Li" wx:for="{{companyInfo.minipgList}}" hover-class="Hover" bindtap="$wx_toMiniProgram" data-info="{{item}}">
+        <view class="image">
+          <image src="{{baseUrl + item.appId + '/logo.png'}}" class="imageFill" ></image>
+        </view>
+        <view class="detail">
+          <view class="detal_top">
+            <view class="name">{{item.name}}</view>
+            <view class="icon iconfont icon-xiaochengxu1"></view>
+          </view>
+          <view class="detai_bottom">{{item.describe}}</view>
+        </view>
+        <view class="right iconfont icon-right-copy"></view>
+      </view>
+    </view>
+    <view class="Kefu" wx:if="{{companyInfo}}">
+      <button open-type="contact" session-from='{"name":"{{userInfo.userName}}","avatarUrl":"{{userInfo.avatarUrl}}"}'>联系客服</button>
+    </view>
+  </block>
+  <view class="About_Empty" wx:else>
+    <image src="/assets/image/wait.gif" class="imageFill"></image>
+  </view>
+</view>

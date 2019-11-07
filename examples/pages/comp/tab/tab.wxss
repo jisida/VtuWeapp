@@ -1,0 +1,23 @@
+.Tab_Span{
+  margin-bottom: 10px;
+}
+
+.style5{
+  background: #000 !important;
+}
+.style5-tab{
+  border-color: #7e7e7e !important;
+}
+.style5-tab-li{
+  font-size: 12px !important;
+}
+.style5 .Vtu_Tabs_Content{
+  padding: 0px;
+}
+.style-content{
+  padding: 15px 10px;
+  font-size: 12px;
+}
+.style-content.block{
+  color: #fff;
+}

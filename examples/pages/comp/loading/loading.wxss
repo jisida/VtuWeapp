@@ -1,0 +1,12 @@
+.content{
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+  display: inline-block;
+}
+.iconStyle1{
+  font-size: 20px !important;
+}
+.LoadingSpan{
+  width: 33.333%;
+  float: left;
+}

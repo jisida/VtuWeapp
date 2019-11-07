@@ -1,0 +1,15 @@
+<view class="container">
+  <vtu-navbar title="Empty"></vtu-navbar>
+  <vtu-tabs value="{{type}}" bind:change="change" item-align="center" custom-class="tabClass" z-index="111">
+    <vtu-tab label="图片" name="name1"></vtu-tab>
+    <vtu-tab label="自定义" name="name2"></vtu-tab>
+    <vtu-tab label="icon" name="name3"></vtu-tab>
+  </vtu-tabs>
+  <view class="Empty_Result">
+    <vtu-empty wx:if="{{type == 'name1'}}" src="/assets/image/empty.png" fill label="没有更多数据了~" describe="当前搜索的数据为空，请重新搜索"></vtu-empty>
+    <vtu-empty wx:if="{{type == 'name2'}}" src="/assets/image/empty1.png" fill label="您还没有登录~">
+      <vtu-btn type="primary" inlineBlock open-type="getUserInfo">立即登录</vtu-btn>
+    </vtu-empty>
+    <vtu-empty wx:if="{{type == 'name3'}}" icon="iconfont icon-kong" fill-screen icon-color="orange" icon-size="50px" label="空空如也~"></vtu-empty>
+  </view>
+</view>

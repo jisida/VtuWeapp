@@ -1,0 +1,86 @@
+@import "../assets/css/Vtu_Common.wxss";
+.Vtu_Loading{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.Vtu_Loading.is-fill{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(255, 255, 255, 0.9);
+    height: 100% !important;
+    z-index: 10;
+}
+.Vtu_Loading.is-fillScreen{
+    width: 100%;
+    height: 100% !important;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+}
+.Vtu_Loading_Center{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translate(0, -50%);
+}
+.Vtu_Loading_Icon{
+    color: var(--primary);
+    font-size: 30px;
+    margin: 0px auto;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+}
+.Vtu_Loading_Img{
+    margin: 0px auto;
+    width: 50px;
+    height: 50px;
+}
+.Vtu_Loading_Img image{
+    width: 100%;
+    height: 0;
+}
+.Vtu_Loading_Label{
+    text-align: center;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    width: 100%;
+}
+
+.Vtu_Loading_Icon.is-rotate{
+    animation-name: myfirst; /*动画的名称 */
+    animation-duration: 1000ms; /*动画从开始到结束的时间*/
+    animation-timing-function: linear; /*动画执行快慢的参数*/
+    animation-iteration-count: infinite; /*动画执行多少次的参数*//*以下是兼容ios所需，参数意义与上相同*/
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes myfirst {
+    /*开始转的角度*/
+    from {
+        transform: rotate(0deg);
+    }/*结束的角度*/
+    to {
+        transform: rotate(360deg);
+    }
+}
+/*兼容ios*/
+@-webkit-keyframes myfirst {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

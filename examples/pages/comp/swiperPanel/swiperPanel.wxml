@@ -1,0 +1,31 @@
+<view class="container">
+  <vtu-navbar title="SwiperPanel"></vtu-navbar>
+  <view class="center Page_Margin">
+    <view class="SwiperPanel">
+      <vtu-tabs current="{{current}}" bind:change="change">
+        <vtu-tab label="标签一" name="name1" badge="hot"></vtu-tab>
+        <vtu-tab label="标签二" name="name2" badge="12"></vtu-tab>
+        <vtu-tab label="标签三" name="name3"></vtu-tab>
+        <vtu-tab label="标签四" name="name4"></vtu-tab>
+      </vtu-tabs>
+      <vtu-swiperPanel height="400px" current="{{current}}" bind:change="change">
+        <vtu-swiperPanel-item name="name1" bindscrolltoupper="bindscrolltoupper" bindscrolltolower="bindscrolltolower"></vtu-swiperPanel-item>
+        <vtu-swiperPanel-item name="name2"></vtu-swiperPanel-item>
+        <vtu-swiperPanel-item name="name3"></vtu-swiperPanel-item>
+        <vtu-swiperPanel-item name="name4" bindscrolltoupper="bindscrolltoupper" bindscrolltolower="bindscrolltolower"></vtu-swiperPanel-item>
+        <view class="swiper" slot="name1">
+          <view class="swiper_li" wx:for="{{20}}">区域一内容展示{{index}}</view>
+        </view>
+        <view class="swiper" slot="name2">
+          <view class="swiper_li" wx:for="{{10}}">区域二内容展示{{index}}</view>
+        </view>
+        <view class="swiper" slot="name3">
+          <view class="swiper_li" wx:for="{{15}}">区域三内容展示{{index}}</view>
+        </view>
+        <view class="swiper" slot="name4">
+          <view class="swiper_li" wx:for="{{30}}">区域四内容展示{{index}}</view>
+        </view>
+      </vtu-swiperPanel>
+    </view>
+  </view>
+</view>

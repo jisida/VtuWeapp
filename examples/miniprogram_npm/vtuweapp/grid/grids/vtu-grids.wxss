@@ -1,0 +1,48 @@
+@import "../../assets/css/Vtu_Common.wxss";
+.Vtu_Grids{
+    width: 100%;
+}
+.Vtu_Grids.is-border{
+    border-top: 1px solid var(--border-bd);
+    border-left: 1px solid var(--border-bd);
+}
+.Vtu_Grids.is-border .Vtu_Grids_Li{
+    border-bottom: 1px solid var(--border-bd);
+}
+.Vtu_Grids.is-border .Vtu_Grids_Li:after{
+    content: '';
+    width: 0px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    border-right: 1px solid var(--border-bd);
+}
+.Vtu_Grids_Li{
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    position: relative;
+}
+.Vtu_Grids_Li.is-disabled .icon-span,
+.Vtu_Grids_Li.is-disabled .label{
+    color: var(--font-disabled) !important;
+}
+.Vtu_Grids_Li_Hover{
+    background: var(--bg-page);
+}
+.Vtu_Grids_Li .label{
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    color: var(--font-hb);
+}
+.icon{
+    display: inline-block;
+    margin: 5px auto 0 auto;
+}
+.icon-span{
+    font-size: 24px;
+}

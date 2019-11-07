@@ -1,0 +1,51 @@
+<view class="container">
+  <vtu-navbar title="Radio"></vtu-navbar>
+  <view class="center Page_Margin">
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="基础用法" border></vtu-cell>
+      <view >
+        <vtu-radio-group model="{{value1}}" bind:change="change">
+          <vtu-radio value="1" label="北京"></vtu-radio>
+          <vtu-radio value="2" label="上海"></vtu-radio>
+          <vtu-radio value="3" label="深圳"></vtu-radio>
+          <vtu-radio value="4" label="南京"></vtu-radio>
+        </vtu-radio-group>
+      </view>
+    </vtu-panel>
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="自定义" border ></vtu-cell>
+      <view >
+        <vtu-radio-group model="{{value1}}" align="right" active-color="red" radio-icon="iconfont icon-xuanze" active-radio-icon="iconfont icon-xuanze-danxuan" bind:change="change">
+          <vtu-radio value="1" label="北京"></vtu-radio>
+          <vtu-radio value="2" label="上海" disabled></vtu-radio>
+          <vtu-radio value="3" label="深圳"></vtu-radio>
+          <vtu-radio value="4" label="南京"></vtu-radio>
+        </vtu-radio-group>
+      </view>
+    </vtu-panel>
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="自定义图标" border></vtu-cell>
+      <view >
+        <vtu-radio-group model="{{value1}}" align="right" radio-icon="" active-color="orange" active-radio-icon="iconfont icon-duihao" active-radio-color="blue" bind:change="change">
+          <vtu-radio value="1" label="北京" icon="iconfont icon-biaoxing" ></vtu-radio>
+          <vtu-radio value="2" label="上海" icon="iconfont icon-xihuan" ></vtu-radio>
+          <vtu-radio value="3" label="深圳" icon="iconfont icon-sousuo"></vtu-radio>
+          <vtu-radio value="4" label="南京" icon="iconfont icon-shangchuan"></vtu-radio>
+        </vtu-radio-group>
+      </view>
+    </vtu-panel>
+    <vtu-panel custom-class="panel">
+      <vtu-cell slot="header" title="弹出单选框" border></vtu-cell>
+      <view >
+        <vtu-btn type="primary" bind:click="openRadioProp">弹出单选框</vtu-btn>
+      </view>
+    </vtu-panel>
+
+    <vtu-radio-prop show="{{showProp}}" model="{{value1}}" align="right" active-color="red" radio-icon="iconfont icon-xuanze" active-radio-icon="iconfont icon-xuanze-danxuan" bind:change="change">
+      <vtu-radio-prop-item value="1" label="北京" icon="iconfont icon-biaoxing" ></vtu-radio-prop-item>
+      <vtu-radio-prop-item value="2" label="上海" icon="iconfont icon-xihuan" ></vtu-radio-prop-item>
+      <vtu-radio-prop-item value="3" label="深圳" icon="iconfont icon-sousuo"></vtu-radio-prop-item>
+      <vtu-radio-prop-item value="4" label="南京" icon="iconfont icon-shangchuan"></vtu-radio-prop-item>
+    </vtu-radio-prop>
+  </view>
+</view>
