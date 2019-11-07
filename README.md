@@ -1,25 +1,30 @@
 <p align="center">
     <a href="https://vtuui.vtuzx.com">
-        <img height="300px" src="https://activity.vtuzx.com/doc/vtuui/weapp/xuanchuan.png">
+        <img width="100%" src="https://activity.vtuzx.com/doc/vtuui/weapp/xuanchuan.png">
     </a>
 </p>
 
 # Vtu Weapp
 
 ### 一套简单便捷高颜值的微信小程序 UI 组件库
-
-<img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/1.jpg">
-<img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/2.jpg">
-<img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/3.jpg">
-<img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/4.jpg">
-<img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/5.jpg">
-<img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/6.jpg">
-<img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/7.jpg">
-<img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/8.jpg">
+<p align="center">
+    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/1.jpg">
+    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/2.jpg">
+    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/3.jpg">
+    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/4.jpg">
+</p>
+<p align="center">
+    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/5.jpg">
+    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/6.jpg">
+    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/7.jpg">
+    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/8.jpg">
+</p>
+<p align="center">
 <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/9.jpg">
 <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/10.jpg">
 <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/11.jpg">
 <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/md/12.jpg">
+</p>
 
 
 ## 文档
@@ -60,7 +65,7 @@ npm run dev
 ```
 然后，将 `examples` 目录在微信开发者工具中打开即可。
 ### 交流
-####微信群：加入微信群请先添加开发者微信。QQ群：793843513 或扫描二维码。
+### 微信群：加入微信群请先添加开发者微信。QQ群：793843513 或扫描二维码。
 <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/wx.jpg">
 <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/qq.png">
 
