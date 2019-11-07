@@ -1,0 +1,37 @@
+<view class="Vtu_Dialog custom-class">
+  <view class="Vtu_Dialog_Mask mask-class" animation="{{maskAnimation}}" bindtap="{{closeOnClickOverlay?'closeDialog':''}}"></view>
+  <view class="Vtu_Dialog_Center center-class" animation="{{centerAnimation}}">
+    <view class="Vtu_Dialog_Center_Common">
+      <view class="Vtu_Dialog_Center_Common_Close" bindtap="closeDialog">
+        <view class="Vtu_Dialog_Center_Common_Close_Icon vtu-icon vtu-icon-x" hover-class="Btn_Hover"></view>
+      </view>
+      <view class="Vtu_Dialog_Center_Common_Title" wx:if="{{title}}">{{title}}</view>
+      <view class="Vtu_Dialog_Center_Common_Summary" wx:if="{{summary}}">{{summary}}</view>
+    </view>
+    <view class="Vtu_Dialog_Center_Body content-class" wx:if="{{userContentSlot}}">
+      <scroll-view scroll-y="{{true}}" class="Vtu_Dialog_Center_Body_Scroll" style="height: {{contentHeight}}">
+        <slot></slot>
+      </scroll-view>
+    </view>
+    <view class="Vtu_Dialog_Center_Body content-class" style="text-align: {{align}}" wx:elif="{{content}}"><text>{{content}}</text></view>
+    <view class="Vtu_Dialog_Center_Footer footer-class {{verticalButtons?'is-vertical':'is-infeed'}}" wx:if="{{buttons.length > 0}}">
+      <view class="Vtu_Dialog_Center_Footer_Btn" style="width: {{verticalButtons?'':100/buttons.length+'%'}};" wx:for="{{buttons}}">
+        <vtu-btn type="{{item.type || 'default'}}"
+                 openType="{{item.openType}}"
+                 size="{{item.size || buttonSize}}"
+                 icon="{{item.icon}}"
+                 loading="{{item.loading||false}}"
+                 custom-class="Footer_Button"
+                 bind:click="{{item.openType?'':'btnClickEvent'}}"
+                 bindgetuserinfo="btnClickEvent"
+                 bindgetphonenumber="btnClickEvent"
+                 bindcontact="btnClickEvent"
+                 binderror="btnClickEvent"
+                 bindopensetting="btnClickEvent"
+                 bindlaunchapp="btnClickEvent"
+                 plain="{{!verticalButtons}}"
+                 data-data="{{ {index: index} }}">{{item.label}}</vtu-btn>
+      </view>
+    </view>
+  </view>
+</view>

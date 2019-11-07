@@ -1,0 +1,6 @@
+<view class="Vtuzx_Cell_Group custom-class {{commonClass}}" slot="{{slot}}">
+  <view class="Vtuzx_Cell_Group_Title" wx:if="{{title}}">{{title}}</view>
+  <view class="Vtuzx_Cell_Group_Center {{round?'is-round':''}}" style="background: {{bgColor}}">
+    <slot></slot>
+  </view>
+</view>

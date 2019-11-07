@@ -1,0 +1,23 @@
+<view class="Vtu_NoticeBar Vtu_NoticeBar--{{type}} custom-class border--{{border?'border':''}} border--{{borderLeft?'left':''}} border--{{borderRight?'right':''}} border--{{borderBottom?'bottom':''}} border--{{borderTop?'top':''}}"
+      wx:if="{{show}}"
+      style="background: {{bgColor}};color: {{color}};border-color: {{borderColor}};border-size: {{borderSize}}; border:{{borderStyle}};border-right:{{borderRightStyle}};border-left:{{borderLeftStyle}};border-top:{{borderTopStyle}};border-bottom:{{borderBottomStyle}};"
+      bindtap="click">
+    <view class="Vtu_NoticeBar_Icon {{icon}} icon-class" wx:if="{{icon}}"></view>
+    <view class="Vtu_NoticeBar_Img img-class" wx:if="{{imgSrc}}">
+        <image src="{{imgSrc}}" mode="{{imgMode}}"/>
+    </view>
+    <view class="Vtu_NoticeBar_Label label-class" wx:if="{{label}}">{{label}}</view>
+    <view class="Vtu_NoticeBar_Content content-class" wx:if="{{content && direction == 'level'}}" id="Vtu_NoticeBar_Content">
+        <view class="Vtu_NoticeBar_Content_Text {{scroll?'is-scroll':'hidden'}}" id="Vtu_NoticeBar_Content_Text" style="transform: translateX(-{{marqueeDistance}}px)">
+            <text>{{content}}</text>
+            <text style="margin-right:{{marquee_margin}}px;"></text>
+            <text style="margin-right:{{marquee_margin}}px;">{{content}}</text>
+        </view>
+    </view>
+    <view class="Vtu_NoticeBar_Content content-class" wx:if="{{direction == 'vertical'}}">
+        <swiper vertical="{{true}}" class="Vtu_NoticeBar_Content_Swiper" duration="{{speed * 1000}}" autoplay="{{true}}" bindchange="swiperChange">
+            <swiper-item wx:for="{{noticeList}}" class="Vtu_NoticeBar_Content_Swiper_Item">{{item.label}}</swiper-item>
+        </swiper>
+    </view>
+    <view class="Vtu_NoticeBar_Close vtu-icon vtu-icon-x close-class" wx:if="{{showClose}}" bindtap="close"></view>
+</view>

@@ -1,0 +1,33 @@
+<view class="Vtu_NavBar {{fixed? 'is-fixed': ''}}" style="height:{{navBarHeight}}px;z-index: {{zIndex}};">
+    <view class="navbar-class Vtu_NavBar_Body {{hidden?'is-hidden':''}}" animation="{{hiddenAnimation}}" style="background-color:{{bgColor}};color:{{fontColor}};height:{{navBarHeight}}px;z-index: {{zIndex}};">
+        <view class="Vtu_NavBar_Body_Content" style="line-height: {{menuBtnHeight}}px;height: {{menuBtnHeight}}px;top:{{menuBtnTop}}px;">
+          <view class="VNBC_Title" wx:if="{{titleAlign=='center' && type == 'default' && !useBarSlot}}" style="color:{{fontColor}};text-align: {{titleAlign}}; width: {{windowWidth - menuBtnWidth*2}}px;"><i class="{{icon}}" wx:if="{{icon}}"></i>{{title}}</view>
+            <view class="VNBC_Body {{slotCenter?'is-center':''}}" style="width: {{menuBtnRight - menuBtnWidth}}px;">
+                <view class="VNBC_Body_NavBtn" wx:if="{{showNavBtn && !tab}}">
+                    <view class="VNBC_Body_NavBtn_Home VNBC_Body_NavBtn_Home--{{homeStyle}} homebar-class" wx:if="{{goHome && pageHisCount > 1}}">
+                        <view class="VNBC_Body_NavBtn_Home_Span" style="z-index: {{zIndex+2}};" bindtap="pageClose">
+                            <i class="vtu-icon vtu-icon-left"></i>
+                        </view>
+                        <view class="VNBC_Body_NavBtn_Home_Span" style="z-index: {{zIndex+2}};">
+                            <i class="vtu-icon vtu-icon-Home"></i>
+                        </view>
+                    </view>
+                    <block wx:else>
+                      <view class="VNBC_Body_NavBtn_Back" bindtap="pageClose" wx:if="{{pageHisCount > 1}}"><span class="vtu-icon vtu-icon-left"></span><font wx:if="{{backLabel}}">{{backLabel}}</font></view>
+                      <view class="VNBC_Body_NavBtn_Back" bindtap="pageClose" wx:if="{{pageHisCount == 1 && goHome}}"><span class="vtu-icon vtu-icon-Home"></span></view>
+                    </block>
+                </view>
+                <view class="VNBC_Body_Center contbar-class">
+                  <block wx:if="{{useBarSlot}}">
+                    <slot></slot>
+                  </block>
+                  <block wx:else>
+                    <block wx:if="{{type == 'default' && titleAlign=='left'}}">
+                      <view class="VNBC_Body_Center_Title {{showNavBtn?'':'is-home'}}" style="color:{{fontColor}};text-align: {{titleAlign}};"><i class="{{icon}}" wx:if="{{icon}}"></i>{{title}}</view>
+                    </block>
+                  </block>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

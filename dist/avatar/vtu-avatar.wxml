@@ -1,0 +1,9 @@
+<view class="Vtu_Avatar Vtu_Avatar--{{size}} custom-class {{commonClass}} {{smooth?'is-smooth':''}}"
+      style="background: {{bgColor}};color: {{color}};width:{{width}};height:{{width}};{{commonStyle}}"
+      bindtap="bindClick">
+    <image src="{{src}}" class="Vtu_Avatar_Image image-class" wx:if="{{src}}"></image>
+    <i class="Vtu_Avatar_Icon {{icon}} icon-class" wx:elif="{{icon}}"></i>
+    <font class="Vtu_Avatar_Content content-class" wx:elif="{{content}}">{{content}}</font>
+    <image src="../assets/image/avatar.png" class="Vtu_Avatar_Image image-class" wx:else></image>
+    <slot name="badge"></slot>
+</view>

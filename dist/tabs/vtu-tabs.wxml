@@ -1,0 +1,26 @@
+<view class="Vtu_Tabs {{round?'is-round':''}} {{fill?'is-fill':''}} custom-class" style="z-index: {{zIndex}}" id="Vtu_Tabs">
+    <view class="Vtu_Tabs_Tab tab-class ">
+        <view class="Vtu_Tabs_Tab_Center tab-class {{border?'is-border':''}} {{fixed?'is-fixed':''}}" style="background: {{bgColor}};top: {{fixedTop}}px;">
+            <scroll-view enable-flex="{{true}}" scroll-x="{{tabList.length > swipeThreshold}}" class="Vtu_Tabs_Tab_Scroll" scroll-into-view="{{'menu_' + value}}">
+                <view class="Vtu_Tabs_Tab_Panel" style="justify-content: {{itemAlign}}">
+                    <view class="Vtu_Tabs_Tab_Line" animation="{{lineAnimation}}" style="background: {{lineColor||activeColor}}" wx:if="{{line}}"></view>
+                    <view wx:for="{{tabList}}" id="{{'menu_' + item.name}}" wx:key="index"
+                          bindtap="select" data-item="{{item}}" data-index="{{index}}"
+                          class="Vtu_Tabs_Tab_Li tab-li-class {{value == item.name?'is-active tab-active-class':''}} {{isAverage && tabList.length <= swipeThreshold?'is-average':''}}"
+                          style="color: {{value == item.name ? activeColor : color}};background: {{value == item.name ? activeBgColor : ''}};">
+                        <view class="Vtu_Tabs_Tab_Li_Label">
+                            <i class="{{item.icon}} Vtu_Tabs_Tab_Li_Label_Icon" style="color: {{value == item.name ? '' : item.iconColor}};font-size: {{item.iconSize}}" wx:if="{{item.icon}}"></i>
+                            <font class="Vtu_Tabs_Tab_Li_Label_Text">{{item.label}}</font>
+                        </view>
+                        <block wx:if="{{item.badge || item.badgeIsDot || item.badgeIcon}}">
+                            <vtu-badge value="{{item.badge}}" type="{{item.badgeType}}" round="{{item.badgeRound}}" circle="{{item.badgeCircle}}" only top="2px" right="0px" max="{{item.badgeMax}}" color="{{item.badgeColor}}" icon="{{item.badgeIcon}}" isDot="{{item.badgeIsDot}}"></vtu-badge>
+                        </block>
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+    </view>
+    <view class="Vtu_Tabs_Content tab-content-class">
+        <slot></slot>
+    </view>
+</view>

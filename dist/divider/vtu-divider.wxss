@@ -1,0 +1,48 @@
+@import "../assets/css/Vtu_Common.wxss";
+.Vtu_Divider{
+    width: 100%;
+    height: 30px;
+    position: relative;
+    line-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Vtu_Divider_Line{
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0, -50%);
+    z-index: 1;
+}
+.Vtu_Divider_Content{
+    height: 100%;
+    font-size: 14px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    color: #4b4b4b;
+}
+.Vtu_Divider_Content{
+    padding: 0px 10px;
+}
+.Vtu_Divider_Content:empty{
+    display: none;
+}
+.Vtu_Divider_Content i{
+    margin: 0px 5px;
+}
+.Vtu_Divider_Content.Vtu_Divider-center{
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.Vtu_Divider_Content.Vtu_Divider-right{
+    right: 10%;
+}
+.Vtu_Divider_Content.Vtu_Divider-left{
+    left: 10%;
+}
+.Vtu_Divider_Content.is-bold{
+    font-weight: bold;
+}

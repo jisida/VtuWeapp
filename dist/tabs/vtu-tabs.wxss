@@ -1,0 +1,88 @@
+@import "../assets/css/Vtu_Common.wxss";
+
+.Vtu_Tabs{
+    width: 100%;
+    position: relative;
+}
+.Vtu_Tabs.is-round{
+    border-radius: var(--round);
+}
+.Vtu_Tabs.is-round .Vtu_Tabs_Tab{
+    border-radius: var(--round) var(--round) 0 0 ;
+}
+.Vtu_Tabs.is-round .Vtu_Tabs_Tab .Vtu_Tabs_Tab_Li{
+    border-radius: var(--round) var(--round) 0 0 ;
+}
+.Vtu_Tabs.is-fill .Vtu_Tabs_Tab{
+    height: calc(100% - 1px) !important;
+}
+.Vtu_Tabs.is-fill .Vtu_Tabs_Tab_Scroll{
+    height: 100% !important;
+}
+.Vtu_Tabs_Tab,
+.Vtu_Tabs_Tab_Center{
+    width: 100%;
+    height: 39px;
+    position: relative;
+    z-index: 1;
+}
+.Vtu_Tabs_Tab_Center.is-fixed{
+    position: fixed;
+    left: 0;
+    z-index: 1;
+}
+.Vtu_Tabs_Tab_Center.is-border{
+    border-bottom: 1px solid var(--border-bd);
+}
+.Vtu_Tabs_Tab_Scroll{
+    width: 100%;
+    white-space:nowrap;
+    height: 40px;
+}
+
+.Vtu_Tabs_Tab_Panel{
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+.Vtu_Tabs_Tab_Li{
+    font-size: 14px;
+    color: var(--font-hb);
+    padding: 0px 15px;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: all .5s;
+}
+.Vtu_Tabs_Tab_Li.is-active{
+    color: var(--primary);
+}
+.Vtu_Tabs_Tab_Li.is-average{
+    flex: 1;
+    padding: 0px !important;
+}
+.Vtu_Tabs_Tab_Li_Label{
+    width: 100%;
+    text-align: center;
+}
+.Vtu_Tabs_Tab_Li_Label_Icon{
+    font-size: 14px;
+    margin-right: 5px;
+}
+.Vtu_Tabs_Tab_Li_Label_Text{}
+.Vtu_Tabs_Tab_Line{
+    width: 0px;
+    height: 3px;
+    background: var(--primary);
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    border-radius: 100px;
+    z-index: 11;
+    align-items: center;
+    display: flex;
+}
+.Vtu_Tabs_Content{
+}

@@ -1,0 +1,243 @@
+@import '../../assets/css/Vtu_Common.wxss';
+
+/************************************
+          其他模板
+*************************************/
+/*小程序卡片*/
+.vtu-minipg{
+    width: calc(100% - 40px);
+    margin: 0 10px 20px 10px;
+    padding: 10px 10px 0 10px;
+    background: #fff;
+    border-radius: 10px;
+}
+.vtu-minipg-hover{
+    background: var(--bg-page);
+}
+.vtu-minipg-logo{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+}
+.vtu-minipg-logo-icon{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+.vtu-minipg-logo-icon image{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+}
+.vtu-minipg-logo-label{
+    margin-left: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: var(--font-hb);
+}
+.vtu-minipg-name{
+    text-align: left;
+    margin: 10px 0 20px 0;
+    font-size: 16px;
+}
+.vtu-minipg-img{
+    width: 100%;
+    text-align: left;
+}
+.vtu-minipg-img image{
+    width: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.vtu-minipg-footer{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    border-top: 1px solid var(--border-bd);
+    margin-top: 10px;
+    color: var(--font-hc);
+}
+.vtu-minipg-footer i{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: var(--mauve);
+    font-size: 14px;
+    margin-right: 10px;
+}
+/*--------------------------------标题样式---------------------------*/
+/*--样式一---*/
+.vtu-title1{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    text-align: center;
+}
+.vtu-title1-center{
+    height: 100%;
+    display: inline-block;
+    font-size: 18px;
+    color: var(--font-ha);
+    font-weight: bold;
+    position: relative;
+}
+.vtu-title1-center-label{
+    width: 100%;
+    z-index: 2;
+    height: 100%;
+    position: relative;
+}
+.vtu-title1-center-label font{
+    font-size: 40px;
+    padding: 0 8px;
+}
+.vtu-title1-center-line{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: -10px;
+    left: 10px;
+    background: var(--redLight);
+    z-index: 0;
+    border-radius: 5px;
+}
+
+/*--样式二---*/
+.vtu-title2{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    text-align: center;
+}
+.vtu-title2-center{
+    height: 100%;
+    display: inline-block;
+    font-size: 18px;
+    color: var(--font-ha);
+    font-weight: bold;
+    position: relative;
+}
+.vtu-title2-center-label{
+    width: 100%;
+    z-index: 2;
+    height: 100%;
+    position: relative;
+}
+.vtu-title2-center-label font{
+    font-size: 40px;
+    padding: 0 8px;
+}
+.vtu-title2-center-line{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: -10px;
+    left: 10px;
+    background: var(--greenLight);
+    z-index: 0;
+    border-radius: 5px;
+}
+
+/*--样式三---*/
+.vtu-title3{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+}
+.vtu-title3-label{
+    float: left;
+    position: relative;
+    padding-left: 20px;
+    font-size:18px;
+    font-weight:bold;
+}
+.vtu-title3-label:after{
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--green);
+    content: '';
+    border-radius: 100px;
+}
+.vtu-title3-desc{
+    float: left;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--font-hc);
+}
+
+/*--样式四---*/
+.vtu-title4{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+}
+.vtu-title4-label{
+    float: left;
+    position: relative;
+    padding-left: 20px;
+    font-size:18px;
+    font-weight:bold;
+}
+.vtu-title4-label:after{
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    width: 5px;
+    height: 5px;
+    background: var(--redColor);
+    content: '';
+    border-radius: 100px;
+    transform: translate(0, -50%);
+}
+.vtu-title4-desc{
+    float: left;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--font-hc);
+}
+
+/*--样式五---*/
+.vtu-title5{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    text-align: center;
+}
+.vtu-title5-center{
+    height: 100%;
+    display: inline-block;
+    font-size: 18px;
+    color: var(--font-ha);
+    font-weight: bold;
+    position: relative;
+}
+.vtu-title5-center-label{
+    width: 100%;
+    z-index: 2;
+    height: 100%;
+    position: relative;
+    color: var(--pink);
+}
+.vtu-title5-center-line{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: -5px;
+    left: 10px;
+    background: var(--pinkLight);
+    z-index: 0;
+    border-radius: 5px;
+}

@@ -1,0 +1,25 @@
+@import "../assets/css/Vtu_Common.wxss";
+
+.Vtu_Badge{
+    position: relative;
+}
+.Vtu_Badge_Content{
+    position: absolute;
+    top: -10px;
+    left: 100%;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 4px;
+    display: inline-block;
+    line-height: 1.5 !important;
+    z-index: 1;
+    border-radius: 1000px;
+    background: var(--danger);
+}
+.Vtu_Badge_Content.is-dot{
+    width: 8px;
+    height: 8px;
+    padding: 0px;
+    top: -3px;
+    right: -3px;
+}

@@ -8,7 +8,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-dist
 miniprogram_dev
 node_modules
 coverage

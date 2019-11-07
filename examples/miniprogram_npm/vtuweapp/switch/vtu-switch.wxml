@@ -1,0 +1,11 @@
+<view class="Vtu-Switch is-{{type}} is-{{checked?'open':'close'}} is-{{size}} {{disabled?'is-disabled':''}} {{simple?'is-simple':''}} custom-class" bindtap="{{disabled?'':'change'}}">
+    <view class="Vtu-Switch-Bg {{checked?'open':'close'}}" style="background: {{checked?activeColor:color}}">
+        <i wx:if="{{checked && activeIcon}}" class="icon open {{activeIcon}} icon-class"></i>
+        <i wx:if="{{!checked && icon}}" class="icon close {{icon}} icon-class"></i>
+        <i wx:if="{{checked && activeLabel}}" class="icon label open">{{activeLabel}}</i>
+        <i wx:if="{{!checked && label}}" class="icon label close">{{label}}</i>
+    </view>
+    <view class="Vtu-Switch-Btn">
+        <i wx:if="{{loading}}" class="vtu-icon vtu-icon-jiazai loading"></i>
+    </view>
+</view>

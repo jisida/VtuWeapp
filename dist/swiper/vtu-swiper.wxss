@@ -1,0 +1,73 @@
+@import "../assets/css/Vtu_Common.wxss";
+.Vtu_Swiper,
+.Vtu_Swipe_Body,
+.Vtu_Swiper_Item,
+.Vtu_Swiper_Item_Body,
+.Vtu_Swiper_Item_Body_Li{
+    width: 100%;
+    position: relative;
+}
+.Vtu_Swiper--card {}
+.Vtu_Swiper--card swiper-item {
+    width: calc(100% - 80px) !important;
+    left: 40px;
+    box-sizing: border-box;
+    padding: 10px 0px 30px 0px;
+    overflow: initial;
+}
+.Vtu_Swiper--card swiper-item .Vtu_Swiper_Item_Body {
+    width: 100%;
+    display: block;
+    height: 100%;
+    border-radius: 5px;
+    transform: scale(0.9);
+    transition: all 0.2s ease-in 0s;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #868686;
+}
+.Vtu_Swiper--card swiper-item.current .Vtu_Swiper_Item_Body {
+    transform: none;
+    transition: all 0.2s ease-in 0s;
+}
+
+.Vtu_Swiper_Dot{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 10;
+    justify-content: center;
+    display: flex;
+}
+.Vtu_Swiper_Dot_Li{
+    width: 10px;
+    height: 10px;
+    margin: 10px 5px;
+    line-height: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in 0s;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.Vtu_Swiper_Dot_Li.Dot--index{
+}
+.Vtu_Swiper_Dot_Li.Dot--round{
+}
+.Vtu_Swiper_Dot_Li.Dot--round.is-active{
+    width: 24px;
+}
+.Vtu_Swiper_Dot_Li.Dot--content{
+    display: none;
+    height: 100%;
+    margin: 0px;
+    border-radius: 0px;
+    line-height: 30px;
+    padding: 0px 10px;
+    width: calc(100% - 20px);
+    font-size: 14px;
+}
+.Vtu_Swiper_Dot_Li.Dot--content.is-active{
+    display: block;
+}

@@ -1,0 +1,33 @@
+@import "../../assets/css/Vtu_Common.wxss";
+.Vtu_Collapse_Item{
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    background: #fff;
+    border-bottom: 1px solid var(--border-bd);
+}
+.Vtu_Collapse_Item.has-gutter{
+    border: 0px;
+}
+.Vtu_Collapse_Item_Title{
+    width: 100%;
+}
+.Vtu_Collapse_Item_Title_Cell{
+    padding: 0px !important;
+    width: 100% !important;
+}
+.Vtu_Collapse_Item_Content{
+    width: 100%;
+    overflow: hidden;
+    will-change: height;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--font-hb);
+}
+.Vtu_Collapse_Item_Content.is-open{
+    padding: 10px 0;
+}
+.Vtu_Collapse_Item_Content.is-close{
+    padding: 0;
+    height: 0;
+}

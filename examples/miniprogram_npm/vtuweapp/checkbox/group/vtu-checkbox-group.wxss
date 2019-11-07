@@ -1,0 +1,41 @@
+@import "../../assets/css/Vtu_Common.wxss";
+.Vtu_CheckBoxGroup{
+    width: 100%;
+}
+.Vtu_CheckBoxGroup_CheckBox{
+    height: 35px;
+    line-height: 35px;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--border-bd);
+    color: var(--font-ha)
+}
+.Vtu_CheckBoxGroup_CheckBox.is-active,
+.Vtu_CheckBoxGroup_CheckBox.is-active .Vtu_CheckBoxGroup_CheckBox_CheckBoxIcon{
+    color: var(--primary);
+}
+.Vtu_CheckBoxGroup_CheckBox.is-disabled .Vtu_CheckBoxGroup_CheckBox_Label,
+.Vtu_CheckBoxGroup_CheckBox.is-disabled .Vtu_CheckBoxGroup_CheckBox_CheckBoxIcon{
+    color: var(--font-disabled) !important;
+}
+.Vtu_CheckBoxGroup_CheckBox_Hover{
+    background: var(--bg-page);
+}
+.Vtu_CheckBoxGroup_CheckBox:last-child{
+    border: 0;
+}
+.Vtu_CheckBoxGroup_CheckBox_CheckBoxIcon{
+    flex: 0;
+    height: 100%;
+    padding: 0px 10px 0 5px;
+    color: var(--font-hc);
+}
+.Vtu_CheckBoxGroup_CheckBox_Label{
+    flex: 1;
+    font-size: 14px;
+}
+.Vtu_CheckBoxGroup_CheckBox_Icon{
+    flex: 0;
+    padding: 0px 10px 0 5px;
+    font-size: 14px;
+}

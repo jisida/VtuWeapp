@@ -1,0 +1,7 @@
+<view class="Vtu_Divider custom-class" style="width: {{width}};">
+    <view class="Vtu_Divider_Line" style="border-bottom: 1px {{dash?'dashed':'solid'}} {{lineColor}};"></view>
+    <view class="Vtu_Divider_Content {{'Vtu_Divider-' + align}} {{round?'is-round':''}} {{bold?'is-bold':''}} font-class" style="background: {{bgColor}};color: {{fontColor}}">
+        <i wx:if="{{icon}}" class="icon iconfont {{icon}}"></i>
+        <slot></slot>
+    </view>
+</view>

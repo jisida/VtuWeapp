@@ -1,0 +1,130 @@
+@import "../assets/css/Vtu_Common.wxss";
+.Vtu_NavBar{
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+}
+.Vtu_NavBar.is-fixed{
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+}
+.Vtu_NavBar_Body{
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    opacity: 1;
+    transition: all .2s;
+}
+.Vtu_NavBar_Body.is-hidden{
+    opacity: 0;
+    top: -100px;
+}
+.Vtu_NavBar_Body_Content{
+    width: 100%;
+    font-size:18px;
+    position: absolute;
+}
+.VNBC_Body{
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+.VNBC_Body.is-center{
+    margin: 0 auto;
+}
+.VNBC_Body_NavBtn{
+    flex: 0;
+    height: 100%;
+}
+.VNBC_Body_NavBtn_Home{
+    border-radius: 100px;
+    display: flex;
+    padding: 0px 5px;
+    margin: 0px;
+}
+.VNBC_Body_NavBtn_Home--cachet{
+    background: rgba(17, 17, 17, 0.22);
+    margin-left: 10px;
+    position: relative;
+}
+.VNBC_Body_NavBtn_Home--cachet:after{
+    position: absolute;
+    content: '';
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border: 1px solid #717171;
+    border-radius: 100px;
+    left: 0px;
+    top: 0px;
+}
+.VNBC_Body_NavBtn_Home--cachet .VNBC_Body_NavBtn_Home_Span:first-child:after{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 50%;
+    top: 25%;
+    right: 0px;
+    background: #717171;
+}
+.VNBC_Body_NavBtn_Home--cachet .VNBC_Body_NavBtn_Home_Span{
+    color: #fff;
+    width: 36px;
+}
+.VNBC_Body_NavBtn_Home_Span{
+    width: 30px;
+    position: relative;
+    text-align: center;
+    z-index: 1002;
+}
+.VNBC_Body_NavBtn_Back{
+    height: 100%;
+    min-width: 40px;
+    white-space:nowrap;
+}
+.VNBC_Body_NavBtn_Back span{
+    height: 100%;
+    font-size:16px;
+    text-align: center;
+    padding-left: 10px;
+}
+.VNBC_Body_NavBtn_Back font{
+    height: 100%;
+    margin-left: 5px;
+    font-size: 14px;
+    padding-right: 10px;
+}
+.VNBC_Body_Center{
+    flex: 1;
+    height: 100%;
+    overflow:hidden;
+
+}
+.VNBC_Title{
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    transform: translate(-50%, 0);
+}
+.VNBC_Title,
+.VNBC_Body_Center_Title{
+    color: var(--font-hb);
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: bold;
+}
+.VNBC_Title i,
+.VNBC_Body_Center_Title i{
+    margin-right: 5px;
+}
+.VNBC_Body_Center_Title{
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+.VNBC_Body_Center_Title.is-home{
+    padding-left: 10px;
+}

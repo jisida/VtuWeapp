@@ -1,0 +1,43 @@
+<!-----新闻列表------>
+<template name="newsList_style1">
+  <view class="vtu-news">
+    <view class="vtu-news-single">
+      <view class="vtu-news-single-info">
+        <view class="vtu-news-single-info-title">班赞遗体告别仪式八宝山举行，濮存昕冯远征等为其送行</view>
+        <view class="vtu-news-single-info-detail"><span>新京报</span><span>123条评论</span></view>
+      </view>
+      <view class="vtu-news-single-img">
+        <image src="{{imgList[0]}}" mode="aspectFill"></image>
+      </view>
+    </view>
+    <view class="vtu-news-tool">
+      <view class="vtu-news-tool-li"><i class="iconfont icon-share"></i>转发</view>
+      <view class="vtu-news-tool-li"><i class="iconfont icon-yijian"></i>评论</view>
+      <view class="vtu-news-tool-li"><i class="iconfont icon-zanshangshouyi"></i>点赞</view>
+    </view>
+  </view>
+</template>
+<template name="newsList_style2">
+  <view class="vtu-news">
+    <view class="vtu-news-user">
+      <view class="vtu-news-user-img"><image src="/assets/image/avatar/1.png"></image></view>
+      <view class="vtu-news-user-info">
+        <view class="vtu-news-user-info-name">Vtu小程序组件</view>
+        <view class="vtu-news-user-info-detail"><span>已关注</span><span>小程序高度自定义UI组件库</span></view>
+      </view>
+      <view class="vtu-news-user-btn bg-orange-light">+ 关注</view>
+    </view>
+    <view class="vtu-news-many">
+      <view class="vtu-news-many-title">班赞遗体告别仪式八宝山举行，濮存昕冯远征等为其送行</view>
+      <view class="vtu-news-many-img">
+        <view class="vtu-news-many-img-li" wx:for="{{imgList}}" wx:for-item="img"><image src="{{img}}" mode="aspectFill"></image></view>
+      </view>
+      <view class="vtu-news-many-detail"><span class="bg-red">置顶</span><span>新京报</span><span>123条评论</span><span>2019-12-23 12:32:53</span></view>
+    </view>
+    <view class="vtu-news-tool">
+      <view class="vtu-news-tool-li"><i class="iconfont icon-share"></i>转发</view>
+      <view class="vtu-news-tool-li"><i class="iconfont icon-yijian"></i>评论</view>
+      <view class="vtu-news-tool-li"><i class="iconfont icon-zanshangshouyi"></i>点赞</view>
+    </view>
+  </view>
+</template>

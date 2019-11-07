@@ -1,0 +1,63 @@
+@import "../assets/css/Vtu_Common.wxss";
+.Vtu_Prop{
+    width: 100%;
+}
+.Vtu_Prop_Mask{
+     width:0;
+     height:100%;
+     background-color:#000;
+     opacity:0;
+     position:fixed;
+     top:0;
+     left:0;
+     z-index:100;
+ }
+.Vtu_Prop_Center{
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    bottom: -1000px;
+    background: #fff;
+    z-index:101;
+}
+.Vtu_Prop_Center_Title{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--font-hb);
+}
+.Vtu_Prop_Center_Title .close{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transition: all 0.5s;
+}
+.Vtu_Prop_Center_Title .close i{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    border-radius: 100px;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+}
+.Vtu_Prop_Center_Title .close-hover i{
+    color: var(--primary);
+}
+.Vtu_Prop_Center_Body{
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    max-height: 400px;
+}
+.Vtu_Prop_Center_Body_scroll{
+    width: 100%;
+    height: 100%;
+    white-space:nowrap;
+}
+.Vtu_Prop_Center_Cancel{
+    width: 90%;
+    margin: 10px 5% !important;
+}

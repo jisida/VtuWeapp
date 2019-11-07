@@ -1,0 +1,115 @@
+@import "../assets/css/Vtu_Common.wxss";
+.Vtu_Tag{
+    display: inline-block;
+    color: #fff;
+    line-height: normal;
+    border: 1px solid transparent;
+    background: var(--primary);
+    margin: 0px 5px 5px 0px;
+}
+.Vtu_Tag.Vtu_Tag--out,
+.Vtu_Tag.Vtu_Tag--capsule{
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+.Vtu_Tag--small{
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+}
+.Vtu_Tag--small .label{
+    padding: 0em 10px;
+}
+.Vtu_Tag--mini{
+    height: 18px;
+    line-height: 18px;
+    font-size: 10px;
+}
+.Vtu_Tag--mini .label{
+    padding: 0em 5px;
+}
+
+.Vtu_Tag--capsule{
+    padding: 0px !important;
+}
+.Vtu_Tag--round{
+    border-radius: var(--round);
+}
+.Vtu_Tag--circle{
+    border-radius: 100px;
+}
+.Vtu_Tag--default.Vtu_Tag--primary,
+.Vtu_Tag--capsule.Vtu_Tag--primary .icon{
+    background: var(--primary);
+    color: #fff;
+}
+.Vtu_Tag--default.Vtu_Tag--success,
+.Vtu_Tag--capsule.Vtu_Tag--success .icon{
+    background: var(--success);
+    color: #fff;
+}
+.Vtu_Tag--default.Vtu_Tag--danger,
+.Vtu_Tag--capsule.Vtu_Tag--danger .icon{
+    background: var(--danger);
+    color: #fff;
+}
+.Vtu_Tag--default.Vtu_Tag--warning,
+.Vtu_Tag--capsule.Vtu_Tag--warning .icon{
+    background: var(--warning);
+    color: #fff;
+}
+.Vtu_Tag--out.Vtu_Tag--primary,
+.Vtu_Tag--capsule.Vtu_Tag--primary{
+    border-color: var(--primary);
+    color: var(--primary);
+}
+.Vtu_Tag--out.Vtu_Tag--success,
+.Vtu_Tag--capsule.Vtu_Tag--success{
+    border-color: var(--success);
+    color: var(--success);
+}
+.Vtu_Tag--out.Vtu_Tag--danger,
+.Vtu_Tag--capsule.Vtu_Tag--danger{
+ border-color: var(--danger);
+ color: var(--danger);
+}
+.Vtu_Tag--out.Vtu_Tag--warning,
+.Vtu_Tag--capsule.Vtu_Tag--warning{
+    border-color: var(--warning);
+    color: var(--warning);
+}
+.Vtu_Tag .label{
+    float: left;
+}
+.Vtu_Tag .delete{
+    float: left;
+    font-size: 10px;
+}
+.Vtu_Tag.Vtu_Tag--small .delete{
+    padding: 0px 10px 0 0px;
+}
+.Vtu_Tag.Vtu_Tag--mini .delete{
+    padding: 0px 5px 0 0px;
+}
+.Vtu_Tag--capsule .icon{
+    float: left;
+    height: 100%;
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+.Vtu_Tag--capsule.Vtu_Tag--small .icon{
+    width: 26px;
+    display: inline-block;
+}
+.Vtu_Tag--capsule.Vtu_Tag--mini .icon{
+    width: 22px;
+}
+.Vtu_Tag--capsule.Vtu_Tag--round .icon{
+    border-radius: var(--round) 0 0 var(--round);
+}
+.Vtu_Tag--capsule.Vtu_Tag--circle .icon{
+    border-radius: 100px 0 0 100px;
+}

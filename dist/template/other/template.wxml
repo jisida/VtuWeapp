@@ -1,0 +1,47 @@
+<!-----小程序卡片------>
+<template name="minipg_style">
+  <view class="vtu-minipg" hover-class="vtu-minipg-hover" bindtap="$wx_toMiniProgram" data-info="{{item}}">
+    <view class="vtu-minipg-logo">
+      <view class="vtu-minipg-logo-icon">
+        <image src="{{baseUrl + item.appId + '/logo.png'}}" mode="widthFix"></image>
+      </view>
+      <view class="vtu-minipg-logo-label">{{item.name}}</view>
+    </view>
+    <view class="vtu-minipg-name">{{item.describe}}</view>
+    <view class="vtu-minipg-img">
+      <image src="{{baseUrl + item.appId + '/minipg.png'}}" mode="widthFix"></image>
+    </view>
+    <view class="vtu-minipg-footer">
+      <i class="vtu-icon vtu-icon-xiaochengxu"></i>小程序
+    </view>
+  </view>
+</template>
+
+<!-----------标题样式------------->
+<template name="title_style1">
+  <view class="vtu-title1">
+    <view class="vtu-title1-center"><span class="vtu-title1-center-label"><font>3</font>月课程表</span><span class="vtu-title1-center-line"></span></view>
+  </view>
+</template>
+<template name="title_style2">
+  <view class="vtu-title2">
+    <view class="vtu-title2-center"><span class="vtu-title2-center-label">第<font>3</font>月</span><span class="vtu-title2-center-line"></span></view>
+  </view>
+</template>
+<template name="title_style3">
+  <view class="vtu-title3">
+    <view class="vtu-title3-label">关于我们</view>
+    <view class="vtu-title3-desc">About</view>
+  </view>
+</template>
+<template name="title_style4">
+  <view class="vtu-title4">
+    <view class="vtu-title4-label">关于我们</view>
+    <view class="vtu-title4-desc">About</view>
+  </view>
+</template>
+<template name="title_style5">
+  <view class="vtu-title5">
+    <view class="vtu-title5-center"><span class="vtu-title5-center-label">关于我们</span><span class="vtu-title5-center-line"></span></view>
+  </view>
+</template>

@@ -1,0 +1,108 @@
+<!-----购买导航------>
+<template name="buyBar_style1">
+  <view class="vtu-buyBar">
+    <button class="vtu-buyBar-action " open-type="contact" hover-class="vtu-buyBar-action-hover">
+      <view class="vtu-buyBar-action-icon vtu-icon vtu-icon-kefu"></view>
+      <view class="vtu-buyBar-action-label">客服</view>
+    </button>
+    <view class="vtu-buyBar-action line font-orange" hover-class="vtu-buyBar-action-hover">
+      <view class="vtu-buyBar-action-icon vtu-icon vtu-icon-biaoxingfill"></view>
+      <view class="vtu-buyBar-action-label">收藏</view>
+    </view>
+    <view class="vtu-buyBar-action line" hover-class="vtu-buyBar-action-hover">
+      <view class="vtu-buyBar-action-icon vtu-icon vtu-icon-gouwuchekong"></view>
+      <view class="vtu-buyBar-action-label">购物车</view>
+    </view>
+    <view class="vtu-buyBar-btn buy">立即订购</view>
+  </view>
+</template>
+<!-----购买导航------>
+<template name="buyBar_style2">
+  <view class="vtu-buyBar">
+    <button class="vtu-buyBar-action " open-type="contact" hover-class="vtu-buyBar-action-hover">
+      <view class="vtu-buyBar-action-icon vtu-icon vtu-icon-kefu"></view>
+      <view class="vtu-buyBar-action-label">客服</view>
+    </button>
+    <view class="vtu-buyBar-action line" hover-class="vtu-buyBar-action-hover">
+      <view class="vtu-buyBar-action-icon vtu-icon vtu-icon-gouwuchekong"></view>
+      <view class="vtu-buyBar-action-label">购物车</view>
+    </view>
+    <view class="vtu-buyBar-btn buy bg-orange">加入购物车</view>
+    <view class="vtu-buyBar-btn buy">立即订购</view>
+  </view>
+</template>
+<!-----购买导航------>
+<template name="buyBar_style3">
+  <view class="vtu-buyBar">
+    <button class="vtu-buyBar-action " open-type="contact" hover-class="vtu-buyBar-action-hover">
+      <view class="vtu-buyBar-action-icon vtu-icon vtu-icon-kefu"></view>
+      <view class="vtu-buyBar-action-label">客服</view>
+    </button>
+    <view class="vtu-buyBar-action line" hover-class="vtu-buyBar-action-hover">
+      <view class="vtu-buyBar-action-icon vtu-icon vtu-icon-gouwuchekong"></view>
+      <view class="vtu-buyBar-action-label">购物车</view>
+    </view>
+    <view class="vtu-buyBar-btn circle buy bg-orange">加入购物车</view>
+    <view class="vtu-buyBar-btn circle buy">立即订购</view>
+  </view>
+</template>
+<!-----购买导航------>
+<template name="buyBar_style4">
+  <view class="vtu-buyBar">
+    <button class="vtu-buyBar-action " open-type="contact" hover-class="vtu-buyBar-action-hover">
+      <view class="vtu-buyBar-action-icon vtu-icon vtu-icon-kefu"></view>
+      <view class="vtu-buyBar-action-label">客服</view>
+    </button>
+    <view class="vtu-buyBar-action line" hover-class="vtu-buyBar-action-hover">
+      <view class="vtu-buyBar-action-icon vtu-icon vtu-icon-gouwuchekong"></view>
+      <view class="vtu-buyBar-action-label">购物车</view>
+    </view>
+    <view class="vtu-buyBar-btn empty">商品已经被卖光了~</view>
+  </view>
+</template>
+
+
+
+<!-----商品列表------>
+<template name="shopList_style1">
+  <view class="vtu-shopList">
+    <view class="vtu-shopList-image"><image src="{{src}}" mode="widthFix"/></view>
+    <view class="vtu-shopList-center">
+      <view class="vtu-shopList-label"><span class="bg-red">京东物流</span>农夫山泉饮用水饮用天然水苏沫量贩装550ml*12瓶</view>
+      <view class="vtu-shopList-tag"><span  class="bg-red-light">满99减5</span><span  class="bg-red-light">限时购</span></view>
+      <view class="vtu-shopList-price">
+        <view class="vtu-shopList-price-d">￥<font>25.9</font></view>
+        <view class="vtu-shopList-price-b">找相似</view>
+      </view>
+    </view>
+  </view>
+</template>
+<!-----商品列表------>
+<template name="shopList_style2">
+  <view class="vtu-shopList">
+    <view class="vtu-shopList-image"><image src="{{src}}" mode="widthFix"/></view>
+    <view class="vtu-shopList-center">
+      <view class="vtu-shopList-label"><span class="bg-olive">自营</span>超火毛衣女心机上衣设计感秋冬百搭内搭可外穿修身打底针织衫女秋</view>
+      <view class="vtu-shopList-tag"><span class="bg-red-out">满99减5</span><span class="bg-cyan">限时购</span></view>
+      <view class="vtu-shopList-price">
+        <view class="vtu-shopList-price-d">￥<font>25.9</font></view>
+        <view class="vtu-shopList-price-s">￥32.5</view>
+      </view>
+      <view class="vtu-shopList-sales">销量1003件</view>
+    </view>
+  </view>
+</template>
+<!-----商品列表------>
+<template name="shopList_style3">
+  <view class="vtu-shopList infeed">
+    <view class="vtu-shopList-image"><image src="{{src}}" mode="widthFix"/></view>
+    <view class="vtu-shopList-center">
+      <view class="vtu-shopList-label"><span class="bg-olive">自营</span>超火毛衣女心机上衣设计感秋冬百搭内搭可外穿修身打底针织衫女秋</view>
+      <view class="vtu-shopList-tag"><span class="bg-red-out">满99减5</span><span class="bg-cyan">限时购</span></view>
+      <view class="vtu-shopList-price">
+        <view class="vtu-shopList-price-d">￥<font>25.9</font></view>
+        <view class="vtu-shopList-price-s">￥32.5</view>
+      </view>
+    </view>
+  </view>
+</template>

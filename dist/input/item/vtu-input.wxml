@@ -1,0 +1,88 @@
+<button class="Vtuzx_Input custom-class {{border?'is-border':''}} {{round?'is-round':''}}"
+        slot="{{slot}}"
+        disabled="{{disabled}}"
+        hover-class="{{arrow?'Vtuzx_Input_Hover':''}}"
+        open-type="{{openType}}"
+        lang="{{lang}}"
+        data-data="{{data}}"
+        bindgetuserinfo="getUserInfo"
+        bindgetphonenumber="getPhoneNumber"
+        bindcontact="contact"
+        binderror="error"
+        bindopensetting="opensetting"
+        bindlaunchapp="launchapp"
+        bindtap="bindtap">
+  <view class="Vtuzx_Input_Top {{panelHeader?'is-header':''}} {{type == 'textarea'?'is-textarea':''}} {{disabled?'is-disabled':''}} ">
+    <view class="Vtuzx_Input_Top_Must"><i class="vtu-icon vtu-icon-bixutian" wx:if="{{must}}"></i></view>
+    <view class="Vtuzx_Input_Top_Icon {{icon}}" style="color: {{iconColor}}" wx:if="{{icon}}"></view>
+    <view class="Vtuzx_Input_Top_Title title-class" style="color: {{titleColor}};text-align: {{titleAlign}};" wx:if="{{title}}">{{title}}</view>
+    <view class="Vtuzx_Input_Top_Value" style="color: {{valueColor}}" wx:if="{{type == 'default'}}">{{value||''}}</view>
+    <view class="Vtuzx_Input_Top_Value" wx:elif="{{type == 'input'}}">
+      <input value="{{value}}"
+             focus="{{focus}}"
+             class="input-class {{status}}"
+             placeholder-class="placeholder"
+             placeholder="{{placeholder}}"
+             cursor-spacing="{{cursorSpacing}}"
+             bindinput="bindinput"
+             bindconfirm="bindconfirm"
+             bindblur="bindblur"
+             bindfocus="bindfocus"
+             bindkeyboardheightchange="bindkeyboardheightchange"
+             disabled="{{disabled}}"
+             maxlength="{{maxlength}}"
+             confirm-type="{{confirmType}}"
+             confirm-hold="{{confirmHold}}"
+             adjust-position="{{adjustPosition}}"
+             cursor-spacing="{{cursorSpacing}}"
+             style="text-align: {{textAlign}};"
+             type="{{inputType}}"/>
+      <view class="Vtuzx_Input_Message {{status}}" wx:if="{{(status == 'success' || status == 'warning' || status == 'error') && message}}"><text>{{message}}</text></view>
+    </view>
+    <view class="Vtuzx_Input_Top_Value" wx:elif="{{type == 'textarea'}}">
+      <textarea value="{{value}}"
+                focus="{{focus}}"
+                class="textarea-class {{status}}"
+                placeholder-class="placeholder"
+                style="text-align: {{textAlign}};height: {{textHeight}}"
+                placeholder="{{placeholder}}"
+                disabled="{{disabled}}"
+                maxlength="{{maxlength}}"
+                auto-height="{{autoHeight}}"
+                show-confirm-bar="{{showConfirmBar}}"
+                cursor-spacing="{{cursorSpacing}}"
+                bindinput="bindinput"
+                bindconfirm="bindconfirm"
+                bindblur="bindblur"
+                bindfocus="bindfocus"
+                bindlinechange="bindlinechange"/>
+      <view class="Vtuzx_Input_Top_Value_MaxLabel" wx:if="{{maxlength && showMaxLabel}}"><font>{{value.length||0}}</font>/{{maxlength}}</view>
+    </view>
+    <view class="Vtuzx_Input_Top_Value" wx:elif="{{type == 'picker'}}">
+      <picker bindchange="bindchange"
+              bindcolumnchange="bindcolumnchange"
+              mode="{{mode}}"
+              value="{{value}}"
+              range="{{range}}"
+              start="{{start}}"
+              end="{{end}}"
+              range-key="{{rangeKey}}">
+        <block wx:if="{{mode == 'selector' && (value || value == 0)}}">{{rangeKey?range[value][rangeKey]:range[value]}}</block>
+        <block wx:elif="{{mode == 'time' && value}}">{{value}}</block>
+        <block wx:elif="{{mode == 'date' && value}}">{{value}}</block>
+        <block wx:elif="{{mode == 'region' && value && value.length > 0}}">{{value[0]}}，{{value[1]}}，{{value[2]}}</block>
+        <block wx:else>{{placeholder||'请选择'}}</block>
+      </picker>
+    </view>
+    <view class="Vtuzx_Input_Top_Value" wx:else></view>
+    <view class="Vtuzx_Input_Top_Slot">
+      <slot name="after"></slot>
+    </view>
+    <view class="Vtuzx_Input_Top_Status {{status}}">
+      <i class="vtu-icon vtu-icon-RectangleCopy1" wx:if="{{status == 'success'}}"></i>
+      <i class="vtu-icon vtu-icon-RectangleCopy2" wx:if="{{status == 'warning'}}"></i>
+      <i class="vtu-icon vtu-icon-RectangleCopy" wx:if="{{status == 'error'}}"></i>
+    </view>
+    <view class="Vtuzx_Input_Top_Arrow vtu-icon vtu-icon-right-copy" wx:if="{{arrow}}"></view>
+  </view>
+</button>

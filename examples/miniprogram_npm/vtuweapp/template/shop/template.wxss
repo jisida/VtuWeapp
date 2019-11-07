@@ -1,0 +1,168 @@
+@import '../../assets/css/Vtu_Common.wxss';
+.vtu-buyBar {
+    position: relative;
+    height: 50px;
+    background: #fff;
+    display: flex;
+}
+.vtu-buyBar-action{
+    height: 100%;
+    text-align: center;
+    background: transparent;
+    margin: 0px;
+    flex: 0;
+    display: inline-block;
+    overflow: inherit !important;
+    padding: 0px 20px;
+    position: relative;
+    color: var(--font-hb);
+}
+.vtu-buyBar-action-hover{
+    background: var(--bg-page);
+}
+.vtu-buyBar-action.line:after{
+    width: 1px;
+    height: 20px;
+    position: absolute;
+    background: var(--border-bd);
+    left: 0px;
+    top: 15px;
+    content: '';
+    z-index: 1;
+}
+.vtu-buyBar-action:after{
+    border: 0px;
+}
+.vtu-buyBar-action-icon{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+}
+.vtu-buyBar-action-label{
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+.vtu-buyBar-btn{
+    flex: 1;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 14px;
+}
+.vtu-buyBar-btn.buy{
+    background: REd;
+}
+.vtu-buyBar-btn.empty{
+    background: var(--bg-disabled);
+    color: var(--font-hd);
+}
+.vtu-buyBar-btn.circle{
+    border-radius: 100px;
+    margin: 8px 10px;
+    height: calc(100% - 16px);
+    line-height: 34px;
+}
+
+
+/************************************
+          商品列表
+*************************************/
+.vtu-shopList{
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.vtu-shopList-image{
+}
+.vtu-shopList-image image{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+.vtu-shopList-center{
+    width: calc(100% - 20px);
+    padding: 10px;
+}
+.vtu-shopList-label{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--font-hb);
+}
+.vtu-shopList-label span{
+    border-radius: 5px;
+    padding: 0px 4px;
+    margin: 0px 5px 0 0;
+}
+.vtu-shopList-tag{
+    margin: 5px 0;
+}
+.vtu-shopList-tag span{
+    padding: 2px 4px;
+    font-size: 10px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+}
+.vtu-shopList-price{
+    width: 100%;
+    margin-top: 15px;
+}
+.vtu-shopList-price-d{
+    display: inline-block;
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+}
+.vtu-shopList-price-s{
+    display: inline-block;
+    font-size: 12px;
+    color: var(--font-hd);
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+.vtu-shopList-price-b{
+    display: inline-block;
+    font-size: 12px;
+    background: rgba(206, 255, 206, 0.66);
+    color: #0fb730;
+    padding: 2px 4px;
+    border-radius: 5px;
+    float: right;
+}
+.vtu-shopList-sales{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: var(--font-hd);
+}
+
+.vtu-shopList.infeed{
+    float: left;
+    width: 100%;
+    border: 0px;
+}
+.vtu-shopList.infeed .vtu-shopList-image{
+    width: 120px;
+    height: 120px;
+    float: left;
+}
+.vtu-shopList.infeed .vtu-shopList-image image{
+    border-radius: 0;
+}
+.vtu-shopList.infeed .vtu-shopList-center{
+    width: calc(100% - 140px);
+    padding: 10px 10px 0 10px;
+    float: left;
+}

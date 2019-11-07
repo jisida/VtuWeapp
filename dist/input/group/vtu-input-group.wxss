@@ -1,0 +1,16 @@
+@import "../../assets/css/Vtu_Common.wxss";
+.Vtuzx_Input_Group{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.Vtuzx_Input_Group_Title{
+    width: calc(100% - 20px);
+    padding: 0px 10px;
+    height: 35px;
+    line-height: 30px;
+    font-size: 14px;
+    color: var(--font-hc);
+}
+.Vtuzx_Input_Group_Center{
+    width: 100%;
+}

@@ -1,0 +1,17 @@
+@import "../../assets/css/Vtu_Common.wxss";
+.Vtu_SwiperPanel{
+    width: 100%;
+}
+.Vtu_SwiperPanel_Swiper{
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+.Vtu_SwiperPanel_Swiper_Item{
+    height: 100%;
+    width: 100%;
+}
+.Vtu_SwiperPanel_Swiper_Item_Scroll{
+    height: 100%;
+    width: 100%;
+}

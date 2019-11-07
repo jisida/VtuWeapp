@@ -1,0 +1,16 @@
+@import '../iconFonts/iconfont.wxss';
+@import '../../css/Vtu_Style.wxss';
+input[disabled]{
+    color: var(--font-disabled);
+}
+.Vtu_Tag + .Vtu_Tag{
+    margin-right: 5px;
+}
+
+.Vtu_Panel.border--border{
+    width: calc(100% - 2px);
+}
+.Vtu_Panel.border--left,
+.Vtu_Panel.border--right{
+    width: calc(100% - 1px);
+}
