@@ -10,7 +10,9 @@
 ## 体验
 使用微信扫一扫体验小程序组件示例
 
-<img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/minipgQR.jpg">
+<p align="center">
+    <img width="200" src="https://activity.vtuzx.com/doc/vtuui/weapp/minipgQR.jpg">
+</p>
 
 ## 快速上手
 ### 使用之前
