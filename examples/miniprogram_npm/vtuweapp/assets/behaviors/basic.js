@@ -221,7 +221,9 @@ export const behavior_badge = {
     /** 右部距离 **/
     right: { type: String, value: null },
     /**  是否使用插槽 **/
-    userSlot: { type: Boolean, value: false }
+    userSlot: { type: Boolean, value: false },
+    /**  形状 **/
+    shape: { type: String, value: "bubble" }
   }),
   methods: {}
 }

@@ -1,27 +1,10 @@
-const app = getApp();
-import Mixin from "../../Mixin";
-class LoadingPage extends Mixin{
-  constructor(...args) {
-    super(...args);
-    super.$init({
-      show1: false,
-      value1: 3
-    })
-  }
+Page({
+  data: {
+    show1: false,
+    value1: 3
+  },
 
-  /**
-   * 预加载方法
-   *
-   */
-  preShow(query, sysData, resolve, reject) {
-    var self = this;
-    var initData = {
-      loading: false
-    }
-    resolve(initData);
-  }
-
-  bindAsyncChange = function(e) {
+  bindAsyncChange: function(e) {
     let self = this
     self.setData({
       show1: true
@@ -34,7 +17,4 @@ class LoadingPage extends Mixin{
       wx.hideLoading();
     }, 2000)
   }
-
-}
-
-Page(new LoadingPage({className: "LoadingPage", path: '/pages/comp/loading/loading', noShow: true}));
+});

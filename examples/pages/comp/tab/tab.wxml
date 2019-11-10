@@ -1,8 +1,7 @@
 <view class="container">
   <vtu-navbar title="Tab" bind:load="navBarLoad"></vtu-navbar>
   <view class="center Page_Margin">
-    <vtu-panel custom-class="panel">
-      <vtu-cell slot="header" title="基础用法"  border></vtu-cell>
+    <vtu-panel custom-class="panel" title="基础用法">
       <view  id="fixTab">
         <vtu-tabs value="{{value2}}" bind:change="change" fixed="{{tabFixed}}" bg-color="#fff" fixed-top="{{tabFixed?navBarHeight:0}}">
           <vtu-tab label="标签一" name="name1" custom-class="style-content" badge="hot"></vtu-tab>
@@ -13,22 +12,33 @@
       </view>
     </vtu-panel>
 
-    <vtu-panel custom-class="panel">
-      <vtu-cell slot="header" title="居中"  border></vtu-cell>
-      <view >
-        <vtu-tabs value="{{value2}}" item-align="center" is-average="{{false}}" bind:change="change">
-          <vtu-tab label="标签一" name="name1"></vtu-tab>
-          <vtu-tab label="标签二" name="name2"></vtu-tab>
-          <vtu-tab label="标签三" name="name3" badge="516" badge-max="100" badge-type="success"></vtu-tab>
-        </vtu-tabs>
-      </view>
+    <vtu-panel custom-class="panel" title="居中">
+      <vtu-tabs value="{{value2}}" item-align="center" is-average="{{false}}" bind:change="change">
+        <vtu-tab label="标签一" name="name1"></vtu-tab>
+        <vtu-tab label="标签二" name="name2"></vtu-tab>
+        <vtu-tab label="标签三" name="name3" badge="516" badge-max="100" badge-type="success"></vtu-tab>
+      </vtu-tabs>
     </vtu-panel>
 
-    <vtu-panel custom-class="panel">
-      <vtu-cell slot="header" title="滚动"  border></vtu-cell>
-        <vtu-tabs value="{{value2}}" bind:change="change">
+    <vtu-panel custom-class="panel" title="滚动">
+      <vtu-tabs value="{{value2}}" bind:change="change">
+        <vtu-tab label="标签一" name="name1"></vtu-tab>
+        <vtu-tab label="标签二" name="name2" badge-is-dot="{{true}}"></vtu-tab>
+        <vtu-tab label="标签三" name="name3"></vtu-tab>
+        <vtu-tab label="标签四" name="name4"></vtu-tab>
+        <vtu-tab label="标签5" name="name5"></vtu-tab>
+        <vtu-tab label="标签6" name="name6"></vtu-tab>
+        <vtu-tab label="标签7" name="name7"></vtu-tab>
+        <vtu-tab label="标签8" name="name8"></vtu-tab>
+        <vtu-tab label="很长的标签9" name="name9"></vtu-tab>
+      </vtu-tabs>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel" title="自定义样式">
+      <view class="Tab_Span">
+        <vtu-tabs value="{{value2}}" bind:change="change" active-color="#fff" bg-color="#eee" active-bg-color="#07c160" line="{{false}}">
           <vtu-tab label="标签一" name="name1"></vtu-tab>
-          <vtu-tab label="标签二" name="name2" badge-is-dot="{{true}}"></vtu-tab>
+          <vtu-tab label="标签二" name="name2"></vtu-tab>
           <vtu-tab label="标签三" name="name3"></vtu-tab>
           <vtu-tab label="标签四" name="name4"></vtu-tab>
           <vtu-tab label="标签5" name="name5"></vtu-tab>
@@ -37,53 +47,32 @@
           <vtu-tab label="标签8" name="name8"></vtu-tab>
           <vtu-tab label="很长的标签9" name="name9"></vtu-tab>
         </vtu-tabs>
-    </vtu-panel>
-
-    <vtu-panel custom-class="panel">
-      <vtu-cell slot="header" title="自定义样式"  border></vtu-cell>
-      <view >
-        <view class="Tab_Span">
-          <vtu-tabs value="{{value2}}" bind:change="change" active-color="#fff" bg-color="#eee" active-bg-color="#07c160" line="{{false}}">
-            <vtu-tab label="标签一" name="name1"></vtu-tab>
-            <vtu-tab label="标签二" name="name2"></vtu-tab>
-            <vtu-tab label="标签三" name="name3"></vtu-tab>
-            <vtu-tab label="标签四" name="name4"></vtu-tab>
-            <vtu-tab label="标签5" name="name5"></vtu-tab>
-            <vtu-tab label="标签6" name="name6"></vtu-tab>
-            <vtu-tab label="标签7" name="name7"></vtu-tab>
-            <vtu-tab label="标签8" name="name8"></vtu-tab>
-            <vtu-tab label="很长的标签9" name="name9"></vtu-tab>
-          </vtu-tabs>
-        </view>
-        <view class="Tab_Span">
-          <vtu-tabs value="{{value2}}" bind:change="change" color="#909399" active-color="#f44" bg-color="#f5f7fa" active-bg-color="#fff">
-            <vtu-tab label="标签一" name="name1"></vtu-tab>
-            <vtu-tab label="标签二" name="name2"></vtu-tab>
-            <vtu-tab label="标签三" name="name3"></vtu-tab>
-            <vtu-tab label="标签四" name="name4"></vtu-tab>
-          </vtu-tabs>
-        </view>
-        <view class="Tab_Span">
-          <vtu-tabs value="{{value2}}" bind:change="change" custom-class="style5" round tab-class="style5-tab" tab-li-class="style5-tab-li">
-            <vtu-tab label="标签一" name="name1" custom-class="style-content block">内容1</vtu-tab>
-            <vtu-tab label="标签二" name="name2" custom-class="style-content block">内容2</vtu-tab>
-            <vtu-tab label="标签三" name="name3" custom-class="style-content block">内容3</vtu-tab>
-            <vtu-tab label="标签四" name="name4" custom-class="style-content block">内容4</vtu-tab>
-          </vtu-tabs>
-        </view>
       </view>
-    </vtu-panel>
-
-    <vtu-panel custom-class="panel">
-      <vtu-cell slot="header" title="图标"  border></vtu-cell>
-      <view >
-        <vtu-tabs value="{{value2}}" bind:change="change" hidden-slot="{{true}}">
-          <vtu-tab label="标签一" name="name1" icon="iconfont icon-shangchuan"></vtu-tab>
-          <vtu-tab label="标签二" name="name2" icon="iconfont icon-share"></vtu-tab>
-          <vtu-tab label="标签三" name="name3" icon="iconfont icon-dianhua"></vtu-tab>
-          <vtu-tab label="标签四" name="name4" icon="iconfont icon-sousuo"></vtu-tab>
+      <view class="Tab_Span">
+        <vtu-tabs value="{{value2}}" bind:change="change" color="#909399" active-color="#f44" bg-color="#f5f7fa" active-bg-color="#fff">
+          <vtu-tab label="标签一" name="name1"></vtu-tab>
+          <vtu-tab label="标签二" name="name2"></vtu-tab>
+          <vtu-tab label="标签三" name="name3"></vtu-tab>
+          <vtu-tab label="标签四" name="name4"></vtu-tab>
         </vtu-tabs>
       </view>
+      <view class="Tab_Span">
+        <vtu-tabs value="{{value2}}" bind:change="change" custom-class="style5" round tab-class="style5-tab" tab-li-class="style5-tab-li">
+          <vtu-tab label="标签一" name="name1" custom-class="style-content block">内容1</vtu-tab>
+          <vtu-tab label="标签二" name="name2" custom-class="style-content block">内容2</vtu-tab>
+          <vtu-tab label="标签三" name="name3" custom-class="style-content block">内容3</vtu-tab>
+          <vtu-tab label="标签四" name="name4" custom-class="style-content block">内容4</vtu-tab>
+        </vtu-tabs>
+      </view>
+    </vtu-panel>
+
+    <vtu-panel custom-class="panel" title="图标">
+      <vtu-tabs value="{{value2}}" bind:change="change" hidden-slot="{{true}}">
+        <vtu-tab label="标签一" name="name1" icon="iconfont icon-shangchuan"></vtu-tab>
+        <vtu-tab label="标签二" name="name2" icon="iconfont icon-share"></vtu-tab>
+        <vtu-tab label="标签三" name="name3" icon="iconfont icon-dianhua"></vtu-tab>
+        <vtu-tab label="标签四" name="name4" icon="iconfont icon-sousuo"></vtu-tab>
+      </vtu-tabs>
     </vtu-panel>
   </view>
 </view>

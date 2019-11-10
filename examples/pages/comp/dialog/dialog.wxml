@@ -2,23 +2,17 @@
   <vtu-navbar title="Dialog"></vtu-navbar>
   <view class="center Page_Margin">
 
-    <vtu-panel custom-class="panel">
-      <vtu-cell slot="header" title="普通对话框" border></vtu-cell>
-      <view >
-        <vtu-btn bind:click="alert1" type="primary" custom-class="dialog-btn">普通对话框</vtu-btn>
-        <vtu-btn bind:click="alert2" type="primary" custom-class="dialog-btn">普通对话框(无取消按钮)</vtu-btn>
-        <vtu-btn bind:click="alert3" type="danger" custom-class="dialog-btn">确认对话框(开放能力)</vtu-btn>
-        <vtu-btn bind:click="alert4" type="success" custom-class="dialog-btn">自定义按钮排列</vtu-btn>
-        <vtu-btn bind:click="alert5" type="warning" custom-class="dialog-btn">点击遮罩关闭</vtu-btn>
-        <vtu-btn bind:click="alert6" type="success" custom-class="dialog-btn">横向排列</vtu-btn>
-      </view>
+    <vtu-panel custom-class="panel" title="普通对话框">
+      <vtu-btn bind:click="alert1" type="primary" custom-class="dialog-btn">普通对话框</vtu-btn>
+      <vtu-btn bind:click="alert2" type="primary" custom-class="dialog-btn">普通对话框(无取消按钮)</vtu-btn>
+      <vtu-btn bind:click="alert3" type="danger" custom-class="dialog-btn">确认对话框(开放能力)</vtu-btn>
+      <vtu-btn bind:click="alert4" type="success" custom-class="dialog-btn">自定义按钮排列</vtu-btn>
+      <vtu-btn bind:click="alert5" type="warning" custom-class="dialog-btn">点击遮罩关闭</vtu-btn>
+      <vtu-btn bind:click="alert6" type="success" custom-class="dialog-btn">横向排列</vtu-btn>
     </vtu-panel>
 
-    <vtu-panel custom-class="panel">
-      <vtu-cell slot="header" title="自定义对话框" border></vtu-cell>
-      <view >
-        <vtu-btn bind:click="alert7" type="primary" custom-class="dialog-btn">自定义对话框</vtu-btn>
-      </view>
+    <vtu-panel custom-class="panel" title="自定义对话框">
+      <vtu-btn bind:click="alert7" type="primary" custom-class="dialog-btn">自定义对话框</vtu-btn>
     </vtu-panel>
     <vtu-dialog id="Vtu-Dialog"></vtu-dialog>
     <vtu-dialog id="Vtu-Custom-Dialog" show="{{show}}" title="自定义对话框内容" user-content-slot>

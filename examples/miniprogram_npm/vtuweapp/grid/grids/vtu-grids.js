@@ -20,7 +20,7 @@ VtuComponent({
   properties: {
     // 列数
     col: {
-      value: null,
+      value: 3,
       type: Number
     },
     // 边框

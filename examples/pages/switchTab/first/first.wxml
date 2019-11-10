@@ -50,7 +50,7 @@
         <vtu-panel content-class="contentClass" round card>
             <vtu-cell slot="header" title="导航组件" icon="iconfont icon-daohang" icon-color="#40cff9" border panel-header></vtu-cell>
             <vtu-cell title="NavBar" value="导航栏" border arrow bind:click="navbar"></vtu-cell>
-            <vtu-cell title="TabBar" value="标签栏" border arrow bind:click="tabBar"></vtu-cell>
+            <vtu-cell title="TabBar" value="选项栏" border arrow bind:click="tabBar"></vtu-cell>
             <vtu-cell title="Tabs" value="标签页" border arrow bind:click="tabs"></vtu-cell>
             <vtu-cell title="Badge" value="徽章" arrow bind:click="badge"></vtu-cell>
         </vtu-panel>

@@ -111,7 +111,7 @@ VtuComponent({
       if(self.data.type == 'line') {
         let process = this.data.value;
         var animation = wx.createAnimation({})
-        animation.width(process + '%').step({ duration: 300 })
+        animation.width(process + '%').step({ duration: 400 })
         this.setData({
           widthAnimation: animation.export()
         })

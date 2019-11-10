@@ -5,6 +5,7 @@
         "vtu-navbar": "/miniprogram_npm/vtuweapp/navbar/vtu-navbar",
         "vtu-progress": "/miniprogram_npm/vtuweapp/progress/vtu-progress",
         "vtu-cell": "/miniprogram_npm/vtuweapp/cell/item/vtu-cell",
-        "vtu-panel": "/miniprogram_npm/vtuweapp/panel/vtu-panel"
+        "vtu-panel": "/miniprogram_npm/vtuweapp/panel/vtu-panel",
+        "vtu-avatar": "/miniprogram_npm/vtuweapp/avatar/vtu-avatar"
     }
 }

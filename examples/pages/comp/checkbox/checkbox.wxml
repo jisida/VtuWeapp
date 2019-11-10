@@ -12,8 +12,7 @@
     </vtu-panel>
     <vtu-panel custom-class="panel">
       <vtu-cell slot="header" title="自定义" border ></vtu-cell>
-      <vtu-checkbox-group model="{{value1}}" align="right" active-color="red" checkbox-icon="iconfont icon-fangxingweixuanzhong"
-                          active-checkbox-icon="iconfont icon-fangxingxuanzhongfill" bind:change="change">
+      <vtu-checkbox-group model="{{value1}}" align="right" active-color="red" checkbox-icon="iconfont icon-fangxingweixuanzhong" active-checkbox-icon="iconfont icon-fangxingxuanzhongfill" bind:change="change">
         <vtu-checkbox value="1" label="北京"></vtu-checkbox>
         <vtu-checkbox value="2" label="上海" disabled></vtu-checkbox>
         <vtu-checkbox value="3" label="深圳"></vtu-checkbox>

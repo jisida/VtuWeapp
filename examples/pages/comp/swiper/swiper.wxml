@@ -3,21 +3,15 @@
   <view class="center Page_Margin">
     <vtu-panel custom-class="panel" content-class="content-class">
       <vtu-cell slot="header" title="卡片式轮播用法"  border></vtu-cell>
-      <view >
-        <vtu-swiper type="card" height="{{(windowWidth-40)/2}}px" list="{{imageList}}" swiper-class="swiperClass" indicator-dots="{{true}}" current="{{current}}" bind:change="bindChange"></vtu-swiper>
-      </view>
+      <vtu-swiper type="card" height="{{(windowWidth-40)/2}}px" list="{{imageList}}" swiper-class="swiperClass" indicator-dots="{{true}}" current="{{current}}" bind:change="bindChange"></vtu-swiper>
     </vtu-panel>
     <vtu-panel custom-class="panel" content-class="content-class">
       <vtu-cell slot="header" title="基础用法" border></vtu-cell>
-      <view >
-        <vtu-swiper list="{{imageList}}" height="{{(windowWidth-40)/2}}px" dot-type="round" indicator-active-color="#3fe816" swiper-class="swiperClass" indicator-dots="{{true}}" current="{{current}}" bind:change="bindChange"></vtu-swiper>
-      </view>
+      <vtu-swiper list="{{imageList}}" height="{{(windowWidth-40)/2}}px" dot-type="round" indicator-active-color="#3fe816" swiper-class="swiperClass" indicator-dots="{{true}}" current="{{current}}" bind:change="bindChange"></vtu-swiper>
     </vtu-panel>
     <vtu-panel custom-class="panel" content-class="content-class">
       <vtu-cell slot="header" title="字幕轮播" border></vtu-cell>
-      <view >
-        <vtu-swiper list="{{imageList2}}" height="{{(windowWidth-40)/2}}px" dot-type="content" swiper-content-class="swiperContentClass" indicator-active-color="rgba(0, 0, 0, .5)" dot-font-color="#fff" swiper-class="swiperClass" indicator-dots="{{true}}" current="{{current}}" bind:change="bindChange"></vtu-swiper>
-      </view>
+       <vtu-swiper list="{{imageList2}}" height="{{(windowWidth-40)/2}}px" dot-type="content" swiper-content-class="swiperContentClass" indicator-active-color="rgba(0, 0, 0, .5)" dot-font-color="#fff" swiper-class="swiperClass" indicator-dots="{{true}}" current="{{current}}" bind:change="bindChange"></vtu-swiper>
     </vtu-panel>
   </view>
 </view>

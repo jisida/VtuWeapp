@@ -1,6 +1,5 @@
 .MyTop{
     width: 100%;
-    background-image: linear-gradient(180deg, transparent 0%, rgb(255,255,255) 60%);
     margin-bottom: 20px;
 }
 .LogoClass{
@@ -25,6 +24,7 @@
     width: 100%;
     height: 80px;
     margin-top: 40px;
+    background: #fff;
 }
 .MyTop-data-col{
     text-align: center;

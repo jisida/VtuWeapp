@@ -27,7 +27,7 @@
     font-size: 12px;
     text-align: right;
     position: relative;
-    transition: all .5s;
+    transition: width 0.5s ease-out;
 }
 .Vtu_Progress_Line_L_Span.status--primary{
     background: var(--primary);

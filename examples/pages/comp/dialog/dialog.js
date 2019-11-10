@@ -1,38 +1,25 @@
-const app = getApp();
-import Mixin from "../../Mixin";
 import Dialog from "../../../miniprogram_npm/vtuweapp/dialog/vtu-index";
-class DialogPage extends Mixin{
-  constructor(...args) {
-    super(...args);
-    super.$init({
-      show: false
-    })
-  }
+Page({
+  data: {
+    show: false
+  },
 
-  /**
-   * 预加载方法
-   *
-   */
-  preShow(query, sysData, resolve, reject) {
-    resolve();
-  }
-
-  alert1 = function() {
+  alert1: function() {
     Dialog().alert({
       title: '普通提示',
       content: '显示您要确定的内容信息'
     })
-  }
+  },
 
-  alert2 = function() {
+  alert2: function() {
     Dialog().alert({
       title: '普通提示',
       content: '显示您要确定的内容信息',
       showCancel: false
     })
-  }
+  },
 
-  alert3 = function() {
+  alert3: function() {
     Dialog().confirm({
       title: '确认对话框',
       content: '系统需要您的授权，请登录',
@@ -54,9 +41,9 @@ class DialogPage extends Mixin{
         });
       }
     })
-  }
+  },
 
-  alert4 = function() {
+  alert4: function() {
     Dialog().open({
       title: '自定义对话框',
       content: '请选择付款方式',
@@ -73,8 +60,15 @@ class DialogPage extends Mixin{
         },
         {
           type: 'danger',
-          label: '支付宝支付',
+          label: '获取手机号',
+          openType: 'getPhoneNumber',
           click: function(e) {
+            console.log("getPhoneNumber: ", e)
+            wx.showToast({
+              title: "获取用户手机号成功！",
+              icon: 'none',
+              duration: 2000
+            });
           }
         },
         {
@@ -86,9 +80,9 @@ class DialogPage extends Mixin{
         }
       ]
     })
-  }
+  },
 
-  alert5 = function() {
+  alert5: function() {
     Dialog().confirm({
       title: '确认对话框',
       content: '系统需要您的授权，请登录',
@@ -110,8 +104,9 @@ class DialogPage extends Mixin{
         });
       }
     })
-  }
-  alert6 = function() {
+  },
+
+  alert6: function() {
     Dialog().open({
       title: '自定义对话框',
       content: '请选择付款方式',
@@ -142,17 +137,15 @@ class DialogPage extends Mixin{
         }
       ]
     })
-  }
+  },
 
-  alert7 = function() {
+  alert7: function() {
     this.setData({
       show: true
     })
-  }
+  },
 
-  closeCustomDialog = function() {
+  closeCustomDialog: function() {
     Dialog("Vtu-Custom-Dialog").close()
   }
-}
-
-Page(new DialogPage({className: "DialogPage", path: '/pages/comp/dialog/dialog', noShow: true}));
+});

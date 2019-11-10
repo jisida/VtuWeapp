@@ -4,75 +4,63 @@
 
     <vtu-panel custom-class="panel">
       <vtu-cell slot="header" title="实心标签" border></vtu-cell>
-      <view >
-        <vtu-tag>标签</vtu-tag>
-        <vtu-tag bg-color="red" font-color="#fff">标签</vtu-tag>
-        <vtu-tag bg-color="orange" font-color="#fff">标签</vtu-tag>
-        <vtu-tag bg-color="#7e35bd" font-color="#fff" shape="circle">标签</vtu-tag>
-        <vtu-tag bg-color="#bd255c" font-color="#fff" shape="circle">标签</vtu-tag>
-        <vtu-tag bg-color="#1abf28" font-color="#fff" shape="circle">标签</vtu-tag>
-        <vtu-tag bg-color="#1f8fee" font-color="#fff" shape="round">标签</vtu-tag>
-        <vtu-tag bg-color="#ff7b8d" font-color="#fff" shape="round">标签</vtu-tag>
-        <vtu-tag bg-color="#fc973d" font-color="#fff" shape="round">标签</vtu-tag>
-        <vtu-tag bg-color="#f0f9eb" font-color="#67c23a" shape="round">标签</vtu-tag>
-        <vtu-tag bg-color="#fdf6ec" font-color="#e6a23c" shape="round">标签</vtu-tag>
-      </view>
+      <vtu-tag>标签</vtu-tag>
+      <vtu-tag bg-color="red" font-color="#fff">标签</vtu-tag>
+      <vtu-tag bg-color="orange" font-color="#fff">标签</vtu-tag>
+      <vtu-tag bg-color="#7e35bd" font-color="#fff" shape="circle">标签</vtu-tag>
+      <vtu-tag bg-color="#bd255c" font-color="#fff" shape="circle">标签</vtu-tag>
+      <vtu-tag bg-color="#1abf28" font-color="#fff" shape="circle">标签</vtu-tag>
+      <vtu-tag bg-color="#1f8fee" font-color="#fff" shape="round">标签</vtu-tag>
+      <vtu-tag bg-color="#ff7b8d" font-color="#fff" shape="round">标签</vtu-tag>
+      <vtu-tag bg-color="#fc973d" font-color="#fff" shape="round">标签</vtu-tag>
+      <vtu-tag bg-color="#f0f9eb" font-color="#67c23a" shape="round">标签</vtu-tag>
+      <vtu-tag bg-color="#fdf6ec" font-color="#e6a23c" shape="round">标签</vtu-tag>
     </vtu-panel>
 
     <vtu-panel custom-class="panel">
       <vtu-cell slot="header" title="标签尺寸" border></vtu-cell>
-      <view >
-        <vtu-tag>标签</vtu-tag>
-        <vtu-tag size="mini">标签</vtu-tag>
-      </view>
+      <vtu-tag>标签</vtu-tag>
+      <vtu-tag size="mini">标签</vtu-tag>
     </vtu-panel>
 
     <vtu-panel custom-class="panel">
       <vtu-cell slot="header" title="镂空标签" border></vtu-cell>
-      <view >
-        <vtu-tag type="out">标签</vtu-tag>
-        <vtu-tag type="out" bg-color="red">标签</vtu-tag>
-        <vtu-tag type="out" bg-color="orange">标签</vtu-tag>
-        <vtu-tag type="out" bg-color="#7e35bd" shape="circle">标签</vtu-tag>
-        <vtu-tag type="out" bg-color="#bd255c" shape="circle">标签</vtu-tag>
-        <vtu-tag type="out" bg-color="#1abf28" shape="circle">标签</vtu-tag>
-        <vtu-tag type="out" bg-color="#1f8fee" shape="round">标签</vtu-tag>
-        <vtu-tag type="out" bg-color="#ff7b8d" shape="round">标签</vtu-tag>
-        <vtu-tag type="out" bg-color="#fc973d" shape="round">标签</vtu-tag>
-      </view>
+      <vtu-tag type="out">标签</vtu-tag>
+      <vtu-tag type="out" bg-color="red">标签</vtu-tag>
+      <vtu-tag type="out" bg-color="orange">标签</vtu-tag>
+      <vtu-tag type="out" bg-color="#7e35bd" shape="circle">标签</vtu-tag>
+      <vtu-tag type="out" bg-color="#bd255c" shape="circle">标签</vtu-tag>
+      <vtu-tag type="out" bg-color="#1abf28" shape="circle">标签</vtu-tag>
+      <vtu-tag type="out" bg-color="#1f8fee" shape="round">标签</vtu-tag>
+      <vtu-tag type="out" bg-color="#ff7b8d" shape="round">标签</vtu-tag>
+      <vtu-tag type="out" bg-color="#fc973d" shape="round">标签</vtu-tag>
     </vtu-panel>
 
     <vtu-panel custom-class="panel">
       <vtu-cell slot="header" title="胶囊标签" border></vtu-cell>
-      <view >
-        <vtu-tag type="capsule" icon="iconfont icon-xihuanfill">标签</vtu-tag>
-        <vtu-tag type="capsule" icon="iconfont icon-xihuanfill" shape="circle" status="warning">标签</vtu-tag>
-        <vtu-tag type="capsule" icon="iconfont icon-xihuanfill" shape="round" size="mini" bg-color="red">标签</vtu-tag>
-      </view>
+      <vtu-tag type="capsule" icon="iconfont icon-xihuanfill">标签</vtu-tag>
+      <vtu-tag type="capsule" icon="iconfont icon-xihuanfill" shape="circle" status="warning">标签</vtu-tag>
+      <vtu-tag type="capsule" icon="iconfont icon-xihuanfill" shape="round" size="mini" bg-color="red">标签</vtu-tag>
     </vtu-panel>
 
     <vtu-panel custom-class="panel">
       <vtu-cell slot="header" title="内置状态" border></vtu-cell>
-      <view >
-        <vtu-tag type="out" status="primary">默认</vtu-tag>
-        <vtu-tag status="primary">默认</vtu-tag>
-        <vtu-tag type="out" status="success">成功</vtu-tag>
-        <vtu-tag status="success">成功</vtu-tag>
-        <vtu-tag type="out" status="danger">危险</vtu-tag>
-        <vtu-tag status="danger">危险</vtu-tag>
-        <vtu-tag type="out" status="warning">警告</vtu-tag>
-        <vtu-tag status="warning">警告</vtu-tag>
-      </view>
+      <vtu-tag type="out" status="primary">默认</vtu-tag>
+      <vtu-tag status="primary">默认</vtu-tag>
+      <vtu-tag type="out" status="success">成功</vtu-tag>
+      <vtu-tag status="success">成功</vtu-tag>
+      <vtu-tag type="out" status="danger">危险</vtu-tag>
+      <vtu-tag status="danger">危险</vtu-tag>
+      <vtu-tag type="out" status="warning">警告</vtu-tag>
+      <vtu-tag status="warning">警告</vtu-tag>
     </vtu-panel>
 
     <vtu-panel custom-class="panel">
       <vtu-cell slot="header" title="可删除" border></vtu-cell>
-      <view >
-        <vtu-tag delete shape="circle" data="{{ {label: '上海', index: 0} }}" bind:click="click">上海</vtu-tag>
-        <vtu-tag type="out" shape="circle" delete data="{{ {label: '南京', index: 1} }}" bind:click="click">南京</vtu-tag>
-        <vtu-tag type="capsule" shape="circle" icon="iconfont icon-xihuanfill" delete data="{{ {label: '北京', index: 2} }}" bind:click="click">北京</vtu-tag>
-        <vtu-tag delete shape="circle" size="mini" data="{{ {label: '武汉', index: 3} }}" bind:click="click">武汉</vtu-tag>
-      </view>
+      <vtu-tag delete shape="circle" bind:click="click" data-label="上海" data-index="0">上海</vtu-tag>
+      <vtu-tag type="out" shape="circle" delete data-label="南京" data-index="1" bind:click="click">南京</vtu-tag>
+      <vtu-tag type="capsule" shape="circle" icon="iconfont icon-xihuanfill" delete data-label="北京" data-index="2" bind:click="click">北京</vtu-tag>
+      <vtu-tag delete shape="circle" size="mini" data-label="武汉" data-index="3" bind:click="click">武汉</vtu-tag>
     </vtu-panel>
   </view>
 </view>

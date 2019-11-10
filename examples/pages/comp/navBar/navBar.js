@@ -1,4 +1,3 @@
-const app = getApp();
 Page({
   data: {
     style: 7,

@@ -1,11 +1,11 @@
 .Badge_Btn{
   margin-right: 30px;
   margin-bottom: 20px;
-  display: inline-block;
+  float: left;
+  margin-top: 20px;
 }
-.Panel{
-  width: 100px;
-  height: 30px;
+.panel{
   position: relative;
-  background: #ddd;
+  float: left;
+  width: 100%;
 }

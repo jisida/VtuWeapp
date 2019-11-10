@@ -20,8 +20,9 @@
     opacity: 0;
     z-index: 2001;
     background: #fff;
-    box-shadow: 0px 0px 5px var(--border-ba);
+    box-shadow: 0px 0px 5px #6e6e6e;
     max-height: 80%;
+    border-radius: 5px;
 }
 .Vtu_Dialog_Center_Common{
     width: 100%;

@@ -37,10 +37,6 @@ VtuComponent({
     delete: {
       type: Boolean,
       value: false
-    },
-    data: {
-      type: Object,
-      value: null
     }
   },
 
@@ -53,9 +49,5 @@ VtuComponent({
   /**
    * 组件的方法列表
    */
-  methods: {
-    click: function(e) {
-      this.triggerEvent('click', e.currentTarget.dataset.data);
-    }
-  }
+  methods: {}
 })

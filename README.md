@@ -5,7 +5,7 @@
 </p>
 
 ## 文档
-[https://vtuui.vtuzx.com](http://inmap.talkingdata.com/wx/index_prod.html)
+[https://vtuui.vtuzx.com](https://vtuui.vtuzx.com)
 
 ## 体验
 使用微信扫一扫体验小程序组件示例

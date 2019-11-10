@@ -1,28 +1,15 @@
-const app = getApp();
-import Mixin from "../../Mixin";
-class SwitchPage extends Mixin{
-  constructor(...args) {
-    super(...args);
-    super.$init({
-      value: true
-    })
-  }
+Page({
+  data: {
+    value: true
+  },
 
-  /**
-   * 预加载方法
-   *
-   */
-  preShow(query, sysData, resolve, reject) {
-    resolve();
-  }
-
-  bindChange = function(e) {
+  bindChange: function(e) {
     this.setData({
       value: e.detail.value
     })
-  }
+  },
 
-  bindAsyncChange = function(e) {
+  bindAsyncChange: function(e) {
     let self = this
     setTimeout(function() {
       self.setData({
@@ -30,6 +17,4 @@ class SwitchPage extends Mixin{
       })
     }, 2000)
   }
-}
-
-Page(new SwitchPage({className: 'SwitchPage', path: '/pages/comp/switch/switch', noShow: true}));
+});
