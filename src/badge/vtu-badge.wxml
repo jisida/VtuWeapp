@@ -1,8 +1,8 @@
-<view slot="{{slot}}" wx:if="{{show && !userSlot}}" class="{{icon}} custom-class badge-class Vtu_Badge_Content {{isDot?'is-dot':''}}"
+<view slot="{{slot}}" wx:if="{{show && !userSlot}}" class="{{icon}} custom-class badge-class Vtu_Badge_Content {{isDot?'is-dot':''}} {{'is-'+shape}}"
       style="background: {{bgColor}};color: {{color}};top: {{top}};right:{{right}};left: {{right?'inherit':''}}"><block wx:if="{{!isDot && value}}">{{value}}</block></view>
 <view class="custom-class Vtu_Badge" slot="{{slot}}" wx:else>
     <slot></slot>
-    <view wx:if="{{(isDot || value || icon) && show}}" class="{{icon}} badge-class Vtu_Badge_Content {{isDot?'is-dot':''}}"
+    <view wx:if="{{(isDot || value || icon) && show}}" class="{{icon}} badge-class Vtu_Badge_Content {{isDot?'is-dot':''}} {{'is-'+shape}}"
           style="background: {{bgColor}};top: {{top}};right: {{right}};left: {{right?'inherit':''}};color: {{fontColor}};"><block wx:if="{{!isDot && value}}">{{value}}</block></view>
 </view>
 

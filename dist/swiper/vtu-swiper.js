@@ -68,8 +68,8 @@ VtuComponent({
     },
     // 指定 swiper 切换缓动动画类型
     easingFunction: {
-      type: Boolean,
-      value: false
+      type: String,
+      value: "default"
     },
     // 同时显示的滑块数量
     displayMultipleItems: {
@@ -105,13 +105,19 @@ VtuComponent({
    * 组件的方法列表
    */
   methods: {
-    swipeChange: function(e) {
+    change: function(e) {
       this.setData({
         current: e.detail.current
       })
       this.triggerEvent('change', {
         current: e.detail.current
       });
+    },
+    animationfinish: function(e) {
+      this.triggerEvent('animationfinish', e.detail);
+    },
+    transition: function(e) {
+      this.triggerEvent('transition', e.detail);
     }
   }
 })

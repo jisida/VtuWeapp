@@ -24,7 +24,7 @@
 1. 添加需要的组件。在页面的 json 中配置（路径根据自己项目位置配置）：
 ```json
 "usingComponents": {
-    "vtu-button": "../../dist/button/vtu-btn"
+    "vtu-btn": "../../dist/button/vtu-btn"
 }
 ```
 2. 在 wxml 中使用组件：

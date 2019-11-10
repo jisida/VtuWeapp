@@ -39,7 +39,7 @@ VtuComponent({
       value: null
     },
     // 图片
-    img: {
+    imgSrc: {
       type: String,
       value: null
     },
@@ -50,6 +50,10 @@ VtuComponent({
     imgHeight: {
       type: String,
       value: null
+    },
+    imgMode: {
+      type: String,
+      value: "aspectFill"
     },
     hidden: {
       type: Boolean,

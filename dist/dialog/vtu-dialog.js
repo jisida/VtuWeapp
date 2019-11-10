@@ -117,9 +117,8 @@ VtuComponent({
     },
 
     btnClickEvent: function(e) {
-      let self = this
       let index = e.currentTarget.dataset.data.index
-      this.data.buttons[index].click(e.detail)
+      this.data.buttons[index].click(e)
       if (this.data.buttons[index].async) {
         this.setData({
           ["buttons[{0}].loading".format(index)]: true
@@ -188,8 +187,8 @@ VtuComponent({
           }
         })
       }
-      param = Object.assign(this.getInit(), param)
 
+      param = Object.assign(this.getInit(), param)
       delete param.confirmAsync
       delete param.confirmOpenType
       this.setData(param)

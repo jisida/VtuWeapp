@@ -32,6 +32,26 @@
 .Vtu_Grids_Li_Hover{
     background: var(--bg-page);
 }
+.Vtu_Grids_Li .image-span{
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  border-radius: var(--radius);
+}
+.Vtu_Grids_Li .image-span image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Vtu_Grids_Li .image-span:after{
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
 .Vtu_Grids_Li .label{
     width: 100%;
     height: 24px;
@@ -42,6 +62,7 @@
 .icon{
     display: inline-block;
     margin: 5px auto 0 auto;
+    width: 100%;
 }
 .icon-span{
     font-size: 24px;

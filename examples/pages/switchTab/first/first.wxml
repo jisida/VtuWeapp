@@ -37,6 +37,7 @@
             <vtu-cell title="Stepper" value="计步器" border arrow bind:click="stepper"></vtu-cell>
             <vtu-cell title="Divider" value="分割线" border arrow bind:click="divider"></vtu-cell>
             <vtu-cell title="Switch" value="开关" border arrow bind:click="switch"></vtu-cell>
+            <vtu-cell title="ImgPicker" value="图片选择器" border arrow bind:click="imgPicker"></vtu-cell>
             <vtu-cell title="Input" value="表单" arrow bind:click="input"></vtu-cell>
         </vtu-panel>
         <vtu-panel content-class="contentClass" round card>

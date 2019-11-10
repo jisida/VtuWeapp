@@ -9,12 +9,17 @@
     left: 100%;
     color: #fff;
     font-size: 10px;
-    padding: 2px 4px;
+    padding: 0px 4px;
     display: inline-block;
     line-height: 1.5 !important;
     z-index: 1;
     border-radius: 1000px;
     background: var(--danger);
+    min-height: 15px;
+    min-width: 11px;
+}
+.Vtu_Badge_Content.is-bubble{
+    border-radius: 1000px 1000px 1000px 2px;
 }
 .Vtu_Badge_Content.is-dot{
     width: 8px;
@@ -22,4 +27,7 @@
     padding: 0px;
     top: -3px;
     right: -3px;
+    border-radius: 1000px;
+    min-height: inherit;
+    min-width: inherit;
 }

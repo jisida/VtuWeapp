@@ -75,6 +75,12 @@ class SwiperPage extends Mixin{
       current: e.detail.current
     })
   }
+
+  bindtransition = function(e) {
+  }
+
+  bindanimationfinish = function(e) {
+  }
 }
 
 Page(new SwiperPage({className: "SwiperPage", path: '/pages/comp/swiper/swiper', noShow: true}));

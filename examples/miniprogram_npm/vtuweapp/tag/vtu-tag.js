@@ -24,7 +24,7 @@ VtuComponent({
     },
     shape: {
       type: String,
-      value: null
+      value: "round"
     },
     status: {
       type: String,

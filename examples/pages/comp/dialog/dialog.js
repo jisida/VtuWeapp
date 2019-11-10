@@ -11,7 +11,8 @@ Page({
     })
   },
 
-  alert2: function() {
+  alert2: function () {
+    bindanimationfinish
     Dialog().alert({
       title: '普通提示',
       content: '显示您要确定的内容信息',

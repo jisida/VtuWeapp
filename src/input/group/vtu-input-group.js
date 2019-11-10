@@ -1,12 +1,6 @@
-const app = getApp()
-Component({
-
+import { VtuComponent } from '../../assets/package/component';
+VtuComponent({
   externalClasses: ['custom-class'],
-
-  options: {
-    multipleSlots: true
-  },
-
   // 定义和使用组件间关系
   relations: {
     '../item/vtu-input': {

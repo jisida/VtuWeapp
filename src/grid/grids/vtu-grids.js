@@ -20,7 +20,7 @@ VtuComponent({
   properties: {
     // 列数
     col: {
-      value: null,
+      value: 3,
       type: Number
     },
     // 边框
@@ -47,7 +47,19 @@ VtuComponent({
     fontSize: {
       type: String,
       value: null
-    }
+    },
+    imgWidth: {
+      type: String,
+      value: null
+    },
+    imgHeight: {
+      type: String,
+      value: null
+    },
+    imgMode: {
+      type: String,
+      value: "aspectFill"
+    },
   },
 
   /**

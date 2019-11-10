@@ -205,7 +205,13 @@ class SwitchtabFirstPage extends ComponentPage {
             wx.navigateTo({
                 url: "/pages/comp/prop/prop"
             });
+        },
+        imgPicker: function() {
+            wx.navigateTo({
+                url: "/pages/comp/imgPicker/imgPicker"
+            });
         }
+
     };
 }
 
