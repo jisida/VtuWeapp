@@ -5,7 +5,7 @@
 </p>
 
 ## 文档
-[https://ui.vtuzx.com](https://ui.vtuzx.com/#/plug/switch)
+<a href="https://ui.vtuzx.com" target="_blank">https://ui.vtuzx.com</a>
 
 ## 体验
 使用微信扫一扫体验小程序组件示例
