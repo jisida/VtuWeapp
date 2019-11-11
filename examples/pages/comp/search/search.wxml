@@ -1,0 +1,48 @@
+<view class="container">
+  <vtu-navbar title="Search"></vtu-navbar>
+  <view class="search">
+    <view class="search_title">基础用法</view>
+    <vtu-search></vtu-search>
+  </view>
+  <view class="search">
+    <view class="search_title">复合型</view>
+    <vtu-search search-shape="circle">
+      <vtu-btn slot="append" type="primary" inlineBlock round shadow width="70px" size="small">搜索</vtu-btn>
+    </vtu-search>
+  </view>
+  <view class="search">
+    <view class="search_title">居中</view>
+    <vtu-search search-shape="circle" search-align="center" search-icon height="60px" ></vtu-search>
+  </view>
+  <view class="search">
+    <view class="search_title">自定义占位文字</view>
+    <vtu-search search-shape="circle" bg-color="red" placeholder="搜索图片、视频、网址" search-icon="iconfont icon-biaoxing">
+      <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/1.png" slot="prepend" circle size="small"></vtu-avatar>
+    </vtu-search>
+  </view>
+  <view class="search">
+    <view class="search_title">自定义背景色</view>
+    <vtu-search  bg-color="#1cbbb4">
+      <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/2.png" slot="prepend" circle size="small"></vtu-avatar>
+    </vtu-search>
+  </view>
+  <view class="search">
+    <view class="search_title">高级用法</view>
+    <vtu-search search-shape="circle" bg-color="#6739b6" placeholder="搜索图片、视频、网址" confirm-type="send">
+      <picker mode="region" slot="prepend">
+        <view class="select"> 北京 <i class="iconfont icon-jiantouxia"></i></view>
+      </picker>
+      <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/1.png" slot="append" circle size="small"></vtu-avatar>
+    </vtu-search>
+  </view>
+  <view class="search">
+    <vtu-search bg-color="#333333" input-bg-color="#000" font-color="#fff" bind:clear="clear" bind:focus="focus" bind:confirm="confirm" bind:blur="blur">
+      <div class="iconList" slot="append" >
+        <i class="iconfont icon-jiahao"></i>
+        <i class="iconfont icon-yijian">
+          <vtu-badge right="0px" top="-5px" is-dot></vtu-badge>
+        </i>
+      </div>
+    </vtu-search>
+  </view>
+</view>

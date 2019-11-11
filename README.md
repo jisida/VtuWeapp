@@ -5,7 +5,7 @@
 </p>
 
 ## 文档
-[https://vtuui.vtuzx.com](https://vtuui.vtuzx.com)
+[https://ui.vtuzx.com](https://ui.vtuzx.com/#/plug/switch)
 
 ## 体验
 使用微信扫一扫体验小程序组件示例

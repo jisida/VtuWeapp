@@ -1,0 +1,16 @@
+<view class="container">
+  <vtu-navbar title="阴影样式"></vtu-navbar>
+  <view class="center Page_Margin">
+
+    <view class="shadow white shadow-default">默认阴影</view>
+    <view class="shadow white shadow-warp">翘边阴影</view>
+    <view class="shadow green shadow-blur">根据背景色改变阴影</view>
+    <view class="shadow mauve shadow-blur">根据背景色改变阴影</view>
+    <view class="shadow img shadow-blur" style="background-image:url(https://activity.vtuzx.com/doc/vtuUI/weapp/swiper/4.png);">
+      <view>根据背景图而改变的阴影</view>
+    </view>
+    <view class="shadow img shadow-blur" style="background-image:url(https://activity.vtuzx.com/doc/vtuUI/weapp/swiper/1.png);">
+      <view>根据背景图而改变的阴影</view>
+    </view>
+  </view>
+</view>

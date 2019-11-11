@@ -1,0 +1,23 @@
+.shadow{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+.shadow.white{
+  background: #fff;
+  color: #000;
+}
+.shadow.green{
+  background: #1cbbb4;
+  color: #fff;
+}
+.shadow.mauve{
+  background: #9c26b0;
+  color: #fff;
+}
+.shadow.img{
+  color: #fff;
+}

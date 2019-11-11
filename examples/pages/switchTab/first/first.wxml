@@ -6,11 +6,15 @@
             <view class="TopSpan_Desc">简单、丰富的小程序UI组件库</view>
         </view>
         <vtu-panel content-class="contentClass" round card>
+            <vtu-cell slot="header" title="css样式" icon="iconfont icon-jichu" icon-color="#40cff9" border panel-header></vtu-cell>
+            <vtu-cell title="Color" value="色彩" border arrow bind:click="color"></vtu-cell>
+            <vtu-cell title="Background" value="背景色" border arrow bind:click="background"></vtu-cell>
+            <vtu-cell title="Shadow" value="阴影" border arrow bind:click="shadow"></vtu-cell>
+        </vtu-panel>
+        <vtu-panel content-class="contentClass" round card>
             <vtu-cell slot="header" title="基础组件" icon="iconfont icon-jichu" icon-color="#40cff9" border panel-header></vtu-cell>
             <vtu-cell title="Button" value="按钮" border arrow bind:click="button"></vtu-cell>
             <vtu-cell title="Cell" value="单元格" border arrow bind:click="cell"></vtu-cell>
-            <vtu-cell title="Color" value="色彩" border arrow bind:click="color"></vtu-cell>
-            <vtu-cell title="Background" value="背景色" border arrow bind:click="background"></vtu-cell>
             <vtu-cell title="Layout" value="栅格布局" arrow bind:click="layout"></vtu-cell>
         </vtu-panel>
         <vtu-panel content-class="contentClass" round card>
@@ -38,7 +42,8 @@
             <vtu-cell title="Divider" value="分割线" border arrow bind:click="divider"></vtu-cell>
             <vtu-cell title="Switch" value="开关" border arrow bind:click="switch"></vtu-cell>
             <vtu-cell title="ImgPicker" value="图片选择器" border arrow bind:click="imgPicker"></vtu-cell>
-            <vtu-cell title="Input" value="表单" arrow bind:click="input"></vtu-cell>
+            <vtu-cell title="Input" value="表单" border arrow bind:click="input"></vtu-cell>
+            <vtu-cell title="Search" value="搜索" arrow bind:click="search"></vtu-cell>
         </vtu-panel>
         <vtu-panel content-class="contentClass" round card>
             <vtu-cell slot="header" title="反馈组件" icon="iconfont icon-icon-fankuizujian" icon-color="#40cff9" border panel-header></vtu-cell>

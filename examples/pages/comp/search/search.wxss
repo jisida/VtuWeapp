@@ -1,0 +1,28 @@
+.search{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.search_title{
+  margin: 0 10px 10px 10px;
+  width: calc(100% - 20px);
+  height: 20px;
+  font-size: 12px;
+  line-height: 20px;
+}
+.search .select{
+  color: #fff;
+  font-size: 14px;
+}
+.search .select i{
+  font-size: 10px;
+}
+.iconList{
+}
+.iconList i{
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  font-size: 24px;
+  position: relative;
+}

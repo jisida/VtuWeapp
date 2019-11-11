@@ -57,7 +57,7 @@
 
     <vtu-panel custom-class="panel">
       <vtu-cell slot="header" title="图标按钮"  border></vtu-cell>
-      <vtu-btn  custom-class="btn-class iconBtn" inlineBlock icon="iconfont icon-jiansuo"></vtu-btn>
+      <vtu-btn custom-class="btn-class iconBtn" inlineBlock icon="iconfont icon-jiansuo"></vtu-btn>
       <vtu-btn  custom-class="btn-class iconBtn" inlineBlock type="primary" icon="iconfont icon-jiansuo">主要按钮</vtu-btn>
       <vtu-btn  custom-class="btn-class iconBtn" inlineBlock type="success" icon="iconfont icon-shangchuan">成功按钮</vtu-btn>
       <vtu-btn  custom-class="btn-class iconBtn" inlineBlock type="warning" icon="iconfont icon-bianji"></vtu-btn>
