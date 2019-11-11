@@ -117,6 +117,10 @@ page{
     line-clamp: 3;
     -webkit-box-orient: vertical;
 }
+/*圆形*/
+.is-circle{
+  border-radius: 1000px;
+}
 /*圆角*/
 .is-round{
     border-radius: var(--round);
@@ -140,7 +144,6 @@ page{
 .font-yellow{
     color: var(--yellow) !important;
 }
-
 /****************************************************************
                             背景颜色
 ****************************************************************/
@@ -208,7 +211,7 @@ page{
 /****************************************************************
                             阴影样式
 ****************************************************************/
-/*翘边阴影*/
+/*--------------------翘边阴影---------------*/
 .shadow-warp {
     position: relative;
     box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
@@ -230,8 +233,11 @@ page{
     left: auto;
     transform: rotate(3deg);
 }
-
-/*按钮阴影*/
+/*--------------------默认阴影---------------*/
+.shadow-default{
+  box-shadow:0 1rpx 6rpx var(--blackShadow);
+}
+/*--------------------根据背景色改变阴影---------------*/
 .shadow-blur {
     position: relative;
 }

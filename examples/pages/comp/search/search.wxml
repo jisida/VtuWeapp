@@ -11,7 +11,7 @@
     </vtu-search>
   </view>
   <view class="search">
-    <view class="search_title">居中</view>
+    <view class="search_title">占位内容居中</view>
     <vtu-search search-shape="circle" search-align="center" search-icon height="60px" ></vtu-search>
   </view>
   <view class="search">
@@ -37,12 +37,12 @@
   </view>
   <view class="search">
     <vtu-search bg-color="#333333" input-bg-color="#000" font-color="#fff" bind:clear="clear" bind:focus="focus" bind:confirm="confirm" bind:blur="blur">
-      <div class="iconList" slot="append" >
+      <view class="iconList" slot="append" >
         <i class="iconfont icon-jiahao"></i>
         <i class="iconfont icon-yijian">
           <vtu-badge right="0px" top="-5px" is-dot></vtu-badge>
         </i>
-      </div>
+      </view>
     </vtu-search>
   </view>
 </view>

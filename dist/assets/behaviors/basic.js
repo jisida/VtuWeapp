@@ -140,6 +140,8 @@ export const behavior_button = {
     size: { value: "default", type: String },
     /** 指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。*/
     lang: { value: "en", type: String },
+    /** 按钮宽度*/
+    width: { value: null, type: String },
     /** 按钮开放能力 **/
     openType: String,
     /** 加载中文本**/

@@ -1,0 +1,25 @@
+<view class="Vtu_Search custom-class" style="height: {{height}};background-color: {{bgColor}};">
+  <view class="Vtu_Search_Prepend">
+    <slot name="prepend"></slot>
+  </view>
+  <view class="Vtu_Search_Input">
+    <view class="Vtu_Search_Input_Center is-{{searchShape}} is-{{searchAlign}}" style="background-color: {{inputBgColor}};color: {{fontColor}}">
+      <view class="Vtu_Search_Input_Center_Icon {{searchIcon}}"></view>
+      <view class="Vtu_Search_Input_Center_Input">
+        <input type="text" placeholder="{{placeholder}}"
+               confirm-type="{{confirmType}}"
+               bindinput="bindinput"
+               bindfocus="bindfocus"
+               bindblur="bindblur"
+               bindconfirm="bindconfirm"
+               value="{{value}}"
+               style="font-size: {{fontSize}};color: {{fontColor}}"
+        />
+        <view class="close vtu-icon vtu-icon-x" wx:if="{{clearable}}" hidden="{{!showClear}}" bindtap="clear" ></view>
+      </view>
+    </view>
+  </view>
+  <view class="Vtu_Search_Append">
+    <slot name="append"></slot>
+  </view>
+</view>

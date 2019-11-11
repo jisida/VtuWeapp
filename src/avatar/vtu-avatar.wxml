@@ -1,5 +1,6 @@
 <view class="Vtu_Avatar Vtu_Avatar--{{size}} custom-class {{commonClass}} {{smooth?'is-smooth':''}}"
       style="background: {{bgColor}};color: {{color}};width:{{width}};height:{{width}};{{commonStyle}}"
+      slot="{{slot}}"
       bindtap="bindClick">
     <image src="{{src}}" class="Vtu_Avatar_Image image-class" wx:if="{{src}}"></image>
     <i class="Vtu_Avatar_Icon {{icon}} icon-class" wx:elif="{{icon}}"></i>

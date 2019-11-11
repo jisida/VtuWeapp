@@ -1,0 +1,66 @@
+@import "../assets/css/Vtu_Common.wxss";
+.Vtu_Search{
+  width: 100%;
+  display: flex;
+}
+.Vtu_Search_Input{
+  height: 100%;
+  flex: 1;
+  position: relative;
+}
+.Vtu_Search_Input_Center{
+  height: calc(100% - 20px);
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translate(0, -50%);
+  display: table;
+}
+.Vtu_Search_Input_Center.is-left{
+  text-align: left;
+}
+.Vtu_Search_Input_Center.is-center{
+  text-align: center;
+}
+.Vtu_Search_Input_Center.is-right{
+  text-align: right;
+}
+.Vtu_Search_Input_Center_Icon{
+  width: 30px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.Vtu_Search_Input_Center_Input{
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+.Vtu_Search_Input_Center_Input input{
+  background: transparent;
+  height: 100%;
+}
+.Vtu_Search_Input_Center_Input .close{
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  background: rgba(203, 203, 203, 0.5);
+  color: #fff;
+  border-radius: 100px;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translate(0, -50%);
+  font-size: 12px;
+  z-index: 2;
+}
+
+.Vtu_Search_Prepend,
+.Vtu_Search_Append{
+  flex-grow: 0;
+  align-items: center;
+  display: flex;
+  padding: 0 10px;
+}
