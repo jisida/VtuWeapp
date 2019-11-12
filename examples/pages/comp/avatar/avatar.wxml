@@ -1,7 +1,7 @@
 <view class="container">
   <vtu-navbar title="Avatar"></vtu-navbar>
   <view class="center Page_Margin">
-    <vtu-panel custom-class="panel">
+    <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="形状"  border>
       </vtu-cell>
       <view class="avatar_li">
@@ -17,7 +17,7 @@
         <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/4.png" circle bind:click="select" data-index="4"></vtu-avatar>
       </view>
     </vtu-panel>
-    <vtu-panel custom-class="panel">
+    <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="尺寸"  border>
       </vtu-cell>
       <view class="avatar_li">
@@ -33,7 +33,7 @@
         <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/4.png" circle size="large"></vtu-avatar>
       </view>
     </vtu-panel>
-    <vtu-panel custom-class="panel">
+    <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="头像徽章" border>
       </vtu-cell>
       <view class="avatar_li">
@@ -57,7 +57,7 @@
         </vtu-avatar>
       </view>
     </vtu-panel>
-    <vtu-panel custom-class="panel">
+    <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="内嵌文字" border>
       </vtu-cell>
       <view class="avatar_li">
@@ -73,7 +73,7 @@
         <vtu-avatar content="图" circle size="large" bg-color="red" color="#fff"></vtu-avatar>
       </view>
     </vtu-panel>
-    <vtu-panel custom-class="panel">
+    <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="内嵌图标" border>
       </vtu-cell>
       <view class="avatar_li">
@@ -89,7 +89,7 @@
         <vtu-avatar icon="iconfont icon-biaoxingfill" circle size="large" bg-color="orange" color="#fff"></vtu-avatar>
       </view>
     </vtu-panel>
-    <vtu-panel custom-class="panel">
+    <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="默认"  border>
       </vtu-cell>
       <view class="avatar_li">

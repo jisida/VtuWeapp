@@ -1,6 +1,6 @@
 import { VtuComponent } from '../../assets/package/component';
 VtuComponent({
-  externalClasses: ['custom-class', 'icon-class', 'radio-class', 'radio-icon-class', 'label-class'],
+  externalClasses: ['icon-class', 'radio-class', 'radio-icon-class', 'label-class'],
   // 定义和使用组件间关系
   relations: {
     '../radio/vtu-radio': {

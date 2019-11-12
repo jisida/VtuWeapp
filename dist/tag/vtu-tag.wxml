@@ -1,4 +1,4 @@
-<view class="Vtu_Tag Vtu_Tag--{{size}} Vtu_Tag--{{type}} Vtu_Tag--{{status}} Vtu_Tag--{{shape}} custom-class" bindtap="bindClick"
+<view class="Vtu_Tag Vtu_Tag--{{size}} Vtu_Tag--{{type}} Vtu_Tag--{{status}} Vtu_Tag--{{shape}} v-class" bindtap="bindClick"
       style="background: {{type=='default'? bgColor:''}}; color: {{type!='default'?(fontColor||bgColor):fontColor}};border-color: {{type!='default'?bgColor:''}}">
     <block wx:if="{{type == 'capsule'}}">
         <view class="icon {{icon}} icon-class" wx:if="{{type == 'capsule' && icon}}" style="background: {{bgColor}}"></view>

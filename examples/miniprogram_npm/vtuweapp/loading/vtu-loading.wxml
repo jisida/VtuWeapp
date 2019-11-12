@@ -1,4 +1,4 @@
-<view class="Vtu_Loading {{round?'is-round':''}} {{fill?'is-fill':''}} {{fillScreen?'is-fillScreen':''}} custom-class" wx:if="{{show}}" style="background: {{bgColor}};height: {{height}}">
+<view class="Vtu_Loading {{round?'is-round':''}} {{fill?'is-fill':''}} {{fillScreen?'is-fillScreen':''}} v-class" wx:if="{{show}}" style="background: {{bgColor}};height: {{height}}">
     <view class="Vtu_Loading_Center">
         <view class="Vtu_Loading_Img" wx:if="{{img}}">
             <image src="{{img}}" mode="{{mode}}" class="img-class"></image>

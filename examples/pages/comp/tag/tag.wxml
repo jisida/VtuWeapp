@@ -2,7 +2,7 @@
   <vtu-navbar title="Tag"></vtu-navbar>
   <view class="center Page_Margin">
 
-    <vtu-panel custom-class="panel">
+    <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="实心标签" border></vtu-cell>
       <vtu-tag>标签</vtu-tag>
       <vtu-tag bg-color="red" font-color="#fff">标签</vtu-tag>
@@ -17,13 +17,13 @@
       <vtu-tag bg-color="#fdf6ec" font-color="#e6a23c" shape="round">标签</vtu-tag>
     </vtu-panel>
 
-    <vtu-panel custom-class="panel">
+    <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="标签尺寸" border></vtu-cell>
       <vtu-tag>标签</vtu-tag>
       <vtu-tag size="mini">标签</vtu-tag>
     </vtu-panel>
 
-    <vtu-panel custom-class="panel">
+    <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="镂空标签" border></vtu-cell>
       <vtu-tag type="out">标签</vtu-tag>
       <vtu-tag type="out" bg-color="red">标签</vtu-tag>
@@ -36,14 +36,14 @@
       <vtu-tag type="out" bg-color="#fc973d" shape="round">标签</vtu-tag>
     </vtu-panel>
 
-    <vtu-panel custom-class="panel">
+    <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="胶囊标签" border></vtu-cell>
       <vtu-tag type="capsule" icon="iconfont icon-xihuanfill">标签</vtu-tag>
       <vtu-tag type="capsule" icon="iconfont icon-xihuanfill" shape="circle" status="warning">标签</vtu-tag>
       <vtu-tag type="capsule" icon="iconfont icon-xihuanfill" shape="round" size="mini" bg-color="red">标签</vtu-tag>
     </vtu-panel>
 
-    <vtu-panel custom-class="panel">
+    <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="内置状态" border></vtu-cell>
       <vtu-tag type="out" status="primary">默认</vtu-tag>
       <vtu-tag status="primary">默认</vtu-tag>
@@ -55,7 +55,7 @@
       <vtu-tag status="warning">警告</vtu-tag>
     </vtu-panel>
 
-    <vtu-panel custom-class="panel">
+    <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="可删除" border></vtu-cell>
       <vtu-tag delete shape="circle" bind:click="click" data-label="上海" data-index="0">上海</vtu-tag>
       <vtu-tag type="out" shape="circle" delete data-label="南京" data-index="1" bind:click="click">南京</vtu-tag>

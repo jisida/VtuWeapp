@@ -10,6 +10,6 @@
     </view>
     <slot name="footer">
     </slot>
-    <vtu-btn wx:if="{{showCancel}}" type="{{cancelType}}" custom-class="Vtu_Prop_Center_Cancel" bindtap="close">{{cancelLabel}}</vtu-btn>
+    <vtu-btn wx:if="{{showCancel}}" type="{{cancelType}}" v-class="Vtu_Prop_Center_Cancel" bindtap="close">{{cancelLabel}}</vtu-btn>
   </view>
 </view>

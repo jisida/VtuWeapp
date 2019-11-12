@@ -1,6 +1,6 @@
 import { VtuComponent } from '../assets/package/component';
 VtuComponent({
-  externalClasses: ['custom-class', "swiper-class", "swiper-item-class", "swiper-item-img-class", 'swiper-content-class'],
+  externalClasses: ["swiper-class", "swiper-item-class", "swiper-item-img-class", 'swiper-content-class'],
   /**
    * 组件的属性列表
    */

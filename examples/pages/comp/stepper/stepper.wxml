@@ -1,30 +1,30 @@
 <view class="container">
   <vtu-navbar title="Stepper"></vtu-navbar>
   <view class="center Page_Margin">
-    <vtu-panel custom-class="panel" title="基础用法">
+    <vtu-panel v-class="panel" title="基础用法">
       <vtu-stepper value="{{value1}}" bind:change="bindChange"></vtu-stepper>
     </vtu-panel>
-    <vtu-panel custom-class="panel" title="尺寸大小">
+    <vtu-panel v-class="panel" title="尺寸大小">
       <view class="stepperSpan"><vtu-stepper value="{{value1}}" bind:change="bindChange"></vtu-stepper></view>
       <view class="stepperSpan"><vtu-stepper value="{{value1}}" bind:change="bindChange" size="small"></vtu-stepper></view>
       <view class="stepperSpan"><vtu-stepper value="{{value1}}" bind:change="bindChange" size="mini"></vtu-stepper></view>
     </vtu-panel>
-    <vtu-panel custom-class="panel" title="限制范围">
+    <vtu-panel v-class="panel" title="限制范围">
       <vtu-stepper value="{{value1}}" min="-1" max="5" bind:change="bindChange"></vtu-stepper>
     </vtu-panel>
-    <vtu-panel custom-class="panel" title="全部禁用状态">
+    <vtu-panel v-class="panel" title="全部禁用状态">
       <vtu-stepper value="{{value1}}" disabled bind:change="bindChange"></vtu-stepper>
     </vtu-panel>
-    <vtu-panel custom-class="panel" title="自定义步数(步数2)">
+    <vtu-panel v-class="panel" title="自定义步数(步数2)">
       <vtu-stepper value="{{value1}}" step="2"></vtu-stepper>
     </vtu-panel>
-    <vtu-panel custom-class="panel" title="异步处理">
+    <vtu-panel v-class="panel" title="异步处理">
       <vtu-stepper value="{{value1}}" async="true" bind:change="bindAsyncChange"></vtu-stepper>
     </vtu-panel>
-    <vtu-panel custom-class="panel" title="自定义宽度">
+    <vtu-panel v-class="panel" title="自定义宽度">
       <vtu-stepper value="{{value1}}" input-width="80px"></vtu-stepper>
     </vtu-panel>
-    <vtu-panel custom-class="panel" title="自定义按钮样式">
+    <vtu-panel v-class="panel" title="自定义按钮样式">
       <vtu-stepper value="{{value1}}" minus-btn-type="danger" plus-btn-type="primary" size="small"></vtu-stepper>
     </vtu-panel>
   </view>

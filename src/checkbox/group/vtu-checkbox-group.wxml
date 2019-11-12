@@ -1,4 +1,4 @@
-<view class="Vtu_CheckBoxGroup custom-class">
+<view class="Vtu_CheckBoxGroup v-class">
   <view class="Vtu_CheckBoxGroup_CheckBox {{item.disabled?'is-disabled':''}} {{item.checked ? 'is-active' : ''}} checkbox-class"
         wx:for="{{checkboxList}}" wx:key="index"
         hover-class="{{item.disabled?'':'Vtu_CheckBoxGroup_CheckBox_Hover'}}"

@@ -1,7 +1,7 @@
 <view class="container">
   <vtu-navbar title="Checkbox"></vtu-navbar>
   <view class="center Page_Margin">
-    <vtu-panel custom-class="panel">
+    <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="基础用法" border></vtu-cell>
       <vtu-checkbox-group model="{{value1}}" bind:change="change">
         <vtu-checkbox value="1" label="北京"></vtu-checkbox>
@@ -10,7 +10,7 @@
         <vtu-checkbox value="4" label="南京"></vtu-checkbox>
       </vtu-checkbox-group>
     </vtu-panel>
-    <vtu-panel custom-class="panel">
+    <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="自定义" border ></vtu-cell>
       <vtu-checkbox-group model="{{value1}}" align="right" active-color="red" checkbox-icon="iconfont icon-fangxingweixuanzhong" active-checkbox-icon="iconfont icon-fangxingxuanzhongfill" bind:change="change">
         <vtu-checkbox value="1" label="北京"></vtu-checkbox>
@@ -19,7 +19,7 @@
         <vtu-checkbox value="4" label="南京"></vtu-checkbox>
       </vtu-checkbox-group>
     </vtu-panel>
-    <vtu-panel custom-class="panel">
+    <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="自定义图标" border></vtu-cell>
       <vtu-checkbox-group model="{{value1}}" max="{{3}}" align="right" checkbox-icon="" active-color="orange" active-checkbox-icon="iconfont icon-duihao" active-checkbox-color="blue" bind:change="change">
         <vtu-checkbox value="1" label="北京" icon="iconfont icon-biaoxing" ></vtu-checkbox>
@@ -29,7 +29,7 @@
       </vtu-checkbox-group>
     </vtu-panel>
 
-    <vtu-panel custom-class="panel">
+    <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="弹出复选框" border></vtu-cell>
       <vtu-btn type="primary" bind:click="openCheckboxProp">弹出复选框</vtu-btn>
     </vtu-panel>

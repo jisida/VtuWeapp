@@ -1,13 +1,13 @@
 <view class="container">
   <vtu-navbar title="Prop"></vtu-navbar>
   <view class="center Page_Margin">
-    <vtu-panel custom-class="panel" title="基础用法">
-      <vtu-btn custom-class="btn-class" bind:click="showProp1">底部弹出</vtu-btn>
-      <vtu-btn custom-class="btn-class" bind:click="showProp2">固定高度</vtu-btn>
-      <vtu-btn custom-class="btn-class" bind:click="showProp3">最大高度</vtu-btn>
+    <vtu-panel v-class="panel" title="基础用法">
+      <vtu-btn v-class="btn-class" bind:click="showProp1">底部弹出</vtu-btn>
+      <vtu-btn v-class="btn-class" bind:click="showProp2">固定高度</vtu-btn>
+      <vtu-btn v-class="btn-class" bind:click="showProp3">最大高度</vtu-btn>
     </vtu-panel>
-    <vtu-panel custom-class="panel" title="高级用法">
-      <vtu-btn custom-class="btn-class" bind:click="showProp4">固定顶端底端</vtu-btn>
+    <vtu-panel v-class="panel" title="高级用法">
+      <vtu-btn v-class="btn-class" bind:click="showProp4">固定顶端底端</vtu-btn>
     </vtu-panel>
   </view>
   <vtu-prop title="底部弹出" show="{{show1}}" show-cancel cancel-type="primary" cancel-label="完成">

@@ -1,4 +1,4 @@
-<view class="Vtu_Sheet custom-class">
+<view class="Vtu_Sheet v-class">
     <view class="Vtu_Sheet_Mask" animation="{{maskAnimation}}" hidden="{{!showOverlay}}" bindtap="{{closeOnClickOverlay?'closeByMask':''}}"></view>
     <view class="Vtu_Sheet_Center" animation="{{centerAnimation}}">
         <view class="Vtu_Sheet_Center_List sheet-class">

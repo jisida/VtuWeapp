@@ -1,6 +1,6 @@
 <view class="container">
   <vtu-navbar title="Empty"></vtu-navbar>
-  <vtu-tabs value="{{type}}" bind:change="change" item-align="center" custom-class="tabClass" z-index="111">
+  <vtu-tabs value="{{type}}" bind:change="change" item-align="center" v-class="tabClass" z-index="111">
     <vtu-tab label="图片" name="name1"></vtu-tab>
     <vtu-tab label="自定义" name="name2"></vtu-tab>
     <vtu-tab label="icon" name="name3"></vtu-tab>

@@ -1,4 +1,4 @@
-<view class="Vtu_Dialog custom-class">
+<view class="Vtu_Dialog v-class">
   <view class="Vtu_Dialog_Mask mask-class" animation="{{maskAnimation}}" bindtap="{{closeOnClickOverlay?'closeDialog':''}}"></view>
   <view class="Vtu_Dialog_Center center-class" animation="{{centerAnimation}}">
     <view class="Vtu_Dialog_Center_Common">
@@ -20,7 +20,7 @@
                  size="{{item.size || buttonSize}}"
                  icon="{{item.icon}}"
                  loading="{{item.loading||false}}"
-                 custom-class="Footer_Button"
+                 v-class="Footer_Button"
                  openType="{{item.openType}}"
                  session-from="{{item.sessionFrom}}"
                  send-message-title="{{item.sendMessageTitle}}"

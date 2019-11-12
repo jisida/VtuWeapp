@@ -1,4 +1,4 @@
-<button class="Vtuzx_Input custom-class {{border?'is-border':''}} {{round?'is-round':''}}"
+<button class="Vtuzx_Input v-class {{border?'is-border':''}} {{round?'is-round':''}}"
         slot="{{slot}}"
         disabled="{{disabled}}"
         hover-class="{{arrow?'Vtuzx_Input_Hover':''}}"

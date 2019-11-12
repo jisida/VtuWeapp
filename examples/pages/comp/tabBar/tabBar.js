@@ -2,13 +2,12 @@ Page({
   data: {
     current: 0,
     type: 1,
-    swiperHeight: 0,
-    windowHeight: wx.getSystemInfoSync().windowHeight
+    navBarHeight: 0
   },
 
   navBarLoad: function(e) {
     this.setData({
-      swiperHeight: this.data.windowHeight - e.detail.navBarHeight - 55
+      navBarHeight: e.detail.navBarHeight
     })
   },
 

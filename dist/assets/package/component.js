@@ -5,9 +5,8 @@ function VtuComponent(vtuOptions = {}) {
       multipleSlots: true,
       styleIsolation: "apply-shared"
     },
-    externalClasses:  ['custom-class'].concat(vtuOptions.externalClasses || [])
+    externalClasses:  ['v-class'].concat(vtuOptions.externalClasses || [])
   })
-
   if (vtuOptions.behaviors && vtuOptions.behaviors.length > 0) {
     let behaviors = []
     vtuOptions.behaviors.forEach(item => {
@@ -26,7 +25,7 @@ function VtuComponent(vtuOptions = {}) {
   }
   if(!vtuOptions.behaviors) vtuOptions.behaviors = []
   // 基础混入对象
-  vtuOptions.behaviors.push(Behavior(basic))
+  vtuOptions.behaviors.push(Behavior(basic()))
   // 当前组件混入对象
   if (vtuOptions.behavior) {
     vtuOptions.behaviors.push(Behavior(vtuOptions.behavior))

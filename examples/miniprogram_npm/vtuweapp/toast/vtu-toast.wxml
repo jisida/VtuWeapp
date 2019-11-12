@@ -1,4 +1,4 @@
-<view class="Vtu_Toast custom-class">
+<view class="Vtu_Toast v-class">
   <view class="Vtu_Toast_Mask mask-class" animation="{{maskAnimation}}" bindtap="{{closeOnClickOverlay?'closeToast':''}}"></view>
   <view class="Vtu_Toast_Center center-class {{type?'':'is-label'}}" animation="{{centerAnimation}}">
     <view class="Vtu_Toast_Center_Icon" wx:if="{{type == 'success' || type == 'error' || type == 'warning' || type == 'loading' || type == 'default'}}">

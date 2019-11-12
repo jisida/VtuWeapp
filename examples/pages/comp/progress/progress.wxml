@@ -1,7 +1,7 @@
 <view class="container">
   <vtu-navbar title="Progress"></vtu-navbar>
   <view class="center Page_Margin">
-    <vtu-panel custom-class="panel">
+    <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="基础用法"  border>
         <view class="" slot="after" >
           <vtu-btn bind:click="plus" type="primary" size="small">加</vtu-btn>
@@ -18,7 +18,7 @@
         </view>
     </vtu-panel>
 
-    <vtu-panel custom-class="panel">
+    <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="尺寸大小"  border>
         <view class="" slot="after" >
           <vtu-btn bind:click="minus" type="danger" size="small">减</vtu-btn>
@@ -35,7 +35,7 @@
         </view>
     </vtu-panel>
 
-    <vtu-panel custom-class="panel">
+    <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="状态"  border>
         <view class="" slot="after" >
           <vtu-btn bind:click="plus" type="primary" size="small">加</vtu-btn>
@@ -57,7 +57,7 @@
         </view>
     </vtu-panel>
 
-    <vtu-panel custom-class="panel">
+    <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="环状进度条"  border>
         <view class="" slot="after" >
           <vtu-btn bind:click="minus" type="danger" size="small">减</vtu-btn>

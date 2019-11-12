@@ -1,4 +1,4 @@
-<view class="custom-class Vtu_ImgPicker" style="grid-template-columns: repeat({{col}}, calc((100% - {{(col-1)*10}}px)/{{col}}))">
+<view class="v-class Vtu_ImgPicker" style="grid-template-columns: repeat({{col}}, calc((100% - {{(col-1)*10}}px)/{{col}}))">
   <view class="Vtu_ImgPicker_Li" wx:for="{{list}}">
     <image src="{{item.url}}" class="Vtu_ImgPicker_Li_Image image-class" mode='{{mode}}' bindtap="previewImage" data-item="{{item}}" data-index="{{index}}"></image>
     <view class="delete vtu-icon vtu-icon-x" wx:if="{{delete}}" hover-class="delete_hover" bindtap="deleteItem" data-item="{{item}}" data-index="{{index}}"></view>

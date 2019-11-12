@@ -1,4 +1,4 @@
-<view class="Vtu_NoticeBar Vtu_NoticeBar--{{type}} custom-class border--{{border?'border':''}} border--{{borderLeft?'left':''}} border--{{borderRight?'right':''}} border--{{borderBottom?'bottom':''}} border--{{borderTop?'top':''}}"
+<view class="Vtu_NoticeBar Vtu_NoticeBar--{{type}} v-class border--{{border?'border':''}} border--{{borderLeft?'left':''}} border--{{borderRight?'right':''}} border--{{borderBottom?'bottom':''}} border--{{borderTop?'top':''}}"
       wx:if="{{show}}"
       style="background: {{bgColor}};color: {{color}};border-color: {{borderColor}};border-size: {{borderSize}}; border:{{borderStyle}};border-right:{{borderRightStyle}};border-left:{{borderLeftStyle}};border-top:{{borderTopStyle}};border-bottom:{{borderBottomStyle}};"
       bindtap="click">

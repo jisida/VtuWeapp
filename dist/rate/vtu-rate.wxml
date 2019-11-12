@@ -1,4 +1,4 @@
-<view class="Vtu_Rate custom-class" slot="{{slot}}">
+<view class="Vtu_Rate v-class" slot="{{slot}}">
     <span class="Vtu_Rate_Li item-class {{index < value ? 'is-selected ' + activeIcon : icon }} {{disabled?'is-disabled':''}}"
           style="font-size: {{size}};color: {{(index < value)?activeColor:color}};" wx:for="{{count}}"
           bindtap="{{readonly||disabled?'':'bindChange'}}" data-index="{{index}}"></span>

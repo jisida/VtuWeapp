@@ -1,4 +1,4 @@
-<view class="custom-class Vtu_Stepper">
+<view class="v-class Vtu_Stepper">
     <view class="Vtu_Stepper_Btn Minus" wx:if="{{showMinus}}">
         <vtu-btn type="{{minusBtnType}}" icon="vtu-icon vtu-icon-move" disabled="{{disabled || value<=min}}" size="{{size}}" bind:click="minusNum"></vtu-btn>
     </view>

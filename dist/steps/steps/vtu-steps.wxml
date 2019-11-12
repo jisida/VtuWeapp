@@ -1,4 +1,4 @@
-<view class="Vtu_Steps custom-class Vtu_Steps--{{direction}}">
+<view class="Vtu_Steps v-class Vtu_Steps--{{direction}}">
     <view class="Vtu_Steps_Li {{alignCenter?'is-center':''}} {{value >= index ? 'is-active' : ''}} item-class" wx:for="{{stepsList}}" wx:key="index" style="color: {{value >= index?(item.activeColor||activeColor):(item.color||color)}} !important">
         <view class="Vtu_Steps_Li_Icon">
             <view class="Vtu_Steps_Li_Icon_Span">

@@ -1,6 +1,6 @@
 import { VtuComponent } from '../../assets/package/component';
 VtuComponent({
-  externalClasses: ['custom-class', 'title-class', 'content-class'],
+  externalClasses: ['title-class', 'content-class'],
   // 定义和使用组件间关系
   relations: {
     '../group/vtu-collapse': {

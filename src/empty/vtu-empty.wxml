@@ -1,4 +1,4 @@
-<view class="Vtu_Empty custom-class {{fill?'is-fill':''}} {{fillScreen?'is-fillScreen':''}}" bindtap="click" data-data="{{data}}" style="height: {{fill||fillScreen?'100%':height}};z-index: {{zIndex}};">
+<view class="Vtu_Empty v-class {{fill?'is-fill':''}} {{fillScreen?'is-fillScreen':''}}" bindtap="click" data-data="{{data}}" style="height: {{fill||fillScreen?'100%':height}};z-index: {{zIndex}};">
     <view class="Vtu_Empty_Center">
         <view class="Vtu_Empty_Center_Icon {{icon}} icon-class" style="font-size: {{iconSize}};color: {{iconColor}}" wx:if="{{icon}}"></view>
         <view class="Vtu_Empty_Center_Src image-class" wx:if="{{src}}">

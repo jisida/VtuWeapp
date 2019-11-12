@@ -1,6 +1,6 @@
 import { VtuComponent } from '../assets/package/component';
 VtuComponent({
-  externalClasses: ['custom-class', 'mask-class', 'center-class', 'content-class', 'footer-class'],
+  externalClasses: ['mask-class', 'center-class', 'content-class', 'footer-class'],
   /**
    * 组件的属性列表
    */

@@ -2,7 +2,7 @@ import { VtuComponent } from '../assets/package/component';
 import {behavior_divider} from '../assets/behaviors/basic';
 VtuComponent({
   externalClasses: ['icon-class', 'img-class', 'label-class', 'load-label-class', 'load-end-label-class'],
-  behaviors:  [{name: 'divider', behavior: behavior_divider}],
+  behaviors:  [{name: 'divider', behavior: behavior_divider()}],
   /**
    * 组件的属性列表
    */

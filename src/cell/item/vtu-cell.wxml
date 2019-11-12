@@ -1,4 +1,4 @@
-<button class="Vtuzx_Cell custom-class {{border?'is-border':''}} {{round?'is-round':''}}"
+<button class="Vtuzx_Cell v-class {{border?'is-border':''}} {{round?'is-round':''}}"
         slot="{{slot}}"
         disabled="{{disabled}}"
         hover-class="{{arrow?'Vtuzx_Cell_Hover':''}}"

@@ -1,4 +1,4 @@
-<view class="Vtu_SwiperPanel custom-class">
+<view class="Vtu_SwiperPanel v-class">
   <swiper class="Vtu_SwiperPanel_Swiper swiper_class" current="{{current}}" bindchange="select" style="height: {{height}};">
     <swiper-item class="Vtu_SwiperPanel_Swiper_Item swiper_item_class" wx:for="{{swiperList}}" wx:key="index">
       <scroll-view scroll-y class="Vtu_SwiperPanel_Swiper_Item_Scroll swiper_item_class_scroll"

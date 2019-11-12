@@ -1,8 +1,7 @@
 import { VtuComponent } from '../../assets/package/component';
 import {behavior_badge} from '../../assets/behaviors/basic';
 VtuComponent({
-  externalClasses: ['custom-class'],
-  behaviors:  [{name: 'badge', behavior: behavior_badge}],
+  behaviors:  [{name: 'badge', behavior: behavior_badge()}],
   // 定义和使用组件间关系
   relations: {
     '../grids/vtu-grids': {

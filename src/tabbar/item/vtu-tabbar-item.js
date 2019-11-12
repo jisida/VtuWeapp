@@ -1,14 +1,13 @@
 import { VtuComponent } from '../../assets/package/component';
+import {behavior_badge} from '../../assets/behaviors/basic';
 VtuComponent({
-  externalClasses: ['custom-class'],
-
+  behaviors:  [{name: 'badge', behavior: behavior_badge()}],
   // 定义和使用组件间关系
   relations: {
     '../tabbar/vtu-tabbar': {
       type: 'parent'
     }
   },
-
   /**
    * 组件的属性列表
    */
@@ -66,38 +65,6 @@ VtuComponent({
       value: null
     },
     animation: null,
-
-    // 徽章
-    badge: null,
-    badgeMax: {
-      type: Number,
-      value: 0
-    },
-    // 类型 primary / success / warning / danger / info
-    badgeType: {
-      type: String,
-      value: "danger"
-    },
-    //圆角
-    badgeRound: {
-      type: Boolean,
-      value: false
-    },
-    //圆形
-    badgeCircle: {
-      type: Boolean,
-      value: true
-    },
-    //颜色
-    badgeColor: {
-      type: String,
-      value: null
-    },
-    // 小红点
-    badgeIsDot: {
-      type: Boolean,
-      value: false
-    },
     name: {
       type: String,
       value: null

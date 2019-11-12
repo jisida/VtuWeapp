@@ -1,4 +1,4 @@
-<view class="Vtu_LoadMore custom-class" wx:if="{{show}}">
+<view class="Vtu_LoadMore v-class" wx:if="{{show}}">
     <view class="Vtu_LoadMore_Loading" wx:if="{{loading}}">
         <view class="Vtu_LoadMore_Loading_Img" wx:if="{{img}}">
             <image src="{{img}}" mode="{{imgMode}}" class="img-class"></image>

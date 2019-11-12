@@ -1,4 +1,4 @@
-<view class="Vtu_Progress custom-class" slot="{{slot}}">
+<view class="Vtu_Progress v-class" slot="{{slot}}">
     <block wx:if="{{type == 'line'}}">
         <view class="Vtu_Progress_Line" style="height: {{strokeWidth}};line-height: {{strokeWidth}}">
             <view class="Vtu_Progress_Line_L {{round?'is-round':''}} {{circle?'is-circle':''}}">

@@ -1,4 +1,4 @@
-<view class="Vtu-Switch is-{{type}} is-{{checked?'open':'close'}} is-{{size}} {{disabled?'is-disabled':''}} {{simple?'is-simple':''}} custom-class" bindtap="{{disabled?'':'change'}}">
+<view class="Vtu-Switch is-{{type}} is-{{checked?'open':'close'}} is-{{size}} {{disabled?'is-disabled':''}} {{simple?'is-simple':''}} v-class" bindtap="{{disabled?'':'change'}}">
     <view class="Vtu-Switch-Bg {{checked?'open':'close'}}" style="background: {{checked?activeColor:color}}">
         <i wx:if="{{checked && activeIcon}}" class="icon open {{activeIcon}} icon-class"></i>
         <i wx:if="{{!checked && icon}}" class="icon close {{icon}} icon-class"></i>

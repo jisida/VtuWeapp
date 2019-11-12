@@ -35,7 +35,7 @@
   <block wx:if="{{style == 7}}">
     <vtu-navbar use-bar-slot show-nav-btn="{{false}}" fontColor="#fff">
       <vtu-tabs value="{{tabValue}}"
-                custom-class="tabClass" color="#606266"
+                v-class="tabClass" color="#606266"
                 tab-active-class="tabActiveClass"
                 is-average="{{false}}"
                 line="{{false}}"
@@ -54,7 +54,7 @@
   <view class="center Page_Margin">
     <view class="Cell_Span">
 
-      <vtu-panel custom-class="panel" content-class="content">
+      <vtu-panel v-class="panel" content-class="content">
         <vtu-cell slot="header" title="点击切换样式"  border></vtu-cell>
         <view >
           <vtu-radio-group model="{{style}}" align="right" active-color="red" radio-icon="iconfont icon-xuanze" active-radio-icon="iconfont icon-xuanze-danxuan" bind:change="radioChange">

@@ -1,4 +1,4 @@
-<view class="Vtu_Tabs {{round?'is-round':''}} {{fill?'is-fill':''}} custom-class" style="z-index: {{zIndex}}" id="Vtu_Tabs">
+<view class="Vtu_Tabs {{round?'is-round':''}} {{fill?'is-fill':''}} v-class" style="z-index: {{zIndex}}" id="Vtu_Tabs">
     <view class="Vtu_Tabs_Tab tab-class ">
         <view class="Vtu_Tabs_Tab_Center tab-class {{border?'is-border':''}} {{fixed?'is-fixed':''}}" style="background: {{bgColor}};top: {{fixedTop}}px;">
             <scroll-view enable-flex="{{true}}" scroll-x="{{tabList.length > swipeThreshold}}" class="Vtu_Tabs_Tab_Scroll" scroll-into-view="{{'menu_' + value}}">

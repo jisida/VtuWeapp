@@ -1,6 +1,6 @@
 import { VtuComponent } from '../assets/package/component';
 VtuComponent({
-  externalClasses: ['custom-class', 'tab-class', 'tab-li-class', 'tab-active-class', 'tab-content-class'],
+  externalClasses: ['tab-class', 'tab-li-class', 'tab-active-class', 'tab-content-class'],
   // 定义和使用组件间关系
   relations: {
     '../tab/vtu-tab': {

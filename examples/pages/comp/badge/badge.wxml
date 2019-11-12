@@ -2,7 +2,7 @@
   <vtu-navbar title="Badge"></vtu-navbar>
   <view class="center Page_Margin">
 
-    <vtu-panel custom-class="panel" title="基础用法" >
+    <vtu-panel v-class="panel" title="基础用法" >
       <view class="Badge_Btn">
         <vtu-badge value="15" user-slot>
           <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/3.png" circle size="small"></vtu-avatar>
@@ -20,7 +20,7 @@
       </view>
     </vtu-panel>
 
-    <vtu-panel custom-class="panel" title="最大值(适用于数字)">
+    <vtu-panel v-class="panel" title="最大值(适用于数字)">
       <view class="Badge_Btn">
         <vtu-badge value="15" max="10" user-slot>
           <vtu-btn>最大10</vtu-btn>
@@ -33,7 +33,7 @@
       </view>
     </vtu-panel>
 
-    <vtu-panel custom-class="panel" title="小红点">
+    <vtu-panel v-class="panel" title="小红点">
       <view class="Badge_Btn">
         <vtu-badge is-dot="true" user-slot>
           <vtu-btn>按钮</vtu-btn>

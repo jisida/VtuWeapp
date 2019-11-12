@@ -2,7 +2,7 @@ import { VtuComponent } from '../assets/package/component';
 import {behavior_loading} from '../assets/behaviors/basic';
 VtuComponent({
   externalClasses: ['content-class', 'footer-class', 'loading-class', 'title-class'],
-  behaviors:  [{name: 'l', behavior: behavior_loading}],
+  behaviors:  [{name: 'l', behavior: behavior_loading()}],
   /**
    * 组件的属性列表
    */

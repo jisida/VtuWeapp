@@ -8,7 +8,7 @@ VtuComponent({
       type: 'parent'
     }
   },
-  behavior:  behavior_button ,
+  behavior:  behavior_button() ,
 
   /**
    * 组件的属性列表

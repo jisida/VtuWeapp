@@ -1,4 +1,4 @@
-<view class="Vtu_Avatar Vtu_Avatar--{{size}} custom-class {{commonClass}} {{smooth?'is-smooth':''}}"
+<view class="Vtu_Avatar Vtu_Avatar--{{size}} v-class {{commonClass}} {{smooth?'is-smooth':''}}"
       style="background: {{bgColor}};color: {{color}};width:{{width}};height:{{width}};{{commonStyle}}"
       slot="{{slot}}"
       bindtap="bindClick">

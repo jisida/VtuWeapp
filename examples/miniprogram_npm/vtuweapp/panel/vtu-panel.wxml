@@ -1,4 +1,4 @@
-<view class="custom-class Vtu_Panel {{commonClass}}" id="{{id}}"
+<view class="v-class Vtu_Panel {{commonClass}}" id="{{id}}"
       style="background: {{bgColor}}; {{commonStyle}};">
     <view class="Vtu_Panel_Title title-class" wx:if="{{title}}">{{title}}</view>
     <slot name="header"></slot>

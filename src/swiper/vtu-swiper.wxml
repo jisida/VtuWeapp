@@ -1,4 +1,4 @@
-<view class="Vtu_Swipe_Body custom-class">
+<view class="Vtu_Swipe_Body v-class">
     <swiper class="swiper-class Vtu_Swiper Vtu_Swiper--{{type}} {{dotType}}--dot"
             indicator-dots="{{indicatorDots && dotType=='default'}}"
             indicator-color="{{indicatorColor}}"

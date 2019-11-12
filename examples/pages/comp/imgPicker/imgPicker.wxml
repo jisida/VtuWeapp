@@ -1,19 +1,19 @@
 <view class="container">
   <vtu-navbar title="ImgPicker"></vtu-navbar>
   <view class="center Page_Margin">
-    <vtu-panel custom-class="panel"  title="基础用法">
+    <vtu-panel v-class="panel"  title="基础用法">
       <vtu-imgPicker list="{{imgList}}"> </vtu-imgPicker>
     </vtu-panel>
-    <vtu-panel custom-class="panel"  title="自定义图片数量(count=3)">
+    <vtu-panel v-class="panel"  title="自定义图片数量(count=3)">
       <vtu-imgPicker count="3" list="{{imgList}}"> </vtu-imgPicker>
     </vtu-panel>
-    <vtu-panel custom-class="panel"  title="自定义每行数量(col=3)">
+    <vtu-panel v-class="panel"  title="自定义每行数量(col=3)">
       <vtu-imgPicker col="4" list="{{imgList}}"> </vtu-imgPicker>
     </vtu-panel>
-    <vtu-panel custom-class="panel"  title="不可删除(delete=false)">
+    <vtu-panel v-class="panel"  title="不可删除(delete=false)">
       <vtu-imgPicker col="4" list="{{imgList}}" delete="{{false}}"> </vtu-imgPicker>
     </vtu-panel>
-    <vtu-panel custom-class="panel"  title="监听事件">
+    <vtu-panel v-class="panel"  title="监听事件">
       <vtu-imgPicker col="4" list="{{imgList}}" bind:change="change" bind:remove="remove" bind:preview="preview"></vtu-imgPicker>
     </vtu-panel>
   </view>

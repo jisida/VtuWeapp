@@ -2,7 +2,7 @@
   <vtu-navbar title="Steps" navbar-class="navBar" font-color="#fff"></vtu-navbar>
   <view class="center Page_Margin">
     <view class="Cell_Span">
-      <vtu-panel custom-class="panel">
+      <vtu-panel v-class="panel">
         <vtu-cell slot="header" title="基础用法"  border>
           <vtu-btn slot="after" type="primary" size="small" bind:click="next1">下一步</vtu-btn>
         </vtu-cell>
@@ -13,7 +13,7 @@
           <vtu-step title="待评价" des="描述问题"></vtu-step>
         </vtu-steps>
       </vtu-panel>
-      <vtu-panel custom-class="panel">
+      <vtu-panel v-class="panel">
         <vtu-cell slot="header" title="居中" border>
           <vtu-btn slot="after" type="primary" size="small" bind:click="next1">下一步</vtu-btn>
         </vtu-cell>
@@ -24,7 +24,7 @@
           <vtu-step title="待评价" des="描述问题" icon="iconfont icon-xihuanfill" active-color="orange"></vtu-step>
         </vtu-steps>
       </vtu-panel>
-      <vtu-panel custom-class="panel">
+      <vtu-panel v-class="panel">
         <vtu-cell slot="header" title="点状-添加状态"  border>
           <vtu-btn slot="after" type="primary" size="small" bind:click="next1">下一步</vtu-btn>
         </vtu-cell>
@@ -35,7 +35,7 @@
           <vtu-step title="待评价" des="描述问题"></vtu-step>
         </vtu-steps>
       </vtu-panel>
-      <vtu-panel custom-class="panel">
+      <vtu-panel v-class="panel">
         <vtu-cell slot="header" title="圆角-自定义颜色"  border content="可自定义颜色">
           <vtu-btn slot="after" type="primary" size="small" bind:click="next1">下一步</vtu-btn>
         </vtu-cell>
@@ -46,7 +46,7 @@
           <vtu-step title="待评价" des="描述问题"></vtu-step>
         </vtu-steps>
       </vtu-panel>
-      <vtu-panel custom-class="panel">
+      <vtu-panel v-class="panel">
         <vtu-cell slot="header" title="自定义icon" border>
           <vtu-btn slot="after" type="primary" size="small" bind:click="next1">下一步</vtu-btn>
         </vtu-cell>
@@ -57,7 +57,7 @@
           <vtu-step title="待评价" des="描述问题" icon="iconfont icon-xihuanfill" active-color="orange"></vtu-step>
         </vtu-steps>
       </vtu-panel>
-      <vtu-panel custom-class="panel">
+      <vtu-panel v-class="panel">
         <vtu-cell slot="header" title="竖直-自定义内容" border>
           <vtu-btn slot="after" type="primary" size="small" bind:click="next1">下一步</vtu-btn>
         </vtu-cell>

@@ -1,7 +1,6 @@
 import { VtuComponent } from '../../assets/package/component';
 VtuComponent({
-  externalClasses: ['custom-class', 'content-class', 'bar-class', 'item-class', 'icon-class', 'img-class', 'label-class'],
-
+  externalClasses: ['content-class', 'bar-class', 'item-class', 'icon-class', 'img-class', 'label-class'],
   // 定义和使用组件间关系
   relations: {
     '../item/vtu-tabbar-item': {
@@ -54,14 +53,13 @@ VtuComponent({
       type: String,
       value: null
     },
-    // 颜色
-    name:{
-      type: String,
-      value: null
-    },
     mode: {
       type: String,
       value: 'single'
+    },
+    navbarHeight: {
+      type: String,
+      value: null
     }
   },
 
@@ -89,6 +87,14 @@ VtuComponent({
 
       this.triggerEvent('change', {
         current: index
+      });
+    },
+    swiperChange (e) {
+      this.setData({
+        current: e.detail.current
+      })
+      this.triggerEvent('change', {
+        current: e.detail.current
       });
     }
   }
