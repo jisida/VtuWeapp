@@ -82,7 +82,7 @@ VtuComponent({
       icon.scale(1, 1).step({ duration: 100 });
       this.setData({
         current: index,
-        ["tabbarList[{0}].animation".format(index)]: icon.export()
+        ["tabbarList["+index+"].animation"]: icon.export()
       })
 
       this.triggerEvent('change', {

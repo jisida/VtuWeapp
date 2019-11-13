@@ -1,4 +1,4 @@
-<view class="Vtu_Tabbar v-class" style="height: calc(100% - {{navbarHeight}}px)" wx:if="{{mode == 'page'}}">
+<view class="Vtu_Tabbar v-class" style="height: calc(100% - {{navbarHeight}}px);top: {{navbarHeight}}px;" wx:if="{{mode == 'page'}}">
     <view class="Vtu_Tabbar_Page content-class">
         <swiper class="Vtu_Tabbar_Page_Swiper" current="{{current}}" bindchange="swiperChange">
             <swiper-item class="Vtu_Tabbar_Page_Swiper_Item" wx:for="{{tabbarList}}" wx:key="index">
