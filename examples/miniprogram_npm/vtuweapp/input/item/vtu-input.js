@@ -81,8 +81,8 @@ VtuComponent({
     },
     /** 点击键盘右下角按钮时是否保持键盘不收起 */
     confirmHold: {
-      value: null,
-      type: String
+      value: false,
+      type: Boolean
     },
     /** 最大输入长度，设置为 -1 的时候不限制最大长度 */
     maxlength: {
@@ -138,11 +138,6 @@ VtuComponent({
       value: null,
       type: String
     },
-    // 圆角
-    round: {
-      type: Boolean,
-      value: false
-    },
     // 面板标题
     panelHeader: {
       type: Boolean,
@@ -171,7 +166,7 @@ VtuComponent({
     },
     showMaxLabel: {
       type: Boolean,
-      value: false
+      value: true
     },
     status: {
       type: String,
@@ -180,6 +175,10 @@ VtuComponent({
     message: {
       type: String,
       value: null
+    },
+    clearable: {
+      type: Boolean,
+      value: true
     }
   },
 
@@ -198,6 +197,12 @@ VtuComponent({
         value: e.detail.value
       })
       this.triggerEvent('input', e.detail);
+    },
+    bindclear: function(e) {
+      this.setData({
+        value: null
+      })
+      this.triggerEvent('clear', e.detail);
     },
     bindkeyboardheightchange: function(e) {
       this.triggerEvent('keyboardheightchange', e.detail);

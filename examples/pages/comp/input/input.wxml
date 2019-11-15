@@ -5,14 +5,14 @@
       <vtu-input title="姓名" border placeholder="请输入姓名" type="input" text-align="left"></vtu-input>
       <vtu-input title="电话" border placeholder="请输入电话" message="请输入正确的电话号码" status="error" value="48568" type="input" text-align="left" input-type="number"></vtu-input>
       <vtu-input title="密码" must border placeholder="请输入密码" value="" type="input" text-align="left" input-type="password"></vtu-input>
-      <vtu-input title="身份证" must border placeholder="请输入身份证" value="" type="input" text-align="left" input-type="idcard"></vtu-input>
-      <vtu-input title="小数" border placeholder="请输入小数" value="" type="input" text-align="left" input-type="digit"></vtu-input>
-      <vtu-input title="价格" placeholder="请输入价格" value="" disabled type="input" text-align="left" input-type="digit">
+      <vtu-input title="身份证" must border placeholder="请输入身份证" value="" type="input" text-align="right" input-type="idcard"></vtu-input>
+      <vtu-input title="小数" border placeholder="请输入小数" value="" type="input" text-align="right" input-type="digit"></vtu-input>
+      <vtu-input title="价格" placeholder="请输入价格" value="" disabled type="input" text-align="right" input-type="digit">
         <view slot="after">元</view>
       </vtu-input>
     </vtu-input-group>
     <vtu-input-group title="自动换行">
-      <vtu-input title="个人简介" border placeholder="请输入个人简介" value="" type="textarea" auto-height="{{true}}"  text-align="left"></vtu-input>
+      <vtu-input title="个人简介" border placeholder="请输入个人简介" value="" type="textarea" auto-height="{{true}}" bind:input="inputEvent" text-align="left"></vtu-input>
       <vtu-input title="最大输入" border placeholder="请输入内容" value="" type="textarea" text-align="left" text-height="100px" show-max-label="{{true}}" maxlength="300"></vtu-input>
     </vtu-input-group>
     <vtu-input-group title="表单">

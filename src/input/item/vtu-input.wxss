@@ -111,6 +111,26 @@
     display: flex;
     z-index: 111;
     position: relative;
+    margin-left: 5px;
+}
+.Vtuzx_Input_Top_Clear{
+    flex-grow: 0;
+    align-items: center;
+    display: flex;
+    z-index: 111;
+    position: relative;
+    margin-left: 5px;
+    align-items: center;
+}
+.Vtuzx_Input_Top_Clear i{
+    width: 18px;
+    height: 18px;
+    background: #d0d0d0;
+    color: #fff !important;
+    border-radius: 100px;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: center;
 }
 .Vtuzx_Input_Top_Status i{
     font-size: 20px;

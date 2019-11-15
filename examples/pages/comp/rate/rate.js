@@ -5,7 +5,7 @@ Page({
 
   bindChange: function(e) {
     this.setData({
-      value1: e.detail
+      value1: e.detail.value
     })
   },
 
@@ -16,7 +16,7 @@ Page({
     })
     setTimeout(function() {
       self.setData({
-        value1: e.detail
+        value1: e.detail.value
       })
       wx.hideLoading();
     }, 2000)

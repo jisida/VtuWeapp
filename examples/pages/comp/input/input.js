@@ -13,6 +13,10 @@ Page({
     showRadioProp: false
   },
 
+  inputEvent: function(e) {
+    console.log(11111111, e)
+  },
+
   pickerChange: function(e) {
     this.setData({
       pickerIndex: parseInt(e.detail.value)

@@ -53,10 +53,6 @@ VtuComponent({
     asyncChange: {
       type: Boolean,
       value: false
-    },
-    slot: {
-      value: null,
-      type: String
     }
   },
 
@@ -76,7 +72,9 @@ VtuComponent({
           value: index
         })
       }
-      this.triggerEvent('change', index);
+      this.triggerEvent('change', {
+        value: index
+      });
     }
   }
 })

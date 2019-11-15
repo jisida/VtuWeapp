@@ -1,17 +1,7 @@
-<button class="Vtuzx_Input v-class {{border?'is-border':''}} {{round?'is-round':''}}"
+<view class="Vtuzx_Input v-class {{border?'is-border':''}} {{round?'is-round':''}}"
         slot="{{slot}}"
         disabled="{{disabled}}"
-        hover-class="{{arrow?'Vtuzx_Input_Hover':''}}"
-        open-type="{{openType}}"
-        lang="{{lang}}"
-        data-data="{{data}}"
-        bindgetuserinfo="getUserInfo"
-        bindgetphonenumber="getPhoneNumber"
-        bindcontact="contact"
-        binderror="error"
-        bindopensetting="opensetting"
-        bindlaunchapp="launchapp"
-        bindtap="bindtap">
+        hover-class="{{arrow?'Vtuzx_Input_Hover':''}}">
   <view class="Vtuzx_Input_Top {{panelHeader?'is-header':''}} {{type == 'textarea'?'is-textarea':''}} {{disabled?'is-disabled':''}} ">
     <view class="Vtuzx_Input_Top_Must"><i class="vtu-icon vtu-icon-bixutian" wx:if="{{must}}"></i></view>
     <view class="Vtuzx_Input_Top_Icon {{icon}}" style="color: {{iconColor}}" wx:if="{{icon}}"></view>
@@ -78,11 +68,14 @@
     <view class="Vtuzx_Input_Top_Slot">
       <slot name="after"></slot>
     </view>
-    <view class="Vtuzx_Input_Top_Status {{status}}">
+    <view class="Vtuzx_Input_Top_Clear" wx:if="{{clearable && value}}" catchtap="bindclear">
+      <i class="vtu-icon vtu-icon-x"></i>
+    </view>
+    <view class="Vtuzx_Input_Top_Status {{status}}" wx:if="{{status}}">
       <i class="vtu-icon vtu-icon-RectangleCopy1" wx:if="{{status == 'success'}}"></i>
       <i class="vtu-icon vtu-icon-RectangleCopy2" wx:if="{{status == 'warning'}}"></i>
       <i class="vtu-icon vtu-icon-RectangleCopy" wx:if="{{status == 'error'}}"></i>
     </view>
     <view class="Vtuzx_Input_Top_Arrow vtu-icon vtu-icon-right-copy" wx:if="{{arrow}}"></view>
   </view>
-</button>
+</view>

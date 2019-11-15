@@ -5,11 +5,6 @@ VtuComponent({
    * 组件的属性列表
    */
   properties: {
-    // 样式  default / search
-    type: {
-      type: String,
-      value: 'default'
-    },
     // 背景颜色
     bgColor: {
       type: String,
@@ -81,10 +76,6 @@ VtuComponent({
     },
     // 隐藏
     hidden: {
-      type: Boolean,
-      value: false
-    },
-    tab: {
       type: Boolean,
       value: false
     }
