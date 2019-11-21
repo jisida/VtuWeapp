@@ -14,7 +14,7 @@
                        activeRadioIcon="{{activeRadioIcon}}"
                        activeRadioColor="{{activeRadioColor}}"
                        bind:change="change">
-        <vtu-radio wx:for="{{radioList}}" value="{{item.value}}" label="{{item.label}}" icon="{{item.icon}}" disabled="{{item.disabled}}"></vtu-radio>
+        <vtu-radio wx:for="{{radioList}}" wx:key="value" value="{{item.value}}" label="{{item.label}}" icon="{{item.icon}}" disabled="{{item.disabled}}"></vtu-radio>
       </vtu-radio-group>
     </view>
   </view>

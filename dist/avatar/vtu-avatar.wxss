@@ -4,6 +4,7 @@
     text-align: center;
     color: var(--primary);
     position: relative;
+    overflow: hidden;
 }
 .Vtu_Avatar image{
     width: 100%;
@@ -69,4 +70,16 @@
 .Vtu_Avatar--large.is-smooth,
 .Vtu_Avatar--large.is-smooth image{
     border-radius: 25px;
+}
+
+.Vtu_Avatar_Upload{
+  width: 100%;
+  height: 24px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0,0,0,.5);
+  text-align: center;
+  line-height: 24px;
+  color: #eaeaea;
 }

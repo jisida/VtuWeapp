@@ -1,11 +1,12 @@
 <view class="Vtu_Avatar Vtu_Avatar--{{size}} v-class {{commonClass}} {{smooth?'is-smooth':''}}"
       style="background: {{bgColor}};color: {{color}};width:{{width}};height:{{width}};{{commonStyle}}"
       slot="{{slot}}"
-      bindtap="bindClick">
+      bindtap="click">
     <image src="{{src}}" class="Vtu_Avatar_Image image-class" wx:if="{{src}}"></image>
     <i class="Vtu_Avatar_Icon {{icon}} icon-class" wx:elif="{{icon}}"></i>
     <font class="Vtu_Avatar_Content content-class" wx:elif="{{content}}">{{content}}</font>
     <image src="../assets/image/avatar.png" class="Vtu_Avatar_Image image-class" wx:else></image>
     <slot name="badge"></slot>
     <slot></slot>
+  <view class="Vtu_Avatar_Upload vtu-icon vtu-icon-shangchuantouxiang" wx:if="{{upload}}"></view>
 </view>

@@ -8,7 +8,10 @@ class PropPage extends Mixin{
       show2: false,
       show3: false,
       show4: false,
-      show5: false
+      show5: false,
+      show6: false,
+      show7: false,
+      show8: false
     })
   }
 
@@ -44,6 +47,21 @@ class PropPage extends Mixin{
   showProp5 = function(e) {
     this.setData({
       show5: true
+    })
+  }
+  showProp6 = function(e) {
+    this.setData({
+      show6: true
+    })
+  }
+  showProp7 = function(e) {
+    this.setData({
+      show7: true
+    })
+  }
+  showProp8 = function(e) {
+    this.setData({
+      show8: true
     })
   }
 }

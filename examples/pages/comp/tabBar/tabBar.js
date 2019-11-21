@@ -21,5 +21,13 @@ Page({
     this.setData({
       type: e.detail.value
     })
+  },
+
+  alert1: function (e) {
+    wx.showToast({
+      title: "点击成功" + e.currentTarget.dataset.d,
+      icon: 'none',
+      duration: 2000
+    });
   }
 });

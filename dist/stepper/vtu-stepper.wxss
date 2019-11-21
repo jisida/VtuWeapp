@@ -32,10 +32,10 @@
     background: #fff;
 }
 .Vtu_Stepper_Input-Size--medium{
-    height: 34px;
+    height: 32px;
 }
 .Vtu_Stepper_Input-Size--small{
-    height: 30px;
+    height: 26px;
 }
 .Vtu_Stepper_Input-Size--mini{
     height: 20px;

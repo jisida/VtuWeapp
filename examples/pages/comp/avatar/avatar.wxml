@@ -18,6 +18,16 @@
       </view>
     </vtu-panel>
     <vtu-panel v-class="panel">
+      <vtu-cell slot="header" title="上传头像"  border>
+      </vtu-cell>
+      <view class="avatar_li">
+        <vtu-avatar src="{{uploadImgPath1}}" round upload bind:change="uploadImg1"></vtu-avatar>
+      </view>
+      <view class="avatar_li">
+        <vtu-avatar src="{{uploadImgPath2}}" circle upload bind:change="uploadImg2"></vtu-avatar>
+      </view>
+    </vtu-panel>
+    <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="尺寸"  border>
       </vtu-cell>
       <view class="avatar_li">

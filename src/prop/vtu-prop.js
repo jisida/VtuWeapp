@@ -26,6 +26,10 @@ VtuComponent({
       type: Boolean,
       value: true
     },
+    width: {
+      type: String,
+      value: null
+    },
     height: {
       type: String,
       value: null
@@ -45,6 +49,14 @@ VtuComponent({
     cancelType: {
       type: String,
       value: "default"
+    },
+    position: {
+      type: String,
+      value: "bottom"
+    },
+    closeable: {
+      type: Boolean,
+      value: true
     }
   },
 
@@ -70,7 +82,7 @@ VtuComponent({
 
       // 菜单层动画
       var center = wx.createAnimation({})
-      center.bottom(0).step({ duration: 300 })
+      center[this.data.position](0).step({ duration: 300 })
       this.setData({
         maskAnimation: mask.export(),
         centerAnimation: center.export()
@@ -87,7 +99,7 @@ VtuComponent({
       mask.width("0px").step({ duration: 1 })
 
       var center = wx.createAnimation({})
-      center.bottom(-1000).step({ duration: 300 })
+      center[this.data.position](-1000).step({ duration: 300 })
 
       this.setData({
         maskAnimation: mask.export(),

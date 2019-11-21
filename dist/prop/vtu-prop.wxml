@@ -1,9 +1,9 @@
 <view class="Vtu_Prop">
   <view class="Vtu_Prop_Mask" animation="{{maskAnimation}}" bindtap="{{closeOnClickOverlay?'close':''}}"></view>
-  <view class="Vtu_Prop_Center" animation="{{centerAnimation}}">
-    <view class="Vtu_Prop_Center_Title" wx:if="{{title}}">{{title}} <view class="close" hover-class="close-hover" bindtap="close"><i class="iconfont vtu-icon-x"></i></view></view>
+  <view class="Vtu_Prop_Center {{position}}" animation="{{centerAnimation}}">
+    <view class="Vtu_Prop_Center_Title" wx:if="{{title}}">{{title}} <view class="close" hover-class="close-hover" bindtap="close" wx:if="{{closeable}}"><i class="iconfont vtu-icon-x"></i></view></view>
     <slot name="header"></slot>
-    <view class="Vtu_Prop_Center_Body" style="max-height: {{maxHeight}};height: {{height}};">
+    <view class="Vtu_Prop_Center_Body" style="width: {{width}};height: {{height}};max-height: {{(position==='top'||position==='bottom')?maxHeight:null}};">
       <scroll-view scroll-y class="Vtu_Prop_Center_Body_scroll">
         <slot ></slot>
       </scroll-view>

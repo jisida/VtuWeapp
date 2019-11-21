@@ -111,10 +111,10 @@
   padding: 12px !important;
 }
 .Vtu-Button-Size--medium{
-  padding: 10px !important;
+  padding: 9px !important;
 }
 .Vtu-Button-Size--small{
-  padding: 9px !important;
+  padding: 6px !important;
   font-size: 12px !important;
 }
 .Vtu-Button-Size--mini{

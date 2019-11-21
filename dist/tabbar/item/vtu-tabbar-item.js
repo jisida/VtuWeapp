@@ -81,5 +81,8 @@ VtuComponent({
    * 组件的方法列表
    */
   methods: {
+    click: function (e) {
+      this.triggerEvent('click', e);
+    }
   }
 })

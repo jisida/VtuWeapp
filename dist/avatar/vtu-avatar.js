@@ -32,6 +32,35 @@ VtuComponent({
     width: {
       type: String,
       value: null
+    },
+    upload: {
+      type: Boolean,
+      value: false
+    },
+    sizeType: {
+      type: Array,
+      value: ['original', 'compressed']
+    },
+    sourceType: {
+      type: Array,
+      value: ['album', 'camera']
+    }
+  },
+  methods: {
+    click(e) {
+      let self = this
+      if (this.data.upload){
+        wx.chooseImage({
+          count: 1,
+          sourceType: self.data.sourceType,
+          sizeType: self.data.sizeType,
+          success: function(res) {
+            self.triggerEvent('change', res.tempFiles[0]);
+          }
+        });
+      } else {
+        this.triggerEvent('click', e);
+      }
     }
   }
 })

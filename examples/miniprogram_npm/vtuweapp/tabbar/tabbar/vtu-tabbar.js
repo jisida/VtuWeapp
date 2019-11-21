@@ -85,6 +85,13 @@ VtuComponent({
         ["tabbarList["+index+"].animation"]: icon.export()
       })
 
+      let nodes = this.getRelationNodes('../item/vtu-tabbar-item');
+      nodes.map((v, i)=>{
+        if (i === index) {
+          nodes[i].click(e)
+        }
+      })
+
       this.triggerEvent('change', {
         current: index
       });

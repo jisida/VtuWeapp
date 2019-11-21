@@ -3,6 +3,9 @@
   <view class="center Page_Margin">
     <vtu-panel v-class="panel" title="基础用法">
       <vtu-btn v-class="btn-class" bind:click="showProp1">底部弹出</vtu-btn>
+      <vtu-btn v-class="btn-class" bind:click="showProp6">左侧弹出</vtu-btn>
+      <vtu-btn v-class="btn-class" bind:click="showProp7">右侧弹出</vtu-btn>
+      <vtu-btn v-class="btn-class" bind:click="showProp8">顶侧弹出</vtu-btn>
       <vtu-btn v-class="btn-class" bind:click="showProp2">固定高度</vtu-btn>
       <vtu-btn v-class="btn-class" bind:click="showProp3">最大高度</vtu-btn>
     </vtu-panel>
@@ -11,6 +14,15 @@
     </vtu-panel>
   </view>
   <vtu-prop title="底部弹出" show="{{show1}}" show-cancel cancel-type="primary" cancel-label="完成">
+    <view class="prop-content">这里是显示内容</view>
+  </vtu-prop>
+  <vtu-prop title="左侧弹出" show="{{show6}}" position="left" show-cancel cancel-type="primary" cancel-label="完成">
+    <view class="prop-content">这里是显示内容</view>
+  </vtu-prop>
+  <vtu-prop title="右侧弹出" show="{{show7}}" position="right" show-cancel cancel-type="primary" cancel-label="完成">
+    <view class="prop-content">这里是显示内容</view>
+  </vtu-prop>
+  <vtu-prop title="顶侧弹出" show="{{show8}}" position="top" show-cancel cancel-type="primary" cancel-label="完成">
     <view class="prop-content">这里是显示内容</view>
   </vtu-prop>
   <vtu-prop title="固定高度" show="{{show2}}" height="300px">

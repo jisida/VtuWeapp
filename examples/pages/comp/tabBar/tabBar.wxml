@@ -2,9 +2,9 @@
   <vtu-navbar title="TabBar" bind:load="navBarLoad"></vtu-navbar>
   <block wx:if="{{type == 1}}">
     <vtu-tabbar active-icon-color="orange" current="{{current}}" bind:change="change" v-class="tabbar-content" mode="page" navbar-height="{{navBarHeight}}">
-      <vtu-tabbar-item label="首页" icon="vtu-icon vtu-icon-yemian-copy-copy" badge_is-dot name="home"></vtu-tabbar-item>
-      <vtu-tabbar-item label="发布" icon="vtu-icon vtu-icon-jiahao" large icon-font-size="36px" name="add"></vtu-tabbar-item>
-      <vtu-tabbar-item label="我的" icon="vtu-icon vtu-icon-wode" badge_value="10" name="my"></vtu-tabbar-item>
+      <vtu-tabbar-item label="首页" icon="vtu-icon vtu-icon-yemian-copy-copy" badge_is-dot name="home" bind:click="alert1" data-d="1"></vtu-tabbar-item>
+      <vtu-tabbar-item label="发布" icon="vtu-icon vtu-icon-jiahao" large icon-font-size="36px" name="add" bind:click="alert1" data-d="2"></vtu-tabbar-item>
+      <vtu-tabbar-item label="我的" icon="vtu-icon vtu-icon-wode" badge_value="10" name="my" bind:click="alert1" data-d="3"></vtu-tabbar-item>
       <view class="swiper_center" slot="home">
         <vtu-panel v-class="panel" content-class="content">
           <vtu-cell slot="header" title="点击切换样式"  border></vtu-cell>
