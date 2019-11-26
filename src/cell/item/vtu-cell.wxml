@@ -28,6 +28,7 @@
     <view class="Vtuzx_Cell_Top_Slot">
       <slot name="after"></slot>
     </view>
+    <vtu-badge show="{{badge_value || badge_isDot}}" v-class="Vtuzx_Cell_Top_Badge" value="{{badge_value}}" shape="{{badge_shape}}" max="{{badge_max}}" color="{{badge_color}}" bg-color="{{badge_bg-color}}" isDot="{{badge_isDot}}"></vtu-badge>
     <view class="Vtuzx_Cell_Top_Arrow vtu-icon vtu-icon-right-copy" wx:if="{{arrow}}"></view>
   </view>
   <view class="Vtuzx_Cell_Content {{icon||image?'is-icon':''}} content-class" wx:if="{{content}}">{{content}}</view>

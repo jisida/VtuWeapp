@@ -23,6 +23,7 @@
     display: flex;
     height: 45px;
     line-height: 45px;
+    align-items: center;
 }
 .Vtuzx_Cell_Top.is-disabled .Vtuzx_Cell_Top_Icon,
 .Vtuzx_Cell_Top.is-disabled .Vtuzx_Cell_Top_Title,
@@ -76,4 +77,10 @@
 .Vtuzx_Cell_Content.is-icon{
     width: calc(100% - 20px);
     padding-left: 20px;
+}
+.Vtuzx_Cell_Top_Badge{
+    position: relative !important;
+    left: 0 !important;
+    display: inherit !important;
+    top: inherit !important;
 }

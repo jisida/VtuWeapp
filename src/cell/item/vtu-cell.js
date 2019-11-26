@@ -1,5 +1,5 @@
 import { VtuComponent } from '../../assets/package/component';
-import { behavior_button} from '../../assets/behaviors/basic';
+import {behavior_badge} from '../../assets/behaviors/basic';
 VtuComponent({
   externalClasses: ['title-class', 'icon-class', 'content-class', ' value-class'],
   // 定义和使用组件间关系
@@ -8,7 +8,7 @@ VtuComponent({
       type: 'parent'
     }
   },
-  behavior:  behavior_button() ,
+  behaviors:  [{name: 'badge', behavior: behavior_badge()}],
 
   /**
    * 组件的属性列表

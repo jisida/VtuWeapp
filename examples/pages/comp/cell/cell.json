@@ -1,6 +1,7 @@
 {
     "usingComponents": {
         "vtu-btn": "/miniprogram_npm/vtuweapp/button/vtu-btn",
+        "vtu-badge": "/miniprogram_npm/vtuweapp/badge/vtu-badge",
         "vtu-stepper": "/miniprogram_npm/vtuweapp/stepper/vtu-stepper",
         "vtu-rate": "/miniprogram_npm/vtuweapp/rate/vtu-rate",
         "vtu-navbar": "/miniprogram_npm/vtuweapp/navbar/vtu-navbar",

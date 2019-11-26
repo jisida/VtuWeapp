@@ -1,6 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-    "vtu-btn": "../../button/vtu-btn"
+    "vtu-badge": "../../badge/vtu-badge"
   }
 }

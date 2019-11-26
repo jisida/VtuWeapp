@@ -10,6 +10,15 @@
     <vtu-panel v-class="panel"  title="自定义每行数量(col=3)">
       <vtu-imgPicker col="4" list="{{imgList}}"> </vtu-imgPicker>
     </vtu-panel>
+    <vtu-panel v-class="panel"  title="图片大小限制">
+      <vtu-imgPicker col="4" list="{{imgList}}" max-size="1024"> </vtu-imgPicker>
+    </vtu-panel>
+    <vtu-panel v-class="panel"  title="图片宽度限制（max-width: 500px）">
+      <vtu-imgPicker col="4" list="{{imgList}}" max-width="500"> </vtu-imgPicker>
+    </vtu-panel>
+    <vtu-panel v-class="panel"  title="图片高度限制（max-height: 500px）">
+      <vtu-imgPicker col="4" list="{{imgList}}" max-height="500"> </vtu-imgPicker>
+    </vtu-panel>
     <vtu-panel v-class="panel"  title="不可删除(delete=false)">
       <vtu-imgPicker col="4" list="{{imgList}}" delete="{{false}}"> </vtu-imgPicker>
     </vtu-panel>

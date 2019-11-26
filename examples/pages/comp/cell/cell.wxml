@@ -5,6 +5,7 @@
       <vtu-cell slot="header" title="基础用法"  border panel-header></vtu-cell>
       <vtu-cell title="普通信息" value="显示内容" border content="详细的描述信息" bind:click="selectItem" data-label="111"></vtu-cell>
       <vtu-cell title="普通信息" value="显示内容" valueColor="#f44" border></vtu-cell>
+      <vtu-cell title="徽章" border badge_value="10" ></vtu-cell>
     </vtu-panel>
 
     <vtu-panel v-class="panel" content-class="contentClass" >

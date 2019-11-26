@@ -1,4 +1,5 @@
 import { VtuComponent } from '../assets/package/component';
+import regeneratorRuntime from '../assets/package/regenerator-runtime/runtime.js'
 VtuComponent({
   externalClasses: ['content-class', 'footer-class', 'loading-class', 'title-class'],
   /**
@@ -40,6 +41,18 @@ VtuComponent({
     delete: {
       type: Boolean,
       value: true
+    },
+    maxSize: {
+      type: Number,
+      value: 0
+    },
+    maxWidth: {
+      type: Number,
+      value: 0
+    },
+    maxHeight: {
+      type: Number,
+      value: 0
     }
   },
   methods: {
@@ -53,9 +66,41 @@ VtuComponent({
         count: self.data.count - self.data.list.length,
         sourceType: self.data.sourceType,
         sizeType: self.data.sizeType,
-        success: function(res) {
+        success: async function (res) {
           var tempFilePath = [];
           for (var i = 0; i < res.tempFilePaths.length; i++) {
+            let fileSize = parseInt(res.tempFiles[i].size / 1024)
+            if (self.data.maxSize && res.tempFiles[i] && self.data.maxSize < fileSize) {
+              let maxSizeStr = self.data.maxSize + 'kb'
+              if (self.data.maxSize >= 1024) maxSizeStr = parseFloat((self.data.maxSize / 1024).toFixed(2)) + "M"
+              wx.showToast({
+                title: "上传图片不能大于" + maxSizeStr,
+                icon: 'none',
+                duration: 2000
+              })
+              return
+            }
+
+            if (self.data.maxWidth || self.data.maxHeight) {
+              let tempInfo = await self.getImageInfo(res.tempFilePaths[i])
+              if (self.data.maxWidth && tempInfo.width > self.data.maxWidth) {
+                wx.showToast({
+                  title: "上传图片宽度不能大于" + self.data.maxWidth + "px",
+                  icon: 'none',
+                  duration: 2000
+                })
+                return
+              }
+              if (self.data.maxHeight && tempInfo.height > self.data.maxHeight) {
+                wx.showToast({
+                  title: "上传图片高度不能大于" + self.data.maxHeight + "px",
+                  icon: 'none',
+                  duration: 2000
+                })
+                return
+              }
+            }
+
             tempFilePath.push({
               url: res.tempFilePaths[i]
             });
@@ -115,6 +160,22 @@ VtuComponent({
           index: index
         });
       }
-    }
+    },
+
+    /**
+     * 获取图片信息
+     * @param path
+     * @returns {Promise<any>}
+     */
+    getImageInfo: function(path) {
+      return new Promise((resolve, reject) => {
+        wx.getImageInfo({
+          src: path,
+          success: function (e) {
+            resolve(e)
+          }
+        })
+      })
+    },
   }
 })
