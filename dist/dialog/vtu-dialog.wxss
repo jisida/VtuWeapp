@@ -79,6 +79,7 @@
 }
 .Vtu_Dialog_Center_Body_Scroll{
     width: 100%;
+    height: 100%;
     white-space:nowrap;
 }
 .Vtu_Dialog_Center_Footer{

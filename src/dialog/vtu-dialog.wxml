@@ -1,5 +1,6 @@
 <view class="Vtu_Dialog v-class">
-  <view class="Vtu_Dialog_Mask mask-class" animation="{{maskAnimation}}" bindtap="{{closeOnClickOverlay?'closeDialog':''}}"></view>
+  <view class="Vtu_Dialog_Mask mask-class" animation="{{maskAnimation}}" bindtap="{{closeOnClickOverlay?'closeDialog':''}}" wx:if="{{lockScroll}}" catchtouchmove="true"></view>
+  <view class="Vtu_Dialog_Mask mask-class" animation="{{maskAnimation}}" bindtap="{{closeOnClickOverlay?'closeDialog':''}}" wx:else></view>
   <view class="Vtu_Dialog_Center center-class" animation="{{centerAnimation}}">
     <view class="Vtu_Dialog_Center_Common">
       <view class="Vtu_Dialog_Center_Common_Close" bindtap="closeDialog">
@@ -8,14 +9,17 @@
       <view class="Vtu_Dialog_Center_Common_Title" wx:if="{{title}}">{{title}}</view>
       <view class="Vtu_Dialog_Center_Common_Summary" wx:if="{{summary}}">{{summary}}</view>
     </view>
-    <view class="Vtu_Dialog_Center_Body content-class" wx:if="{{userContentSlot}}">
-      <scroll-view scroll-y="{{true}}" class="Vtu_Dialog_Center_Body_Scroll" style="height: {{contentHeight}}">
+    <view class="Vtu_Dialog_Center_Body content-class" wx:if="{{userContentSlot}}" style="height: {{contentHeight}};">
+      <scroll-view scroll-y="{{true}}" class="Vtu_Dialog_Center_Body_Scroll">
         <slot></slot>
       </scroll-view>
     </view>
     <view class="Vtu_Dialog_Center_Body content-class" style="text-align: {{align}}" wx:elif="{{content}}"><text>{{content}}</text></view>
+    <view class="Vtu_Dialog_Center_Footer footer-class" wx:if="{{userFooterSlot}}">
+      <slot name="footer"></slot>
+    </view>
     <view class="Vtu_Dialog_Center_Footer footer-class {{verticalButtons?'is-vertical':'is-infeed'}}" wx:if="{{buttons.length > 0}}">
-      <view class="Vtu_Dialog_Center_Footer_Btn" style="width: {{verticalButtons?'':100/buttons.length+'%'}};" wx:for="{{buttons}}">
+      <view class="Vtu_Dialog_Center_Footer_Btn" style="width: {{verticalButtons?'':100/buttons.length+'%'}};" wx:for="{{buttons}}" wx:key="id">
         <vtu-btn type="{{item.type || 'default'}}"
                  size="{{item.size || buttonSize}}"
                  icon="{{item.icon}}"

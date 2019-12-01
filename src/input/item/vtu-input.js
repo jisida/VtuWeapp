@@ -7,7 +7,7 @@ VtuComponent({
       type: 'parent'
     }
   },
-
+  builtBehaviors: ['wx://form-field'],
   /**
    * 组件的属性列表
    */
@@ -178,7 +178,7 @@ VtuComponent({
     },
     clearable: {
       type: Boolean,
-      value: true
+      value: false
     }
   },
 

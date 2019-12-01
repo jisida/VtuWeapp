@@ -51,5 +51,9 @@ Page({
     this.setData({
       radioVal: e.detail.value
     })
+  },
+
+  formSubmit: function (e) {
+    console.log(11111, e)
   }
 });

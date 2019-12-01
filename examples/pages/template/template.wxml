@@ -14,7 +14,7 @@
     <block wx:else>
       <view class="LuckDraw_Style_Image imgBody" wx:if="{{item.prizes.length > 0}}" style="height: {{(windowWidth-20)/2}}px" >
         <swiper wx:if="{{detail}}" style="height: 100%" indicator-dots="{{true}}" indicator-active-color="#f5bf49" autoplay="{{true}}">
-          <swiper-item wx:for="{{item.prizes}}" wx:for-item="image">
+          <swiper-item wx:for="{{item.prizes}}" wx:key="id" wx:for-item="image" wx:key="id">
             <image src="{{baseUrl + item.id + '/' + image.picUrl}}" mode="widthFix" class="image"/>
           </swiper-item>
         </swiper>
@@ -26,7 +26,7 @@
         <view class="Items" wx:if="{{item.prizes.length > 0}}">
           <view class="Items_Title">奖品</view>
           <view class="Items_List">
-            <view class="Items_List_Li" wx:for="{{item.prizes}}" wx:for-item="prize">
+            <view class="Items_List_Li" wx:for="{{item.prizes}}" wx:key="id" wx:for-item="prize">
               <view class="Items_List_Li_Name overSpace">{{prize.title}}</view>
               <view class="Items_List_Li_Price">×{{prize.number}}</view>
             </view>
@@ -46,7 +46,7 @@
           </view>
           <view class="Users_Count">共{{item.joinCount}}人参与<span wx:if="{{item.winnerNumber > 1}}">{{item.winnerNumber}}个中奖名额</span></view>
           <view class="Users_List" wx:if="{{item.newJoinerList.length > 0}}">
-            <view class="Users_List_Li circle" wx:for="{{item.newJoinerList}}" wx:for-item="image">
+            <view class="Users_List_Li circle" wx:for="{{item.newJoinerList}}" wx:for-item="image" wx:key="id">
               <image src="{{image.avatarUrl}}" class="imageFill circle"></image>
             </view>
             <view class="Users_List_Li circle iconfont icon-tubiaozhizuomoban"></view>
@@ -70,7 +70,7 @@
     </view>
     <view class="LuckDraw_User_Style_Info">
       <view class="LuckDraw_User_Style_Info_Name overTwoSpace">
-        <span wx:for="{{item.prizes}}" wx:for-index="pIndex" wx:for-item="prize">{{prize.title}} ×{{prize.number}}<span wx:if="{{pIndex < item.prizes.length - 1}}">、</span></span>
+        <span wx:for="{{item.prizes}}"  wx:key="id" wx:for-index="pIndex" wx:for-item="prize">{{prize.title}} ×{{prize.number}}<span wx:if="{{pIndex < item.prizes.length - 1}}">、</span></span>
       </view>
       <view class="LuckDraw_User_Style_Info_Detail">
         <view class="Detail_Li Active" wx:if="{{item.isJoin}}">
@@ -91,7 +91,7 @@
     <view class="OverTime_Style_Center">
       <view class="LuckDraw_OverTime_Style_Center_Title">奖品</view>
       <view class="LuckDraw_OverTime_Style_Center_Product overSpace">
-        <block wx:for="{{3}}">Lide saml dda 四人帐篷×2 </block>
+        <block wx:for="{{3}}" wx:key="id">Lide saml dda 四人帐篷×2 </block>
       </view>
     </view>
     <view class="OverTime_Style_Time">6月10日</view>
@@ -129,7 +129,7 @@
       </view>
       <view class="Users">
         <view class="Users_List">
-          <view class="Users_List_Li circle" wx:for="{{item.userList}}" wx:for-item="image">
+          <view class="Users_List_Li circle" wx:for="{{item.userList}}" wx:for-item="image" wx:key="id">
             <image src="{{image}}" class="imageFill circle"></image>
           </view>
           <view class="Users_List_Li circle iconfont icon-tubiaozhizuomoban"></view>
@@ -159,12 +159,12 @@
 <template name="Vote_Users_List_Temp">
   <view class="Vote_Users_List_Style">
     <view class="Vote_Users_List_Style_Split">
-      <block wx:for="{{19}}" wx:if="{{index % 2 == 0}}">
+      <block wx:for="{{19}}" wx:if="{{index % 2 == 0}}" wx:key="id">
         <template is="Vote_Users_Info_Temp"></template>
       </block>
     </view>
     <view class="Vote_Users_List_Style_Split">
-      <block wx:for="{{19}}" wx:if="{{index % 2 == 1}}">
+      <block wx:for="{{19}}" wx:if="{{index % 2 == 1}}" wx:key="id">
         <template is="Vote_Users_Info_Temp"></template>
       </block>
     </view>
@@ -222,7 +222,7 @@
 -->
 <template name="Bottom_Temp">
   <view class="Bottom_Style {{hasAnimation?'animation':''}}" animation="{{bottomAnimation}}">
-    <block wx:for="{{menu}}">
+    <block wx:for="{{menu}}" wx:key="id">
       <block wx:if="{{item.center}}">
         <form bindsubmit="{{item.catchtap}}" class="Bottom_Style_Li" report-submit="{{true}}" data-data="{{item.data}}">
           <button form-type="submit" hover-class="Btn_Hover" class="form_btn">

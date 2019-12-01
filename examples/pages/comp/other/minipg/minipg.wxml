@@ -2,7 +2,7 @@
 <view class="container">
   <vtu-navbar title="小程序卡片"></vtu-navbar>
   <view class="center">
-    <block wx:for="{{companyInfo && companyInfo.minipgList}}">
+    <block wx:for="{{companyInfo && companyInfo.minipgList}}" wx:key="id">
       <template is="minipg_style" data="{{item: item, baseUrl: baseUrl}}"></template>
     </block>
   </view>

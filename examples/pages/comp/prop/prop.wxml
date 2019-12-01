@@ -27,18 +27,18 @@
   </vtu-prop>
   <vtu-prop title="固定高度" show="{{show2}}" height="300px">
     <view class="prop-content">
-      <view class="prop-content-li" wx:for="{{20}}">这里是显示内容</view>
+      <view class="prop-content-li" wx:for="{{20}}" wx:key="id">这里是显示内容</view>
     </view>
   </vtu-prop>
   <vtu-prop title="设置最大高度" show="{{show3}}" max-height="300px">
     <view class="prop-content auto">
-      <view class="prop-content-li" wx:for="{{5}}">这里是显示内容</view>
+      <view class="prop-content-li" wx:for="{{5}}" wx:key="id">这里是显示内容</view>
     </view>
   </vtu-prop>
   <vtu-prop title="固定顶端底端" show="{{show4}}" max-height="300px">
     <view class="prop-header" slot="header"></view>
     <view class="prop-content">
-      <view class="prop-content-li" wx:for="{{20}}">这里是显示内容</view>
+      <view class="prop-content-li" wx:for="{{20}}" wx:key="id">这里是显示内容</view>
     </view>
     <view class="prop-footer" slot="footer"></view>
   </vtu-prop>

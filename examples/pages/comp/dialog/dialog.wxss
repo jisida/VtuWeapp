@@ -10,3 +10,6 @@
 .dialog-custom-btn{
   margin: 0px 5px !important;
 }
+.Vtu-Custom-Footer{
+  text-align: center;
+}

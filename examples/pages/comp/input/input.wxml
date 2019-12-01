@@ -34,6 +34,19 @@
       </vtu-input>
       <vtu-input title="选择城市" icon="iconfont icon-kefu" arrow border icon-color="#f5bf49" value="{{radioVal}}" bind:click="showRadioEvent"></vtu-input>
     </vtu-input-group>
+
+    <form bindsubmit="formSubmit">
+      <vtu-input-group title="form表单">
+        <vtu-input title="姓名" name="name" border placeholder="请输入姓名" type="input" text-align="left"></vtu-input>
+        <vtu-input title="身份证" name="idCard" must border placeholder="请输入身份证" value="" type="input" text-align="right" input-type="idcard"></vtu-input>
+        <vtu-input title="普通选项" name="picker" icon="iconfont icon-kefu" icon-color="#1989fa" border value="{{pickerIndex}}" range="{{pickerArray1}}" range-key="label" type="picker" bindchange="pickerChange" arrow></vtu-input>
+        <vtu-input title="日期" name="date" placeholder="选择日期" icon="iconfont icon-kefu" border icon-color="#1989fa" border value="{{pickerDate}}" type="picker" mode="date" bindchange="pickerDateChange" arrow></vtu-input>
+        <vtu-input title="时间" name="time" placeholder="选择时间" icon="iconfont icon-kefu" start="09:00" icon-color="#f5bf49" border value="{{pickerTime}}" type="picker" mode="time" bindchange="pickerTimeChange" arrow></vtu-input>
+<!--        <vtu-btn type="primary" form-type="submit">提交</vtu-btn> tip:目前，设置了form-type的button只会对当前组件中的form有效。因而，将button封装在自定义组件中，而from在自定义组件外，将会使这个button的form-type失效。 -->
+        <button type="primary" form-type="submit">提交</button>
+      </vtu-input-group>
+    </form>
+
     <vtu-radio-prop show="{{showRadioProp}}"
                     model="{{radioVal}}"
                     align="right"

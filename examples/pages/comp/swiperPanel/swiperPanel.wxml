@@ -14,16 +14,16 @@
         <vtu-swiperPanel-item name="name3"></vtu-swiperPanel-item>
         <vtu-swiperPanel-item name="name4" bindscrolltoupper="bindscrolltoupper" bindscrolltolower="bindscrolltolower"></vtu-swiperPanel-item>
         <view class="swiper" slot="name1">
-          <view class="swiper_li" wx:for="{{20}}">区域一内容展示{{index}}</view>
+          <view class="swiper_li" wx:for="{{20}}" wx:key="id">区域一内容展示{{index}}</view>
         </view>
         <view class="swiper" slot="name2">
-          <view class="swiper_li" wx:for="{{10}}">区域二内容展示{{index}}</view>
+          <view class="swiper_li" wx:for="{{10}}" wx:key="id">区域二内容展示{{index}}</view>
         </view>
         <view class="swiper" slot="name3">
-          <view class="swiper_li" wx:for="{{15}}">区域三内容展示{{index}}</view>
+          <view class="swiper_li" wx:for="{{15}}" wx:key="id">区域三内容展示{{index}}</view>
         </view>
         <view class="swiper" slot="name4">
-          <view class="swiper_li" wx:for="{{30}}">区域四内容展示{{index}}</view>
+          <view class="swiper_li" wx:for="{{30}}" wx:key="id">区域四内容展示{{index}}</view>
         </view>
       </vtu-swiperPanel>
     </view>

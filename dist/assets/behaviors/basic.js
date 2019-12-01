@@ -1,6 +1,7 @@
 
 const baseProperties = {
   id: String,                                   // ID
+  name: String,                                 // name
   slot: String,                                 // 插槽
   icon: { type: String, value: null },          // 图标
   circle: { type: Boolean, value: false },      // 圆形
@@ -173,6 +174,9 @@ export const behavior_button = function () {
       bgColor:{ value: null, type: String },
       /** 自定义文字颜色**/
       fontColor:{ value: null, type: String },
+      /** 用于 form 组件，点击分别会触发 form 组件的 submit/reset 事件 **/
+      formType:{ value: null, type: String },
+
     },
     methods: {
       getUserInfo: function(e) {

@@ -17,7 +17,7 @@
         <view class="label">微图知行出品</view>
         <view class="line"></view>
       </view>
-      <view class="List_Li" wx:for="{{companyInfo.minipgList}}" hover-class="Hover" bindtap="$wx_toMiniProgram" data-info="{{item}}">
+      <view class="List_Li" wx:for="{{companyInfo.minipgList}}" wx:key="id" hover-class="Hover" bindtap="$wx_toMiniProgram" data-info="{{item}}">
         <view class="image">
           <image src="{{baseUrl + item.appId + '/logo.png'}}" class="imageFill" ></image>
         </view>

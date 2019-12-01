@@ -1,7 +1,8 @@
 import Dialog from "../../../miniprogram_npm/vtuweapp/dialog/vtu-index";
 Page({
   data: {
-    show: false
+    show: false,
+    show2: false
   },
 
   alert1: function() {
@@ -12,7 +13,6 @@ Page({
   },
 
   alert2: function () {
-    bindanimationfinish
     Dialog().alert({
       title: '普通提示',
       content: '显示您要确定的内容信息',
@@ -143,6 +143,21 @@ Page({
   alert7: function() {
     this.setData({
       show: true
+    })
+  },
+
+  alert8: function() {
+    Dialog().alert({
+      title: '普通提示',
+      content: '显示您要确定的内容信息',
+      showCancel: false,
+      lockScroll: true
+    })
+  },
+
+  alert9: function() {
+    this.setData({
+      show2: true
     })
   },
 

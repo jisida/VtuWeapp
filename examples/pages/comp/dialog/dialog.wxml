@@ -9,10 +9,12 @@
       <vtu-btn bind:click="alert4" type="success" v-class="dialog-btn">自定义按钮排列</vtu-btn>
       <vtu-btn bind:click="alert5" type="warning" v-class="dialog-btn">点击遮罩关闭</vtu-btn>
       <vtu-btn bind:click="alert6" type="success" v-class="dialog-btn">横向排列</vtu-btn>
+      <vtu-btn bind:click="alert8" type="warning" v-class="dialog-btn">禁止底层滑动</vtu-btn>
     </vtu-panel>
 
     <vtu-panel v-class="panel" title="自定义对话框">
       <vtu-btn bind:click="alert7" type="primary" v-class="dialog-btn">自定义对话框</vtu-btn>
+      <vtu-btn bind:click="alert9" type="warning" v-class="dialog-btn">自定义高度</vtu-btn>
     </vtu-panel>
     <vtu-dialog id="Vtu-Dialog"></vtu-dialog>
     <vtu-dialog id="Vtu-Custom-Dialog" show="{{show}}" title="自定义对话框内容" user-content-slot>
@@ -29,5 +31,14 @@
         <vtu-btn bind:click="closeCustomDialog" inlineBlock v-class="dialog-custom-btn">取消</vtu-btn>
       </view>
     </vtu-dialog>
+    <vtu-dialog id="Vtu-Custom-Dialog2" lockScroll="true" show="{{show2}}" contentHeight="60vh" title="自定义高度" user-content-slot  user-footer-slot>
+      <view class="Vtu-Custom-Center">
+        <text>1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n</text>
+      </view>
+      <view slot="footer" class="Vtu-Custom-Footer">
+        <vtu-btn type="primary" inlineBlock width="200px" v-class="dialog-custom-btn">确定</vtu-btn>
+      </view>
+    </vtu-dialog>
+    <view class="" style="width: 100%;height: 400px;"></view>
   </view>
 </view>

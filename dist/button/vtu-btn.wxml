@@ -6,6 +6,7 @@
         lang="{{lang}}"
         loading="{{loading}}"
         slot="{{slot}}"
+        form-type="{{formType}}"
         session-from="{{sessionFrom}}"
         send-message-title="{{sendMessageTitle}}"
         send-message-path="{{sendMessagePath}}"

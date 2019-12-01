@@ -1,5 +1,6 @@
 <view class="Vtuzx_Input v-class {{border?'is-border':''}} {{round?'is-round':''}}"
         slot="{{slot}}"
+        bindtap="bindClick"
         disabled="{{disabled}}"
         hover-class="{{arrow?'Vtuzx_Input_Hover':''}}">
   <view class="Vtuzx_Input_Top {{panelHeader?'is-header':''}} {{type == 'textarea'?'is-textarea':''}} {{disabled?'is-disabled':''}} ">
@@ -10,6 +11,8 @@
     <view class="Vtuzx_Input_Top_Value" wx:elif="{{type == 'input'}}">
       <input value="{{value}}"
              focus="{{focus}}"
+             id="{{id}}"
+             name="{{name}}"
              class="input-class {{status}}"
              placeholder-class="placeholder"
              placeholder="{{placeholder}}"
@@ -32,6 +35,8 @@
     <view class="Vtuzx_Input_Top_Value" wx:elif="{{type == 'textarea'}}">
       <textarea value="{{value}}"
                 focus="{{focus}}"
+                id="{{id}}"
+                name="{{name}}"
                 class="textarea-class {{status}}"
                 placeholder-class="placeholder"
                 style="text-align: {{textAlign}};height: {{textHeight}}"
@@ -50,6 +55,8 @@
     </view>
     <view class="Vtuzx_Input_Top_Value" wx:elif="{{type == 'picker'}}">
       <picker bindchange="bindchange"
+              id="{{id}}"
+              name="{{name}}"
               bindcolumnchange="bindcolumnchange"
               mode="{{mode}}"
               value="{{value}}"

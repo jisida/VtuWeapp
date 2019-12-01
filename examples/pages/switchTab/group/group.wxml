@@ -6,7 +6,7 @@
             <view class="TopSpan_Name">组合案例</view>
             <view class="TopSpan_Desc">敬请期待.....</view>
         </view>
-        <block wx:for="{{companyInfo && companyInfo.minipgList}}">
+        <block wx:for="{{companyInfo && companyInfo.minipgList}}" wx:key="id">
             <template is="minipg_style" data="{{item: item, baseUrl: baseUrl}}"></template>
         </block>
     </view>

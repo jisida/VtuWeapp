@@ -32,6 +32,10 @@ function VtuComponent(vtuOptions = {}) {
   if (vtuOptions.behavior) {
     vtuOptions.behaviors.push(Behavior(vtuOptions.behavior))
   }
+  // 当前组件混入对象
+  if (vtuOptions.builtBehaviors) {
+    vtuOptions.behaviors.push(vtuOptions.builtBehaviors)
+  }
 
   Component(vtuOptions);
 }

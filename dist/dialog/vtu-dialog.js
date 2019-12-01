@@ -49,9 +49,17 @@ VtuComponent({
       type: Boolean,
       value: false
     },
+    userFooterSlot: {
+      type: Boolean,
+      value: false
+    },
     contentHeight: {
       type: String,
       value: null
+    },
+    lockScroll: {
+      type: Boolean,
+      value: false
     }
   },
 
@@ -138,7 +146,8 @@ VtuComponent({
         confirmLabel: '确定',
         verticalButtons: true,
         closeOnClickOverlay: false,
-        userContentSlot: false
+        userContentSlot: false,
+        lockScroll: false
       }
     },
 
