@@ -62,6 +62,11 @@ class SwitchtabSecondPage extends ComponentPage {
         url: "/pages/comp/list/chat/list"
       });
     },
+    chatDetail() {
+      wx.navigateTo({
+        url: "/pages/comp/chat/chat"
+      });
+    },
     minipg() {
       wx.navigateTo({
         url: "/pages/comp/other/minipg/minipg"

@@ -1,0 +1,9 @@
+@import "../assets/css/Vtu_Common.wxss";
+.Vtu_Slide{
+    overflow:hidden;
+}
+.Vtu_Slide_View{
+    display:flex;
+    direction:row;
+    overflow:hidden;
+}

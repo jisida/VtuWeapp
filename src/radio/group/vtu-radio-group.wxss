@@ -2,6 +2,18 @@
 .Vtu_RadioGroup{
     width: 100%;
 }
+.Vtu_RadioGroup.is-horizontal{
+    display: inline-block;
+}
+.Vtu_RadioGroup.is-horizontal .Vtu_RadioGroup_Radio{
+    float: left;
+    border: 0px;
+}
+.Vtu_RadioGroup.is-horizontal .Vtu_RadioGroup_Radio .Vtu_RadioGroup_Radio_Label{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
 .Vtu_RadioGroup_Radio{
     height: 35px;
     line-height: 35px;

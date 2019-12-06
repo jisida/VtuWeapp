@@ -220,6 +220,11 @@ class SwitchtabFirstPage extends ComponentPage {
             wx.navigateTo({
                 url: "/pages/comp/search/search"
             });
+        },
+        slide: function() {
+            wx.navigateTo({
+                url: "/pages/comp/slide/slide"
+            });
         }
     };
 }

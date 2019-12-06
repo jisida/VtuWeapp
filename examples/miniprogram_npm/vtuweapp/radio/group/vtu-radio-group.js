@@ -41,6 +41,14 @@ VtuComponent({
     activeRadioColor: {
       type: String,
       value: null
+    },
+    direction: {
+      type: String,
+      value: "vertical"
+    },
+    horizontalNumber: {
+      type: Number,
+      value: 3
     }
   },
 

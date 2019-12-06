@@ -1,0 +1,160 @@
+<import src="/miniprogram_npm/vtuweapp/template/list/template"/>
+<view class="container">
+  <vtu-navbar title="聊天列表"></vtu-navbar>
+
+  <view class="chatListPanel is-{{showBMP?'showBMP':''}}" capture-bind:touchstart="hiddenBar" capture-bind:touchend="">
+    <scroll-view class="chatListPanel_scroll" enable-back-to-top="true" scroll-y>
+      <view class="chatListPanel_showMore">查看更多历史消息</view>
+      <view class="chatListPanel_li Page_Padding left">
+        <view class="time">2019-12-05</view>
+        <view class="detail">
+          <view class="image">
+            <image src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/3.png" class="imageFill"></image>
+          </view>
+          <view class="mesbar">
+            <view class="customerName">沧海花</view>
+            <view class="content">
+              <view class="content_text">你好，有问题想要咨询</view>
+            </view>
+            <view class="icon">
+              <i class="vtu-icon vtu-icon-chaoshi"></i>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="chatListPanel_li Page_Padding right">
+        <view class="time">2019-12-06</view>
+        <view class="detail">
+          <view class="image">
+            <image src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/1.png" class="imageFill"></image>
+          </view>
+          <view class="mesbar">
+            <view class="customerName">轩辕风</view>
+            <view class="content">
+              <view class="content_text">您好，有什么问题</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="chatListPanel_li Page_Padding left">
+        <view class="time">2019-12-06</view>
+        <view class="detail">
+          <view class="image">
+            <image src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/3.png" class="imageFill"></image>
+          </view>
+          <view class="mesbar">
+            <view class="customerName">沧海花</view>
+            <view class="content">
+              <view class="content_img">
+                <image src="https://activity.vtuzx.com/doc/vtuui/weapp/jiaoliu.png" mode="widthFix" data-src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/4.png" bindtap="previewImage"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="chatListPanel_li Page_Padding right">
+        <view class="time">2019-12-06</view>
+        <view class="detail">
+          <view class="image">
+            <image src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/1.png" class="imageFill"></image>
+          </view>
+          <view class="mesbar">
+            <view class="customerName">轩辕风</view>
+            <view class="content">
+              <view class="content_audio">
+                <view class="content_audio_text audio">
+                  <view class="audio_img">
+                    <image src="/assets/image/audio.gif"/>
+                  </view>
+                  <view class="audio_duration">5''</view>
+                </view>
+              </view>
+            </view>
+            <view class="icon">
+              <i class="vtu-icon vtu-icon-xianzhilei"></i>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="chatListPanel_li Page_Padding right">
+        <view class="time">2019-12-06</view>
+        <view class="error">
+          <view class="error-info bg-red-light">对方拒绝了你的消息</view>
+        </view>
+        <view class="detail">
+          <view class="image">
+            <image src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/1.png" class="imageFill"></image>
+          </view>
+          <view class="mesbar">
+            <view class="customerName">轩辕风</view>
+            <view class="content">
+              <view class="content_location">
+                <view class="content_location_info">北京市</view>
+                <view class="content_location_img">
+                  <image src="https://kefu.vtuzx.com/doc/system/minipg_icon/map.png" class="imageFill"></image>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="chatToolPanel">
+    <view class="chatToolPanel_input">
+      <view class="icon vtu-icon {{!showRecord?'vtu-icon-yuyin':'vtu-icon-jianpan'}}" capture-bind:touchstart="clickRecord" capture-bind:touchend=""></view>
+      <view class="input">
+        <block wx:if="{{showRecord}}">
+          <view class="recordBtn" hover-class="Hover" capture-bind:touchstart="startReordEvent" capture-bind:touchmove="handleTouchMove" capture-bind:touchend="cancelRecordEvent">{{recordBarText}}</view>
+        </block>
+        <block wx:else>
+          <input type="text" class="{{inputFocus?'focusClass':''}}" value="{{messageText}}"
+                 focus="{{inputFocus}}" cursor-spacing="10"
+                 bindinput="inputChangeEvent"
+                 bindfocus="inputFocusEvent"
+                 bindblur="inputBlurEvent"
+                 bindconfirm="sendText"
+                 confirm-type="send"
+                 confirm-hold="true"></input>
+        </block>
+      </view>
+      <view class="icon vtu-icon {{showBQ?'vtu-icon-jianpan':'vtu-icon-emoji'}}"  capture-bind:touchstart="clickBQ" capture-bind:touchend=""></view>
+      <view class="icon vtu-icon  {{!showMENU?'vtu-icon-jiahao1':'vtu-icon-plus-arrow-up-copy'}}" capture-bind:touchstart="clickMENU" capture-bind:touchend=""></view>
+    </view>
+    <view class="chatToolPanel_menu" hidden="{{!showBMP}}">
+      <view class="emoij" hidden="{{!showBQ}}">
+        <swiper indicator-dots="true" class="emoij-swiper">
+          <swiper-item wx:for="{{biaoqingList}}" wx:key="index">
+            <view class="emoij-span">
+              <view class="emoij-span-li" wx:for="{{item}}"  hover-class="emoij-span-li-hover" wx:for-index="index" wx:for-item="bq" wx:key="index" catchtap="selectBQ" data-bq="{{bq}}">
+                <image src="https://kefu.vtuzx.com/doc/system/bq/png/{{bq.id-1}}.png"></image>
+              </view>
+            </view>
+          </swiper-item>
+        </swiper>
+        <view class="emojiBar">
+          <view class="icon vtu-icon vtu-icon-expression"></view>
+          <view class="btn" hover-class="btn-hover" capture-bind:touchstart="sendText" capture-bind:touchend="">发送</view>
+        </view>
+      </view>
+      <view class="menu" hidden="{{!showMENU}}">
+        <view class="menu-li" hover-class="menu-li-hover"><view class="span vtu-icon vtu-icon-x-bmp"></view><view class="text">图片</view> </view>
+        <view class="menu-li"><view class="span vtu-icon vtu-icon-zhuanjie" hover-class="span-hover"></view><view class="text">客服转接</view> </view>
+        <view class="menu-li" hover-class="menu-li-hover"><view class="span vtu-icon vtu-icon-kuaijie"></view><view class="text">快捷消息</view> </view>
+        <view class="menu-li" hover-class="menu-li-hover"><view class="span vtu-icon vtu-icon-liaotianjilu"></view><view class="text">历史记录</view> </view>
+      </view>
+    </view>
+  </view>
+  <view class="recordDialog" wx:if="{{startRecord}}">
+    <view class="recordDialog_Icon">
+      <view class="recordDialog_Icon_Cancel vtu-icon vtu-icon-wanjiantou" wx:if="{{cancelRecord}}"></view>
+      <view class="recordDialog_Icon_Start" wx:else>
+        <image src="/assets/image/record.gif" class="imageFill"></image>
+      </view>
+    </view>
+    <view class="recordDialog_Text {{cancelRecord?'cancel':''}}">
+      {{recordDialogText}}
+    </view>
+  </view>
+</view>

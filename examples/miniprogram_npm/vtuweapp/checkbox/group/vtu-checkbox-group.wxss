@@ -2,6 +2,18 @@
 .Vtu_CheckBoxGroup{
     width: 100%;
 }
+.Vtu_CheckBoxGroup.is-horizontal{
+    display: inline-block;
+}
+.Vtu_CheckBoxGroup.is-horizontal .Vtu_CheckBoxGroup_CheckBox{
+    float: left;
+    border: 0px;
+}
+.Vtu_CheckBoxGroup.is-horizontal .Vtu_CheckBoxGroup_CheckBox .Vtu_CheckBoxGroup_CheckBox_Label{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
 .Vtu_CheckBoxGroup_CheckBox{
     height: 35px;
     line-height: 35px;

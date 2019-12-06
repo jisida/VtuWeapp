@@ -1,0 +1,22 @@
+<movable-area class="Vtu_Slide" style="width: {{width}}px; height: {{height}}px;">
+    <movable-view
+        direction="horizontal"
+        class="Vtu_Slide_View"
+        out-of-bounds="{{out}}"
+        damping="{{damping}}"
+        friction="{{friction}}"
+        disabled="{{disabled}}"
+        x="{{x}}"
+        style="width: {{width + slideWidth}}px; height: {{height}}px;"
+        inertia="{{inertia}}"
+        bindtouchend="onTouchEnd"
+        bindtouchstart="onTouchStart"
+        bindchange="onChange">
+        <view class="left"  style="width: {{width}}px; height: {{height}}px;" bindtap="onLeftTap">
+            <slot name="left"></slot>
+        </view>
+        <view class="right" bindtap="onRightTap" style="width: {{slideWidth}}px; height: {{height}}px;">
+            <slot name="right"></slot>
+        </view>
+    </movable-view>
+</movable-area>

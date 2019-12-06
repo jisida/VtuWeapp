@@ -10,6 +10,26 @@
         <vtu-radio value="4" label="南京"></vtu-radio>
       </vtu-radio-group>
     </vtu-panel>
+
+    <vtu-panel v-class="panel">
+      <vtu-cell slot="header" title="横向" border></vtu-cell>
+      <vtu-radio-group model="{{value1}}" direction="horizontal" bind:change="change">
+        <vtu-radio value="1" label="《南极姑娘》"></vtu-radio>
+        <vtu-radio value="2" label="《格格不入》"></vtu-radio>
+        <vtu-radio value="3" label="《无梦之境》"></vtu-radio>
+      </vtu-radio-group>
+    </vtu-panel>
+
+    <vtu-panel v-class="panel">
+      <vtu-cell slot="header" title="横向（水平个数）" border></vtu-cell>
+      <vtu-radio-group model="{{value1}}" direction="horizontal" horizontalNumber="{{2}}" bind:change="change">
+        <vtu-radio value="1" label="《你和梦想必须一起活下去》" ></vtu-radio>
+        <vtu-radio value="2" label="《格格不入》"></vtu-radio>
+        <vtu-radio value="3" label="《比时间更短 比爱情更长》"></vtu-radio>
+        <vtu-radio value="4" label="《我与世界只差一个你》"></vtu-radio>
+      </vtu-radio-group>
+    </vtu-panel>
+
     <vtu-panel v-class="panel">
       <vtu-cell slot="header" title="自定义" border ></vtu-cell>
       <vtu-radio-group model="{{value1}}" align="right" active-color="red" radio-icon="iconfont icon-xuanze" active-radio-icon="iconfont icon-xuanze-danxuan" bind:change="change">

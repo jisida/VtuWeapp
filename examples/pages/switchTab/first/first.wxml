@@ -52,6 +52,7 @@
             <vtu-cell title="Loading" value="加载" border arrow bind:click="loading"></vtu-cell>
             <vtu-cell title="LoadMore" value="底部加载更多" border arrow bind:click="loadMore"></vtu-cell>
             <vtu-cell title="Toast" value="轻提醒" border arrow bind:click="toast"></vtu-cell>
+            <vtu-cell title="Slide" value="滑动菜单" border arrow bind:click="slide"></vtu-cell>
         </vtu-panel>
         <vtu-panel content-class="contentClass" round card>
             <vtu-cell slot="header" title="导航组件" icon="iconfont icon-daohang" icon-color="#40cff9" border panel-header></vtu-cell>

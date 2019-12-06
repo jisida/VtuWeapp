@@ -1,6 +1,6 @@
 {
   "name": "vtuweapp",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "",
   "scripts": {
     "dev": "gulp dev --develop",

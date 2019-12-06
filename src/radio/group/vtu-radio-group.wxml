@@ -1,8 +1,8 @@
-<view class="Vtu_RadioGroup v-class">
+<view class="Vtu_RadioGroup v-class is-{{direction}}">
   <view class="Vtu_RadioGroup_Radio {{item.disabled?'is-disabled':''}} {{model == item.value ? 'is-active' : ''}} radio-class" wx:for="{{radioList}}" wx:key="index"
         hover-class="{{item.disabled?'':'Vtu_RadioGroup_Radio_Hover'}}"
         bindtap="{{item.disabled?'':'radioChange'}}"
-        style="color: {{model == item.value ?activeColor:''}}"
+        style="color: {{model == item.value ?activeColor:''}};width: {{direction==='horizontal'?(100/horizontalNumber)+'%':''}}"
         data-value="{{item.value}}">
     <block wx:if="{{align == 'left'}}">
       <view class="Vtu_RadioGroup_Radio_RadioIcon radio-icon-class {{model == item.value ? 'is-active ' + activeRadioIcon : radioIcon}}" style="color: {{model == item.value ? activeRadioColor||activeColor : radioColor}};"></view>

@@ -13,8 +13,9 @@
         <vtu-panel content-class="contentClass" round card>
             <vtu-cell slot="header" title="列表模板" icon="iconfont icon-biaodanzujian" icon-color="#40cff9" border panel-header></vtu-cell>
             <vtu-cell title="评论列表" border arrow bind:click="comment"></vtu-cell>
-            <vtu-cell title="聊天列表" border arrow bind:click="chat"></vtu-cell>
-            <vtu-cell title="新闻列表" arrow bind:click="newsList"></vtu-cell>
+            <vtu-cell title="好友列表" border arrow bind:click="chat"></vtu-cell>
+            <vtu-cell title="新闻列表" border arrow bind:click="newsList"></vtu-cell>
+            <vtu-cell title="聊天对话" arrow bind:click="chatDetail"></vtu-cell>
         </vtu-panel>
         <vtu-panel content-class="contentClass" round card>
             <vtu-cell slot="header" title="其他模板" icon="iconfont icon-zhanshi" icon-color="#40cff9" border panel-header></vtu-cell>

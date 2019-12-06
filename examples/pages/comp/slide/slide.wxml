@@ -1,0 +1,90 @@
+<view class="container">
+  <vtu-navbar title="Slide"></vtu-navbar>
+  <view class="center">
+    <view class="title Page_Padding">基础用法</view>
+    <vtu-slide height="60" slide-width="170" >
+      <view slot="left" class="left">
+        <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/1.png" width="40px" round v-class="avatar"></vtu-avatar>
+        <view class="info">
+          <view class="name">小明</view>
+          <view class="content">谢谢您的使用</view>
+        </view>
+      </view>
+      <view slot="right" class="right">
+        <view class="read">标记未读</view>
+        <view class="delete">删除</view>
+      </view>
+    </vtu-slide>
+    <vtu-slide height="60" slide-width="70" >
+      <view slot="left" class="left">
+        <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/4.png" width="40px" round v-class="avatar"></vtu-avatar>
+        <view class="info">
+          <view class="name">VtuUI</view>
+          <view class="content">很高兴您能使用VtuUI组件</view>
+        </view>
+      </view>
+      <view slot="right" class="right">
+        <view class="delete">删除</view>
+      </view>
+    </vtu-slide>
+    <vtu-slide height="60" slide-width="240" >
+      <view slot="left" class="left">
+        <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/3.png" width="40px" round v-class="avatar"></vtu-avatar>
+        <view class="info">
+          <view class="name">知行服务</view>
+          <view class="content">您使用还满意吗</view>
+        </view>
+      </view>
+      <view slot="right" class="right">
+        <view class="top">置顶</view>
+        <view class="read">标记未读</view>
+        <view class="delete">删除</view>
+      </view>
+    </vtu-slide>
+    <view class="title Page_Padding">速度</view>
+    <vtu-slide height="60" slide-width="240" damping="{{100}}">
+      <view slot="left" class="left">
+        <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/2.png" width="40px" round v-class="avatar"></vtu-avatar>
+        <view class="info">
+          <view class="name">订阅号消息</view>
+          <view class="content">您使用还满意吗</view>
+        </view>
+      </view>
+      <view slot="right" class="right">
+        <view class="top">置顶</view>
+        <view class="read">标记未读</view>
+        <view class="delete">删除</view>
+      </view>
+    </vtu-slide>
+    <view class="title Page_Padding">禁止滑动</view>
+    <vtu-slide height="60" slide-width="240" disabled="{{true}}">
+      <view slot="left" class="left">
+        <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/1.png" width="40px" round v-class="avatar"></vtu-avatar>
+        <view class="info">
+          <view class="name">小小行</view>
+          <view class="content">您使用还满意吗</view>
+        </view>
+      </view>
+      <view slot="right" class="right">
+        <view class="top">置顶</view>
+        <view class="read">标记未读</view>
+        <view class="delete">删除</view>
+      </view>
+    </vtu-slide>
+    <view class="title Page_Padding">事件</view>
+    <vtu-slide height="60" slide-width="240" bind:slideopen="slideopen" bind:slideclose="slideclose">
+      <view slot="left" class="left">
+        <vtu-avatar src="https://activity.vtuzx.com/doc/vtuUI/weapp/avatar/3.png" width="40px" round v-class="avatar"></vtu-avatar>
+        <view class="info">
+          <view class="name">雪原</view>
+          <view class="content">您使用还满意吗</view>
+        </view>
+      </view>
+      <view slot="right" class="right">
+        <view class="top">置顶</view>
+        <view class="read">标记未读</view>
+        <view class="delete">删除</view>
+      </view>
+    </vtu-slide>
+  </view>
+</view>

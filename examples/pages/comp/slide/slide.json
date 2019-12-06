@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "vtu-panel": "/miniprogram_npm/vtuweapp/panel/vtu-panel",
+        "vtu-navbar": "/miniprogram_npm/vtuweapp/navbar/vtu-navbar",
+        "vtu-slide": "/miniprogram_npm/vtuweapp/slide/vtu-slide",
+        "vtu-avatar": "/miniprogram_npm/vtuweapp/avatar/vtu-avatar"
+    }
+}

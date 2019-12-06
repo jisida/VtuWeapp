@@ -50,6 +50,14 @@ VtuComponent({
     max: {
       type: Number,
       value: 0
+    },
+    direction: {
+      type: String,
+      value: "vertical"
+    },
+    horizontalNumber: {
+      type: Number,
+      value: 3
     }
   },
 
