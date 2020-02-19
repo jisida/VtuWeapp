@@ -122,19 +122,19 @@ VtuComponent({
   ready:function(){
     let self = this
 
-    if(!this.data.value && (this.data.current || this.data.current == 0)) {
+    if(!this.data.value && (this.data.current || this.data.current == 0) && this.data.tabList[this.data.current]) {
       this.setData({
         value: this.data.tabList[this.data.current].name
       })
     }
-    var nodes = this.getRelationNodes('../tab/vtu-tab')
-    this.createSelectorQuery().select("#Vtu_Tabs").boundingClientRect(function (rect) {
-      self.setData({
-        tabLeft: rect.left
-      })
-      self.changeLine()
-    }).exec()
-    this.changeContent()
+    // var nodes = this.getRelationNodes('../tab/vtu-tab')
+    // this.createSelectorQuery().select("#Vtu_Tabs").boundingClientRect(function (rect) {
+    //   self.setData({
+    //     tabLeft: rect.left
+    //   })
+    //   self.changeLine()
+    // }).exec()
+    // this.changeContent()
   },
 
   /**

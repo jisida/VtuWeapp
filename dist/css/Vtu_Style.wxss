@@ -5,6 +5,8 @@ page{
     --primary-light: #91c7ff;
     --primary-dark: #0072de;
 
+    --assign: #f6aa7f;
+
     --success: #07c160;
     --warning: #f5bf49;
     --danger: #f44;

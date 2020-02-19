@@ -86,7 +86,7 @@ VtuComponent({
     },
     /** 最大输入长度，设置为 -1 的时候不限制最大长度 */
     maxlength: {
-      value: null,
+      value: -1,
       type: Number
     },
     /** 是否禁用 */

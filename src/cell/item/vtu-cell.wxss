@@ -47,6 +47,11 @@
     min-width: 70px;
     text-align: left;
 }
+.Vtuzx_Cell_Top_Title{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
 .Vtuzx_Cell_Top_Value{
     flex-grow: 1;
     font-size: 12px;

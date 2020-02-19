@@ -88,7 +88,24 @@ VtuComponent({
     height: {
       value: "45px",
       type: String
-    }
+    },
+
+    /** 指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。*/
+    lang: { value: "en", type: String },
+    /** 按钮开放能力 **/
+    openType: String,
+    /** 会话来源，open-type="contact"时有效 **/
+    sessionFrom:{ value: null, type: String },
+    /** 会话内消息卡片标题，open-type="contact"时有效**/
+    sendMessageTitle:{ value: null, type: String },
+    /** 会话内消息卡片点击跳转小程序路径，open-type="contact"时有效**/
+    sendMessagePath:{ value: null, type: String },
+    /** 会话内消息卡片图片，open-type="contact"时有效**/
+    sendMessageImg:{ value: null, type: String },
+    /** 打开 APP 时，向 APP 传递的参数，open-type=launchApp时有效**/
+    appParameter:{ value: null, type: String },
+    /** 是否显示会话内消息卡片，设置此参数为 true，用户进入客服会话会在右下角显示"可能要发送的小程序"提示，用户点击后可以快速发送小程序消息，open-type="contact"时有效**/
+    showMessageCard:{ value: null, type: String }
   },
 
   /**
@@ -100,5 +117,24 @@ VtuComponent({
   /**
    * 组件的方法列表
    */
-  methods: {}
+  methods: {
+    getUserInfo: function(e) {
+      this.triggerEvent('getuserinfo', e.detail);
+    },
+    getPhoneNumber: function(e) {
+      this.triggerEvent('getphonenumber', e.detail);
+    },
+    contact: function(e) {
+      this.triggerEvent('contact', e.detail);
+    },
+    error: function(e) {
+      this.triggerEvent('error', e.detail);
+    },
+    opensetting: function(e) {
+      this.triggerEvent('opensetting', e.detail);
+    },
+    launchapp: function(e) {
+      this.triggerEvent('launchapp', e.detail);
+    }
+  }
 })

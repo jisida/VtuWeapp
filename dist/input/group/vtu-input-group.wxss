@@ -2,6 +2,7 @@
 .Vtuzx_Input_Group{
     width: 100%;
     margin-bottom: 10px;
+    position: relative;
 }
 .Vtuzx_Input_Group_Title{
     width: calc(100% - 20px);

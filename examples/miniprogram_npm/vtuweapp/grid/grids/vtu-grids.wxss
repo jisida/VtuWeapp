@@ -25,6 +25,13 @@
     padding-top: 10px;
     position: relative;
 }
+.Vtu_Grids_Li.is-active{
+    border: 1px solid var(--primary);
+}
+.Vtu_Grids_Li.is-active .icon-span,
+.Vtu_Grids_Li.is-active .label{
+    color: var(--primary) !important;
+}
 .Vtu_Grids_Li.is-disabled .icon-span,
 .Vtu_Grids_Li.is-disabled .label{
     color: var(--font-disabled) !important;

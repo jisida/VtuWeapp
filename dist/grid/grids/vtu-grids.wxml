@@ -1,5 +1,5 @@
 <view class="Vtu_Grids v-class {{border?'is-border':''}} {{commonClass}}">
-    <view class="Vtu_Grids_Li {{item.disabled?'is-disabled':''}}"
+    <view class="Vtu_Grids_Li {{item.disabled?'is-disabled':''}} {{item.isActive?'is-active':''}}"
           bindtap="click"
           data-index="{{index}}"
           wx:if="{{!item.hidden}}"

@@ -57,6 +57,10 @@ VtuComponent({
     hidden: {
       type: Boolean,
       value: false
+    },
+    isActive: {
+      type: Boolean,
+      value: false
     }
   },
 

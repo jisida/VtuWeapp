@@ -1,5 +1,4 @@
-<view class="v-class Vtu_Panel {{commonClass}}" id="{{id}}"
-      style="background: {{bgColor}}; {{commonStyle}};">
+<view class="v-class Vtu_Panel {{commonClass}}" hover-class="hover-class" id="{{id}}" style="background: {{bgColor}}; {{commonStyle}};" bindtap="bindClick">
     <view class="Vtu_Panel_Title title-class" wx:if="{{title}}">{{title}}</view>
     <slot name="header"></slot>
     <view class="Vtu_Panel_Content content-class {{simple?'is-simple':''}}">

@@ -32,6 +32,9 @@
     margin-top: 12px;
     min-height: 28px
 }
+.Vtuzx_Input_Top .Vtuzx_Input_Top_Value .placeholder{
+    color: var(--font-hb) !important;
+}
 .Vtuzx_Input_Top.is-disabled .Vtuzx_Input_Top_Icon,
 .Vtuzx_Input_Top.is-disabled .Vtuzx_Input_Top_Title,
 .Vtuzx_Input_Top.is-disabled .Vtuzx_Input_Top_Value,
@@ -95,6 +98,7 @@
     height: 100%;
     z-index: 111;
     position: relative;
+    color: var(--font-hb);
 }
 .Vtuzx_Input_Top_Slot{
     flex-grow: 0;
@@ -169,4 +173,7 @@
     position: absolute;
     left: 0px;
     bottom: -5px;
+}
+.Vtuzx_Input_Placeholder_Class{
+    color: var(--font-hb);
 }

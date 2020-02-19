@@ -15,7 +15,6 @@
       <vtu-btn type="success" bind:click="open5">自定义颜色</vtu-btn>
       <vtu-btn type="primary" bind:click="open6">加载中</vtu-btn>
     </vtu-panel>
-
     <vtu-notify id="Vtu_Notify"></vtu-notify>
   </view>
 </view>

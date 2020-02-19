@@ -2,7 +2,6 @@
 .Vtu_LoadMore{
     position: relative;
     width: 100%;
-    height: 100%;
 }
 .Vtu_LoadMore_Loading{
     width: 100%;

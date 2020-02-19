@@ -2,7 +2,8 @@ import Dialog from "../../../miniprogram_npm/vtuweapp/dialog/vtu-index";
 Page({
   data: {
     show: false,
-    show2: false
+    show2: false,
+    show3: false
   },
 
   alert1: function() {
@@ -158,6 +159,12 @@ Page({
   alert9: function() {
     this.setData({
       show2: true
+    })
+  },
+
+  alert10: function() {
+    this.setData({
+      show3: true
     })
   },
 

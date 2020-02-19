@@ -56,6 +56,7 @@
     <view class="Vtuzx_Input_Top_Value" wx:elif="{{type == 'picker'}}">
       <picker bindchange="bindchange"
               id="{{id}}"
+              style="color: {{valueColor}};text-align: {{textAlign}};height: {{textHeight}}"
               name="{{name}}"
               bindcolumnchange="bindcolumnchange"
               mode="{{mode}}"

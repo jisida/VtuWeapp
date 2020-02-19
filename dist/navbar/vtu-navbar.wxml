@@ -9,12 +9,12 @@
                             <i class="vtu-icon vtu-icon-left"></i>
                         </view>
                         <view class="VNBC_Body_NavBtn_Home_Span" style="z-index: {{zIndex+2}};">
-                            <i class="vtu-icon vtu-icon-Home"></i>
+                            <i class="vtu-icon vtu-icon-Home" bindtap="toFirstPage"></i>
                         </view>
                     </view>
                     <block wx:else>
                       <view class="VNBC_Body_NavBtn_Back" bindtap="pageClose" wx:if="{{pageHisCount > 1}}"><span class="vtu-icon vtu-icon-left"></span><font wx:if="{{backLabel}}">{{backLabel}}</font></view>
-                      <view class="VNBC_Body_NavBtn_Back" bindtap="pageClose" wx:if="{{pageHisCount == 1 && goHome}}"><span class="vtu-icon vtu-icon-Home"></span></view>
+                      <view class="VNBC_Body_NavBtn_Back" bindtap="toFirstPage" wx:if="{{pageHisCount == 1 && goHome}}"><span class="vtu-icon vtu-icon-Home"></span></view>
                     </block>
                 </view>
                 <view class="VNBC_Body_Center contbar-class">
